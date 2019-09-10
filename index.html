@@ -5,9 +5,9 @@
         <title>Test Page</title>
         <script>
             function startTimer() {
+                const timer = setTimeout(startTimer, 800)
                 console.log("Alligator!!!");
             }
-            const timer = setTimeout(startTimer, 800)
 
             function stopTimer(){
                 clearTimeout(timer);
