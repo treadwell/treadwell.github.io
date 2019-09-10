@@ -4,9 +4,14 @@
         <meta charset="UTF-8">
         <title>Test Page</title>
         <script>
-            function gator() {
+            function startTimer() {
                 alert("Watch console for alligators...");
                 console.log("Alligator!!!");
+            }
+            const timer = setTimeout(startTimer, 800)
+
+            function stopTimer(){
+                clearTimeout(timer);
             }
         </script>
     </head>
@@ -25,7 +30,8 @@
                     
                 </textarea>
             </label>
-            <button onclick="gator()">Try it</button>
+            <button onclick="startTimer()">Start timer</button>
+            <button onclick="stopTimer()">Stop timer</button>
         </form>
     </body>
 </html>
