@@ -16,7 +16,7 @@
                 return timerID = setInterval(() => console.log("breathe"), 3000);
             }
 
-            function stopTimer(){
+            function stopTimer(timerID){
                 clearInterval(timerID);
             }
         </script>
@@ -24,6 +24,6 @@
     <body>
         <p>Hello World!</p>
         <button onclick="startTimer()">Start timer</button>
-        <button onclick="stopTimer()">Stop timer</button>
+        <button onclick="stopTimer(timerID)">Stop timer</button>
     </body>
 </html>
