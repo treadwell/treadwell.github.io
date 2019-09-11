@@ -4,16 +4,12 @@
         <meta charset="UTF-8">
         <title>Test Page</title>
         <script>
-
-            function postMessage() {
-                console.log("inhale");
-            }
             function startTimer() {
-                const timer = setInterval(postMessage, 3000);
+                let timerID = setInterval(() => alert("breathe"), 3000);
             }
 
             function stopTimer(){
-                clearInterval(timer);
+                clearInterval(timerID);
             }
         </script>
     </head>
