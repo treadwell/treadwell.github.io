@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <title>Test Page</title>
         <script>
+
+            function postMessage() {
+                console.log("inhale");
+            }
             function startTimer() {
-                const timer = setTimeout(startTimer, 800)
-                console.log("Alligator!!!");
+                const timer = setInterval(postMessage, 3000);
             }
 
             function stopTimer(){
-                clearTimeout(timer);
+                clearInterval(timer);
             }
         </script>
     </head>
