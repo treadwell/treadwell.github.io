@@ -8,7 +8,12 @@
             // add input for breaths per minute
             // add input for duration of timer
             // separate "breathe" into inhale and exhale
+            
             // move commands to web page from console
+            function inhale1() {
+                document.getElementById('txt').innerHTML = "inhale";
+            }
+
             // add sound or tts to commands
             // add scaling visuals to commands
 
@@ -16,9 +21,7 @@
                 console.log("inhale");
             }
 
-            function exhale() {
-                console.log("exhale");
-            }
+ 
 
             function breathe(bpm, duration) {
                 // change bpm to seconds and inhale / exhale cycles
@@ -28,7 +31,7 @@
                 console.log(duration_ms);
                 
                 // loop for duration
-                const timerID = setInterval(inhale, cycle);
+                var timerID = setInterval(inhale, cycle);
                 setTimeout(clearInterval(timerID), duration);
             }
 
@@ -42,7 +45,7 @@
         </script>
     </head>
     <body>
-        <p>Hello World!</p>
+        <div id="txt"></div>
         <button onclick="breathe(10, 0.25)">Start timer</button>
         <button onclick="console.log('Not implemented')">Stop timer</button>
     </body>
