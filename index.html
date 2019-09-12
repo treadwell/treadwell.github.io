@@ -26,10 +26,8 @@
                 console.log(cycle)
                 
                 // while loop for duration
-                    inhale();
-                    setTimeout(cycle);
-                    exhale();
-                    setTimeout(cycle);
+                    setTimeout(inhale, cycle);
+                    setTimeout(exhale, cycle);
             }
 
             function startTimer() {
