@@ -13,21 +13,23 @@
             // add scaling visuals to commands
 
             function inhale() {
-                console.log("inhale")
+                console.log("inhale");
             }
 
             function exhale() {
-                console.log("exhale")
+                console.log("exhale");
             }
 
             function breathe(bpm, duration) {
                 // change bpm to seconds and inhale / exhale cycles
-                cycle = 60.0 / bpm / 2.0 * 1000 // ms for a half breath (in or out)
-                console.log(cycle)
+                cycle = 60.0 / bpm / 2 * 1000; // ms for a half breath cycle
+                duration_ms = duration * 60 * 1000;
+                console.log(cycle);
+                console.log(duration_ms);
                 
-                // while loop for duration
-                    setTimeout(inhale, cycle);
-                    setTimeout(exhale, cycle);
+                // loop for duration
+                const timerID = setInterval(inhale, cycle);
+                setTimeout(clearInterval(timerID), duration);
             }
 
             function startTimer() {
@@ -41,7 +43,7 @@
     </head>
     <body>
         <p>Hello World!</p>
-        <button onclick="breathe(10, 5)">Start timer</button>
+        <button onclick="breathe(10, 0.25)">Start timer</button>
         <button onclick="stopTimer(timerID)">Stop timer</button>
     </body>
 </html>
