@@ -12,6 +12,25 @@
             // add sound or tts to commands
             // add scaling visuals to commands
 
+            function inhale() {
+                console.log("inhale")
+            }
+
+            function exhale() {
+                console.log("exhale")
+            }
+
+            function breathe(bpm, duration) {
+                // change bpm to seconds and inhale / exhale cycles
+                cycle = 60.0 / bpm / 2.0 * 1000 // ms for a half breath (in or out)
+                
+                // while loop for duration
+                    inhale();
+                    setTimeout(cycle);
+                    exhale();
+                    setTimeout(cycle);
+            }
+
             function startTimer() {
                 return timerID = setInterval(() => console.log("breathe"), 3000);
             }
@@ -23,7 +42,7 @@
     </head>
     <body>
         <p>Hello World!</p>
-        <button onclick="startTimer()">Start timer</button>
+        <button onclick="breathe(10, 5)">Start timer</button>
         <button onclick="stopTimer(timerID)">Stop timer</button>
     </body>
 </html>
