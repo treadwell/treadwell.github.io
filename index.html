@@ -21,8 +21,6 @@
                 console.log("inhale");
             }
 
- 
-
             function breathe(bpm, duration) {
                 // change bpm to seconds and inhale / exhale cycles
                 cycle = 60.0 / bpm / 2 * 1000; // ms for a half breath cycle
@@ -31,6 +29,8 @@
                 console.log(duration_ms);
                 
                 // loop for duration
+                // Note this partially works if I don't call the function above, but just 
+                // use console.log("inhale") as the function below
                 var timerID = setInterval(inhale, cycle);
                 setTimeout(clearInterval(timerID), duration);
             }
@@ -46,7 +46,11 @@
     </head>
     <body>
         <div id="txt"></div>
-        <button onclick="breathe(10, 0.25)">Start timer</button>
-        <button onclick="console.log('Not implemented')">Stop timer</button>
+        <form>
+            <p>Breaths per minute (count): <input type="number" name="bpm" value="10"></p>
+            <p>Length of practice (minutes): <input type="number" name="duration" value="1"></p>
+            <button onclick="breathe(this.form.bpm.value, this.form.duration.value)">Start timer</button>
+            <button onclick="console.log('Not implemented')">Stop timer</button>
+        </form>
     </body>
 </html>
