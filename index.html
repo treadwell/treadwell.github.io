@@ -11,8 +11,8 @@
             // add sound or tts to commands
             // add scaling visuals to commands
 
-            function inhale() {
-                console.log("inhale");
+            function command(message) {
+                console.log(message);
             }
 
             function breathe() {
@@ -24,7 +24,7 @@
                 console.log(cycle);
                 console.log(duration_ms);
 
-                const timerID = setInterval(inhale, cycle);
+                const timerID = setInterval(() => command("inhale"), cycle);
                 setTimeout(() => clearInterval(timerID), duration_ms);
 
             }
@@ -34,7 +34,7 @@
         <div id="txt"></div>
         <div>
             <p>Breaths per minute (count): <input type="number" id="bpm" value="10"></p>
-            <p>Length of practice (minutes): <input type="number" id="duration" value="0.25"></p>
+            <p>Length of practice (minutes): <input type="number" id="duration" value="0.5"></p>
             <button onclick="breathe()">Start timer</button>
             <button onclick="console.log('Not implemented')">Stop timer</button>
         </div>
