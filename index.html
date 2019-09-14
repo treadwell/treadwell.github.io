@@ -31,24 +31,24 @@
                 // loop for duration
                 // Note this partially works if I don't call the function above, but just 
                 // use console.log("inhale") as the function below
-                var timerID = setInterval(inhale, cycle);
-                setTimeout(clearInterval(timerID), duration);
+                timerID = setInterval(inhale, cycle);
+                setTimeout(() => clearInterval(timerID), duration_ms);
             }
 
-            function startTimer() {
-                return timerID = setInterval(() => console.log("breathe"), 3000);
-            }
+            // function startTimer() {
+            //     return timerID = setInterval(() => console.log("breathe"), 3000);
+            // }
 
-            function stopTimer(timerID){
-                clearInterval(timerID);
-            }
+            // function stopTimer(timerID){
+            //     clearInterval(timerID);
+            // }
         </script>
     </head>
     <body>
         <div id="txt"></div>
         <form>
             <p>Breaths per minute (count): <input type="number" name="bpm" value="10"></p>
-            <p>Length of practice (minutes): <input type="number" name="duration" value="1"></p>
+            <p>Length of practice (minutes): <input type="number" name="duration" value="0.25"></p>
             <button onclick="breathe(this.form.bpm.value, this.form.duration.value)">Start timer</button>
             <button onclick="console.log('Not implemented')">Stop timer</button>
         </form>
