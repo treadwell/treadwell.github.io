@@ -4,16 +4,10 @@
         <meta charset="UTF-8">
         <title>Test Page</title>
         <script>
-            // get timers working
-            // add input for breaths per minute
-            // add input for duration of timer
+            // get timers working (check)
             // separate "breathe" into inhale and exhale
-            
             // move commands to web page from console
-            function inhale1() {
-                document.getElementById('txt').innerHTML = "inhale";
-            }
-
+            //      document.getElementById('txt').innerHTML = "inhale";
             // add sound or tts to commands
             // add scaling visuals to commands
 
@@ -21,36 +15,28 @@
                 console.log("inhale");
             }
 
-            function breathe(bpm, duration) {
+            function breathe() {
                 // change bpm to seconds and inhale / exhale cycles
-                cycle = 60.0 / bpm / 2 * 1000; // ms for a half breath cycle
-                duration_ms = duration * 60 * 1000;
+                const bpm = document.getElementById("bpm").value
+                const duration = document.getElementById("duration").value
+                const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
+                const duration_ms = duration * 60 * 1000;
                 console.log(cycle);
                 console.log(duration_ms);
-                
-                // loop for duration
-                // Note this partially works if I don't call the function above, but just 
-                // use console.log("inhale") as the function below
-                timerID = setInterval(inhale, cycle);
+
+                const timerID = setInterval(inhale, cycle);
                 setTimeout(() => clearInterval(timerID), duration_ms);
+
             }
-
-            // function startTimer() {
-            //     return timerID = setInterval(() => console.log("breathe"), 3000);
-            // }
-
-            // function stopTimer(timerID){
-            //     clearInterval(timerID);
-            // }
         </script>
     </head>
     <body>
         <div id="txt"></div>
-        <form>
-            <p>Breaths per minute (count): <input type="number" name="bpm" value="10"></p>
-            <p>Length of practice (minutes): <input type="number" name="duration" value="0.25"></p>
-            <button onclick="breathe(this.form.bpm.value, this.form.duration.value)">Start timer</button>
+        <div>
+            <p>Breaths per minute (count): <input type="number" id="bpm" value="10"></p>
+            <p>Length of practice (minutes): <input type="number" id="duration" value="0.25"></p>
+            <button onclick="breathe()">Start timer</button>
             <button onclick="console.log('Not implemented')">Stop timer</button>
-        </form>
+        </div>
     </body>
 </html>
