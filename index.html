@@ -10,6 +10,38 @@
             // add sound or tts to commands
             // add scaling visuals to commands
 
+            // if you have another AudioContext class use that one, as some browsers have a limit
+            var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
+
+            //All arguments are optional:
+
+            //duration of the tone in milliseconds. Default is 500
+            //frequency of the tone in hertz. default is 440
+            //volume of the tone. Default is 1, off is 0.
+            //type of tone. Possible values are sine, square, sawtooth, triangle, and custom. Default is sine.
+            //callback to use on end of tone
+            function beep() {
+                const duration = document.getElementById("tone_length").value
+                const frequency = document.getElementById("tone_freq").value
+                const volume = document.getElementById("tone_volume").value
+                const type = document.getElementById("tone_type").value
+                const callback = "oneended"
+
+                var oscillator = audioCtx.createOscillator();
+                var gainNode = audioCtx.createGain();
+
+                oscillator.connect(gainNode);
+                gainNode.connect(audioCtx.destination);
+
+                if (volume){gainNode.gain.value = volume;};
+                if (frequency){oscillator.frequency.value = frequency;}
+                if (type){oscillator.type = type;}
+                if (callback){oscillator.onended = callback;}
+
+                oscillator.start();
+                setTimeout(function(){oscillator.stop()}, (duration ? duration : 500));
+            };
+
             function command(message) {
                 // console.log(message)
                 document.getElementById('txt').innerHTML = message;
@@ -52,6 +84,15 @@
             <p>Breaths per minute (count): <input type="number" id="bpm" value="10"></p>
             <p>Length of practice (minutes): <input type="number" id="duration" value="0.5"></p>
             <button onclick="breathe()">Start timer</button>
+            
+        </div>
+        <div>
+                <p>Tone duration: <input type="number" id="tone_length" value="500"></p>
+                <p>Tone frequency: <input type="number" id="tone_freq" value="1000"></p>
+                <p>Tone volume: <input type="number" id="tone_volume" value="0.5"></p>
+                <p>Tone type: <input type="text" id="tone_type" value="triangle"></p>
+                <!-- <p>Tone callback: <input type="text" id="tone_callback" value="oneended"></p> -->
+            <button onclick="beep()">Start tone</button>
         </div>
     </body>
 </html>
