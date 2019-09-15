@@ -7,12 +7,12 @@
             // get timers working (check)
             // separate "breathe" into inhale and exhale
             // move commands to web page from console
-            //      document.getElementById('txt').innerHTML = "inhale";
             // add sound or tts to commands
             // add scaling visuals to commands
 
             function command(message) {
-                console.log(message);
+                // console.log(message)
+                document.getElementById('txt').innerHTML = message;
             }
 
             function breathe() {
@@ -24,8 +24,24 @@
                 // console.log(cycle);
                 // console.log(duration_ms);
 
-                const timerID = setInterval(() => command("inhale"), cycle);
-                setTimeout(() => clearInterval(timerID), duration_ms);
+                const timers = []  // creating separate inhale and exhale timers
+
+                //inhale timer on cycle
+                timers[0] = setInterval(() => command("inhale"), cycle)
+
+                setTimeout(() => {  // delays exhale timer by half a cycle
+
+                    // exhale timer
+                    timers[1] = setInterval(() => command("exhale"), cycle)
+                    
+                    // clear timers.  
+                    // Position here to make sure there are available timer IDs
+                    setTimeout(() => {
+                        clearInterval(timers[0])
+                        clearInterval(timers[1])
+                    }, duration_ms)
+
+                }, cycle / 2)
 
             }
         </script>
