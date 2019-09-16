@@ -20,12 +20,12 @@
             //volume of the tone. Default is 1, off is 0.
             //type of tone. Possible values are sine, square, sawtooth, triangle, and custom. Default is sine.
             //callback to use on end of tone
-            function beep() {
-                const duration = document.getElementById("tone_length").value
-                const frequency = document.getElementById("tone_freq").value
-                const volume = document.getElementById("tone_volume").value
-                const type = document.getElementById("tone_type").value
-                const callback = "oneended"
+            function beep(duration, frequency, volume, type, callback) {
+                // const duration = document.getElementById("tone_length").value
+                // const frequency = document.getElementById("tone_freq").value
+                // const volume = document.getElementById("tone_volume").value
+                // const type = document.getElementById("tone_type").value
+                // const callback = "oneended"
 
                 var oscillator = audioCtx.createOscillator();
                 var gainNode = audioCtx.createGain();
@@ -87,12 +87,12 @@
             
         </div>
         <div>
-                <p>Tone duration: <input type="number" id="tone_length" value="500"></p>
+                <!-- <p>Tone duration: <input type="number" id="tone_length" value="500"></p>
                 <p>Tone frequency: <input type="number" id="tone_freq" value="1000"></p>
                 <p>Tone volume: <input type="number" id="tone_volume" value="0.5"></p>
                 <p>Tone type: <input type="text" id="tone_type" value="triangle"></p>
-                <!-- <p>Tone callback: <input type="text" id="tone_callback" value="oneended"></p> -->
-            <button onclick="beep()">Start tone</button>
+                <p>Tone callback: <input type="text" id="tone_callback" value="oneended"></p> -->
+            <button onclick="beep(500, 1000, 0.5, 'triangle')">Start tone</button>
         </div>
     </body>
 </html>
