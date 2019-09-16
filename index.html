@@ -45,6 +45,11 @@
             function command(message) {
                 // console.log(message)
                 document.getElementById('txt').innerHTML = message;
+                if (message === "inhale") {
+                    beep(500, 1000, 0.5, 'triangle')
+                } else {
+                    beep(500, 500, 0.5, 'triangle')
+                }
             }
 
             function breathe() {
@@ -81,18 +86,10 @@
     <body>
         <div id="txt"></div>
         <div>
-            <p>Breaths per minute (count): <input type="number" id="bpm" value="10"></p>
-            <p>Length of practice (minutes): <input type="number" id="duration" value="0.5"></p>
+            <p>Breaths per minute (count): <input type="number" id="bpm" value="5"></p>
+            <p>Length of practice (minutes): <input type="number" id="duration" value="5"></p>
             <button onclick="breathe()">Start timer</button>
             
-        </div>
-        <div>
-                <!-- <p>Tone duration: <input type="number" id="tone_length" value="500"></p>
-                <p>Tone frequency: <input type="number" id="tone_freq" value="1000"></p>
-                <p>Tone volume: <input type="number" id="tone_volume" value="0.5"></p>
-                <p>Tone type: <input type="text" id="tone_type" value="triangle"></p>
-                <p>Tone callback: <input type="text" id="tone_callback" value="oneended"></p> -->
-            <button onclick="beep(500, 1000, 0.5, 'triangle')">Start tone</button>
         </div>
     </body>
 </html>
