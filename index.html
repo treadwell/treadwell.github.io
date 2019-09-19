@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Breathing Timer</title>
         <script>
-            // add check box to generate tone (default on)
+            // add check box to generate tone (default on) - make the control real time!
             // add tone volume slider
             // add "reset timer" button
             // add scaling visuals
@@ -50,13 +50,15 @@
                 document.getElementById('msg').innerHTML = "Feature not implemented."
             }
 
-            function command(message) {
+            function command(message, play_tone) {
                 // console.log(message)
                 document.getElementById('txt').innerHTML = message;
-                if (message === "inhale") {
-                    beep(500, 1000, 0.5, 'triangle')
-                } else {
-                    beep(500, 500, 0.5, 'triangle')
+                if (play_tone) {
+                    if (message === "inhale") {
+                        beep(500, 1000, 0.5, 'triangle')
+                    } else {
+                        beep(500, 500, 0.5, 'triangle')
+                    }
                 }
             }
 
@@ -64,20 +66,20 @@
                 // change bpm to seconds and inhale / exhale cycles
                 const bpm = document.getElementById("bpm").value
                 const duration = document.getElementById("duration").value
+                const play_tone = document.getElementById("tones").checked ? true : false
+
                 const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
-                const duration_ms = duration * 60 * 1000;
-                // console.log(cycle);
-                // console.log(duration_ms);
+                const duration_ms = duration * 60 * 100
 
                 const timers = []  // creating separate inhale and exhale timers
 
                 //inhale timer on cycle
-                timers[0] = setInterval(() => command("inhale"), cycle)
+                timers[0] = setInterval(() => command("inhale", play_tone), cycle)
 
                 setTimeout(() => {  // delays exhale timer by half a cycle
 
                     // exhale timer
-                    timers[1] = setInterval(() => command("exhale"), cycle)
+                    timers[1] = setInterval(() => command("exhale", play_tone), cycle)
                     
                     // clear timers.  
                     // Position here to make sure there are available timer IDs
@@ -97,6 +99,7 @@
         <div>
             <p>Breaths per minute (count): <input type="number" id="bpm" value="6"></p>
             <p>Length of practice (minutes): <input type="number" id="duration" value="20"></p>
+            <p><input type="checkbox" id="tones" checked>Play tones</p>
             <button onclick="breathe()">Start timer</button>
             <button onclick="notImplemented()">Test feature</button>
         </div>
