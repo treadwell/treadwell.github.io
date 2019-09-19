@@ -50,9 +50,13 @@
                 document.getElementById('msg').innerHTML = "Feature not implemented."
             }
 
-            function command(message, play_tone) {
+            function command(message) {
+                const play_tone = document.getElementById("tones").checked ? true : false
                 // console.log(message)
+                // console.log(play_tone)
+
                 document.getElementById('txt').innerHTML = message;
+                
                 if (play_tone) {
                     if (message === "inhale") {
                         beep(500, 1000, 0.5, 'triangle')
@@ -66,7 +70,6 @@
                 // change bpm to seconds and inhale / exhale cycles
                 const bpm = document.getElementById("bpm").value
                 const duration = document.getElementById("duration").value
-                const play_tone = document.getElementById("tones").checked ? true : false
 
                 const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
                 const duration_ms = duration * 60 * 100
@@ -74,12 +77,12 @@
                 const timers = []  // creating separate inhale and exhale timers
 
                 //inhale timer on cycle
-                timers[0] = setInterval(() => command("inhale", play_tone), cycle)
+                timers[0] = setInterval(() => command("inhale"), cycle)
 
                 setTimeout(() => {  // delays exhale timer by half a cycle
 
                     // exhale timer
-                    timers[1] = setInterval(() => command("exhale", play_tone), cycle)
+                    timers[1] = setInterval(() => command("exhale"), cycle)
                     
                     // clear timers.  
                     // Position here to make sure there are available timer IDs
