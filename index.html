@@ -9,6 +9,7 @@
             // add "reset timer" button
             // add scaling visuals
             // add tts
+            // add check box to generate tts
             // add Sury A in tts
             
 
@@ -43,6 +44,11 @@
                 oscillator.start();
                 setTimeout(function(){oscillator.stop()}, (duration ? duration : 500));
             };
+
+            function notImplemented() {
+                console.log("feature not implemented")
+                document.getElementById('msg').innerHTML = "Feature not implemented."
+            }
 
             function command(message) {
                 // console.log(message)
@@ -86,12 +92,13 @@
         </script>
     </head>
     <body>
-        <div id="txt"></div>
+            <div id="msg"></div>
+            <div id="txt"></div>
         <div>
             <p>Breaths per minute (count): <input type="number" id="bpm" value="6"></p>
             <p>Length of practice (minutes): <input type="number" id="duration" value="20"></p>
             <button onclick="breathe()">Start timer</button>
-            
+            <button onclick="notImplemented()">Test feature</button>
         </div>
     </body>
 </html>
