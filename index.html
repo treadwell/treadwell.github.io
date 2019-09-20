@@ -9,7 +9,7 @@
             // add scaling visuals
             // add tts preload to avoid change in voice
             // add Sury A in tts
-            // make responsive
+            // make responsive - done
 
             function say(m) {
                 var msg = new SpeechSynthesisUtterance();
@@ -95,7 +95,7 @@
                 const duration = document.getElementById("duration").value
 
                 const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
-                const duration_ms = duration * 60 * 100
+                const duration_ms = duration * 60 * 1000
 
                 const timers = []  // creating separate inhale and exhale timers
 
