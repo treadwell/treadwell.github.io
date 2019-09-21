@@ -14,10 +14,10 @@
             function say(m) {
                 var msg = new SpeechSynthesisUtterance();
                 var voices = window.speechSynthesis.getVoices();
-                msg.voice = voices[10];
+                msg.voice = voices[10];  // en has 1, 10, 17
                 msg.voiceURI = "native";
-                msg.volume = 1;
-                msg.rate = 0.5;
+                msg.volume = document.getElementById("volSlide").value
+                msg.rate = 1.0;
                 msg.pitch = 0.8;
                 msg.text = m;
                 msg.lang = 'en-US';
@@ -134,6 +134,7 @@
             <p><input type="range" min="0.0" max="1.0" step="0.01" value="0.5" class="slider" id="volSlide"> Volume</p>
             <p>
                 <button onclick="breathe()">Start timer</button>
+                <button onclick="window.location.reload()">Reset timer</button>
             </p>
             <p><button onclick="say('Hello world.')">TTS</button></p>
             <p><button onclick="notImplemented()">Test feature</button></p>
