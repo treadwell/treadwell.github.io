@@ -11,16 +11,24 @@
             // add Sury A in tts
             // make responsive - done
 
-            function say(m, voice, language) {
-                var voices = window.speechSynthesis.getVoices();
-                speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance(), {
-                    voice: voices[voice],  // en has 1, 10, 17
-                    voiceURI: "native",
-                    volume: document.getElementById("volSlide").value,
-                    rate: 1.0,
-                    pitch: 0.8,
-                    text: m,
-                    lang: language
+            function say({
+                    voice = 10,
+                    voiceURI = "native", 
+                    volume = 0.5,
+                    rate = 1.0,
+                    pitch = 0.8,
+                    m = "Hello world.",
+                    lang = "en-US"
+                }) {
+                    var voices = window.speechSynthesis.getVoices();
+                    speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance(), {
+                        voice: voices[voice],  // en has 1, 10, 17
+                        voiceURI: voiceURI,
+                        volume: document.getElementById("volSlide").value,
+                        rate: rate,
+                        pitch: pitch,
+                        text: m,
+                        lang: lang
                 }))
             }
             
@@ -78,9 +86,9 @@
 
                 if (playVoice) {
                     if (message === "inhale") {
-                        say("Inhale.", 10, "en-us")
+                        say({ m: "Inhale." })
                     } else {
-                        say("Exhale.",10, "en-us")
+                        say({ m: "Exhale." })
                     }
                 }
             }
@@ -142,7 +150,7 @@
 
             <hr/>
             <h3>Test features:</h3>
-            <p><button onclick="say('ekam, dve, trini.', 20, 'sa')">TTS</button></p>
+            <p><button onclick="say({ m: 'ekam, dve, trini.', voice: 20, lang: 'sa' })">TTS</button></p>
             <p><button onclick="notImplemented()">Test feature</button></p>
         </div>
     </body>
