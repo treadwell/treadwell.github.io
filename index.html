@@ -132,21 +132,12 @@
 
             function readAloud() {
                 let lines = document.getElementById('suryA').innerText.split('\n\n')
-
+                
                 for(var i = 0;i < lines.length;i++){
-                    // call say() on the html
-                    // with a timeout
+
                     let msg = lines[i]
-                    
-                    // This doesn't delay, but does say the words
-                    // setTimeout(say({ m: msg }), 3000 * i)
-
+                    console.log(msg)
                     setTimeout(() => say({ m: msg }), 6000 * i)
-
-                    // The following works with the timeout:
-                    // setTimeout(() => {
-                    //     console.log(msg)
-                    // }, 3000 * i)
                 }
             }
 
@@ -176,27 +167,30 @@
         <div id="suryA">
             <hr/>
             <h3>Surya Namaskara A</h3>
-            <p>ekam: inhale, lift the arms up.</p>
-            <p>dve: exhale, fold forward.</p>
-            <p>trini: inhale, head up only.</p>
-            <p>catvari: exhale, jump back to chaturanga.</p>
-            <p>panca: inhale, push up to upward dog.</p>
-            <p>sat: exhale, push back to downward dog.</p>
-            <p>One. Inhale</p>
-            <p>Exhale</p>
-            <p>Two. Inhale</p>
-            <p>Exhale</p>
-            <p>Three. Inhale</p>
-            <p>Exhale</p>
-            <p>Four. Inhale</p>
-            <p>Exhale</p>
-            <p>Five. Inhale</p>
-            <p>Exhale</p>
-            <p>sapta: inhale, jump forward, head up.</p>
-            <p>astau: exhale, fold forward.</p>
-            <p>nava: inhale, lift the arms up.</p>
-            <p>Exhale: samasthitih</p>
-            
+            <ul>
+                <li>ekam: inhale, lift the arms up.</li>
+                <li>dve: exhale, fold forward.</li>
+                <li>trini: inhale, head up only.</li>
+                <li>catvari: exhale, jump back to chaturanga.</li>
+                <li>panca: inhale, push up to upward dog.</li>
+                <li>sat: exhale, push back to downward dog.</li>
+                <ul>
+                    <li>One. Inhale</li>
+                    <li>Exhale</li>
+                    <li>Two. Inhale</li>
+                    <li>Exhale</li>
+                    <li>Three. Inhale</li>
+                    <li>Exhale</li>
+                    <li>Four. Inhale</li>
+                    <li>Exhale</li>
+                    <li>Five. Inhale</li>
+                    <li>Exhale</li>
+                </ul>
+                <li>sapta: inhale, jump forward, head up.</li>
+                <li>astau: exhale, fold forward.</li>
+                <li>nava: inhale, lift the arms up.</li>
+                <li>Exhale: samasthitih</li>
+            </ul>
         </div>
         <p><button id="ReadAloud"  onclick="readAloud()">Read aloud</button></p>
     </body>
