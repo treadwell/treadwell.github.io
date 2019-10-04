@@ -1,9 +1,14 @@
-const promise = new Promise(function(resolve, reject) {
-    setTimeout(function() {
-        resolve('resolved promise');
-    }, 2000);
-});
+const msg = false
 
-promise.then(function(data) {
-    console.log(data);
-});
+const promise = new Promise( (resolve, reject) => {
+    if (msg) {
+        setTimeout( () => resolve('resolved promise'), 2000)
+    } else {
+        setTimeout( () => reject('rejected promise'), 2000)
+    }
+})
+
+promise.then( 
+    (data) => console.log(data),  // success condition
+    (data) => console.log(data)   // implicit error condition
+)
