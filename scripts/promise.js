@@ -8,6 +8,9 @@ const promise = new Promise( (resolve, reject) => {
     }
 })
 
+// there should be error handling implicit in this.  I'm 
+// using else to short-circuit error handling.
+
 promise.then( 
     (data) => console.log(data),  // success condition
     (data) => console.log(data)   // implicit error condition
