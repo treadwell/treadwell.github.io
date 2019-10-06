@@ -129,29 +129,30 @@ function readAloud() {
     const cycle = document.getElementById("secPerBreath").value / 2.0 * 1000
     const asanas = [ "suryA", "suryA", "suryA", "suryB" ]
 
-    function read_asanas([asana, ...asanas]) {
-
-        if (!asana) return
-        // console.log(asana)
-        // console.log(asanas)
-        // console.log("--------------")
-        
-        const lines = document.getElementById(asana).innerText.split('\n')
-
-        read_lines(lines, asanas)
-    }
-
-    function read_lines([line, ...lines], asanas) {
-        if (!line) {
-            read_asanas(asanas)
-        } else {
-            setTimeout (() => {
-                say({ m:line })
-                // console.log(line)
-                read_lines (lines, asanas)
-            }, cycle)
-        }
-    }
-
-    read_asanas(asanas)
+    read_asanas(asanas, cycle)
 }
+
+function read_asanas([asana, ...asanas], cycle) {
+
+    if (!asana) return
+    // console.log(asana)
+    // console.log(asanas)
+    // console.log("--------------")
+    
+    const lines = document.getElementById(asana).innerText.split('\n')
+
+    read_lines(lines, asanas, cycle)
+}
+
+function read_lines([line, ...lines], asanas, cycle) {
+    if (!line) {
+        read_asanas(asanas)
+    } else {
+        setTimeout (() => {
+            say({ m:line })
+            // console.log(line)
+            read_lines (lines, asanas, cycle)
+        }, cycle)
+    }
+}
+
