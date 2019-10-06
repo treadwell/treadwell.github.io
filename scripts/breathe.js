@@ -57,7 +57,7 @@ function beep({
 
 function notImplemented() {
     console.log("feature not implemented")
-    document.getElementById('msg').innerHTML = "Feature not implemented."
+    document.getElementById('testMsg').innerHTML = "Feature not implemented."
 }
 
 function command(message) {
@@ -126,41 +126,32 @@ function breathe() {
 
 function readAloud() {
 
-    const asanas = ['suryA', 'suryB']
+    const cycle = document.getElementById("secPerBreath").value / 2.0 * 1000
+    const asanas = [ "suryA", "suryA", "suryA", "suryB" ]
 
     function read_asanas([asana, ...asanas]) {
+
         if (!asana) return
+        // console.log(asana)
+        // console.log(asanas)
+        // console.log("--------------")
         
-        let lines = document.getElementById(asana).innerText.split('\n')
-        console.log(asana)
-        console.log("--------------")
-        read_lines(lines, asana)
+        const lines = document.getElementById(asana).innerText.split('\n')
+
+        read_lines(lines, asanas)
     }
 
     function read_lines([line, ...lines], asanas) {
         if (!line) {
             read_asanas(asanas)
+        } else {
+            setTimeout (() => {
+                say({ m:line })
+                // console.log(line)
+                read_lines (lines, asanas)
+            }, cycle)
         }
-
-        setTimeout (() => {
-            say({ m:line })
-            read_lines (lines, asanas)
-        }, 6000)
     }
 
-    // this is asynch and it needs to wait.
-
-    // for (asana of asanas){
-
-    //     let lines = document.getElementById(asana).innerText.split('\n')
-        
-    //     console.log(asana)
-    //     console.log("--------------")
-        
-    //     for (let i = 0; i < lines.length; i++){
-    //         let msg = lines[i]
-    //         console.log(i, msg)
-    //         setTimeout(() => say({ m: msg }), 6000 * i)
-    //     }
-    // }
+    read_asanas(asanas)
 }
