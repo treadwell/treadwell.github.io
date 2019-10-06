@@ -30,7 +30,7 @@ function say({
 }
 
 // if you have another AudioContext class use that one, as some browsers have a limit
-var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
+// var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
 
 function beep({
     duration = 500, //duration of the tone in milliseconds. Default is 500
@@ -39,6 +39,7 @@ function beep({
     type = "triangle", //type of tone. Possible values are sine, square, sawtooth, triangle, and custom. Default is sine.
     callback = () => console.log("callback test") //callback to use on end of tone
 }) {
+    var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
     var oscillator = audioCtx.createOscillator()
     var gainNode = audioCtx.createGain()
 
@@ -127,19 +128,39 @@ function readAloud() {
 
     const asanas = ['suryA', 'suryB']
 
-    // this is asynch and it needs to wait.
-
-    for (asana of asanas){
-
-        let lines = document.getElementById(asana).innerText.split('\n')
+    function read_asanas([asana, ...asanas]) {
+        if (!asana) return
         
+        let lines = document.getElementById(asana).innerText.split('\n')
         console.log(asana)
         console.log("--------------")
-        
-        for (let i = 0; i < lines.length; i++){
-            let msg = lines[i]
-            console.log(i, msg)
-            setTimeout(() => say({ m: msg }), 6000 * i)
-        }
+        read_lines(lines, asana)
     }
+
+    function read_lines([line, ...lines], asanas) {
+        if (!line) {
+            read_asanas(asanas)
+        }
+
+        setTimeout (() => {
+            say({ m:line })
+            read_lines (lines, asanas)
+        }, 6000)
+    }
+
+    // this is asynch and it needs to wait.
+
+    // for (asana of asanas){
+
+    //     let lines = document.getElementById(asana).innerText.split('\n')
+        
+    //     console.log(asana)
+    //     console.log("--------------")
+        
+    //     for (let i = 0; i < lines.length; i++){
+    //         let msg = lines[i]
+    //         console.log(i, msg)
+    //         setTimeout(() => say({ m: msg }), 6000 * i)
+    //     }
+    // }
 }
