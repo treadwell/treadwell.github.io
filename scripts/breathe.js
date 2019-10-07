@@ -127,8 +127,16 @@ function breathe() {
 function readAloud() {
 
     const cycle = document.getElementById("secPerBreath").value / 2.0 * 1000
-    const asanas = [ "suryA", "suryA", "suryA", "suryB" ]
-
+    const starting = [ "suryA", "suryA", "suryA", "suryA", "suryA", "suryB", "suryB", "suryB" ]
+    const fundamentals = [ "padangusthasana", "padahastasana", "trikonasana", "parivrittaTrikonasana", "parshvakonasana", "parivrittaParshvakonasana", "prasaritaPadottanasana", "parsvottanasana"]
+    const standing = ["Utthita Hasta Padangusthasana A, B, C", "rdha Baddha Padmottanasana", "Utkatasana", "Virabhadrasana I", "Virabhadrasana II"]
+    const seated_start = ["Dandasana", "Paschimottanasana A B C", "Purvottanasana", "Ardha Baddha Padma Paschimottanasana", "Trianga Mukhaikapada Paschimottanasana", "Janu Sirsasana A B C", "Marichyasana A B C D", "Navasana"]
+    const seated_end = ["Bhujapidasana", "Kurmasana", "Supta Kurmasana" , "Garbha Pindasana", "Kukkutasana", "Baddha Konasana A B C", "Upavishta Konasana A B", "Supta Konasana", "Supta Padangusthasana", "Ubhaya Padangusthasana", "Urdhva Mukha Paschimottanasana", "Setu Bandhasana"]
+    const finishing_start = ["Urdhva Dhanurasana", "Paschimottanasana", "Salamba Sarvangasana", "Halasana", "Karnapidasana", "Urdhva Padmasana", "Pindasana", "Matsyasana", "Uttana Padasana", "Sirsasana A B", "Balasana"]
+    const finishing_end = ["Baddha Padmasana / Yoga Mudra", "Padmasana", "Utpluthih", "Savasana"]
+    
+    const asanas = [...starting]
+    
     read_asanas(asanas, cycle)
 }
 
