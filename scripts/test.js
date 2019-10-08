@@ -4,7 +4,9 @@
 // add Sury A in tts
 // make responsive - done
 
-
+window.onload = () => {
+    document.getElementById('notImplemented').setAttribute('onclick','notImplemented()')
+}
 
 function say({
         voice = 10,
@@ -53,7 +55,10 @@ function beep({
     setTimeout(() => oscillator.stop(), duration)
 }
 
-
+function notImplemented() {
+    console.log("feature not implemented")
+    document.getElementById('testMsg').innerHTML = "Feature not implemented."
+}
 
 function command(message) {
     const playTone = document.getElementById("tones").checked
@@ -118,6 +123,4 @@ function breathe() {
     }, cycle / 2)
 
 }
-
-
 

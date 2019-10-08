@@ -30,54 +30,7 @@ function say({
 // if you have another AudioContext class use that one, as some browsers have a limit
 // var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
 
-function beep({
-    duration = 500, //duration of the tone in milliseconds. Default is 500
-    frequency = 500, //frequency of the tone in hertz. default is 440
-    volume = 0.5, //volume of the tone. Default is 1, off is 0.
-    type = "triangle", //type of tone. Possible values are sine, square, sawtooth, triangle, and custom. Default is sine.
-    callback = () => console.log("callback test") //callback to use on end of tone
-}) {
-    var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
-    var oscillator = audioCtx.createOscillator()
-    var gainNode = audioCtx.createGain()
 
-    gainNode.connect(audioCtx.destination)
-    gainNode.gain.value = volume
-
-    oscillator.connect(gainNode)
-    oscillator.frequency.value = frequency
-    oscillator.type = type
-    oscillator.onended = callback
-    oscillator.start()
-
-    setTimeout(() => oscillator.stop(), duration)
-}
-
-
-
-function command(message) {
-    const playTone = document.getElementById("tones").checked
-    const playVoice = document.getElementById("voice").checked
-    const volume = document.getElementById("volSlide").value
-
-    document.getElementById('txt').innerHTML = message
-
-    if (playTone) {
-        if (message === "inhale") {
-            beep({ frequency: 1000, volume: volume })
-        } else {
-            beep({ volume: volume })
-        }
-    }
-
-    if (playVoice) {
-        if (message === "inhale") {
-            say({ m: "Inhale." })
-        } else {
-            say({ m: "Exhale." })
-        }
-    }
-}
 
 // Destructuring example:
 //      const test = { a: 1, c: [1, 2, 3], d: () => 4 }
@@ -119,5 +72,43 @@ function breathe() {
 
 }
 
+function readAloud() {
 
+    const cycle = document.getElementById("secPerBreath").value / 2.0 * 1000
+    const starting = [ "suryA", "suryA", "suryA", "suryA", "suryA", "suryB", "suryB", "suryB" ]
+    const fundamentals = [ "padangusthasana", "padahastasana", "trikonasana", "parivrittaTrikonasana", "parshvakonasana", "parivrittaParshvakonasana", "prasaritaPadottanasana", "parsvottanasana"]
+    const standing = ["Utthita Hasta Padangusthasana A, B, C", "rdha Baddha Padmottanasana", "Utkatasana", "Virabhadrasana I", "Virabhadrasana II"]
+    const seated_start = ["Dandasana", "Paschimottanasana A B C", "Purvottanasana", "Ardha Baddha Padma Paschimottanasana", "Trianga Mukhaikapada Paschimottanasana", "Janu Sirsasana A B C", "Marichyasana A B C D", "Navasana"]
+    const seated_end = ["Bhujapidasana", "Kurmasana", "Supta Kurmasana" , "Garbha Pindasana", "Kukkutasana", "Baddha Konasana A B C", "Upavishta Konasana A B", "Supta Konasana", "Supta Padangusthasana", "Ubhaya Padangusthasana", "Urdhva Mukha Paschimottanasana", "Setu Bandhasana"]
+    const finishing_start = ["Urdhva Dhanurasana", "Paschimottanasana", "Salamba Sarvangasana", "Halasana", "Karnapidasana", "Urdhva Padmasana", "Pindasana", "Matsyasana", "Uttana Padasana", "Sirsasana A B", "Balasana"]
+    const finishing_end = ["Baddha Padmasana / Yoga Mudra", "Padmasana", "Utpluthih", "Savasana"]
+    
+    const asanas = [...starting]
+    
+    read_asanas(asanas, cycle)
+}
+
+function read_asanas([asana, ...asanas], cycle) {
+
+    if (!asana) return
+    // console.log(asana)
+    // console.log(asanas)
+    // console.log("--------------")
+    
+    const lines = document.getElementById(asana).innerText.split('\n')
+
+    read_lines(lines, asanas, cycle)
+}
+
+function read_lines([line, ...lines], asanas, cycle) {
+    if (!line) {
+        read_asanas(asanas)
+    } else {
+        setTimeout (() => {
+            say({ m:line })
+            // console.log(line)
+            read_lines (lines, asanas, cycle)
+        }, cycle)
+    }
+}
 
