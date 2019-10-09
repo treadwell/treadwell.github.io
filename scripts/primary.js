@@ -27,63 +27,21 @@ function say({
     }))
 }
 
-// if you have another AudioContext class use that one, as some browsers have a limit
-// var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
-
-
-
-// Destructuring example:
-//      const test = { a: 1, c: [1, 2, 3], d: () => 4 }
-//      let mike = test.b
-//      let { c: [jake, cindy, kara, kenneth = 4] } = test
-//      let { c: matt } = test
-//      console.log(mike, jake, cindy, kara)
-
-function breathe() {
-    // change bpm to seconds and inhale / exhale cycles
-    const bpm = document.getElementById("bpm").value
-    const duration = document.getElementById("duration").value
-
-    const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
-    const duration_ms = duration * 60 * 1000
-
-    const timers = []  // create separate inhale and exhale timers
-
-    // initiate breathing before setInterval kicks in
-    setTimeout(() => command("inhale"), 0)
-    setTimeout(() => command("exhale"), cycle / 2)
-
-    // inhale timer on cycle
-    timers[0] = setInterval(() => command("inhale"), cycle)
-
-    setTimeout(() => {  // delays exhale timer by half a cycle
-
-        // exhale timer
-        timers[1] = setInterval(() => command("exhale"), cycle)
-        
-        // clear timers.  
-        // Position here to make sure there are available timer IDs
-        setTimeout(() => {
-            clearInterval(timers[0])
-            clearInterval(timers[1])
-        }, duration_ms)
-
-    }, cycle / 2)
-
-}
-
 function readAloud() {
 
     const cycle = document.getElementById("secPerBreath").value / 2.0 * 1000
-    const starting = [ "suryA", "suryA", "suryA", "suryA", "suryA", "suryB", "suryB", "suryB" ]
-    const fundamentals = [ "padangusthasana", "padahastasana", "trikonasana", "parivrittaTrikonasana", "parshvakonasana", "parivrittaParshvakonasana", "prasaritaPadottanasana", "parsvottanasana"]
-    const standing = ["Utthita Hasta Padangusthasana A, B, C", "rdha Baddha Padmottanasana", "Utkatasana", "Virabhadrasana I", "Virabhadrasana II"]
-    const seated_start = ["Dandasana", "Paschimottanasana A B C", "Purvottanasana", "Ardha Baddha Padma Paschimottanasana", "Trianga Mukhaikapada Paschimottanasana", "Janu Sirsasana A B C", "Marichyasana A B C D", "Navasana"]
-    const seated_end = ["Bhujapidasana", "Kurmasana", "Supta Kurmasana" , "Garbha Pindasana", "Kukkutasana", "Baddha Konasana A B C", "Upavishta Konasana A B", "Supta Konasana", "Supta Padangusthasana", "Ubhaya Padangusthasana", "Urdhva Mukha Paschimottanasana", "Setu Bandhasana"]
-    const finishing_start = ["Urdhva Dhanurasana", "Paschimottanasana", "Salamba Sarvangasana", "Halasana", "Karnapidasana", "Urdhva Padmasana", "Pindasana", "Matsyasana", "Uttana Padasana", "Sirsasana A B", "Balasana"]
-    const finishing_end = ["Baddha Padmasana / Yoga Mudra", "Padmasana", "Utpluthih", "Savasana"]
     
-    const asanas = [...starting]
+    const starting = [ "suryA", "suryA", "suryA", "suryA", "suryA", "suryB", "suryB", "suryB" ]
+    const fundamentals = ["padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana"]
+    const standing = ["utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana"]
+    const seated_start = ["dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana"]
+    const seated_end = ["bhujapidasana", "kurmasana", "suptaKurmasana", "garbhaPindasana", "kukkutasana", "baddhaKonasana", "upavisthaKonasanaA", "upavisthaKonasanaB", "suptaKonasana", "suptaPadangusthasana", "ubhayaPadangusthasana", "urdhvaMukhaPaschimottanasana", "setthuBandhasana"]
+    const finishing_start = ["urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana"]
+    const finishing_end = ["baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]
+
+    const half = [...starting, ...fundamentals, ...standing, ...seated_start, ...finishing_start, ...finishing_end]
+    
+    const asanas = half
     
     read_asanas(asanas, cycle)
 }
@@ -91,9 +49,6 @@ function readAloud() {
 function read_asanas([asana, ...asanas], cycle) {
 
     if (!asana) return
-    // console.log(asana)
-    // console.log(asanas)
-    // console.log("--------------")
     
     const lines = document.getElementById(asana).innerText.split('\n')
 
@@ -102,7 +57,7 @@ function read_asanas([asana, ...asanas], cycle) {
 
 function read_lines([line, ...lines], asanas, cycle) {
     if (!line) {
-        read_asanas(asanas)
+        read_asanas(asanas, cycle)
     } else {
         setTimeout (() => {
             say({ m:line })
