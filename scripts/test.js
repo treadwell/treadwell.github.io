@@ -60,9 +60,10 @@ function notImplemented() {
     document.getElementById('testMsg').innerHTML = "Feature not implemented."
 }
 
-function command(message) {
+function command(message, cycle) {
     const playTone = document.getElementById("tones").checked
     const playVoice = document.getElementById("voice").checked
+    const playBar = document.getElementById("bar").checked
     const volume = document.getElementById("volSlide").value
 
     document.getElementById('txt').innerHTML = message
@@ -80,6 +81,14 @@ function command(message) {
             say({ m: "Inhale." })
         } else {
             say({ m: "Exhale." })
+        }
+    }
+
+    if (playBar) {
+        if (message === "inhale") {
+            move(cycle)
+        } else {
+            // move(cycle)
         }
     }
 }
@@ -102,16 +111,16 @@ function breathe() {
     const timers = []  // create separate inhale and exhale timers
 
     // initiate breathing before setInterval kicks in
-    setTimeout(() => command("inhale"), 0)
-    setTimeout(() => command("exhale"), cycle / 2)
+    setTimeout(() => command("inhale", cycle), 0)
+    setTimeout(() => command("exhale", cycle), cycle / 2)
 
     // inhale timer on cycle
-    timers[0] = setInterval(() => command("inhale"), cycle)
+    timers[0] = setInterval(() => command("inhale", cycle), cycle)
 
     setTimeout(() => {  // delays exhale timer by half a cycle
 
         // exhale timer
-        timers[1] = setInterval(() => command("exhale"), cycle)
+        timers[1] = setInterval(() => command("exhale", cycle), cycle)
         
         // clear timers.  
         // Position here to make sure there are available timer IDs
@@ -123,4 +132,28 @@ function breathe() {
     }, cycle / 2)
 
 }
+
+function move(cycle) {
+    const elem = document.getElementById("breathBar")  
+    let progress = 0
+    let cumTime = 0
+    const timerId = setInterval(frame, 10)
+    
+    function frame() {
+        if (progress < 0) {
+            console.log('finished')
+            clearInterval(timerId)
+        } else if (cumTime <= cycle / 2) {
+            cumTime = cumTime + 10
+            progress = progress + 10
+            console.log('adding', progress, progress / cycle / 2)
+            elem.style.width = (2 * 100 * progress / cycle) + '%'
+        } else  if (cumTime <= cycle) {
+            cumTime = cumTime + 10
+            progress = progress - 10
+            console.log('subtracting', progress, (100 * progress / cycle / 2))
+            elem.style.width = (2 * 100 * progress / cycle) + '%'
+        }
+    }
+  }
 
