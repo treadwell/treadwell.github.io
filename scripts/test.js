@@ -86,11 +86,7 @@ function command(message, cycle) {
     }
 
     if (playBar) {
-        if (message === "inhale") {
-            move(cycle)
-        } else {
-            // move(cycle)
-        }
+        move(message, cycle)
     }
 }
 
@@ -129,25 +125,19 @@ function breathe() {
 
 }
 
-function move(cycle) {
-    const elem = document.getElementById("breathBar")  
+function move(message, cycle) {
+    const elem = document.getElementById("breathBar")
     let progress = 0
-    let cumTime = 0
     const timerId = setInterval(frame, 10)
     
     function frame() {
-        if (progress < 0) {
+        if (progress >= cycle / 2) {
             console.log('finished')
             clearInterval(timerId)
-        } else if (cumTime <= cycle / 2) {
-            cumTime = cumTime + 10
+            elem.style.width = 0 + '%'
+        } else {
             progress = progress + 10
-            console.log('adding', progress, progress / cycle / 2)
-            elem.style.width = (2 * 100 * progress / cycle) + '%'
-        } else  if (cumTime <= cycle) {
-            cumTime = cumTime + 10
-            progress = progress - 10
-            console.log('subtracting', progress, (100 * progress / cycle / 2))
+            console.log('inhaling', progress, (2 * 100 * progress / cycle))
             elem.style.width = (2 * 100 * progress / cycle) + '%'
         }
     }
