@@ -65,6 +65,7 @@ function command(message, cycle) {
     const playVoice = document.getElementById("voice").checked
     const playBar = document.getElementById("bar").checked
     const volume = document.getElementById("volSlide").value
+    
 
     document.getElementById('txt').innerHTML = message
 
@@ -93,12 +94,7 @@ function command(message, cycle) {
     }
 }
 
-// Destructuring example:
-//      const test = { a: 1, c: [1, 2, 3], d: () => 4 }
-//      let mike = test.b
-//      let { c: [jake, cindy, kara, kenneth = 4] } = test
-//      let { c: matt } = test
-//      console.log(mike, jake, cindy, kara)
+
 
 function breathe() {
     // change bpm to seconds and inhale / exhale cycles

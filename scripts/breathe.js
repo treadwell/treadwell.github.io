@@ -1,9 +1,7 @@
-// destructure say args
+
+// TO DO
 // add tts preload to avoid change in voice
 // add scaling visuals
-// add Sury A in tts
-// make responsive - done
-
 
 
 function say({
@@ -58,7 +56,9 @@ function beep({
 function command(message) {
     const playTone = document.getElementById("tones").checked
     const playVoice = document.getElementById("voice").checked
+    const playBar = document.getElementById("bar").checked
     const volume = document.getElementById("volSlide").value
+    const elem = document.getElementById("breathBar")
 
     document.getElementById('txt').innerHTML = message
 
@@ -77,14 +77,10 @@ function command(message) {
             say({ m: "Exhale." })
         }
     }
+
 }
 
-// Destructuring example:
-//      const test = { a: 1, c: [1, 2, 3], d: () => 4 }
-//      let mike = test.b
-//      let { c: [jake, cindy, kara, kenneth = 4] } = test
-//      let { c: matt } = test
-//      console.log(mike, jake, cindy, kara)
+
 
 function breathe() {
     // change bpm to seconds and inhale / exhale cycles
@@ -118,6 +114,4 @@ function breathe() {
     }, cycle / 2)
 
 }
-
-
 
