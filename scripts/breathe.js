@@ -53,7 +53,7 @@ function beep({
 
 
 
-function command(message) {
+function command(message, cycle) {
     const playTone = document.getElementById("tones").checked
     const playVoice = document.getElementById("voice").checked
     const playBar = document.getElementById("bar").checked
@@ -78,7 +78,29 @@ function command(message) {
         }
     }
 
+    if (playBar) {
+        move(message, cycle)
+    }
+
 }
+
+function move(message, cycle) {
+    const elem = document.getElementById("breathBar")
+    let progress = 0
+    const timerId = setInterval(frame, 10)
+    
+    function frame() {
+        if (progress >= cycle / 2) {
+            console.log('finished')
+            clearInterval(timerId)
+            elem.style.width = 0 + '%'
+        } else {
+            progress = progress + 10
+            console.log('inhaling', progress, (2 * 100 * progress / cycle))
+            elem.style.width = (2 * 100 * progress / cycle) + '%'
+        }
+    }
+  }
 
 
 
@@ -93,16 +115,16 @@ function breathe() {
     const timers = []  // create separate inhale and exhale timers
 
     // initiate breathing before setInterval kicks in
-    setTimeout(() => command("inhale"), 0)
-    setTimeout(() => command("exhale"), cycle / 2)
+    setTimeout(() => command("inhale", cycle), 0)
+    setTimeout(() => command("exhale", cycle), cycle / 2)
 
     // inhale timer on cycle
-    timers[0] = setInterval(() => command("inhale"), cycle)
+    timers[0] = setInterval(() => command("inhale", cycle), cycle)
 
     setTimeout(() => {  // delays exhale timer by half a cycle
 
         // exhale timer
-        timers[1] = setInterval(() => command("exhale"), cycle)
+        timers[1] = setInterval(() => command("exhale", cycle), cycle)
         
         // clear timers.  
         // Position here to make sure there are available timer IDs
