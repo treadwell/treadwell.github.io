@@ -93,7 +93,7 @@ function move(message, cycle) {
         if (progress >= cycle / 2) {
             console.log('finished')
             clearInterval(timerId)
-            elem.style.width = 0 + '%'
+            // elem.style.width = 100 + '%'
         } else {
             progress = progress + 10
             console.log('inhaling', progress, (2 * 100 * progress / cycle))
