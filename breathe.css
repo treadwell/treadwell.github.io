@@ -1,13 +1,34 @@
 #breathProgress {
     width: 100%;
     height: 30px;
-    position: relative;
     background-color: #ddd;
 }
   
 #breathBar {
     background-color: #4CAF50;
-    width: 10px;
-    height: 30px;
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transform-origin: left center;
+}
+
+@keyframes inhale {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes exhale {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
 }
