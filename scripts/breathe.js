@@ -87,16 +87,19 @@ function command(message, cycle) {
 function move(message, cycle) {
     const elem = document.getElementById("breathBar")
     let progress = 0
+    if (message == "exhale") {progress = cycle / 2}
     const timerId = setInterval(frame, 10)
     
     function frame() {
-        if (progress >= cycle / 2) {
-            console.log('finished')
+        if (progress > cycle / 2 || progress < 0 ) {
             clearInterval(timerId)
-            // elem.style.width = 100 + '%'
         } else {
-            progress = progress + 10
-            console.log('inhaling', progress, (2 * 100 * progress / cycle))
+            if (message == "inhale") {
+                progress = progress + 10
+            } 
+            if (message == "exhale") {
+                progress = progress - 10
+            }
             elem.style.width = (2 * 100 * progress / cycle) + '%'
         }
     }
