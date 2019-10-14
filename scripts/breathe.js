@@ -95,17 +95,11 @@ function moveCircle(message, cycle) {
     const elem = document.getElementById("breathCircle")
     elem.style["animation-duration"] = cycle / 2 + "ms"
     if (message === "inhale") {
-        console.log("inhaleCircle triggered")
         elem.style["animation-name"] = "inhaleCircle"
     } else {
-        console.log("exhaleCircle triggered")
         elem.style["animation-name"] = "exhaleCircle"
     }
   }
-
-
-
-
 
 function breathe() {
     // change bpm to seconds and inhale / exhale cycles
