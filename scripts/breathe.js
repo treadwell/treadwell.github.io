@@ -80,6 +80,7 @@ function command(message, cycle) {
 
     if (playBar) {
         move(message, cycle)
+        moveCircle(message, cycle)
     }
 
 }
@@ -89,6 +90,20 @@ function move(message, cycle) {
     elem.style["animation-name"] = message
     elem.style["animation-duration"] = cycle / 2 + "ms"
   }
+
+function moveCircle(message, cycle) {
+    const elem = document.getElementById("breathCircle")
+    elem.style["animation-duration"] = cycle / 2 + "ms"
+    if (message === "inhale") {
+        console.log("inhaleCircle triggered")
+        elem.style["animation-name"] = "inhaleCircle"
+    } else {
+        console.log("exhaleCircle triggered")
+        elem.style["animation-name"] = "exhaleCircle"
+    }
+  }
+
+
 
 
 

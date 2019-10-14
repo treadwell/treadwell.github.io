@@ -56,7 +56,6 @@ function readAloud() {
     
     const primaryElements = ["suryAs", "suryBs", "fundamentals", "standing", "seated_start", "seated_end", "finishing_start", "finishing_end"]
     
-
     asanas = []
     for (element of primaryElements) {
         if (document.getElementById(element).checked) {
