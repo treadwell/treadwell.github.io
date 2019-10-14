@@ -30,8 +30,21 @@ function say({
 function readAloud() {
 
     const cycle = document.getElementById("secPerBreath").value / 2.0 * 1000
-    
-    const starting = [ "suryA", "suryA", "suryA", "suryA", "suryA", "suryB", "suryB", "suryB" ]
+
+    const primarySeries = {
+        suryAs: {
+            key: "suryAs", 
+            value: ["suryA", "suryA", "suryA", "suryA", "suryA" ]
+        },
+        suryBs: {
+            key: "suryBs",
+            value: ["suryA", "suryA", "suryA", "suryA", "suryA" ]
+        }
+    }
+
+    const suryAs = ["suryA", "suryA", "suryA", "suryA", "suryA" ]
+    const suryBs = [ "suryB", "suryB", "suryB" ]
+    const starting = [ ...suryAs, ...suryBs]
     const fundamentals = ["padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana"]
     const standing = ["utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana"]
     const seated_start = ["dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana"]
@@ -41,8 +54,18 @@ function readAloud() {
 
     const half = [...starting, ...fundamentals, ...standing, ...seated_start, ...finishing_start, ...finishing_end]
     
-    const asanas = half
+    const primaryElements = ["suryAs", "suryBs", "fundamentals", "standing", "seated_start", "seated_end", "finishing_start", "finishing_end"]
     
+
+    asanas = []
+    for (element of primaryElements) {
+        if (document.getElementById(element).checked) {
+            asanas = asanas.concat(eval(element))
+        }
+    }
+    
+    console.log("asanas:",asanas)
+
     read_asanas(asanas, cycle)
 }
 

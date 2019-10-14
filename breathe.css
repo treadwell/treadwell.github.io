@@ -18,6 +18,24 @@
     transform-origin: left center;
 }
 
+#breathProgressCircle {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    /* vertical-align: center; */
+    /* background-color: #ddd; */
+}
+
+#breathCircle {
+    height: 25px;
+    width: 25px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display:    inline-block;
+    transform: scale3d(0);
+    transform-origin: center;
+  }
+
 @keyframes inhale {
     0% {
         transform: scaleX(0);
