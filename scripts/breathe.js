@@ -79,17 +79,17 @@ function command(message, cycle) {
     }
 
     if (playBar) {
-        move(message, cycle)
+        // move(message, cycle)
         moveCircle(message, cycle)
     }
 
 }
 
-function move(message, cycle) {
-    const elem = document.getElementById("breathBar")
-    elem.style["animation-name"] = message
-    elem.style["animation-duration"] = cycle / 2 + "ms"
-  }
+// function move(message, cycle) {
+//     const elem = document.getElementById("breathBar")
+//     elem.style["animation-name"] = message
+//     elem.style["animation-duration"] = cycle / 2 + "ms"
+//   }
 
 function moveCircle(message, cycle) {
     const elem = document.getElementById("breathCircle")
