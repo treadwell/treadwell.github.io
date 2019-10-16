@@ -21,7 +21,9 @@
 #breathProgressCircle {
     width: 300px;
     height: 300px;
-    /* text-align: center; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     /* background-color: #ddd; */
     /* vertical-align: center; */
     /* background-color: #ddd; */
@@ -30,8 +32,9 @@
 #breathCircle {
     height: 100%;
     width: 100%;
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
     border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #5cabff, #000);
     /* display:    inline-block; */
     transform: scale3d(0, 0, 1);
     /* the following line drives hardware acceleration */
@@ -41,6 +44,13 @@
     animation-direction: normal;
     animation-fill-mode: forwards;
     transform-origin: center;
+}
+
+#txt {
+    /* display: inline-block;
+    text-align: center;
+    vertical-align: middle; */
+    /* transform: translate(50%, 50%); */
 }
 
 @keyframes inhale {
