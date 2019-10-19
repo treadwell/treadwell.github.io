@@ -28,8 +28,8 @@
     font-size: 25px;
     text-transform: uppercase;
 
-    color: coral;
-    mix-blend-mode: lighten;
+    color: lightgreen;
+    /* mix-blend-mode: lighten; */
 }
 
 @keyframes inhaleCircle {
