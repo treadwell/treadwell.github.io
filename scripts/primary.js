@@ -63,7 +63,7 @@ function readAloud() {
         }
     }
     
-    console.log("asanas:",asanas)
+    // console.log("asanas:",asanas)
 
     read_asanas(asanas, cycle)
 }
@@ -72,7 +72,10 @@ function read_asanas([asana, ...asanas], cycle) {
 
     if (!asana) return
     
-    const lines = document.getElementById(asana).innerText.split('\n')
+    let lines = document.getElementById(asana).innerText.split('\n')
+
+    say({ m:lines[0] })
+    lines.shift()
 
     read_lines(lines, asanas, cycle)
 }
