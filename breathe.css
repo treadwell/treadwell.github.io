@@ -29,6 +29,7 @@
     text-transform: uppercase;
 
     color: coral;
+    mix-blend-mode: lighten;
 }
 
 @keyframes inhaleCircle {
