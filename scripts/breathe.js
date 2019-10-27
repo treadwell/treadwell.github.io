@@ -1,136 +1,40 @@
+let $bpm = null
+let $duration = null
+let timer = null
 
-// TO DO
-// add tts preload to avoid change in voice
-// add scaling visuals
-
-
-function say({
-        voice = 10,
-        voiceURI = "native", 
-        volume = 0.5,
-        rate = 1.0,
-        pitch = 0.8,
-        m = "Hello world.",
-        lang = "en-US"
-    }) {
-        var voices = window.speechSynthesis.getVoices();
-        speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance(), {
-            voice: voices[voice],  // en has 1, 10, 17
-            voiceURI: voiceURI,
-            volume: document.getElementById("volSlide").value,
-            rate: rate,
-            pitch: pitch,
-            text: m,
-            lang: lang
-    }))
-}
-
-// if you have another AudioContext class use that one, as some browsers have a limit
-// var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
-
-function beep({
-    duration = 500, //duration of the tone in milliseconds. Default is 500
-    frequency = 500, //frequency of the tone in hertz. default is 440
-    volume = 0.5, //volume of the tone. Default is 1, off is 0.
-    type = "triangle", //type of tone. Possible values are sine, square, sawtooth, triangle, and custom. Default is sine.
-    callback = () => console.log("callback test") //callback to use on end of tone
-}) {
-    var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
-    var oscillator = audioCtx.createOscillator()
-    var gainNode = audioCtx.createGain()
-
-    gainNode.connect(audioCtx.destination)
-    gainNode.gain.value = volume
-
-    oscillator.connect(gainNode)
-    oscillator.frequency.value = frequency
-    oscillator.type = type
-    oscillator.onended = callback
-    oscillator.start()
-
-    setTimeout(() => oscillator.stop(), duration)
-}
-
-
-
-function command(message, cycle) {
-    const playTone = document.getElementById("tones").checked
-    const playVoice = document.getElementById("voice").checked
-    const playBar = document.getElementById("bar").checked
-    const volume = document.getElementById("volSlide").value
-    const elem = document.getElementById("breathBar")
-
-    document.getElementById('txt').innerHTML = message
-
-    if (playTone) {
-        if (message === "inhale") {
-            beep({ frequency: 1000, volume: volume })
-        } else {
-            beep({ volume: volume })
-        }
-    }
-
-    if (playVoice) {
-        if (message === "inhale") {
-            say({ m: "Inhale." })
-        } else {
-            say({ m: "Exhale." })
-        }
-    }
-
-    if (playBar) {
-        // move(message, cycle)
-        moveCircle(message, cycle)
-    }
-
-}
-
-// function move(message, cycle) {
-//     const elem = document.getElementById("breathBar")
-//     elem.style["animation-name"] = message
-//     elem.style["animation-duration"] = cycle / 2 + "ms"
-//   }
-
-function moveCircle(message, cycle) {
-    const elem = document.getElementById("breathCircle")
-    elem.style["animation-duration"] = cycle / 2 + "ms"
-    if (message === "inhale") {
-        elem.style["animation-name"] = "inhaleCircle"
-    } else {
-        elem.style["animation-name"] = "exhaleCircle"
-    }
-  }
-
-function breathe() {
-    // change bpm to seconds and inhale / exhale cycles
-    const bpm = document.getElementById("bpm").value
-    const duration = document.getElementById("duration").value
-
-    const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
-    const duration_ms = duration * 60 * 1000
-
-    const timers = []  // create separate inhale and exhale timers
-
-    // initiate breathing before setInterval kicks in
-    setTimeout(() => command("inhale", cycle), 0)
-    setTimeout(() => command("exhale", cycle), cycle / 2)
-
-    // inhale timer on cycle
-    timers[0] = setInterval(() => command("inhale", cycle), cycle)
-
-    setTimeout(() => {  // delays exhale timer by half a cycle
-
-        // exhale timer
-        timers[1] = setInterval(() => command("exhale", cycle), cycle)
-        
-        // clear timers.  
-        // Position here to make sure there are available timer IDs
-        setTimeout(() => {
-            clearInterval(timers[0])
-            clearInterval(timers[1])
-        }, duration_ms)
-
-    }, cycle / 2)
-
-}
-
+$(document).ready(() =>
+    $(document.body).append(
+        $("<div>")
+            .append(
+                $("<p>")
+                    .html("Breaths per minute (count): ")
+                    .append(
+                        $bpm = $("<input>", {
+                            type: "number",
+                            value: 5
+                        })
+                    )
+            ),
+        $("<div>")
+            .append(
+                $("<p>")
+                    .html("Length of practice (minutes): ")
+                    .append(
+                        $duration = $("<input>", {
+                            type: "number",
+                            value: 20
+                        })
+                    )
+            ),
+        $("<div>")
+            .append(
+                $("<button>")
+                    .html("Start Timer")
+                    .on("click", () => $bpm.val($bpm.val() + 1)))
+            .append(
+                $("<button>")
+                    .html("Stop Timer")
+                    .on("click", () => {
+                        console.log("stop")
+                        timer = null
+                }))))
