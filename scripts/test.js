@@ -1,9 +1,3 @@
-// destructure say args
-// add tts preload to avoid change in voice
-// add scaling visuals
-// add Sury A in tts
-// make responsive - done
-
 window.onload = () => {
     document.getElementById('notImplemented').setAttribute('onclick','notImplemented()')
 }
@@ -28,9 +22,6 @@ function say({
             lang: lang
     }))
 }
-
-// if you have another AudioContext class use that one, as some browsers have a limit
-// var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
 
 function beep({
     duration = 500, //duration of the tone in milliseconds. Default is 500
