@@ -33,7 +33,6 @@ $(document).ready(() =>
         $("<div>")
             .append(
                 $("<p>")
-                    .html("Play tones")
                     .append(
                         $playTone = $("<input>", {
                             type: "checkbox",
@@ -41,11 +40,11 @@ $(document).ready(() =>
                             checked: false
                         })
                     )
+                    .append(" Play tones")
             ),
         $("<div>")
             .append(
                 $("<p>")
-                    .html("Play voice")
                     .append(
                         $playTone = $("<input>", {
                             type: "checkbox",
@@ -53,11 +52,11 @@ $(document).ready(() =>
                             checked: false
                         })
                     )
+                    .append(" Play voice")
             ),
         $("<div>")
             .append(
                 $("<p>")
-                    .html("Progress circle")
                     .append(
                         $playBar = $("<input>", {
                             type: "checkbox",
@@ -65,6 +64,7 @@ $(document).ready(() =>
                             checked: true
                         })
                     )
+                    .append(" Progress circle")
             ),
         $("<div>")
             .append(
