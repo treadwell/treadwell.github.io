@@ -88,7 +88,7 @@ function read_lines([line, ...lines], asanas, cycle) {
             say({ m:line })
             // console.log(line)
             read_lines (lines, asanas, cycle)
-        }, cycle)
+        }, cycle, null)
     }
 }
 
