@@ -4,17 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
         <title>Breathing Timer</title>
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/breathe.js"></script>
         <link rel="stylesheet" type="text/css" href="breathe.css">
 
     </head>
     <body>
-        <h1>Breathing Timer</h1>
+        <!-- <h1>Breathing Timer</h1>
         <div id="msg"></div>
         
-        <!-- <div id="breathProgress">
-            <div id="breathBar"></div>
-        </div> -->
         <div id="timer">
             <p>Breaths per minute (count): <input type="number" id="bpm" value="5"></p>
             <p>Length of practice (minutes): <input type="number" id="duration" value="20"></p>
@@ -31,6 +29,6 @@
         <div id="breathProgressCircle">
             <div id="breathCircle"></div>
             <div id="txt"></div>
-        </div>
+        </div> -->
     </body>
 </html>

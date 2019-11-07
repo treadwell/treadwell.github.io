@@ -1,8 +1,146 @@
+let $bpm = null
+let $duration = null
+let $playTone = null
+let $playVoice = null
+let $playBar = null
+let $volume = null
+let timer = null
 
-// TO DO
-// add tts preload to avoid change in voice
-// add scaling visuals
+$(document).ready(() =>
+    $(document.body).append(
+        $("<div>")
+            .append(
+                $("<p>")
+                    .html("Breaths per minute (count): ")
+                    .append(
+                        $bpm = $("<input>", {
+                            id: "bpm",
+                            type: "number",
+                            value: 5
+                        })
+                    )
+            ),
+        $("<div>")
+            .append(
+                $("<p>")
+                    .html("Length of practice (minutes): ")
+                    .append(
+                        $duration = $("<input>", {
+                            id: "duration",
+                            type: "number",
+                            value: 20
+                        })
+                    )
+            ),
+        $("<div>")
+            .append(
+                $("<p>")
+                    .append(
+                        $playTone = $("<input>", {
+                            type: "checkbox",
+                            id: "tones",
+                            checked: false
+                        })
+                    )
+                    .append(" Play tones")
+            ),
+        $("<div>")
+            .append(
+                $("<p>")
+                    .append(
+                        $playTone = $("<input>", {
+                            type: "checkbox",
+                            id: "voice",
+                            checked: false
+                        })
+                    )
+                    .append(" Play voice")
+            ),
+        $("<div>")
+            .append(
+                $("<p>")
+                    .append(
+                        $playBar = $("<input>", {
+                            type: "checkbox",
+                            id: "bar",
+                            checked: true
+                        })
+                    )
+                    .append(" Progress circle")
+            ),
+        $("<div>")
+            .append(
+                $("<p>")
+                    .html("Volume")
+                    .append(
+                        $volume = $("<input>", {
+                            type: "range",
+                            id: "volSlide",
+                            min: 0.0,
+                            max: 1.0,
+                            step: 0.01,
+                            value: 0.5,
+                            class: "slider"
+                        })
+                    )
+            ),
+        $("<div>")
+            .append(
+                $("<button>")
+                    .html("Start Timer")
+                    .on("click", () => breathe()))
+            .append(
+                $("<button>")
+                    .html("Stop Timer")
+                    .on("click", () => {
+                        console.log("stop")
+                        timer = null
+                    })
+            ),
+        $("<div>", {
+            id: "breathProgressCircle"
+        })
+            .append(
+                $("<div>", {
+                    id: "breathCircle"
+                }),
+                $("<div>", {
+                    id: "txt"
+                })
+            )
+        ))
 
+function breathe() {
+    // change bpm to seconds and inhale / exhale cycles
+    const bpm = document.getElementById("bpm").value
+    const duration = document.getElementById("duration").value
+
+    const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
+    const duration_ms = duration * 60 * 1000
+
+    const timers = []  // create separate inhale and exhale timers
+
+    // initiate breathing before setInterval kicks in
+    setTimeout(() => command("inhale", cycle), 0)
+    setTimeout(() => command("exhale", cycle), cycle / 2)
+
+    // inhale timer on cycle
+    timers[0] = setInterval(() => command("inhale", cycle), cycle)
+
+    setTimeout(() => {  // delays exhale timer by half a cycle
+
+        // exhale timer
+        timers[1] = setInterval(() => command("exhale", cycle), cycle)
+        
+        // clear timers.  
+        // Position here to make sure there are available timer IDs
+        setTimeout(() => {
+            clearInterval(timers[0])
+            clearInterval(timers[1])
+        }, duration_ms)
+
+    }, cycle / 2)
+}
 
 function say({
         voice = 10,
@@ -17,7 +155,7 @@ function say({
         speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance(), {
             voice: voices[voice],  // en has 1, 10, 17
             voiceURI: voiceURI,
-            volume: document.getElementById("volSlide").value,
+            volume: volume,
             rate: rate,
             pitch: pitch,
             text: m,
@@ -34,7 +172,7 @@ function beep({
     volume = 0.5, //volume of the tone. Default is 1, off is 0.
     type = "triangle", //type of tone. Possible values are sine, square, sawtooth, triangle, and custom. Default is sine.
     callback = () => console.log("callback test") //callback to use on end of tone
-}) {
+    }) {
     var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
     var oscillator = audioCtx.createOscillator()
     var gainNode = audioCtx.createGain()
@@ -85,52 +223,14 @@ function command(message, cycle) {
 
 }
 
-// function move(message, cycle) {
-//     const elem = document.getElementById("breathBar")
-//     elem.style["animation-name"] = message
-//     elem.style["animation-duration"] = cycle / 2 + "ms"
-//   }
+
 
 function moveCircle(message, cycle) {
-    const elem = document.getElementById("breathCircle")
-    elem.style["animation-duration"] = cycle / 2 + "ms"
-    if (message === "inhale") {
-        elem.style["animation-name"] = "inhaleCircle"
-    } else {
-        elem.style["animation-name"] = "exhaleCircle"
-    }
-  }
-
-function breathe() {
-    // change bpm to seconds and inhale / exhale cycles
-    const bpm = document.getElementById("bpm").value
-    const duration = document.getElementById("duration").value
-
-    const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
-    const duration_ms = duration * 60 * 1000
-
-    const timers = []  // create separate inhale and exhale timers
-
-    // initiate breathing before setInterval kicks in
-    setTimeout(() => command("inhale", cycle), 0)
-    setTimeout(() => command("exhale", cycle), cycle / 2)
-
-    // inhale timer on cycle
-    timers[0] = setInterval(() => command("inhale", cycle), cycle)
-
-    setTimeout(() => {  // delays exhale timer by half a cycle
-
-        // exhale timer
-        timers[1] = setInterval(() => command("exhale", cycle), cycle)
-        
-        // clear timers.  
-        // Position here to make sure there are available timer IDs
-        setTimeout(() => {
-            clearInterval(timers[0])
-            clearInterval(timers[1])
-        }, duration_ms)
-
-    }, cycle / 2)
-
+const elem = document.getElementById("breathCircle")
+elem.style["animation-duration"] = cycle / 2 + "ms"
+if (message === "inhale") {
+    elem.style["animation-name"] = "inhaleCircle"
+} else {
+    elem.style["animation-name"] = "exhaleCircle"
 }
-
+}
