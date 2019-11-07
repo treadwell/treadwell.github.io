@@ -1,3 +1,7 @@
+//  TO DO
+//  1. stop timer
+//  2. $txt variable
+
 let $bpm = null
 let $duration = null
 let $playTone = null
@@ -94,7 +98,7 @@ $(document).ready(() =>
                     .html("Stop Timer")
                     .on("click", () => {
                         console.log("stop")
-                        timer = null
+                        timer = null  // how does this work?
                     })
             ),
         $("<div>", {
