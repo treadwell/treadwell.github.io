@@ -48,7 +48,7 @@ $(document).ready(() =>
             .append(
                 $("<p>")
                     .append(
-                        $playTone = $("<input>", {
+                        $playVoice = $("<input>", {
                             type: "checkbox",
                             id: "voice",
                             checked: false
@@ -112,8 +112,11 @@ $(document).ready(() =>
 
 function breathe() {
     // change bpm to seconds and inhale / exhale cycles
-    const bpm = document.getElementById("bpm").value
-    const duration = document.getElementById("duration").value
+    // const bpm = document.getElementById("bpm").value
+    // const bpm = $("#bpm").val()
+    const bpm = $bpm.val()
+    // const duration = document.getElementById("duration").value
+    const duration = $duration.val()
 
     const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
     const duration_ms = duration * 60 * 1000
@@ -163,9 +166,6 @@ function say({
     }))
 }
 
-// if you have another AudioContext class use that one, as some browsers have a limit
-// var audioCtx = new (window.AudioContext || window.webkitAudioContext || window.audioContext);
-
 function beep({
     duration = 500, //duration of the tone in milliseconds. Default is 500
     frequency = 500, //frequency of the tone in hertz. default is 440
@@ -192,11 +192,10 @@ function beep({
 
 
 function command(message, cycle) {
-    const playTone = document.getElementById("tones").checked
-    const playVoice = document.getElementById("voice").checked
-    const playBar = document.getElementById("bar").checked
-    const volume = document.getElementById("volSlide").value
-    const elem = document.getElementById("breathBar")
+    const playTone = $playTone.prop("checked")
+    const playVoice = $playVoice.prop("checked")
+    const playBar = $playBar.prop("checked")
+    const volume = $volume.val()
 
     document.getElementById('txt').innerHTML = message
 
