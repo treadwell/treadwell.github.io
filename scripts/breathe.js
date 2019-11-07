@@ -14,6 +14,7 @@ $(document).ready(() =>
                     .html("Breaths per minute (count): ")
                     .append(
                         $bpm = $("<input>", {
+                            id: "bpm",
                             type: "number",
                             value: 5
                         })
@@ -25,6 +26,7 @@ $(document).ready(() =>
                     .html("Length of practice (minutes): ")
                     .append(
                         $duration = $("<input>", {
+                            id: "duration",
                             type: "number",
                             value: 20
                         })
@@ -110,8 +112,8 @@ $(document).ready(() =>
 
 function breathe() {
     // change bpm to seconds and inhale / exhale cycles
-    const bpm = $bpm
-    const duration = $duration
+    const bpm = document.getElementById("bpm").value
+    const duration = document.getElementById("duration").value
 
     const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
     const duration_ms = duration * 60 * 1000
@@ -153,7 +155,7 @@ function say({
         speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance(), {
             voice: voices[voice],  // en has 1, 10, 17
             voiceURI: voiceURI,
-            volume: $volume.val,
+            volume: volume,
             rate: rate,
             pitch: pitch,
             text: m,
@@ -190,10 +192,10 @@ function beep({
 
 
 function command(message, cycle) {
-    const playTone = $playTone
-    const playVoice = $playVoice
-    const playBar = $playBar
-    const volume = $volume.val
+    const playTone = document.getElementById("tones").checked
+    const playVoice = document.getElementById("voice").checked
+    const playBar = document.getElementById("bar").checked
+    const volume = document.getElementById("volSlide").value
     const elem = document.getElementById("breathBar")
 
     document.getElementById('txt').innerHTML = message
