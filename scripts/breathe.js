@@ -1,26 +1,26 @@
 //  TO DO
 //  1. stop timer
-//  2. $txt variable
+//  2. $txt color contrast
 
-let $bpm = null
+let $inhaleSec = null
 let $duration = null
 let $playTone = null
 let $playVoice = null
 let $playBar = null
 let $volume = null
-let timer = null
+let timers = null
 
 $(document).ready(() =>
     $(document.body).append(
         $("<div>")
             .append(
                 $("<p>")
-                    .html("Breaths per minute (count): ")
+                    .html("Seconds per inhale/exhale (sec): ")
                     .append(
-                        $bpm = $("<input>", {
-                            id: "bpm",
+                        $inhaleSec = $("<input>", {
+                            id: "inhalesec",
                             type: "number",
-                            value: 5
+                            value: 6
                         })
                     )
             ),
@@ -98,7 +98,9 @@ $(document).ready(() =>
                     .html("Stop Timer")
                     .on("click", () => {
                         console.log("stop")
-                        timer = null  // how does this work?
+                        timers = null  // how does this work?
+                        // clearInterval(timers[0])
+                        // clearInterval(timers[1])
                     })
             ),
         $("<div>", {
@@ -118,11 +120,11 @@ function breathe() {
     // change bpm to seconds and inhale / exhale cycles
     // const bpm = document.getElementById("bpm").value
     // const bpm = $("#bpm").val()
-    const bpm = $bpm.val()
+    const inhaleSec = $inhaleSec.val()
     // const duration = document.getElementById("duration").value
     const duration = $duration.val()
 
-    const cycle = 60.0 / bpm * 1000; // ms for a full breath cycle
+    const cycle = 2 * inhaleSec * 1000; // ms for a full breath cycle
     const duration_ms = duration * 60 * 1000
 
     const timers = []  // create separate inhale and exhale timers
@@ -226,14 +228,12 @@ function command(message, cycle) {
 
 }
 
-
-
 function moveCircle(message, cycle) {
-const elem = document.getElementById("breathCircle")
-elem.style["animation-duration"] = cycle / 2 + "ms"
-if (message === "inhale") {
-    elem.style["animation-name"] = "inhaleCircle"
-} else {
-    elem.style["animation-name"] = "exhaleCircle"
-}
+    const elem = document.getElementById("breathCircle")
+    elem.style["animation-duration"] = cycle / 2 + "ms"
+    if (message === "inhale") {
+        elem.style["animation-name"] = "inhaleCircle"
+    } else {
+        elem.style["animation-name"] = "exhaleCircle"
+    }
 }
