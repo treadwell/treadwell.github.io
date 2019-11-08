@@ -98,9 +98,9 @@ $(document).ready(() =>
                     .html("Stop Timer")
                     .on("click", () => {
                         console.log("stop")
-                        timers = null  // how does this work?
-                        // clearInterval(timers[0])
-                        // clearInterval(timers[1])
+                        // timers = null  // how does this work?
+                        clearInterval(timers[0])
+                        clearInterval(timers[1])
                     })
             ),
         $("<div>", {
@@ -127,7 +127,7 @@ function breathe() {
     const cycle = 2 * inhaleSec * 1000; // ms for a full breath cycle
     const duration_ms = duration * 60 * 1000
 
-    const timers = []  // create separate inhale and exhale timers
+    timers = []  // create separate inhale and exhale timers
 
     // initiate breathing before setInterval kicks in
     setTimeout(() => command("inhale", cycle), 0)
