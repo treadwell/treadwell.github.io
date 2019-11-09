@@ -1,8 +1,6 @@
 //  TO DO
-//  1. stop timer
 //  2. $txt color contrast
-//  3. kill references to document.getElementById()
-//  4. remove animation from 2nd half of first cycle
+//  3. kill references to document.getElementById() - $breathCircle
 
 let $inhaleSec = null
 let $duration = null
@@ -11,7 +9,8 @@ let $playVoice = null
 let $playBar = null
 let $volume = null
 let $txt = null
-let timers = null
+let $breathCircle = null
+let $timers = null
 
 $(document).ready(() =>
     $(document.body).append(
@@ -100,15 +99,13 @@ $(document).ready(() =>
                 $("<button>")
                     .html("Stop Timer")
                     .on("click", () => {
-                        console.log("stop")
-                        // timers = null  // how does this work?
-                        clearInterval(timers[0])
-                        clearInterval(timers[1])
-                        clearTimeout(timers[2])
-                        clearTimeout(timers[3])
-                        clearTimeout(timers[4])
+                        // console.log("stop")
+                        clearInterval($timers[0])
+                        clearInterval($timers[1])
+                        clearTimeout($timers[2])
+                        clearTimeout($timers[3])
+                        clearTimeout($timers[4])
                         $("#breathCircle").css("animation", "none")
-                        // $("#breathCircle").css("exhaleCircle", "none")
                         $txt.empty()
                     })
             ),
@@ -116,7 +113,7 @@ $(document).ready(() =>
             id: "breathProgressCircle"
         })
             .append(
-                $("<div>", {
+                $breathCircle = $("<div>", {
                     id: "breathCircle"
                 }),
                 $txt = $("<div>", {
@@ -126,35 +123,31 @@ $(document).ready(() =>
         ))
 
 function breathe() {
-    // change bpm to seconds and inhale / exhale cycles
-    // const bpm = document.getElementById("bpm").value
-    // const bpm = $("#bpm").val()
     const inhaleSec = $inhaleSec.val()
-    // const duration = document.getElementById("duration").value
     const duration = $duration.val()
 
     const cycle = 2 * inhaleSec * 1000; // ms for a full breath cycle
     const duration_ms = duration * 60 * 1000
 
-    timers = []  // create separate inhale and exhale timers
+    $timers = []  // create separate inhale and exhale timers
 
     // initiate breathing before setInterval kicks in
-    timers[2] = setTimeout(() => command("inhale", cycle), 0)
-    timers[3] = setTimeout(() => command("exhale", cycle), cycle / 2)
+    $timers[2] = setTimeout(() => command("inhale", cycle), 0)
+    $timers[3] = setTimeout(() => command("exhale", cycle), cycle / 2)
 
     // inhale timer on cycle
-    timers[0] = setInterval(() => command("inhale", cycle), cycle)
+    $timers[0] = setInterval(() => command("inhale", cycle), cycle)
 
-    timers[4] = setTimeout(() => {  // delays exhale timer by half a cycle
+    $timers[4] = setTimeout(() => {  // delays exhale timer by half a cycle
 
         // exhale timer
-        timers[1] = setInterval(() => command("exhale", cycle), cycle)
+        $timers[1] = setInterval(() => command("exhale", cycle), cycle)
         
         // clear timers.  
         // Position here to make sure there are available timer IDs
         setTimeout(() => {
-            clearInterval(timers[0])
-            clearInterval(timers[1])
+            clearInterval($timers[0])
+            clearInterval($timers[1])
         }, duration_ms)
 
     }, cycle / 2)
@@ -212,7 +205,7 @@ function command(message, cycle) {
     const playBar = $playBar.prop("checked")
     const volume = $volume.val()
 
-    document.getElementById('txt').innerHTML = message
+    $txt.text(message)
 
     if (playTone) {
         if (message === "inhale") {
@@ -239,6 +232,8 @@ function command(message, cycle) {
 
 function moveCircle(message, cycle) {
     const elem = document.getElementById("breathCircle")
+    // const elem = $("#breathCircle")
+    // const elem = $breathCircle
     elem.style["animation-duration"] = cycle / 2 + "ms"
     if (message === "inhale") {
         elem.style["animation-name"] = "inhaleCircle"
