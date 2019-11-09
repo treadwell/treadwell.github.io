@@ -1,6 +1,8 @@
 //  TO DO
 //  1. stop timer
 //  2. $txt color contrast
+//  3. kill references to document.getElementById()
+//  4. remove animation from 2nd half of first cycle
 
 let $inhaleSec = null
 let $duration = null
@@ -102,6 +104,8 @@ $(document).ready(() =>
                         // timers = null  // how does this work?
                         clearInterval(timers[0])
                         clearInterval(timers[1])
+                        clearTimeout(timers[2])
+                        clearTimeout(timers[3])
                         $("#breathCircle").css("animation", "none")
                         // $("#breathCircle").css("exhaleCircle", "none")
                         $txt.empty()
@@ -134,8 +138,8 @@ function breathe() {
     timers = []  // create separate inhale and exhale timers
 
     // initiate breathing before setInterval kicks in
-    setTimeout(() => command("inhale", cycle), 0)
-    setTimeout(() => command("exhale", cycle), cycle / 2)
+    timers[2] = setTimeout(() => command("inhale", cycle), 0)
+    timers[3] = setTimeout(() => command("exhale", cycle), cycle / 2)
 
     // inhale timer on cycle
     timers[0] = setInterval(() => command("inhale", cycle), cycle)
