@@ -74,7 +74,7 @@ function read_asanas([asana, ...asanas], cycle) {
     
     let lines = document.getElementById(asana).innerText.split('\n')
 
-    say({ m:lines[0] })
+    say({ m: lines[0] })
     lines.shift()
 
     read_lines(lines, asanas, cycle)
@@ -84,8 +84,8 @@ function read_lines([line, ...lines], asanas, cycle) {
     if (!line) {
         read_asanas(asanas, cycle)
     } else {
-        setTimeout (() => {
-            say({ m:line })
+        setTimeout(() => {
+            say({ m: line })
             // console.log(line)
             read_lines (lines, asanas, cycle)
         }, cycle)
