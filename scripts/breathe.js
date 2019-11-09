@@ -8,6 +8,7 @@ let $playTone = null
 let $playVoice = null
 let $playBar = null
 let $volume = null
+let $txt = null
 let timers = null
 
 $(document).ready(() =>
@@ -101,6 +102,9 @@ $(document).ready(() =>
                         // timers = null  // how does this work?
                         clearInterval(timers[0])
                         clearInterval(timers[1])
+                        $("#breathCircle").css("animation", "none")
+                        // $("#breathCircle").css("exhaleCircle", "none")
+                        $txt.empty()
                     })
             ),
         $("<div>", {
@@ -110,7 +114,7 @@ $(document).ready(() =>
                 $("<div>", {
                     id: "breathCircle"
                 }),
-                $("<div>", {
+                $txt = $("<div>", {
                     id: "txt"
                 })
             )
