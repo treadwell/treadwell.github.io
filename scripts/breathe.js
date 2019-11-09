@@ -106,6 +106,7 @@ $(document).ready(() =>
                         clearInterval(timers[1])
                         clearTimeout(timers[2])
                         clearTimeout(timers[3])
+                        clearTimeout(timers[4])
                         $("#breathCircle").css("animation", "none")
                         // $("#breathCircle").css("exhaleCircle", "none")
                         $txt.empty()
@@ -144,7 +145,7 @@ function breathe() {
     // inhale timer on cycle
     timers[0] = setInterval(() => command("inhale", cycle), cycle)
 
-    setTimeout(() => {  // delays exhale timer by half a cycle
+    timers[4] = setTimeout(() => {  // delays exhale timer by half a cycle
 
         // exhale timer
         timers[1] = setInterval(() => command("exhale", cycle), cycle)
