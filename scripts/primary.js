@@ -84,7 +84,7 @@ function read_lines([line, ...lines], asanas, cycle) {
     if (!line) {
         read_asanas(asanas, cycle)
     } else {
-        setTimeout(() => {
+        setTimeout(function () {
             say({ m: line })
             // console.log(line)
             read_lines (lines, asanas, cycle)
