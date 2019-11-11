@@ -106,7 +106,7 @@ $(document).ready(() =>
                         clearTimeout($timers[3])
                         clearTimeout($timers[4])
                         $("#breathCircle").css("animation", "none")
-                        $txt.empty()
+                        $txt.text("")
                     })
             ),
         $("<div>", {
