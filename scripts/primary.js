@@ -71,6 +71,8 @@ function readAloud() {
 function read_asanas([asana, ...asanas], cycle) {
 
     if (!asana) return
+
+    document.getElementById("currentAsana").innerHTML = asana
     
     let lines = document.getElementById(asana).innerText.split(/[\r\n]+/)
     // alert(JSON.stringify(lines, null, 2))
