@@ -4,7 +4,8 @@
 // add Sury A in tts
 // make responsive - done
 
-
+$asanaIdx = null
+$lineIdx = null
 
 function say({
         voice = 10,
@@ -64,7 +65,7 @@ function readAloud() {
     }
     
     // console.log("asanas:",asanas)
-
+    $asanaIdx = 0
     read_asanas(asanas, cycle)
 }
 
@@ -73,14 +74,19 @@ function read_asanas([asana, ...asanas], cycle) {
     if (!asana) return
 
     document.getElementById("currentAsana").innerHTML = asana
+    console.log(asana, "index:", $asanaIdx)
     
     let lines = document.getElementById(asana).innerText.split(/[\r\n]+/)
     // alert(JSON.stringify(lines, null, 2))
-
+    
     say({ m: lines[0] })
     lines.shift()
 
+
+    $lineIdx = 0
     read_lines(lines, asanas, cycle)
+    
+    $asanaIdx++
 }
 
 function read_lines([line, ...lines], asanas, cycle) {
@@ -89,8 +95,9 @@ function read_lines([line, ...lines], asanas, cycle) {
     } else {
         setTimeout(() => {
             say({ m: line })
-            console.log(line)
+            console.log($lineIdx, line)
             read_lines (lines, asanas, cycle)
         }, cycle)
+        $lineIdx++
     }
 }
