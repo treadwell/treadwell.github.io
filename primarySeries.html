@@ -12,7 +12,9 @@
                 <p>Seconds per breath cycle: <input type="number" id="secPerBreath" value="10"></p>
                 <p><input type="range" min="0.0" max="1.0" step="0.01" value="0.5" class="slider" id="volSlide"> Volume</p>
                     <p>
-                        <button id="ReadAloud" onclick="readAloud()">Read aloud</button>
+                        <button id="ReadAloud" onclick="$asanaIdx = 0; $lineIdx = 0; readAloud()">Read aloud</button>
+                        <button id="Pause" onclick="clearTimeout($timer)">Pause</button>
+                        <button id="Resume" onclick="readAloud()">Resume</button>
                     </p>
 
                     <p>Select practice elements:</p>
