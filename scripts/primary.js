@@ -5,7 +5,7 @@
 // make responsive - done
 
 let $asanaIdx = 1
-let $lineIdx = 0
+let $lineIdx = 2
 
 function say({
         voice = 10,
