@@ -63,48 +63,43 @@ function readAloud() {
             asanas = asanas.concat(eval(element))
         }
     }
-    
-    console.log("readAloud 0:", $asanaIdx, $lineIdx)
 
     read_asanas(asanas.slice($asanaIdx), cycle)
 }
 
 function read_asanas([asana, ...asanas], cycle) {
-    console.log("read_asanas 0:", $asanaIdx, $lineIdx)
 
     if (!asana) return
 
-    console.log(asana, "index:", $asanaIdx)
+    console.log($asanaIdx, asana)
     
     let lines = document.getElementById(asana).innerText.split(/[\r\n]+/)
     // alert(JSON.stringify(lines, null, 2))
+    
     document.getElementById("currentAsana").innerHTML = lines[0]
-    say({ m: lines[0] })
-    console.log($lineIdx, lines[0])
-    $lineIdx = 1
 
-    console.log("read_asanas 1:", $asanaIdx, $lineIdx)
-    read_lines(lines.slice($lineIdx), asanas, cycle)
+    read_lines(lines, asanas, cycle)  // put slice here
     
     $asanaIdx++
-    console.log("read_asanas 2:", $asanaIdx, $lineIdx)
 }
 
 function read_lines([line, ...lines], asanas, cycle) {
-    console.log("read_lines 0:", $asanaIdx, $lineIdx)
     if (!line) {
-        console.log("read_lines 1:", $asanaIdx, $lineIdx)
+        $lineIdx = 0
         read_asanas(asanas, cycle)
     } else {
-        console.log("read_lines 2:", $asanaIdx, $lineIdx)
-        setTimeout(() => {
-            say({ m: line })
+        if (line == lines[0]) {
+            say({ m: lines[0] })
             console.log($lineIdx, line)
-            read_lines (lines, asanas, cycle)
             $lineIdx++
-            console.log("read_lines 4:", $asanaIdx, $lineIdx)
-        }, cycle)
-        
-        console.log("read_lines 5:", $asanaIdx, $lineIdx)
+            read_lines (lines, asana, cycle)
+        } else {
+            setTimeout(() => {
+                say({ m: line })
+                console.log($lineIdx, line)
+                $lineIdx++
+                read_lines (lines, asanas, cycle)
+            }, cycle)
+        }
     }
 }
