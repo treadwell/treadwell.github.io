@@ -4,7 +4,7 @@
 // add Sury A in tts
 // make responsive - done
 
-let $asanaIdx = 0
+let $asanaIdx = 1
 let $lineIdx = 0
 
 function say({
@@ -65,7 +65,7 @@ function readAloud() {
     }
     
     console.log("readAloud 0:", $asanaIdx, $lineIdx)
-    $asanaIdx = 0
+
     read_asanas(asanas.slice($asanaIdx), cycle)
 }
 
