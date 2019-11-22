@@ -4,8 +4,9 @@
 // add Sury A in tts
 // make responsive - done
 
-let $asanaIdx = 1
-let $lineIdx = 2
+let $asanaIdx = null
+let $lineIdx = null
+let $timer = null
 
 function say({
         voice = 10,
@@ -94,7 +95,7 @@ function read_lines([line, ...lines], asanas, cycle) {
             $lineIdx++
             read_lines (lines, asana, cycle)
         } else {
-            setTimeout(() => {
+            $timer = setTimeout(() => {
                 say({ m: line })
                 console.log($lineIdx, line)
                 $lineIdx++
