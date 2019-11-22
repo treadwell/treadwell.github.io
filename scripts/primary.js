@@ -78,7 +78,7 @@ function read_asanas([asana, ...asanas], cycle) {
     
     document.getElementById("currentAsana").innerHTML = lines[0]
 
-    read_lines(lines, asanas, cycle)  // put slice here
+    read_lines(lines.slice($lineIdx), asanas, cycle)
     
     $asanaIdx++
 }
