@@ -81,11 +81,12 @@ function read_asanas([asana, ...asanas], cycle) {
 
     read_lines(lines.slice($lineIdx), asanas, cycle)
     
-    $asanaIdx++
+    
 }
 
 function read_lines([line, ...lines], asanas, cycle) {
     if (!line) {
+        $asanaIdx++
         $lineIdx = 0
         read_asanas(asanas, cycle)
     } else {
