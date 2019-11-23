@@ -85,6 +85,7 @@ function read_asanas([asana, ...asanas], cycle) {
 }
 
 function read_lines([line, ...lines], asanas, cycle) {
+    cycle = document.getElementById("secPerBreath").value / 2.0 * 1000
     if (!line) {
         $asanaIdx++
         $lineIdx = 0
