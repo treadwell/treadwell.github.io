@@ -15,6 +15,7 @@
                         <button id="ReadAloud" onclick="$asanaIdx = 0; $lineIdx = 0; readAloud()">Read aloud</button>
                         <button id="Pause" onclick="clearTimeout($timer)">Pause</button>
                         <button id="Resume" onclick="readAloud()">Resume</button>
+                        <button id="Reset" onclick="clearTimeout($timer); $asanaIdx = 0; $lineIdx = 0">Reset</button>
                     </p>
 
                     <p>Select practice elements:</p>
