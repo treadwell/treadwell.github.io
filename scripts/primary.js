@@ -91,18 +91,11 @@ function read_lines([line, ...lines], asanas, cycle) {
         $lineIdx = 0
         read_asanas(asanas, cycle)
     } else {
-        if (line == lines[0]) {
-            say({ m: lines[0] })
-            console.log($lineIdx, line)
-            $lineIdx++
-            read_lines (lines, asana, cycle)
-        } else {
-            $timer = setTimeout(() => {
-                say({ m: line })
-                console.log($lineIdx, line)
-                $lineIdx++
-                read_lines (lines, asanas, cycle)
-            }, cycle)
-        }
+        say({ m: line })
+        $lineIdx++
+        console.log($lineIdx, line)
+        $timer = setTimeout(() => {
+            read_lines (lines, asanas, cycle)
+        }, cycle)
     }
 }
