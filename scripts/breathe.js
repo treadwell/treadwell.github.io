@@ -235,9 +235,8 @@ function moveCircle(message, cycle) {
     // const elem = $("#breathCircle")
     // const elem = $breathCircle
     $breathCircle.css("animation-duration", cycle / 2 + "ms")
-    if (message === "inhale") {
-        $breathCircle.css("animation-name", "inhaleCircle")
-    } else {
-        $breathCircle.css("animation-name", "exhaleCircle")
-    }
+    $breathCircle.css("animation-name", {
+        inhale: "inhaleCircle",
+        exhale: "exhaleCircle"
+    }[message] || console.error("invalid message: " + message))
 }
