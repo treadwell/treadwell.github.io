@@ -105,7 +105,7 @@ $(document).ready(() =>
                         clearTimeout($timers[2])
                         clearTimeout($timers[3])
                         clearTimeout($timers[4])
-                        $("#breathCircle").css("animation", "none")
+                        $breathCircle.css("animation-name", "none")
                         $txt.text("")
                     })
             ),
@@ -231,13 +231,13 @@ function command(message, cycle) {
 }
 
 function moveCircle(message, cycle) {
-    const elem = document.getElementById("breathCircle")
+    // const elem = document.getElementById("breathCircle")
     // const elem = $("#breathCircle")
     // const elem = $breathCircle
-    elem.style["animation-duration"] = cycle / 2 + "ms"
+    $breathCircle.css("animation-duration", cycle / 2 + "ms")
     if (message === "inhale") {
-        elem.style["animation-name"] = "inhaleCircle"
+        $breathCircle.css("animation-name", "inhaleCircle")
     } else {
-        elem.style["animation-name"] = "exhaleCircle"
+        $breathCircle.css("animation-name", "exhaleCircle")
     }
 }
