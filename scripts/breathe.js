@@ -12,6 +12,20 @@ let $txt = null
 let $breathCircle = null
 let $timers = null
 
+function Player () {
+    // let...
+    let counter = 1
+    return {
+        // methods go here
+        get() {
+            return counter
+        },
+        inc() {
+            counter++
+        }
+    }
+}
+
 $(document).ready(() =>
     $(document.body).append(
         $("<div>")
