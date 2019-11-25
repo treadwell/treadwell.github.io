@@ -33,17 +33,6 @@ function readAloud() {
 
     const cycle = document.getElementById("secPerBreath").value / 2.0 * 1000
 
-    const primarySeries = {
-        suryAs: {
-            key: "suryAs", 
-            value: ["suryA", "suryA", "suryA", "suryA", "suryA" ]
-        },
-        suryBs: {
-            key: "suryBs",
-            value: ["suryA", "suryA", "suryA", "suryA", "suryA" ]
-        }
-    }
-
     const suryAs = ["suryA", "suryA", "suryA", "suryA", "suryA" ]
     const suryBs = [ "suryB", "suryB", "suryB" ]
     const starting = [ ...suryAs, ...suryBs]
@@ -98,4 +87,10 @@ function read_lines([line, ...lines], asanas, cycle) {
             read_lines (lines, asanas, cycle)
         }, cycle)
     }
+}
+
+function calc_duration() {
+    // update the asana list
+    // calculate duration
+    console.log("update duration")
 }
