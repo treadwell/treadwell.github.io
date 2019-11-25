@@ -44,6 +44,7 @@ function readAloud() {
     const finishing_end = ["baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]
 
     const half = [...starting, ...fundamentals, ...standing, ...seated_start, ...finishing_start, ...finishing_end]
+    const full = [...starting, ...fundamentals, ...standing, ...seated_start, ...seated_end, ...finishing_start, ...finishing_end]
     
     const primaryElements = ["suryAs", "suryBs", "fundamentals", "standing", "seated_start", "seated_end", "finishing_start", "finishing_end"]
     
@@ -90,7 +91,26 @@ function read_lines([line, ...lines], asanas, cycle) {
 }
 
 function calc_duration() {
-    // update the asana list
+    // Note massive redundancy of data...
+
+    const suryAs = ["suryA", "suryA", "suryA", "suryA", "suryA" ]
+    const suryBs = [ "suryB", "suryB", "suryB" ]
+    const starting = [ ...suryAs, ...suryBs]
+    const fundamentals = ["padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana"]
+    const standing = ["utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana"]
+    const seated_start = ["dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana"]
+    const seated_end = ["bhujapidasana", "kurmasana", "suptaKurmasana", "garbhaPindasana", "kukkutasana", "baddhaKonasana", "upavisthaKonasanaA", "upavisthaKonasanaB", "suptaKonasana", "suptaPadangusthasana", "ubhayaPadangusthasana", "urdhvaMukhaPaschimottanasana", "setthuBandhasana"]
+    const finishing_start = ["urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana"]
+    const finishing_end = ["baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]
+
+    const primaryElements = ["suryAs", "suryBs", "fundamentals", "standing", "seated_start", "seated_end", "finishing_start", "finishing_end"]
+
+    asanas = []
+    for (element of primaryElements) {
+        if (document.getElementById(element).checked) {
+            asanas = asanas.concat(eval(element))
+        }
+    }
+    console.log("Number asanas:", asanas.length)
     // calculate duration
-    console.log("update duration")
 }
