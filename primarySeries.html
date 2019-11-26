@@ -9,7 +9,7 @@
             </head>
             <body>
                 <h1>Primary Series</h1>
-                <p>Seconds per breath cycle: <input type="number" id="secPerBreath" value="10"></p>
+                <p>Seconds per breath cycle: <input type="number" id="secPerBreath" value="6"></p>
                 <p><input type="range" min="0.0" max="1.0" step="0.01" value="0.5" class="slider" id="volSlide"> Volume</p>
                     <p>
                         <button id="ReadAloud" onclick="$asanaIdx = 0; $lineIdx = 0; readAloud()">Read aloud</button>
@@ -20,8 +20,8 @@
 
                     <p>Select practice elements:</p>
                     <ul>
-                    <li><input type="checkbox" id="suryAs" checked onchange="calc_duration()"> Surya Namaskara A x 5</li>
-                    <li><input type="checkbox" id="suryBs"checked onchange="calc_duration()"> Surya Namaskara B x 3</li>
+                    <li><input type="checkbox" id="suryAs" onchange="calc_duration()"> Surya Namaskara A x 5</li>
+                    <li><input type="checkbox" id="suryBs" onchange="calc_duration()"> Surya Namaskara B x 3</li>
                     <li><input type="checkbox" id="fundamentals" onchange="calc_duration()"> Padangusthasana through Parsvottanasana</li>
                     <li><input type="checkbox" id="standing" onchange="calc_duration()"> Utthita Hasta Padangusthasana through Virabhadrasana</li>
                     <li><input type="checkbox" id="seated_start" onchange="calc_duration()"> Dandasana through Navasana</li>
@@ -30,6 +30,7 @@
                     <li><input type="checkbox" id="finishing_end" onchange="calc_duration()"> Baddha Padmasana through Utpluthih</li>
                     </ul>
                     <hr/>
+                    <div><span>Expected time: </span><span id="totalTime"></span></div>
                     <div id="currentAsana"></div>
                     <div id="suryA">
                         <hr/>

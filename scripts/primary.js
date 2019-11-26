@@ -75,17 +75,14 @@ function calc_duration() {
     halfBreathDuration = document.getElementById("secPerBreath").value / 2.0
 
     const asanas = calc_asana_list()
-    console.log("Number asanas:", asanas.length)
-    console.log(asanas)
 
     spokenLines = asanas.map((asana) => { return document.getElementById(asana).innerText.split(/[\r\n]+/).length - 1 })
-                    .reduce((a, b) => a + b)
+                    .reduce((a, b) => a + b, 0)
         
-    spokenDurationMinutes = halfBreathDuration * spokenLines / 60.0
-    // .reduce((a, b) => a + b)
+    spokenDurationSeconds = halfBreathDuration * spokenLines
+    displayTime = new Date(spokenDurationSeconds * 1000).toISOString().substr(11, 8);
 
-    console.log(spokenDurationMinutes)
-    // calculate duration
+    document.getElementById("totalTime").innerHTML = displayTime
 }
 
 function calc_asana_list () {
