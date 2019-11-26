@@ -33,27 +33,7 @@ function readAloud() {
 
     const cycle = document.getElementById("secPerBreath").value / 2.0 * 1000
 
-    const suryAs = ["suryA", "suryA", "suryA", "suryA", "suryA" ]
-    const suryBs = [ "suryB", "suryB", "suryB" ]
-    const starting = [ ...suryAs, ...suryBs]
-    const fundamentals = ["padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana"]
-    const standing = ["utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana"]
-    const seated_start = ["dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana"]
-    const seated_end = ["bhujapidasana", "kurmasana", "suptaKurmasana", "garbhaPindasana", "kukkutasana", "baddhaKonasana", "upavisthaKonasanaA", "upavisthaKonasanaB", "suptaKonasana", "suptaPadangusthasana", "ubhayaPadangusthasana", "urdhvaMukhaPaschimottanasana", "setthuBandhasana"]
-    const finishing_start = ["urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana"]
-    const finishing_end = ["baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]
-
-    const half = [...starting, ...fundamentals, ...standing, ...seated_start, ...finishing_start, ...finishing_end]
-    const full = [...starting, ...fundamentals, ...standing, ...seated_start, ...seated_end, ...finishing_start, ...finishing_end]
-    
-    const primaryElements = ["suryAs", "suryBs", "fundamentals", "standing", "seated_start", "seated_end", "finishing_start", "finishing_end"]
-    
-    asanas = []
-    for (element of primaryElements) {
-        if (document.getElementById(element).checked) {
-            asanas = asanas.concat(eval(element))
-        }
-    }
+    let asansas = calc_asana_list()
 
     read_asanas(asanas.slice($asanaIdx), cycle)
 }
@@ -91,7 +71,24 @@ function read_lines([line, ...lines], asanas, cycle) {
 }
 
 function calc_duration() {
-    // Note massive redundancy of data...
+
+    halfBreathDuration = document.getElementById("secPerBreath").value / 2.0
+
+    const asanas = calc_asana_list()
+    console.log("Number asanas:", asanas.length)
+    console.log(asanas)
+
+    spokenLines = asanas.map((asana) => { return document.getElementById(asana).innerText.split(/[\r\n]+/).length - 1 })
+                    .reduce((a, b) => a + b)
+        
+    spokenDurationMinutes = halfBreathDuration * spokenLines / 60.0
+    // .reduce((a, b) => a + b)
+
+    console.log(spokenDurationMinutes)
+    // calculate duration
+}
+
+function calc_asana_list () {
 
     const suryAs = ["suryA", "suryA", "suryA", "suryA", "suryA" ]
     const suryBs = [ "suryB", "suryB", "suryB" ]
@@ -111,6 +108,6 @@ function calc_duration() {
             asanas = asanas.concat(eval(element))
         }
     }
-    console.log("Number asanas:", asanas.length)
-    // calculate duration
+
+    return asanas
 }
