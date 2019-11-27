@@ -93,7 +93,7 @@ function calc_duration() {
 function calc_asana_list () {
 
     const suryAs = ["suryA", "suryA", "suryA", "suryA", "suryA" ]
-    const suryBs = [ "suryB"]  // , "suryB", "suryB" 
+    const suryBs = [ "suryB", "suryB", "suryB"]
     const starting = [ ...suryAs, ...suryBs]
     const fundamentals = ["padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana"]
     const standing = ["utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana"]
