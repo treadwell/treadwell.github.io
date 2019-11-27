@@ -39,9 +39,13 @@ function readAloud() {
 }
 
 function read_asanas([asana, ...asanas], cycle) {
+    
+    if (!asana) {
+        window.scrollTo(0, 0)
+        return
+    }
 
-    if (!asana) return
-
+    document.getElementById(asana).scrollIntoView(true)
     console.log($asanaIdx, asana)
     
     let lines = document.getElementById(asana).innerText.split(/[\r\n]+/)
@@ -89,7 +93,7 @@ function calc_duration() {
 function calc_asana_list () {
 
     const suryAs = ["suryA", "suryA", "suryA", "suryA", "suryA" ]
-    const suryBs = [ "suryB", "suryB", "suryB" ]
+    const suryBs = [ "suryB"]  // , "suryB", "suryB" 
     const starting = [ ...suryAs, ...suryBs]
     const fundamentals = ["padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana"]
     const standing = ["utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana"]
