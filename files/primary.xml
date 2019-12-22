@@ -1,0 +1,803 @@
+<asanas>
+    <asana id="suryA">
+        <name><sanscrit>Surya Namaskara A</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, lift the arms up.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, fold forward.</step>
+            <step><sanscrit>trini</sanscrit>: inhale, head up only.</step>
+            <step><sanscrit>catvari</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>panca</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>sat</sanscrit>: exhale, push back to downward dog.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump forward, head up.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, fold forward.</step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the arms up.</step>
+        </steps>
+    </asana>
+    <asana id="suryB">
+        <name><sanscrit>Suryanamaskara B</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, lift the arms up and bend knees to utkatasana</step>
+            <step><sanscrit>dve</sanscrit>: exhale, fold forward.</step>
+            <step><sanscrit>trini</sanscrit>: inhale, head up.</step>
+            <step><sanscrit>catvari</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>panca</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>sat</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>sapta</sanscrit>: inhale, right foot forward to Warrior 1.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, hands down, step back to chaturanga.</step>
+            <step><sanscrit>nava</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>dasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, left foot forward to Warrior 1.</step>
+            <step><sanscrit>dvadasa</sanscrit>: exhale, hands down, step back to chaturanga.</step>
+            <step><sanscrit>trayodasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>pancadasa</sanscrit>: inhale, jump forward, head up.</step>
+            <step><sanscrit>sodasa</sanscrit>: exhale, fold forward.</step>
+            <step><sanscrit>saptadasa</sanscrit>: inhale, hands up, bent knees, utkatasana.</step>
+        </steps>
+    </asana>
+    <asana id="padangusthasana">
+        <name><sanscrit>Padangusthasana</sanscrit></name>
+        <steps>
+            <step>Spread the feet half a foot apart.</step>
+            <step><sanscrit>ekam</sanscrit>: inhale, catch the big toes, head up.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, take the head between the legs.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trini</sanscrit>: inhale, lift the head up.</step>
+        </steps>
+    </asana>
+    <asana id="padahastasana">
+        <name><sanscrit>Padahastasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, place the palms under the feet, head up.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, take the head between the legs.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trini</sanscrit>: inhale, head up,</step>
+        </steps>
+    </asana>
+    <asana id="utthitaTrikonasanaA">
+        <name><sanscrit>Utthita Trikonasana A</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, jump to the right side, legs three feet apart, arms out.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, pivot right to catch the right big toe, look up</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trini</sanscrit>: inhale, come up.</step>
+            <step><sanscrit>catvari</sanscrit>: exhale, pivot left to catch the left big toe, look up</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>panca</sanscrit>: inhale, come up, arms out</step>
+        </steps>
+    </asana>
+    <asana id="utthitaTrikonasanaB">
+        <name><sanscrit>Utthita Trikonasana B</sanscrit></name>
+        <steps>
+            <step><sanscrit>dve</sanscrit>: exhale, twist the body to the right side, place the left hand next to the right foot.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trini</sanscrit>: inhale, come up.</step>
+            <step><sanscrit>catvari</sanscrit>: exhale, twist the body to the left side. Place the right hand next to the left foot.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>panca</sanscrit>: inhale, come up.</step>
+        </steps>
+    </asana>
+    <asana id="utthitaParsvakonasanaA">
+        <name><sanscrit>Utthita Parsvakonasana A</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, jump to the right side with the legs five feet apart and arms out.
+        </steps>
+            </step>
+        <steps>
+            <step><sanscrit>dve</sanscrit>: exhale, bend the right knee, place the right hand outside the right foot, reach the left arm over the head.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trini</sanscrit>: inhale, come up.</step>
+            <step><sanscrit>catvari</sanscrit>: exhale, bend the left knee, place the left hand outside the left foot, reach the right arm over the head.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>panca</sanscrit>: inhale, come up.</step>
+        </steps>
+    </asana>
+    <asana id="utthitaParsvakonasanaB">
+        <name><sanscrit>Utthita Parsvakonasana B</sanscrit></name>
+        <steps>
+            <step><sanscrit>dve</sanscrit>: exhale, bend the right knee, twist the body, and place the left hand outside the right foot.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trini</sanscrit>: inhale, come up.</step>
+            <step><sanscrit>catvari</sanscrit>: exhale, bend the left knee, twist the body, and place the right hand outside the left foot.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>panca</sanscrit>: inhale, come up.</step>
+        </steps>
+    </asana>
+    <asana id="prasaritaPadottanasanaA">
+        <name><sanscrit>Prasarita Padottanasana A</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, jump to the right side, place the hands on the waist.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, place the hands on the floor between the feet. Inhale and lift the head up.</step>
+            <step><sanscrit>trini</sanscrit>: exhale, place the head on the floor.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>catvari</sanscrit>: inhale, lift the head only, keep the hands on the floor.</step>
+            <step><sanscrit>panca</sanscrit>: inhale, hands on waist, come up.</step>
+        </steps>
+    </asana>
+    <asana id="prasaritaPadottanasanaB">
+        <name><sanscrit>Prasarita Padottanasana B</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, spread the arms out to the side.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, place the hands on the waist.</step>
+            <step><sanscrit>trini</sanscrit>: exhale, place the head on the floor between the feet.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>catvari</sanscrit>: inhale, come up.</step>
+        </steps>
+    </asana>
+    <asana id="prasaritaPadottanasanaC">
+        <name><sanscrit>Prasarita Padottanasana C</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, spread the arms out to the side.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, clasp hands behind the back.</step>
+            <step><sanscrit>trini</sanscrit>: exhale, place the head on the floor between the feet and reach the hands toward the floor.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>catvari</sanscrit>: inhale, come up.</step>
+        </steps>
+    </asana>
+    <asana id="prasaritaPadottanasanaD">
+        <name><sanscrit>Prasarita Padottanasana D</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, place the hands on the waist.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, catch the big toes. Inhale, lift the head.</step>
+            <step><sanscrit>trini</sanscrit>: exhale, place the head on the floor between the feet.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>catvari</sanscrit>: inhale, lift the head only.</step>
+            <step><sanscrit>panca</sanscrit>: inhale, hands to waist, come up.</step>
+        </steps>
+    </asana>
+    <asana id="parsvottanasana">
+        <name><sanscrit>Parsvottanasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, jump to the right side with the feet three feet apart, palms together behind back</step>
+            <step><sanscrit>dve</sanscrit>: exhale, bend forward front leg straight.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trini</sanscrit>: inhale, come up. Turn to the left side.</step>
+            <step><sanscrit>catvari</sanscrit>: exhale, bend forward, leg straight.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>panca</sanscrit>: inhale, come up.</step>
+        </steps>
+    </asana>
+    <asana id="utthitaHastaPadangusthasana">
+        <name><sanscrit>Utthita Hasta Padangusthasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, catch the right big toe with the right hand, keep both legs straight.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trini</sanscrit>: inhale, head up.</step>
+            <step><sanscrit>catvari</sanscrit>: exhale, take the leg to the right side, look to the left</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>panca</sanscrit>: inhale, bring the leg back to the front.</step>
+            <step><sanscrit>sat</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><sanscrit>sapta</sanscrit>: inhale, lift the head. Place both hands on the waist.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astau</sanscrit>: inhale, catch the left big toe with the left hand, keep both legs straight.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: inhale, head up.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, take the leg to the left side, look to the right</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, bring the leg to the front.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, lift the head. Place the hands on the waist.</step>
+            <step><breath-count>5</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="ardhaBaddhaPadmottanasana">
+        <name><sanscrit>Ardha Baddha Padmottanasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, take the right leg into half padmasana, bind.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, bend forward, place the left hand next to the left foot.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trini</sanscrit>: inhale, head up only.</step>
+            <step><sanscrit>catvari</sanscrit>: inhale, come up.</step>
+            <step><sanscrit>panca</sanscrit>: exhale, release the right leg.</step>
+            <step><sanscrit>sat</sanscrit>: inhale, take the left leg into half padmasana, bind.</step>
+            <step><sanscrit>sapta</sanscrit>: exhale, bend forward, place the right hand next to the right foot.</step>
+            <step>Breath five times.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, head up only.</step>
+            <step><sanscrit>nava</sanscrit>: inhale, come up.</step>
+        </steps>
+    </asana>
+    <asana id="utkatasana">
+        <name><sanscrit>Utkatasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>ekam</sanscrit>: inhale, hands up.</step>
+            <step><sanscrit>dve</sanscrit>: exhale, fold forward.</step>
+            <step><sanscrit>trini</sanscrit>: inhale, head up</step>
+            <step><sanscrit>catvari</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>panca</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>sat</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump the feet forward to the hands, bend the legs, take the arms up to utkatasana</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astau</sanscrit>: inhale, hands down, lift up.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="virabhadrasana">
+        <name><sanscrit>Virabhadrasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, step the right leg forward and take the arms up to Virabhadrasana 1</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astau</sanscrit>: exhale, turn to the left side.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: exhale, spread the arms to the side (Virabhadrasana 2).</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: exhale, turn to the right side.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, place both hands down beside the front foot, lift the legs up.
+        </steps>
+            </step>
+        <steps>
+            <step><sanscrit>dvadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>trayodasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="dandasana">
+        <name><sanscrit>Dandasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale. Jump through to seated, straighten the legs, keep the hands next to the hips, tuck the chin.</step>
+            <step><breath-count>5</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="paschimottanasanaA">
+        <name><sanscrit>Paschimottanasana A</sanscrit></name>
+        <steps>
+            <step><sanscrit>astau</sanscrit>: inhale, catch the big toes and lift the head up.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, touch the head or chin to the knees.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: inhale, head up.</step>
+        </steps>
+    </asana>
+    <asana id="paschimottanasanaBorD">
+        <name><sanscrit>Paschimottanasana B or D</sanscrit></name>
+        <steps>
+            <step><sanscrit>astau</sanscrit>: inhale, lock the hands around the feet, lift the head up.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, touch the chin to the knees.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: inhale, head up.</step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>dvadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>trayodasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="purvottanasana">
+        <name><sanscrit>Purvottanasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated, straighten the legs.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, lift the hips up.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: exhale, come down.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="ardhaBaddhaPadmaPaschimottanasana">
+        <name><sanscrit>Ardha Baddha Padma Paschimottanasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated, right leg into half padmasana, bind. Left hand to left foot.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, jump through to seated, left leg into half padmasana, bind. Right hand to right foot.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>sodasa</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>saptadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>astadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>ekonavimsatih</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>vimsatih</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="triyangaMukhaEkaPadaPaschimottanasana">
+        <name><sanscrit>Triyanga Mukha Eka Pada Paschimottanasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through with right leg folded back. Catch the left foot with both hands, head up.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, jump through with left leg folded back. Catch the right foot with both hands, head up.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>sodasa</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>saptadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>astadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>ekonavimsatih</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>vimsatih</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="januSirsasanaA">
+        <name><sanscrit>Janu Sirsasana A</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: jump through to seated, fold the right leg to the side. Catch the left foot with both hands, head up.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, jump through to seated, fold the left leg to the side. Catch the right foot with both hands, head up.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>sodasa</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>saptadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>astadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>ekonavimsatih</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>vimsatih</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="januSirsasanaB">
+        <name><sanscrit>Janu Sirsasana B</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated, sit on right heel. Catch the left foot with both hands, head up.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the head up.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, jump through to seated, sit on left heel. Catch the right foot with both hands, head up.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>sodasa</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>saptadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>astadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>ekonavimsatih</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>vimsatih</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="januSirsasanaC">
+        <name><sanscrit>Janu Sirsasana C</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated, right foot in with the heel up. Catch the left foot, head up.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, jump through to seated, left foot in with the heel up. Catch the right foot, head up.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>sodasa</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>saptadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>astadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>ekonavimsatih</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>vimsatih</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="maricasanaA">
+        <name><sanscrit>Maricasana A</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated, bend the right knee, bend forward, and bind.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, jump through to seated, bend the left knee, bend forward, and bind.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>sodasa</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>saptadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>astadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>ekonavimsatih</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>vimsatih</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="maricasanaB">
+        <name><sanscrit>Maricasana B</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated. Take the left leg into half padmasana, bend the right knee, bend forward, and bind.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, touch the nose or chin to the floor.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, jump through to seated. Take the right leg into half padmasana, bend the left knee, bend forward, and bind.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, touch the nose or chin to the floor.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>sodasa</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>saptadasa</sanscrit>: inhale, lift up with crossed legs.</step>
+            <step><sanscrit>astadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>ekonavimsatih</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>vimsatih</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="maricasanaC">
+        <name><sanscrit>Maricasana C</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated. Bend the right knee, twist right, and bind.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astau</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, jump through to seated. Bend the left knee, twist left, and bind.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trayodasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>caturdasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>pancadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>sodasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="maricasanaD">
+        <name><sanscrit>Maricasana D</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated. Take the left leg into half padmasana, twist right, and bind.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astau</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, jump through to seated. Take the right leg into half padmasana, twist left, and bind.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>trayodasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>caturdasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>pancadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>sodasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="navasana">
+        <name><sanscrit>Navasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated. Legs up, arms straight.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astau</sanscrit>: inhale, lift. Exhale, lower down.</step>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated. Legs up, arms straight.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astau</sanscrit>: inhale, lift. Exhale, lower down.</step>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated. Legs up, arms straight.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astau</sanscrit>: inhale, lift. Exhale, lower down.</step>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated. Legs up, arms straight.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astau</sanscrit>: inhale, lift. Exhale, lower down.</step>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated. Legs up, arms straight.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astau</sanscrit>: inhale, lift. Exhale, lower down.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="bhujapidasana">
+        <name><sanscrit>Bhujapidasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump and wrap the legs around the arms. Lock the feet in front of you with the right on top of the left.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, place the head or chin on the floor.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the head or chin up off the floor.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, take bakasana.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="kurmasana">
+        <name><sanscrit>Kurmasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump and place the legs around the arms. Go down and straighten the arms and legs.</step>
+            <step><breath-count>5</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="suptaKurmasana">
+        <name><sanscrit>Supta Kurmasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>astau</sanscrit>: exhale, take the arms behind the back and lock the hands.</step>
+            <step><sanscrit>nava</sanscrit>: inhale, cross the feet, and take them behind the head. The right leg should be on top of the left.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift up.</step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, take the legs to bakasana position.</step>
+            <step><sanscrit>dvadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>trayodasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="garbhaPindasana">
+        <name><sanscrit>Garbha Pindasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, take padmasana position, thread the arms through the legs, place the hands over the ears.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: exhale, roll down onto the back.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, roll down onto the back.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, roll down onto the back.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, roll down onto the back.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, roll down onto the back.</step>
+        </steps>
+    </asana>
+    <asana id="kukkutasana">
+        <name><sanscrit>Kukkutasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>nava</sanscrit>: inhale, lift up and balance.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift up in padmasana or with crossed legs.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="baddhaKonasana">
+        <name><sanscrit>Baddha Konasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated. Pull your heels in.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, touch the chin on the floor.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: inhale, sit up.</step>
+            <step><sanscrit>dasa</sanscrit>: exhale, touch the head to the toes.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="upavisthaKonasanaA">
+        <name><sanscrit>Upavistha Konasana A</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated. Spread the legs, catch the heels with the hands, and lift the head up.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, touch the chin to the floor.</step>
+            <step><breath-count>5</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="upavisthaKonasanaB">
+        <name><sanscrit>Upavistha Konasana B</sanscrit></name>
+        <steps>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift both of the legs up and balance.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>dvadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>trayodasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="suptaKonasana">
+        <name><sanscrit>Supta Konasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: jump through to seated and lie down.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, take both legs back over the head, spread the legs, and catch the big toes.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: inhale, roll up while holding the toes. </step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift the head up only.</step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>dvadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>trayodasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="suptaPadangusthasana">
+        <name><sanscrit>Supta Padangusthasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated and lie down.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, catch the right big toe with the right hand while keeping both legs straight.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lower the head only.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, take the right leg to the right side, look to the left.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, bring the right leg back to the center.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, lower the head only.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, release the right toe and lower the right leg to the floor.
+        </steps>
+            </step>
+        <steps>
+            <step><sanscrit>sodasa</sanscrit>: inhale, catch the left big toe with the left hand while keeping both legs straight.</step>
+            <step><sanscrit>saptadasa</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>astadasa</sanscrit>: inhale, lower the head to the floor.</step>
+            <step><sanscrit>ekonavimsatih</sanscrit>: exhale, take the left leg to the left side, look to the right.
+        </steps>
+            </step>
+        <steps>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>vimsatih</sanscrit>: inhale, bring the left leg back to center.</step>
+            <step><sanscrit>eka vimsatih</sanscrit>: exhale, touch the chin to the knee.</step>
+            <step><sanscrit>dva vimsatih</sanscrit>: inhale, lower the head only.</step>
+            <step><sanscrit>trayo vimsatih</sanscrit>: exhale, release the left toe and lower the left leg to the floor.
+        </steps>
+            </step>
+        <steps>
+            <step><sanscrit>catur vimsatih</sanscrit>: inhale, take the feet over the head and take cakrasana back into chaturanga dandasana.</step>
+            <step><sanscrit>panca vimsatih</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>sat vimsatih</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="ubhayaPadangusthasana">
+        <name><sanscrit>Ubhaya Padangusthasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated, lie down.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, bring both legs over the head, catch the big toes.</step>
+            <step><sanscrit>nava</sanscrit>: inhale, roll up with straight legs and look up.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="urdhvaMukhaPaschimottanasana">
+        <name><sanscrit>Urdhva Mukha Paschimottanasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated and lie down.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, bring both legs over the head, catch the heels.</step>
+            <step><sanscrit>nava</sanscrit>: inhale, roll up with straight legs.</step>
+            <step><sanscrit>dasa</sanscrit>: exhale, touch the chin to the knees.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, straighten the arms, head back, exhale.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="setthuBandhasana">
+        <name><sanscrit>Setthu Bandhasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated and lie down.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, bend the knees slightly with the heels together, take back the head, and cross the arms over the chest.</step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the hips off the floor.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: exhale, come down.</step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, take the feet back over the head and cakrasana, roll back into chaturanga dandasana.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="urdhvaDhanurasana">
+        <name><sanscrit>Urdhva Dhanurasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated and lie down.</step>
+            <step><sanscrit>astau</sanscrit>: exhale, bend the knees, take the hands back behind the shoulders.</step>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the body up off the floor.</step>
+            <step><breath-count>5</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: exhale, come down to the floor. Repeat two to four more times.</step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, take the feet back over the head and cakrasana. roll back into chaturanga dandasana.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="paschimottanasana">
+        <name><sanscrit>Paschimottanasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: jump through to seated and straighten the legs.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, lock the hands around the feet and lift the head up.</step>
+            <step><sanscrit>nava</sanscrit>: exhale, touch the head or chin to the knees.</step>
+            <step><breath-count>10</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: inhale, head up.</step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, lift.</step>
+            <step><sanscrit>dvadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>trayodasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="salambaSarvangasana">
+        <name><sanscrit>Salamba Sarvangasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated and lie down.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, lift the legs straight up.</step>
+            <step><breath-count>10</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="halasana">
+        <name><sanscrit>Halasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>astau</sanscrit>: exhale, lower the legs over the head and touch the toes to the floor.</step>
+            <step><breath-count>8</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="karnapidasana">
+        <name><sanscrit>Karnapidasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>astau</sanscrit>: exhale, bend the knees around the head and press them to the ears.</step>
+            <step><breath-count>8</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="urdhvaPadmasana">
+        <name><sanscrit>Urdhva Padmasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>nava</sanscrit>: inhale, lift the legs up and take padmasana. Place the hands on the knees.
+        </steps>
+            </step>
+        <steps>
+            <step><breath-count>8</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="pindasana">
+        <name><sanscrit>Pindasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>nava</sanscrit>: inhale, wrap the arms around padmasana and lock the hands.</step>
+            <step><breath-count>8</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="matsyasana">
+        <name><sanscrit>Matsyasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>nava</sanscrit>: exhale, lower padmasana to the floor, arch back, top of head on floor.</step>
+            <step><breath-count>8</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="uttanaPadasana">
+        <name><sanscrit>Uttana Padasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>nava</sanscrit>: exhale, straighten lift the legs and arms, and press the hands together.</step>
+            <step><breath-count>8</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: inhale, take the feet back over the head and cakrasana, roll back to chaturanga dandasana.</step>
+            <step><sanscrit>ekadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>dvadasa</sanscrit>: exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="sirsasana">
+        <name><sanscrit>Sirsasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, take sirsasana position.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, lift the legs straight up.</step>
+            <step><breath-count>15</breath-count></step>
+            <step><sanscrit>nava</sanscrit>: Exhale, lower the legs half way, point the toes.</step>
+            <step><breath-count>10</breath-count></step>
+            <step><sanscrit>dasa</sanscrit>: Exhale, come down, sit on the heels with the head remaining down.</step>
+            <step><breath-count>10</breath-count></step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, exhale, push back to downward dog.</step>
+        </steps>
+    </asana>
+    <asana id="baddhaPadmasana">
+        <name><sanscrit>Baddha Padmasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>sapta</sanscrit>: inhale, jump through to seated.</step>
+            <step><sanscrit>astau</sanscrit>: inhale, take padmasana position, wrap the left arm and then the right around to bind.</step>
+        </steps>
+    </asana>
+    <asana id="yogaMudra">
+        <name><sanscrit>Yoga Mudra</sanscrit></name>
+        <steps>
+            <step><sanscrit>nava</sanscrit>: exhale, touch the chin to the floor.</step>
+            <step><breath-count>10</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="padmasana">
+        <name><sanscrit>Padmasana</sanscrit></name>
+        <steps>
+            <step><sanscrit>dasa</sanscrit>: inhale, come up. Straighten the arms and breathe deeply with sound.</step>
+            <step><breath-count>10</breath-count></step>
+        </steps>
+    </asana>
+    <asana id="utpluthih">
+        <name><sanscrit>Utpluthih</sanscrit></name>
+        <steps>
+            <step><sanscrit>dasa</sanscrit>: inhale, lift up and balance.</step>
+            <step><breath-count>10</breath-count></step>
+            <step><sanscrit>ekadasa</sanscrit>: exhale, jump back to chaturanga.</step>
+            <step><sanscrit>dvadasa</sanscrit>: inhale, push up to upward dog.</step>
+            <step><sanscrit>trayodasa</sanscrit>: exhale, push back to downward dog.</step>
+            <step><sanscrit>caturdasa</sanscrit>: inhale, jump to standing.</step>
+            <step><sanscrit>pancadasa</sanscrit>: exhale, touch the chin to the knees.</step>
+            <step><sanscrit>Samasthitih</sanscrit></step>
+        </steps>
+    </asana>
+</asanas>
