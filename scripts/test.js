@@ -134,3 +134,20 @@ function move(message, cycle) {
     }
   }
 
+  let asanas = ["suryA"]
+  let cycle = 6000
+
+  function read_asanas_xml([asana, ...asanas], cycle) {
+    
+    let lines = document.getElementById(asana).innerHTML
+    console.log(lines)
+    // let lines = document.getElementById(asana).innerText.split(/[\r\n]+/)
+    // alert(JSON.stringify(lines, null, 2))
+    
+    // for (line of lines){
+    //     console.log(line)
+    // }
+    
+    
+}
+
