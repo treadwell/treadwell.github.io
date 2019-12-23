@@ -10,6 +10,24 @@ function Db (text) {
     }
 }
 
+function TimeDisplay () {
+    let seconds = 0
+    let $el = null
+    let self = null
+    return self = {
+        update(s) {
+            seconds = s
+            $el.replaceWith(self.render())
+        },
+        render() {
+            const time = new Date(seconds * 1000)
+                .toISOString()
+                .substr(11, 8)
+            return $el = $("<span>").html(time)
+        }
+    }
+}
+
 $(document).ready(() => 
     fetch("/app/asana/data.xml")
         .then(resp => resp.text())
@@ -72,24 +90,5 @@ $(document).ready(() =>
                     "Expected time: ",
                     timeDisplay.render()),
                 $("<div>").append("Current asana: None"))
-
-        function TimeDisplay () {
-            let seconds = 0
-            let $el = null
-            let self = null
-            return self = {
-                update(s) {
-                    seconds = s
-                    $el.replaceWith(self.render())
-                },
-                render() {
-                    const time = new Date(seconds * 1000)
-                        .toISOString()
-                        .substr(11, 8)
-                    return $el = $("<span>")
-                    .html(time)
-                }
-            }
-        }
 
     }))
