@@ -1,10 +1,16 @@
 function Db (text) {
     const $xml = $($.parseXML(text))
     return {
+        $xml,
         getAsanas() {
             return $xml.find("asanas > asana").toArray().map(x => ({
-                id: $(x).prop("id"),
-                name: $(x).find("name").text()
+                id: $(x).attr("id"),
+                name: $(x).attr("name"),
+                steps: $(x).find("step").toArray().map(y => ({
+                    count: $(y).attr("count"),
+                    breaths: $(y).attr("breaths"),
+                    text: $(y).text(),
+                }))
             }))
         }
     }
@@ -28,13 +34,48 @@ function TimeDisplay () {
     }
 }
 
-$(document).ready(() => 
-    fetch("/app/asana/data.xml")
-        .then(resp => resp.text())
-        .then(text => Db(text))
-        .then(db => {
+function AsanaSelector (db) {
+    let options = $("<select>")
+        .prop("id", "options")
+        .prop("multiple", "multiple")
+        .css("width", "40%")
+        .append(db.getAsanas().map(asana => 
+            $("<option>")
+                .html(asana.name)))
+    let selected = $("<select>")
+        .prop("id", "selected")
+        .prop("multiple", "multiple")
+        .css("width", "40%")
+    return {
+        select() {
+            let toMove = options.find("option").filter(function () {
+                return this.selected
+            })
+            options.remove(toMove)
+            selected.append(toMove)
+        },
+        deselect() {
+            let toMove = selected.find("option").filter(function () {
+                return this.selected
+            })
+            selected.remove(toMove)
+            options.append(toMove)
+        },
+        render() {
+            return $("<div>").append(options, selected)
+        }
+    }
+}
+
+fetch("/app/asana/data.xml")
+    .then(resp => resp.text())
+    .then(text => Db(text))
+    .then(db => 
+
+        $(document).ready(() => {
 
             let timeDisplay = TimeDisplay()
+            let asanaSelector = AsanaSelector(db)
 
             $(document.body).append(
                 $("<h1>").append("Ashtanga Series Builder"),
@@ -67,25 +108,14 @@ $(document).ready(() =>
                         .html("Reset")
                         .on("click", () => console.log("Reset")),),
                 $("<div>").append(
-                    $("<div>").append(
-                        $("<select>")
-                            .prop("id", "options")
-                            .prop("multiple", "multiple")
-                            .css("width", "40%")
-                            .append(db.getAsanas().map(asana => 
-                                $("<option>")
-                                    .html(asana.name))),
-                        $("<select>")
-                            .prop("id", "selected")
-                            .prop("multiple", "multiple")
-                            .css("width", "40%")),
+                    asanaSelector.render(),
                     $("<div>").append(
                         $("<button>")
                             .html("<-")
-                            .on("click", () => console.log("Remove asanas")),
+                            .on("click", () => asanaSelector.deselect()),
                         $("<button>")
                             .html("->")
-                            .on("click", () => console.log("Add asanas")))),
+                            .on("click", () => asanaSelector.select()))),
                 $("<div>").append(
                     "Expected time: ",
                     timeDisplay.render()),
