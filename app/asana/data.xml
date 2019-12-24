@@ -613,4 +613,500 @@
         <step count="15">Exhale, touch the chin to the knees.</step>
         <step>Samasthitih.</step>
     </asana>
+    <asana id="pasasana" name="Pasasana" series="intermediate">
+        <step count="1">Inhale, hands up.</step>
+        <step count="2">Exhale, fold forward.</step>
+        <step count="3">Inhale, head up.</step>
+        <step count="4">Exhale, jump back.</step>
+        <step count="5">Inhale, push up.</step>
+        <step count="6">Exhale, push back.</step>
+        <step count="7">Inhale, jump to crouch, right arm wraps to bind.</step>
+        <step breaths="5"></step>
+        <step count="8">Inhale, left arm wraps to bind.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, lift legs up, balance on straight arms.</step>
+        <step count="10">Exhale, drop to chaturanga.</step>
+        <step count="11">Inhale, push up to upward dog.</step>
+        <step count="12">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="krounshasana" name="Krounshasana" series="intermediate">
+        <step count="7">Inhale, jump through, right leg bent beside right hip, left leg up, head up.</step>
+        <step count="8">Exhale, touch your chin to shin, look toward toes.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, head up.</step>
+        <step>Exhale.</step>
+        <step count="10">Inhale, lift legs up, balance on straight arms.</step>
+        <step count="11">Exhale, drop back to chaturanga.</step>
+        <step count="12">Inhale, push up to upward dog.</step>
+        <step count="13">Exhale, push back to downward dog.</step>
+        <step count="14">Jump through to left side position, toes point, head up.</step>
+        <step count="15">Exhale, touch your chin to chin, look toward toes.</step>
+        <step breaths="5"></step>
+        <step count="16">Inhale, head up.</step>
+        <step>Exhale.</step>
+        <step count="17">Inhale, lift legs up, balance on straight arms.</step>
+        <step count="18">Drop back to chaturanga.</step>
+        <step count="19">Inhale, push up to upward dog.</step>
+        <step count="20">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="shalabhasana" name="Shalabhasana" series="intermediate">
+        <step>Inhale, high plank.</step>
+        <step count="4">Exhale, lower to chaturanga.</step>
+        <step count="5">Inhale, tops of hands to mat beside hips, feet and chest up.</step>
+        <step breaths="5"></step> 
+        <step count="6">Inhale, hands palms down at waist, keep feet and chest up.</step>
+        <step>Exhale.</step>
+        <step breaths="5"></step> 
+        <step count="7">Inhale, push up to upward dog.</step>
+        <step count="8">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="bhekasana" name="Bhekasana" series="intermediate">
+        <step count="4">Inhale to chaturanga.</step>
+        <step count="5">Exhale, grab tops of feet and push down, elbows up, head up.</step>
+        <step breaths="5"></step>
+        <step count="6">Inhale, push up to upward dog.</step>
+        <step count="7">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="dhanurasana" name="Dhanurasana" series="intermediate">
+        <step>Inhale, high plank.</step>
+        <step count="4">Exhale to chaturanga.</step>
+        <step count="5">Inhale, lift feet off floor.</step>
+        <step>Exhale, grasp ankles, arch upwards.</step>
+        <step breaths="5"></step>
+        <step count="6">Inhale, push up to upward dog.</step>
+        <step count="7">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="parshvaDhanurasana" name="Parshva Dhanurasana" series="intermediate">
+        <step>Inhale, high plank.</step>
+        <step count="4">Exhale to chaturanga.</step>
+        <step count="5">Inhale, grasp ankles, arch upwards.</step>
+        <step count="6">Exhale, roll to right side, knees together.</step>
+        <step breaths="5"></step>
+        <step count="7">Inhale, roll back to center.</step>
+        <step count="8">Exhale, roll to left side.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, roll back to center.</step>
+        <step>Exhale.</step>
+        <step breaths="5"></step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="ustrasana" name="Ustrasana" series="intermediate">
+        <step count="7">Inhale, jump to kneeling, hands on hips.</step>
+        <step count="8">Exhale, arch back, hands on heels.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, come back up, hands on hips.</step>
+        <step>Exhale.</step>
+        <step count="10">Inhale, legs up.</step>
+        <step count="11">Exhale to chaturanga.</step>
+        <step count="12">Inhale, push up to upward dog.</step>
+        <step count="13">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="laghuvajrasana" name="Laghuvajrasana" series="intermediate">
+        <step count="7">Inhale, jump to kneeling, hands on hips.</step>
+        <step count="8">Exhale, arch back, hands on ankles, top of head to floor.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, come back up, hands on hips.</step>
+        <step>Exhale.</step>
+        <step count="10">Inhale, legs up.</step>
+        <step count="11">Exhale to chaturanga.</step>
+        <step count="12">Inhale, push up to upward dog.</step>
+        <step count="13">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="kapotasana" name="Kapotasana" series="intermediate">
+        <step count="7">Inhale, jump to kneeling, hands on hips.</step>
+        <step count="8">Exhale, arch back, hands through prayer to grasp ankles, elbows on floor, head back to floor.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, push up, hands on floor, arms straight, head off floor.</step>
+        <step breaths="5"></step>
+        <step count="10">Inhale, come back up, hands on hips.</step>
+        <step>Exhale.</step>
+        <step count="11">Inhale, legs up.</step>
+        <step count="12">Exhale to chaturanga.</step>
+        <step count="13">Inhale, push up to upward dog.</step>
+        <step count="14">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="suptaVadrasana" name="Supta Vadrasana" series="intermediate">
+        <step count="7">Inhale, jump through, straight legs, sit down.</step>
+        <step count="8">Exhale, baddha padmasana.</step>
+        <step>Inhale.</step>
+        <step count="9">Exhale, lean back, head to floor, hold for five breaths.</step>
+        <step breaths="5"></step>
+        <step>Inhale, sit up.</step>
+        <step>Exhale, arch back, one.</step>
+        <step>Inhale, sit up.</step>
+        <step>Exhale, arch back, two.</step>
+        <step>Inhale, sit up.</step>
+        <step>Exhale, arch back, three.</step>
+        <step>Inhale, sit up.</step>
+        <step>Exhale, arch back, four.</step>
+        <step>Inhale, sit up.</step>
+        <step>Exhale, arch back, five.</step>
+        <step>Inhale, sit up.</step>
+        <step>Exhale, arch back, hold for five breaths.</step>
+        <step breaths="5"></step>
+        <step count="10">Inhale, sit back up to baddha padmasana.</step>
+        <step count="11">Inhale, lift up, balance on straight arms.</step>
+        <step count="12">Exhale to chaturanga.</step>
+        <step count="13">Inhale, push up to upward dog.</step>
+        <step count="14">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="bakasanaA" name="Bakasana A" series="intermediate">
+        <step count="7">Inhale, push forward, straight arms, legs bent in air.</step>
+        <step>Exhale, squat down.</step>
+        <step count="8">Inhale, rise to position, head up.</step>
+        <step>Exhale.</step>
+        <step breaths="5"></step>
+        <step>Inhale.</step>
+        <step count="9">Exhale to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="bakasanaB" name="Bakasana B" series="intermediate">
+        <step count="7">Inhale, jump to Bakasana.</step>
+        <step>Exhale.</step>
+        <step breaths="5"></step>
+        <step count="8">Inhale, lift legs up.</step>
+        <step count="9">Exhale to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="bharadvajasana" name="Bharadvajasana" series="intermediate">
+        <step count="7">Inhale, jump through, dandasana.</step>
+        <step count="8">Exhale, fold left leg back, right leg lotus.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, legs up.</step>
+        <step count="10">Exhale to chaturanga.</step>
+        <step count="11">Inhale, push up to upward dog.</step>
+        <step count="12">Exhale, push back to downward dog.</step>
+        <step count="13">Inhale, jump through, dandasana.</step>
+        <step count="14">Exhale, fold right leg back, left leg lotus.</step>
+        <step breaths="5"></step>
+        <step count="15">Inhale, legs up.</step>
+        <step count="16">Exhale to chaturanga.</step>
+        <step count="17">Inhale, push up to upward dog.</step>
+        <step count="18">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="ardhaMatsyendrasana" name="Ardha Matsyendrasana" series="intermediate">
+        <step count="7">Inhale, jump through, dandasana.</step>
+        <step count="8">Exhale, left leg under and right leg over.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, legs up.</step>
+        <step count="10">Exhale to chaturanga.</step>
+        <step count="11">Inhale, push up to upward dog.</step>
+        <step count="12">Exhale, push back to downward dog.</step>
+        <step count="13">Inhale, jump through, dandasana.</step>
+        <step count="14">Exhale, right leg under, left over.</step>
+        <step breaths="5"></step>
+        <step count="15">Inhale, legs up.</step>
+        <step count="16">Exhale to chaturanga.</step>
+        <step count="17">Inhale, push up to upward dog.</step>
+        <step count="18">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="eka Pada Sirsasana" name="Eka Pada Sirsasana" series="intermediate">
+        <step count="7">Jump through, right foot behind head.</step>
+        <step count="8">Exhale, touch your chin to shin.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, look up, hands in prayer.</step>
+        <step>Exhale, hands to floor.</step>
+        <step count="10">Inhale, swing leg up.</step>
+        <step count="11">Exhale, jump back to chaturanga.</step>
+        <step count="12">Inhale, push up to upward dog.</step>
+        <step count="13">Exhale, push back to downward dog.</step>
+        <step count="14">Inhale, legs up, left leg over arm.</step>
+        <step>Exhale, sit down, left foot behind head.</step>
+        <step>Inhale, hand in prayer.</step>
+        <step count="15">Exhale, chin to shin.</step>
+        <step breaths="5"></step>
+        <step count="16">Inhale, sit up, hands in prayer.</step>
+        <step>Exhale.</step>
+        <step count="17">Inhale, lift up, bend legs in air.</step>
+        <step count="18">Exhale, jump back to chaturanga.</step>
+        <step count="19">Inhale, push up to upward dog.</step>
+        <step count="20">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="dvi Pada Sirsasana" name="Dvi Pada Sirsasana" series="intermediate">
+        <step count="7">Inhale, jump forward, bend legs in the air.</step>
+        <step>Exhale, bring legs to Tittibhasana, and put feet behind head, hands in prayer.</step>
+        <step breaths="5"></step>
+        <step count="8">Inhale, plance hands on floor.</step>
+        <step>Exhale, lift up with feet behind head.</step>
+        <step>Inhale, straighten legs to Tittibhasana.</step>
+        <step count="9">Exhale, legs to Bakasana.</step>
+        <step>Inhale, legs up.</step>
+        <step count="10">Exhale to chaturanga.</step>
+        <step count="11">Inhale, push up to upward dog.</step>
+        <step count="12">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="yogaNidrasana" name="Yoga Nidrasana" series="intermediate">
+        <step count="7">Inhale, jump forward, feet up.</step>
+        <step>Exhale, swing through, lay down.</step>
+        <step count="8">Inhale, lift both legs.</step>
+        <step>Exhale, left, then right foot behind head.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, cakrasana.</step>
+        <step>Exhale to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="tittibhasana" name="Tittibhasana" series="intermediate">
+        <step count="7">Inhale, jump forward, feet up.</step>
+        <step>Exhale, place straight legs over upper arms.</step>
+        <step breaths="5"></step>
+        <step count="8">Exhale, place feet on floor, head between legs, lock arms around back.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, head up and take five steps.</step>
+        <step>One.</step>
+        <step>Two.</step>
+        <step>Three.</step>
+        <step>Four.</step>
+        <step>Five.</step>
+        <step>Walk back.</step>
+        <step>One.</step>
+        <step>Two.</step>
+        <step>Three.</step>
+        <step>Four.</step>
+        <step>Five.</step>
+        <step count="10">Close your feet, Lock back your hands. head down, straight knees.</step>
+        <step breaths="5"></step>
+        <step count="10">Inhale, legs up to Tittibhasana.</step>
+        <step count="11">Exhale, legs to Bakasana position.</step>
+        <step>Inhale.</step>
+        <step count="12">Exhale, jump back to chaturanga.</step>
+        <step count="13">Inhale, push up to upward dog.</step>
+        <step count="14">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="pinchaMayurasana" name="Pincha Mayurasana" series="intermediate">,
+        <step count="7">Inhale, kneel down.</step>
+        <step>Exhale, elbows down, forearms parallel on floor.</step>
+        <step count="8">Inhale, lift up to balance.</step>
+        <step breaths="5"></step>
+        <step count="9">Exhale to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="karandavasana" name="Karandavasana" series="intermediate">,
+        <step count="7">Inhale, kneel down.</step>
+        <step>Exhale, elbows down, forearms parallel on floor.</step>
+        <step count="8">Inhale, lift up to pincha mayurasana.</step>
+        <step count="9">Exhale, fold legs to padmasana, lower to chest.</step>
+        <step breaths="5"></step>
+        <step count="10">Inhale, extend back to Pincha Mayurasana.</step>
+        <step count="11">Exhale to chaturanga.</step>
+        <step count="12">Inhale, push up to upward dog.</step>
+        <step count="13">Exhale, push back to downward dog.</step>
+        <step count="14">Inhale, jump to standing, head up.</step>
+        <step count="15">Exhale, forward fold.</step>
+        <step>Samastitih.</step>
+    </asana>
+    <asana id="mayurasana" name="Mayurasana" series="intermediate">
+        <step count="1">Inhale, feet shoulder width.</step>
+        <step>Exhale, hands between feet, fingers to back, head up.</step>
+        <step>Inhale, head stays lifted.</step>
+        <step count="2">Exhale, head between arms.</step>
+        <step count="3">Inhale, head up again.</step>
+        <step count="4">Exhale, jump back, balance weight on elbows.</step>
+        <step count="5">Inhale, hold mayurasana position.</step>
+        <step>Exhale.</step>
+        <step breaths="5"></step>
+        <step count="6">Inhale, feet on floor push to upward dog (hands stay reversed)</step>
+        <step count="7">Exhale, push back to downward dog (hands stay reversed)</step>
+        <step count="8">Inhale, jump to standing (hands stay reversed), head up.</step>
+        <step count="9">Exhale, forward fold, hands reversed.</step>
+        <step>Samastitih.</step>
+    </asana>
+    <asana id="nakrasana" name="Nakrasana" series="intermediate">
+        <step count="1">Inhale, hands up.</step>
+        <step count="2">Exhale, fold forward.</step>
+        <step count="3">Inhale,  head up.</step>
+        <step count="4">Exhale, jump back to Chaturanga, close your feet.</step>
+        <step>Hop forward, One.</step>
+        <step>Two.</step>
+        <step>Three.</step>
+        <step>Four.</step>
+        <step>Five.</step>
+        <step>Hop back, One.</step>
+        <step>Two.</step>
+        <step>Three.</step>
+        <step>Four.</step>
+        <step>Five.</step>
+        <step count="5">Inhale, push to upward dog.</step>
+        <step count="6">Exhale to downward dog.</step>
+        <step count="7">Inhale, jump to half-standing, head up.</step>
+        <step count="8">Exhale, fold forward.</step>
+        <step>Samastitih.</step>
+    </asana>
+    <asana id="vatayanasana" name="Vatayanasana" series="intermediate">
+        <step count="1">Inhale, right leg to half lotus bind, standing.</step>
+        <step count="2">Exhale, both hands to mat.</step>
+        <step count="3">Inhale, head up.</step>
+        <step count="4">Exhale, jump back, right leg in lotus.</step>
+        <step count="5">Inhale, push up to upward dog, right leg in lotus.</step>
+        <step count="6">Exhale, push back to downward dog, right leg in lotus.</step>
+        <step count="7">Jump, to one leg standing.</step>
+        <step>Exhale, lower, left foot points out, right knee to floor, right arm over left, raise them.</step>
+        <step breaths="5"></step>
+        <step count="8">Inhale, lift up to standing forward fold, right leg in lotus.</step>
+        <step count="9">Exhale, jump to chaturanga, right leg in lotus.</step>
+        <step count="10">Inhale, push to upward dog, right leg in lotus.</step>
+        <step count="11">Exhale, push back to downward dog, right leg in lotus.</step>
+        <step>Inhale, right foot to floor.</step>
+        <step>Exhale, left leg in lotus.</step>
+        <step count="12">Jump to half standing, left leg in lotus.</step>
+        <step>Exhale, lower, right foot points out, left knee to floor, left arm over right, raise them.</step>
+        <step breaths="5"></step>
+        <step count="13">Inhale, lift up, left leg in lotus.</step>
+        <step count="14">Exhale to chaturanga, left leg in lotus.</step>
+        <step count="15">Inhale, push up to upward dog, left leg in lotus.</step>
+        <step count="16">Exhale, push back to downward dog, left leg in lotus.</step>
+        <step count="17">Inhale, jump to half standing, left leg in lotus.</step>
+        <step count="18">Exhale, lower head to shin, left leg in lotus.</step>
+        <step count="19">Inhale, straighten back, head up, left leg in lotus.</step>
+        <step>Exhale, left arm behind back, grab left foot.</step>
+        <step count="20">Inhale. straighten, left foot in lotus, right arm up.</step>
+        <step>Exhale, lower leg and arm.</step>
+        <step>Samastitih.</step>
+    </asana>
+    <asana id="parighasana" name="Parighasana" series="intermediate">
+        <step count="1">Inhale, arms up.</step>
+        <step count="2">Exhale, fold forward.</step>
+        <step count="3">Inhale, head up.</step>
+        <step count="4">Exhale, jump back to chaturanga.</step>
+        <step count="5">Inhale, push up to upward dog.</step>
+        <step count="6">Exhale, push back to downward dog.</step>
+        <step count="7">Inhale, jump forward legs up.</step>
+        <step>Exhale, bend right leg, left leg straight to side.</step>
+        <step>Inhale, left hand to right knee, right hand over head to right foot.</step>
+        <step count="8">Exhale, left hand grabs inside of left foot.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, sit up, hands to waist.</step>
+        <step>Exhale, hands to floor, lift.</step>
+        <step count="10">Inhale, legs up, balance on arms.</step>
+        <step count="11">Exhale to chaturanga.</step>
+        <step count="12">Inhale, push up to upward dog.</step>
+        <step count="13">Exhale, push back to downward dog.</step>
+        <step count="14">Inhale, jump forward legs up.</step>
+        <step>Exhale, bend left leg, right leg straight to side.</step>
+        <step>Inhale, right hand to left knee, left hand over head to left foot.</step>
+        <step count="15">Exhale, right hand grabs inside of right foot.</step>
+        <step breaths="5"></step>
+        <step count="16">Inhale, sit up, hands to waist.</step>
+        <step>Exhale, hands to floor, lift.</step>
+        <step count="17">Inhale, legs up, balance on arms.</step>
+        <step count="18">Exhale, jump back to chaturanga.</step>
+        <step count="19">Inhale, push up to upward dog.</step>
+        <step count="20">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="gomukhasana" name="Gomukhasana" series="intermediate">
+        <step count="7">Inhale, jump forward.</step>
+        <step count="8">Exhale, right knee over left, hands around right knee, chin down.</step>
+        <step breaths="5"></step>
+        <step count="9">Inhale, right arm up, left arm down, clasp hands behind back.</step>
+        <step>Exhale.</step>
+        <step breaths="5"></step>, hands to floor
+        <step count="10">Inhale, lift up on straight arms, legs up.</step>
+        <step count="11">Exhale to chaturanga.</step>
+        <step count="12">Inhale, push up to upward dog.</step>
+        <step count="13">Exhale, push back to downward dog.</step>
+        <step count="14">Inhale, jump forward on straight arms, legs up.</step>
+        <step count="15">Exhale, left knee over right, hands around left knee, chin down.</step>
+        <step breaths="5"></step>
+        <step count="16">Inhale, left arm up, right arm down, clasp hands behind back.</step>
+        <step breaths="5"></step>
+        <step>Exhale, hands to floor</step>
+        <step count="17">Inhale, lift up on straight arms, legs up.</step>
+        <step count="18">Exhale, jump back to chaturanga.</step>
+        <step count="19">Inhale, push up to upward dog.</step>
+        <step count="20">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="supta Urdhva Pada Vajrasana" name="Supta Urdhva Pada Vajrasana" series="intermediate">
+        <step count="7">Inhale jump through, lay down.</step>
+        <step count="8">Inhale, lift both legs to Halasana.</step>
+        <step>Exhale, right leg lotus, right hand bind, left hand grabs left big toe.</step>
+        <step count="9">Inhale, roll up, balance.</step>
+        <step>Exhale, bend left leg next to left hip.</step>
+        <step>Inhale, bring left hand under right knee, turn to right.</step>
+        <step breaths="5"></step>
+        <step>Exhale, turn back to center, hands on floor.</step>
+        <step count="10">Inhale, lift up, balance on straight arms.</step>
+        <step count="11">Exhale, lower to chaturanga.</step>
+        <step count="12">Inhale, push up to upward dog.</step>
+        <step count="13">Exhale, push back to downward dog.</step>
+        <step count="14">Inhale, jump forward balancing on straight arms.</step>
+        <step>Exhale, swing through, lie down.</step>
+        <step count="15">Inhale, lift both legs to Halasana.</step>
+        <step>Exhale, left leg lotus, left hand bind, right hand grabs right big toe.</step>
+        <step count="16">Inhale, roll up and balance.</step>
+        <step>Exhale, bend right leg next to right hip.</step>
+        <step>Inhale, bring right hand under left knee, turn to left.</step>
+        <step breaths="5"></step>
+        <step>Exhale, turn back to center, hands on floor.</step>
+        <step count="17">Inhale, lift up, balance on straight arms.</step>
+        <step count="18">Exhale, lower to chaturanga.</step>
+        <step count="19">Inhale, push up to upward dog.</step>
+        <step count="20">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="mukta Hasta Sirsasana A" name="Mukta Hasta Sirsasana A" series="intermediate">
+        <step count="7">Inhale, jump forward balancing on straight arms.</step>
+        <step>Exhale, kneel down, set hands in tripod, place head on floor, pike with straight legs.</step>
+        <step count="8">Inhale, lift straight legs.</step>
+        <step breaths="5"></step>
+        <step count="9">Exhale, lower to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="mukta Hasta Sirsasana B" name="Mukta Hasta Sirsasana B" series="intermediate">
+        <step count="7">Inhale, jump forward balancing on straight arms.</step>
+        <step>Exhale, kneel down, set hands toward front, palms up, place head on floor, pike with straight legs.</step>
+        <step count="8">Inhale, lift straight legs.</step>
+        <step breaths="5"></step>
+        <step count="9">Exhale, lower to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="mukta Hasta Sirsasana C" name="Mukta Hasta Sirsasana C" series="intermediate">
+        <step count="7">Inhale, jump forward balancing on straight arms.</step>
+        <step>Exhale, kneel down, set hands palms down to side, place head on floor, pike with straight legs.</step>
+        <step count="8">Inhale, lift straight legs.</step>
+        <step breaths="5"></step>
+        <step count="9">Exhale, lower to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="baddha Hasta Sirsansa A" name="Baddha Hasta Sirsansa A" series="intermediate">,
+        <step count="7">Inhale, jump forward balancing on straight arms.</step>
+        <step>Exhale, kneel down, set hands, cup back of head, place head on floor, pike with straight legs.</step>
+        <step count="8">Inhale, lift straight legs.</step>
+        <step breaths="5"></step>
+        <step count="9">Exhale, lower to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="baddha Hasta Sirsansa B" name="Baddha Hasta Sirsansa B" series="intermediate">
+        <step count="7">Inhale, jump forward balancing on straight arms.</step>
+        <step>Exhale, kneel down, set hands, grasp elbows, place head on floor, pike with straight legs.</step>
+        <step count="8">Inhale, lift straight legs.</step>
+        <step breaths="5"></step>
+        <step count="9">Exhale, lower to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="baddha Hasta Sirsansa C" name="Baddha Hasta Sirsansa C" series="intermediate">
+        <step count="7">Inhale, jump forward balancing on straight arms.</step>
+        <step>Exhale, kneel down, set hands, arms parallel, place head on floor, pike with straight legs.</step>
+        <step count="8">Inhale, lift straight legs.</step>
+        <step breaths="5"></step>
+        <step count="9">Exhale, lower to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
+    <asana id="baddha Hasta Sirsansa D" name="Baddha Hasta Sirsansa D" series="intermediate">
+        <step count="7">Inhale, jump forward balancing on straight arms.</step>
+        <step>Exhale, kneel down, set hands, elbows on floor, place head on floor, pike with straight legs.</step>
+        <step count="8">Inhale, lift straight legs.</step>
+        <step breaths="5"></step>
+        <step count="9">Exhale, lower to chaturanga.</step>
+        <step count="10">Inhale, push up to upward dog.</step>
+        <step count="11">Exhale, push back to downward dog.</step>
+    </asana>
 </asanas>
