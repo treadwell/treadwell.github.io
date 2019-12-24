@@ -803,7 +803,7 @@
         <step count="17">Inhale, push up to upward dog.</step>
         <step count="18">Exhale, push back to downward dog.</step>
     </asana>
-    <asana id="eka Pada Sirsasana" name="Eka Pada Sirsasana" series="intermediate">
+    <asana id="ekaPadaSirsasana" name="Eka Pada Sirsasana" series="intermediate">
         <step count="7">Jump through, right foot behind head.</step>
         <step count="8">Exhale, touch your chin to shin.</step>
         <step breaths="5"></step>
@@ -825,7 +825,7 @@
         <step count="19">Inhale, push up to upward dog.</step>
         <step count="20">Exhale, push back to downward dog.</step>
     </asana>
-    <asana id="dvi Pada Sirsasana" name="Dvi Pada Sirsasana" series="intermediate">
+    <asana id="dviPadaSirsasana" name="Dvi Pada Sirsasana" series="intermediate">
         <step count="7">Inhale, jump forward, bend legs in the air.</step>
         <step>Exhale, bring legs to Tittibhasana, and put feet behind head, hands in prayer.</step>
         <step breaths="5"></step>
@@ -1019,7 +1019,7 @@
         <step count="19">Inhale, push up to upward dog.</step>
         <step count="20">Exhale, push back to downward dog.</step>
     </asana>
-    <asana id="supta Urdhva Pada Vajrasana" name="Supta Urdhva Pada Vajrasana" series="intermediate">
+    <asana id="suptaUrdhvaPadaVajrasana" name="Supta Urdhva Pada Vajrasana" series="intermediate">
         <step count="7">Inhale jump through, lay down.</step>
         <step count="8">Inhale, lift both legs to Halasana.</step>
         <step>Exhale, right leg lotus, right hand bind, left hand grabs left big toe.</step>
@@ -1046,7 +1046,7 @@
         <step count="19">Inhale, push up to upward dog.</step>
         <step count="20">Exhale, push back to downward dog.</step>
     </asana>
-    <asana id="mukta Hasta Sirsasana A" name="Mukta Hasta Sirsasana A" series="intermediate">
+    <asana id="muktaHastaSirsasanaA" name="Mukta Hasta Sirsasana A" series="intermediate">
         <step count="7">Inhale, jump forward balancing on straight arms.</step>
         <step>Exhale, kneel down, set hands in tripod, place head on floor, pike with straight legs.</step>
         <step count="8">Inhale, lift straight legs.</step>
@@ -1055,7 +1055,7 @@
         <step count="10">Inhale, push up to upward dog.</step>
         <step count="11">Exhale, push back to downward dog.</step>
     </asana>
-    <asana id="mukta Hasta Sirsasana B" name="Mukta Hasta Sirsasana B" series="intermediate">
+    <asana id="muktaHastaSirsasanaB" name="Mukta Hasta Sirsasana B" series="intermediate">
         <step count="7">Inhale, jump forward balancing on straight arms.</step>
         <step>Exhale, kneel down, set hands toward front, palms up, place head on floor, pike with straight legs.</step>
         <step count="8">Inhale, lift straight legs.</step>
@@ -1064,7 +1064,7 @@
         <step count="10">Inhale, push up to upward dog.</step>
         <step count="11">Exhale, push back to downward dog.</step>
     </asana>
-    <asana id="mukta Hasta Sirsasana C" name="Mukta Hasta Sirsasana C" series="intermediate">
+    <asana id="muktaHastaSirsasanaC" name="Mukta Hasta Sirsasana C" series="intermediate">
         <step count="7">Inhale, jump forward balancing on straight arms.</step>
         <step>Exhale, kneel down, set hands palms down to side, place head on floor, pike with straight legs.</step>
         <step count="8">Inhale, lift straight legs.</step>
@@ -1073,7 +1073,7 @@
         <step count="10">Inhale, push up to upward dog.</step>
         <step count="11">Exhale, push back to downward dog.</step>
     </asana>
-    <asana id="baddha Hasta Sirsansa A" name="Baddha Hasta Sirsansa A" series="intermediate">,
+    <asana id="baddhaHastaSirsansaA" name="Baddha Hasta Sirsansa A" series="intermediate">,
         <step count="7">Inhale, jump forward balancing on straight arms.</step>
         <step>Exhale, kneel down, set hands, cup back of head, place head on floor, pike with straight legs.</step>
         <step count="8">Inhale, lift straight legs.</step>
@@ -1082,7 +1082,7 @@
         <step count="10">Inhale, push up to upward dog.</step>
         <step count="11">Exhale, push back to downward dog.</step>
     </asana>
-    <asana id="baddha Hasta Sirsansa B" name="Baddha Hasta Sirsansa B" series="intermediate">
+    <asana id="baddhaHastaSirsansaB" name="Baddha Hasta Sirsansa B" series="intermediate">
         <step count="7">Inhale, jump forward balancing on straight arms.</step>
         <step>Exhale, kneel down, set hands, grasp elbows, place head on floor, pike with straight legs.</step>
         <step count="8">Inhale, lift straight legs.</step>
@@ -1091,7 +1091,7 @@
         <step count="10">Inhale, push up to upward dog.</step>
         <step count="11">Exhale, push back to downward dog.</step>
     </asana>
-    <asana id="baddha Hasta Sirsansa C" name="Baddha Hasta Sirsansa C" series="intermediate">
+    <asana id="baddhaHastaSirsansaC" name="Baddha Hasta Sirsansa C" series="intermediate">
         <step count="7">Inhale, jump forward balancing on straight arms.</step>
         <step>Exhale, kneel down, set hands, arms parallel, place head on floor, pike with straight legs.</step>
         <step count="8">Inhale, lift straight legs.</step>
@@ -1100,7 +1100,7 @@
         <step count="10">Inhale, push up to upward dog.</step>
         <step count="11">Exhale, push back to downward dog.</step>
     </asana>
-    <asana id="baddha Hasta Sirsansa D" name="Baddha Hasta Sirsansa D" series="intermediate">
+    <asana id="baddhaHastaSirsansaD" name="Baddha Hasta Sirsansa D" series="intermediate">
         <step count="7">Inhale, jump forward balancing on straight arms.</step>
         <step>Exhale, kneel down, set hands, elbows on floor, place head on floor, pike with straight legs.</step>
         <step count="8">Inhale, lift straight legs.</step>

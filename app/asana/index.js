@@ -74,6 +74,8 @@ fetch("/app/asana/data.xml")
 
         $(document).ready(() => {
 
+            console.log(db.getAsanas())
+
             let timeDisplay = TimeDisplay()
             let asanaSelector = AsanaSelector(db)
 
