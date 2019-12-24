@@ -1,5 +1,5 @@
 <asanas>
-    <asana series="primary" id="suryA" name="Surya Namaskara A">
+    <asana series="suryA" id="suryA" name="Surya Namaskara A">
         <step count="1">Inhale, lift the arms up.</step>
         <step count="2">Exhale, fold forward.</step>
         <step count="3">Inhale, head up only.</step>
@@ -11,7 +11,7 @@
         <step count="8">Exhale, fold forward.</step>
         <step count="9">Inhale, lift the arms up.</step>
     </asana>
-    <asana series="primary" id="suryB" name="Surya Namaskara B">
+    <asana series="suryB" id="suryB" name="Surya Namaskara B">
         <step count="1">Inhale, lift the arms up and bend knees to utkatasana</step>
         <step count="2">Exhale, fold forward.</step>
         <step count="3">Inhale, head up.</step>
@@ -31,20 +31,20 @@
         <step count="16">Exhale, fold forward.</step>
         <step count="17">Inhale, hands up, bent knees, utkatasana.</step>
     </asana>
-    <asana series="primary" id="padangusthasana" name="Padangusthasana">
+    <asana series="fundamental" id="padangusthasana" name="Padangusthasana">
         <step>Spread the feet half a foot apart.</step>
         <step count="1">Inhale, catch the big toes, head up.</step>
         <step count="2">Exhale, take the head between the legs.</step>
         <step breaths="5"></step>
         <step count="3">Inhale, lift the head up.</step>
     </asana>
-    <asana series="primary" id="padahastasana" name="Padahastasana">
+    <asana series="fundamental" id="padahastasana" name="Padahastasana">
         <step count="1">Inhale, place the palms under the feet, head up.</step>
         <step count="2">Exhale, take the head between the legs.</step>
         <step breaths="5"></step>
         <step count="3">Inhale, head up,</step>
     </asana>
-    <asana series="primary" id="utthitaTrikonasanaA" name="Utthita Trikonasana A">
+    <asana series="fundamental" id="utthitaTrikonasanaA" name="Utthita Trikonasana A">
         <step count="1">Inhale, jump to the right side, legs three feet apart, arms out.</step>
         <step count="2">Exhale, pivot right to catch the right big toe, look up</step>
         <step breaths="5"></step>
@@ -53,7 +53,7 @@
         <step breaths="5"></step>
         <step count="5">Inhale, come up, arms out</step>
     </asana>
-    <asana series="primary" id="utthitaTrikonasanaB" name="Utthita Trikonasana B">
+    <asana series="fundamental" id="utthitaTrikonasanaB" name="Utthita Trikonasana B">
         <step count="2">Exhale, twist the body to the right side, place the left hand next to the right foot.</step>
         <step breaths="5"></step>
         <step count="3">Inhale, come up.</step>
@@ -61,7 +61,7 @@
         <step breaths="5"></step>
         <step count="5">Inhale, come up.</step>
     </asana>
-    <asana series="primary" id="utthitaParsvakonasanaA" name="Utthita Parsvakonasana A">
+    <asana series="fundamental" id="utthitaParsvakonasanaA" name="Utthita Parsvakonasana A">
         <step count="1">Inhale, jump to the right side with the legs five feet apart and arms out.</step>
         <step count="2">Exhale, bend the right knee, place the right hand outside the right foot, reach the left arm over the head.</step>
         <step breaths="5"></step>
@@ -70,7 +70,7 @@
         <step breaths="5"></step>
         <step count="5">Inhale, come up.</step>
     </asana>
-    <asana series="primary" id="utthitaParsvakonasanaB" name="Utthita Parsvakonasana B">
+    <asana series="fundamental" id="utthitaParsvakonasanaB" name="Utthita Parsvakonasana B">
         <step count="2">Exhale, bend the right knee, twist the body, and place the left hand outside the right foot.</step>
         <step breaths="5"></step>
         <step count="3">Inhale, come up.</step>
@@ -78,7 +78,7 @@
         <step breaths="5"></step>
         <step count="5">Inhale, come up.</step>
     </asana>
-    <asana series="primary" id="prasaritaPadottanasanaA" name="Prasarita Padottanasana A">
+    <asana series="fundamental" id="prasaritaPadottanasanaA" name="Prasarita Padottanasana A">
         <step count="1">Inhale, jump to the right side, place the hands on the waist.</step>
         <step count="2">Exhale, place the hands on the floor between the feet. Inhale and lift the head up.</step>
         <step count="3">Exhale, place the head on the floor.</step>
@@ -86,21 +86,21 @@
         <step count="4">Inhale, lift the head only, keep the hands on the floor.</step>
         <step count="5">Inhale, hands on waist, come up.</step>
     </asana>
-    <asana series="primary" id="prasaritaPadottanasanaB" name="Prasarita Padottanasana B">
+    <asana series="fundamental" id="prasaritaPadottanasanaB" name="Prasarita Padottanasana B">
         <step count="1">Inhale, spread the arms out to the side.</step>
         <step count="2">Exhale, place the hands on the waist.</step>
         <step count="3">Exhale, place the head on the floor between the feet.</step>
         <step breaths="5"></step>
         <step count="4">Inhale, come up.</step>
     </asana>
-    <asana series="primary" id="prasaritaPadottanasanaC" name="Prasarita Padottanasana C">
+    <asana series="fundamental" id="prasaritaPadottanasanaC" name="Prasarita Padottanasana C">
         <step count="1">Inhale, spread the arms out to the side.</step>
         <step count="2">Exhale, clasp hands behind the back.</step>
         <step count="3">Exhale, place the head on the floor between the feet and reach the hands toward the floor.</step>
         <step breaths="5"></step>
         <step count="4">Inhale, come up.</step>
     </asana>
-    <asana series="primary" id="prasaritaPadottanasanaD" name="Prasarita Padottanasana D">
+    <asana series="fundamental" id="prasaritaPadottanasanaD" name="Prasarita Padottanasana D">
         <step count="1">Inhale, place the hands on the waist.</step>
         <step count="2">Exhale, catch the big toes. Inhale, lift the head.</step>
         <step count="3">Exhale, place the head on the floor between the feet.</step>
@@ -108,7 +108,7 @@
         <step count="4">Inhale, lift the head only.</step>
         <step count="5">Inhale, hands to waist, come up.</step>
     </asana>
-    <asana series="primary" id="parsvottanasana" name="Parsvottanasana">
+    <asana series="fundamental" id="parsvottanasana" name="Parsvottanasana">
         <step count="1">Inhale, jump to the right side with the feet three feet apart, palms together behind back</step>
         <step count="2">Exhale, bend forward front leg straight.</step>
         <step breaths="5"></step>
@@ -117,7 +117,7 @@
         <step breaths="5"></step>
         <step count="5">Inhale, come up.</step>
     </asana>
-    <asana series="primary" id="utthitaHastaPadangusthasana" name="Utthita Hasta Padangusthasana">
+    <asana series="primaryStanding" id="utthitaHastaPadangusthasana" name="Utthita Hasta Padangusthasana">
         <step count="1">Inhale, catch the right big toe with the right hand, keep both legs straight.</step>
         <step count="2">Exhale, touch the chin to the knee.</step>
         <step breaths="5"></step>
@@ -139,7 +139,7 @@
         <step count="14">Inhale, lift the head. Place the hands on the waist.</step>
         <step breaths="5"></step>
     </asana>
-    <asana series="primary" id="ardhaBaddhaPadmottanasana" name="Ardha Baddha Padmottanasana">
+    <asana series="primaryStanding" id="ardhaBaddhaPadmottanasana" name="Ardha Baddha Padmottanasana">
         <step count="1">Inhale, take the right leg into half padmasana, bind.</step>
         <step count="2">Exhale, bend forward, place the left hand next to the left foot.</step>
         <step breaths="5"></step>
@@ -152,7 +152,7 @@
         <step count="8">Inhale, head up only.</step>
         <step count="9">Inhale, come up.</step>
     </asana>
-    <asana series="primary" id="utkatasana" name="Utkatasana">
+    <asana series="primaryStanding" id="utkatasana" name="Utkatasana">
         <step count="1">Inhale, hands up.</step>
         <step count="2">Exhale, fold forward.</step>
         <step count="3">Inhale, head up</step>
@@ -166,7 +166,7 @@
         <step count="10">Inhale, push up to upward dog.</step>
         <step count="11">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="virabhadrasana" name="Virabhadrasana">
+    <asana series="primaryStanding" id="virabhadrasana" name="Virabhadrasana">
         <step count="7">Inhale, step the right leg forward and take the arms up to Virabhadrasana 1</step>
         <step breaths="5"></step>
         <step count="8">Exhale, turn to the left side.</step>
@@ -180,17 +180,17 @@
         <step count="13">Inhale, push up to upward dog.</step>
         <step count="14">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="dandasana" name="Dandasana">
+    <asana series="primarySeated1" id="dandasana" name="Dandasana">
         <step count="7">Inhale. Jump through to seated, straighten the legs, keep the hands next to the hips, tuck the chin.</step>
         <step breaths="5"></step>
     </asana>
-    <asana series="primary" id="paschimottanasanaA" name="Paschimottanasana A">
+    <asana series="primarySeated1" id="paschimottanasanaA" name="Paschimottanasana A">
         <step count="8">Inhale, catch the big toes and lift the head up.</step>
         <step count="9">Exhale, touch the head or chin to the knees.</step>
         <step breaths="5"></step>
         <step count="10">Inhale, head up.</step>
     </asana>
-    <asana series="primary" id="paschimottanasanaBorD" name="Paschimottanasana B or D">
+    <asana series="primarySeated1" id="paschimottanasanaBorD" name="Paschimottanasana B or D">
         <step count="8">Inhale, lock the hands around the feet, lift the head up.</step>
         <step count="9">Exhale, touch the chin to the knees.</step>
         <step breaths="5"></step>
@@ -200,7 +200,7 @@
         <step count="13">Inhale, push up to upward dog.</step>
         <step count="14">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="purvottanasana" name="Purvottanasana">
+    <asana series="primarySeated1" id="purvottanasana" name="Purvottanasana">
         <step count="7">Inhale, jump through to seated, straighten the legs.</step>
         <step count="8">Inhale, lift the hips up.</step>
         <step breaths="5"></step>
@@ -210,7 +210,7 @@
         <step count="12">Inhale, push up to upward dog.</step>
         <step count="13">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="ardhaBaddhaPadmaPaschimottanasana" name="Ardha Baddha Padma Paschimottanasana">
+    <asana series="primarySeated1" id="ardhaBaddhaPadmaPaschimottanasana" name="Ardha Baddha Padma Paschimottanasana">
         <step count="7">Inhale, jump through to seated, right leg into half padmasana, bind. Left hand to left foot.</step>
         <step count="8">Exhale, touch the chin to the knee.</step>
         <step breaths="5"></step>
@@ -228,7 +228,7 @@
         <step count="19">Inhale, push up to upward dog.</step>
         <step count="20">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="triyangaMukhaEkaPadaPaschimottanasana" name="Triyanga Mukha Eka Pada Paschimottanasana">
+    <asana series="primarySeated1" id="triyangaMukhaEkaPadaPaschimottanasana" name="Triyanga Mukha Eka Pada Paschimottanasana">
         <step count="7">Inhale, jump through with right leg folded back. Catch the left foot with both hands, head up.</step>
         <step count="8">Exhale, touch the chin to the knee.</step>
         <step breaths="5"></step>
@@ -246,7 +246,7 @@
         <step count="19">Inhale, push up to upward dog.</step>
         <step count="20">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="januSirsasanaA" name="Janu Sirsasana A">
+    <asana series="primarySeated1" id="januSirsasanaA" name="Janu Sirsasana A">
         <step count="7">Jump through to seated, fold the right leg to the side. Catch the left foot with both hands, head up.</step>
         <step count="8">Exhale, touch the chin to the knee.</step>
         <step breaths="5"></step>
@@ -264,7 +264,7 @@
         <step count="19">Inhale, push up to upward dog.</step>
         <step count="20">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="januSirsasanaB" name="Janu Sirsasana B">
+    <asana series="primarySeated1" id="januSirsasanaB" name="Janu Sirsasana B">
         <step count="7">Inhale, jump through to seated, sit on right heel. Catch the left foot with both hands, head up.</step>
         <step count="8">Exhale, touch the chin to the knee.</step>
         <step breaths="5"></step>
@@ -282,7 +282,7 @@
         <step count="19">Inhale, push up to upward dog.</step>
         <step count="20">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="januSirsasanaC" name="Janu Sirsasana C">
+    <asana series="primarySeated1" id="januSirsasanaC" name="Janu Sirsasana C">
         <step count="7">Inhale, jump through to seated, right foot in with the heel up. Catch the left foot, head up.</step>
         <step count="8">Exhale, touch the chin to the knee.</step>
         <step breaths="5"></step>
@@ -300,7 +300,7 @@
         <step count="19">Inhale, push up to upward dog.</step>
         <step count="20">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="maricasanaA" name="Maricasana A">
+    <asana series="primarySeated1" id="maricasanaA" name="Maricasana A">
         <step count="7">Inhale, jump through to seated, bend the right knee, bend forward, and bind.</step>
         <step count="8">Exhale, touch the chin to the knee.</step>
         <step breaths="5"></step>
@@ -318,7 +318,7 @@
         <step count="19">Inhale, push up to upward dog.</step>
         <step count="20">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="maricasanaB" name="Maricasana B">
+    <asana series="primarySeated1" id="maricasanaB" name="Maricasana B">
         <step count="7">Inhale, jump through to seated. Take the left leg into half padmasana, bend the right knee, bend forward, and bind.</step>
         <step count="8">Exhale, touch the nose or chin to the floor.</step>
         <step breaths="5"></step>
@@ -336,7 +336,7 @@
         <step count="19">Inhale, push up to upward dog.</step>
         <step count="20">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="maricasanaC" name="Maricasana C">
+    <asana series="primarySeated1" id="maricasanaC" name="Maricasana C">
         <step count="7">Inhale, jump through to seated. Bend the right knee, twist right, and bind.</step>
         <step breaths="5"></step>
         <step count="8">Inhale, lift.</step>
@@ -350,7 +350,7 @@
         <step count="15">Inhale, push up to upward dog.</step>
         <step count="16">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="maricasanaD" name="Maricasana D">
+    <asana series="primarySeated1" id="maricasanaD" name="Maricasana D">
         <step count="7">Inhale, jump through to seated. Take the left leg into half padmasana, twist right, and bind.</step>
         <step breaths="5"></step>
         <step count="8">Inhale, lift.</step>
@@ -364,7 +364,7 @@
         <step count="15">Inhale, push up to upward dog.</step>
         <step count="16">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="navasana" name="Navasana">
+    <asana series="primarySeated1" id="navasana" name="Navasana">
         <step count="7">Inhale, jump through to seated. Legs up, arms straight.</step>
         <step breaths="5"></step>
         <step count="8">Inhale, lift.</step>
@@ -389,7 +389,7 @@
         <step count="10">Inhale, push up to upward dog.</step>
         <step count="11">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="bhujapidasana" name="Bhujapidasana">
+    <asana series="primarySeated2" id="bhujapidasana" name="Bhujapidasana">
         <step count="7">Inhale, jump and wrap the legs around the arms. Lock the feet in front of you with the right on top of the left.</step>
         <step count="8">Exhale, place the head or chin on the floor.</step>
         <step breaths="5"></step>
@@ -399,11 +399,11 @@
         <step count="12">Inhale, push up to upward dog.</step>
         <step count="13">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="kurmasana" name="Kurmasana">
+    <asana series="primarySeated2" id="kurmasana" name="Kurmasana">
         <step count="7">Inhale, jump and place the legs around the arms. Go down and straighten the arms and legs.</step>
         <step breaths="5"></step>
     </asana>
-    <asana series="primary" id="suptaKurmasana" name="Supta Kurmasana">
+    <asana series="primarySeated2" id="suptaKurmasana" name="Supta Kurmasana">
         <step count="8">Exhale, take the arms behind the back and lock the hands.</step>
         <step count="9">Inhale, cross the feet, and take them behind the head. The right leg should be on top of the left.</step>
         <step breaths="5"></step>
@@ -413,7 +413,7 @@
         <step count="13">Inhale, push up to upward dog.</step>
         <step count="14">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="garbhaPindasana" name="Garbha Pindasana">
+    <asana series="primarySeated2" id="garbhaPindasana" name="Garbha Pindasana">
         <step count="7">Inhale, jump through to seated.</step>
         <step count="8">Inhale, take padmasana position, thread the arms through the legs, place the hands over the ears.</step>
         <step breaths="5"></step>
@@ -423,14 +423,14 @@
         <step count="9">Exhale, roll down onto the back.</step>
         <step count="9">Exhale, roll down onto the back.</step>
     </asana>
-    <asana series="primary" id="kukkutasana" name="Kukkutasana">
+    <asana series="primarySeated2" id="kukkutasana" name="Kukkutasana">
         <step count="9">Inhale, lift up and balance.</step>
         <step count="10">Inhale, lift up in padmasana or with crossed legs.</step>
         <step count="11">Exhale, jump back to chaturanga.</step>
         <step count="12">Inhale, push up to upward dog.</step>
         <step count="13">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="baddhaKonasana" name="Baddha Konasana">
+    <asana series="primarySeated2" id="baddhaKonasana" name="Baddha Konasana">
         <step count="7">Inhale, jump through to seated. Pull your heels in.</step>
         <step count="8">Exhale, touch the chin on the floor.</step>
         <step breaths="5"></step>
@@ -443,12 +443,12 @@
         <step count="14">Inhale, push up to upward dog.</step>
         <step count="15">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="upavisthaKonasanaA" name="Upavistha Konasana A">
+    <asana series="primarySeated2" id="upavisthaKonasanaA" name="Upavistha Konasana A">
         <step count="7">Inhale, jump through to seated. Spread the legs, catch the heels with the hands, and lift the head up.</step>
         <step count="8">Exhale, touch the chin to the floor.</step>
         <step breaths="5"></step>
     </asana>
-    <asana series="primary" id="upavisthaKonasanaB" name="Upavistha Konasana B">
+    <asana series="primarySeated2" id="upavisthaKonasanaB" name="Upavistha Konasana B">
         <step count="9">Inhale, lift the head up only.</step>
         <step count="10">Inhale, lift both of the legs up and balance.</step>
         <step breaths="5"></step>
@@ -457,7 +457,7 @@
         <step count="13">Inhale, push up to upward dog.</step>
         <step count="14">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="suptaKonasana" name="Supta Konasana">
+    <asana series="primarySeated2" id="suptaKonasana" name="Supta Konasana">
         <step count="7">Jump through to seated and lie down.</step>
         <step count="8">Inhale, take both legs back over the head, spread the legs, and catch the big toes.</step>
         <step breaths="5"></step>
@@ -468,7 +468,7 @@
         <step count="13">Inhale, push up to upward dog.</step>
         <step count="14">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="suptaPadangusthasana" name="Supta Padangusthasana">
+    <asana series="primarySeated2" id="suptaPadangusthasana" name="Supta Padangusthasana">
         <step count="7">Inhale, jump through to seated and lie down.</step>
         <step count="8">Inhale, catch the right big toe with the right hand while keeping both legs straight.</step>
         <step count="9">Exhale, touch the chin to the knee.</step>
@@ -494,7 +494,7 @@
         <step count="25">Inhale, push up to upward dog.</step>
         <step count="26">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="ubhayaPadangusthasana" name="Ubhaya Padangusthasana">
+    <asana series="primarySeated2" id="ubhayaPadangusthasana" name="Ubhaya Padangusthasana">
         <step count="7">Inhale, jump through to seated, lie down.</step>
         <step count="8">Inhale, bring both legs over the head, catch the big toes.</step>
         <step count="9">Inhale, roll up with straight legs and look up.</step>
@@ -504,7 +504,7 @@
         <step count="12">Inhale, push up to upward dog.</step>
         <step count="13">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="urdhvaMukhaPaschimottanasana" name="Urdhva Mukha Paschimottanasana">
+    <asana series="primarySeated2" id="urdhvaMukhaPaschimottanasana" name="Urdhva Mukha Paschimottanasana">
         <step count="7">Inhale, jump through to seated and lie down.</step>
         <step count="8">Inhale, bring both legs over the head, catch the heels.</step>
         <step count="9">Inhale, roll up with straight legs.</step>
@@ -516,7 +516,7 @@
         <step count="14">Inhale, push up to upward dog.</step>
         <step count="15">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="setthuBandhasana" name="Setthu Bandhasana">
+    <asana series="primarySeated2" id="setthuBandhasana" name="Setthu Bandhasana">
         <step count="7">Inhale, jump through to seated and lie down.</step>
         <step count="8">Exhale, bend the knees slightly with the heels together, take back the head, and cross the arms over the chest.</step>
         <step count="9">Inhale, lift the hips off the floor.</step>
@@ -526,7 +526,7 @@
         <step count="12">Inhale, push up to upward dog.</step>
         <step count="13">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="urdhvaDhanurasana" name="Urdhva Dhanurasana">
+    <asana series="closing1" id="urdhvaDhanurasana" name="Urdhva Dhanurasana">
         <step count="7">Inhale, jump through to seated and lie down.</step>
         <step count="8">Exhale, bend the knees, take the hands back behind the shoulders.</step>
         <step count="9">Inhale, lift the body up off the floor.</step>
@@ -536,7 +536,7 @@
         <step count="12">Inhale, push up to upward dog.</step>
         <step count="13">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="paschimottanasana" name="Paschimottanasana">
+    <asana series="closing1" id="paschimottanasana" name="Paschimottanasana">
         <step count="7">Jump through to seated and straighten the legs.</step>
         <step count="8">Inhale, lock the hands around the feet and lift the head up.</step>
         <step count="9">Exhale, touch the head or chin to the knees.</step>
@@ -547,39 +547,39 @@
         <step count="13">Inhale, push up to upward dog.</step>
         <step count="14">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="salambaSarvangasana" name="Salamba Sarvangasana">
+    <asana series="closing1" id="salambaSarvangasana" name="Salamba Sarvangasana">
         <step count="7">Inhale, jump through to seated and lie down.</step>
         <step count="8">Inhale, lift the legs straight up.</step>
         <step breaths="10"></step>
     </asana>
-    <asana series="primary" id="halasana" name="Halasana">
+    <asana series="closing1" id="halasana" name="Halasana">
         <step count="8">Exhale, lower the legs over the head and touch the toes to the floor.</step>
         <step breaths="8"></step>
     </asana>
-    <asana series="primary" id="karnapidasana" name="Karnapidasana">
+    <asana series="closing1" id="karnapidasana" name="Karnapidasana">
         <step count="8">Exhale, bend the knees around the head and press them to the ears.</step>
         <step breaths="8"></step>
     </asana>
-    <asana series="primary" id="urdhvaPadmasana" name="Urdhva Padmasana">
+    <asana series="closing1" id="urdhvaPadmasana" name="Urdhva Padmasana">
         <step count="9">Inhale, lift the legs up and take padmasana. Place the hands on the knees.</step>
         <step breaths="8"></step>
     </asana>
-    <asana series="primary" id="pindasana" name="Pindasana">
+    <asana series="closing1" id="pindasana" name="Pindasana">
         <step count="9">Inhale, wrap the arms around padmasana and lock the hands.</step>
         <step breaths="8"></step>
     </asana>
-    <asana series="primary" id="matsyasana" name="Matsyasana">
+    <asana series="closing1" id="matsyasana" name="Matsyasana">
         <step count="9">Exhale, lower padmasana to the floor, arch back, top of head on floor.</step>
         <step breaths="8"></step>
     </asana>
-    <asana series="primary" id="uttanaPadasana" name="Uttana Padasana">
+    <asana series="closing1" id="uttanaPadasana" name="Uttana Padasana">
         <step count="9">Exhale, straighten lift the legs and arms, and press the hands together.</step>
         <step breaths="8"></step>
         <step count="10">Inhale, take the feet back over the head and cakrasana, roll back to chaturanga dandasana.</step>
         <step count="11">Inhale, push up to upward dog.</step>
         <step count="12">Exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="sirsasana" name="Sirsasana">
+    <asana series="closing1" id="sirsasana" name="Sirsasana">
         <step count="7">Inhale, take sirsasana position.</step>
         <step count="8">Inhale, lift the legs straight up.</step>
         <step breaths="15"></step>
@@ -591,19 +591,19 @@
         <step count="12">Inhale, push up to upward dog.</step>
         <step count="13">Exhale, exhale, push back to downward dog.</step>
     </asana>
-    <asana series="primary" id="baddhaPadmasana" name="Baddha Padmasana">
+    <asana series="closing2" id="baddhaPadmasana" name="Baddha Padmasana">
         <step count="7">Inhale, jump through to seated.</step>
         <step count="8">Inhale, take padmasana position, wrap the left arm and then the right around to bind.</step>
     </asana>
-    <asana series="primary" id="yogaMudra" name="Yoga Mudra">
+    <asana series="closing2" id="yogaMudra" name="Yoga Mudra">
         <step count="9">Exhale, touch the chin to the floor.</step>
         <step breaths="10"></step>
     </asana>
-    <asana series="primary" id="padmasana" name="Padmasana">
+    <asana series="closing2" id="padmasana" name="Padmasana">
         <step count="10">Inhale, come up. Straighten the arms and breathe deeply with sound.</step>
         <step breaths="10"></step>
     </asana>
-    <asana series="primary" id="utpluthih" name="Utpluthih">
+    <asana series="closing2" id="utpluthih" name="Utpluthih">
         <step count="10">Inhale, lift up and balance.</step>
         <step breaths="10"></step>
         <step count="11">Exhale, jump back to chaturanga.</step>
