@@ -1,0 +1,5127 @@
+[
+  {
+    "id": "suryA",
+    "name": "Surya Namaskara A",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up only."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward, head up."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      }
+    ],
+    "seq": 1,
+    "series": "suryA"
+  },
+  {
+    "id": "suryB",
+    "name": "Surya Namaskara B",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up and bend knees to utkatasana"
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, right foot forward to Warrior 1."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, hands down, step back to chaturanga."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, left foot forward to Warrior 1."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, hands down, step back to chaturanga."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward, head up."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, hands up, bent knees, utkatasana."
+      }
+    ],
+    "seq": 2,
+    "series": "suryB"
+  },
+  {
+    "id": "padangusthasana",
+    "name": "Padangusthasana",
+    "steps": [
+      {
+        "breaths": 0.5,
+        "text": "Spread the feet half a foot apart."
+      },
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, catch the big toes, head up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, take the head between the legs."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up."
+      }
+    ],
+    "seq": 3,
+    "series": "fundamental"
+  },
+  {
+    "id": "padahastasana",
+    "name": "Padahastasana",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, place the palms under the feet, head up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, take the head between the legs."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up,"
+      }
+    ],
+    "seq": 4,
+    "series": "fundamental"
+  },
+  {
+    "id": "utthitaTrikonasanaA",
+    "name": "Utthita Trikonasana A",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, jump to the right side, legs three feet apart, arms out."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, pivot right to catch the right big toe, look up"
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, pivot left to catch the left big toe, look up"
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, come up, arms out"
+      }
+    ],
+    "seq": 5,
+    "series": "fundamental"
+  },
+  {
+    "id": "utthitaTrikonasanaB",
+    "name": "Utthita Trikonasana B",
+    "steps": [
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, twist the body to the right side, place the left hand next to the right foot."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, twist the body to the left side. Place the right hand next to the left foot."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      }
+    ],
+    "seq": 6,
+    "series": "fundamental"
+  },
+  {
+    "id": "utthitaParsvakonasanaA",
+    "name": "Utthita Parsvakonasana A",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, jump to the right side with the legs five feet apart and arms out."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, bend the right knee, place the right hand outside the right foot, reach the left arm over the head."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, bend the left knee, place the left hand outside the left foot, reach the right arm over the head."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      }
+    ],
+    "seq": 7,
+    "series": "fundamental"
+  },
+  {
+    "id": "utthitaParsvakonasanaB",
+    "name": "Utthita Parsvakonasana B",
+    "steps": [
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, bend the right knee, twist the body, and place the left hand outside the right foot."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, bend the left knee, twist the body, and place the right hand outside the left foot."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      }
+    ],
+    "seq": 8,
+    "series": "fundamental"
+  },
+  {
+    "id": "prasaritaPadottanasanaA",
+    "name": "Prasarita Padottanasana A",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, jump to the right side, place the hands on the waist."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, place the hands on the floor between the feet. Inhale and lift the head up."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Exhale, place the head on the floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head only, keep the hands on the floor."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, hands on waist, come up."
+      }
+    ],
+    "seq": 9,
+    "series": "fundamental"
+  },
+  {
+    "id": "prasaritaPadottanasanaB",
+    "name": "Prasarita Padottanasana B",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, spread the arms out to the side."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, place the hands on the waist."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Exhale, place the head on the floor between the feet."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      }
+    ],
+    "seq": 10,
+    "series": "fundamental"
+  },
+  {
+    "id": "prasaritaPadottanasanaC",
+    "name": "Prasarita Padottanasana C",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, spread the arms out to the side."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, clasp hands behind the back."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Exhale, place the head on the floor between the feet and reach the hands toward the floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      }
+    ],
+    "seq": 11,
+    "series": "fundamental"
+  },
+  {
+    "id": "prasaritaPadottanasanaD",
+    "name": "Prasarita Padottanasana D",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, place the hands on the waist."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, catch the big toes. Inhale, lift the head."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Exhale, place the head on the floor between the feet."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head only."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, hands to waist, come up."
+      }
+    ],
+    "seq": 12,
+    "series": "fundamental"
+  },
+  {
+    "id": "parsvottanasana",
+    "name": "Parsvottanasana",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, jump to the right side with the feet three feet apart, palms together behind back"
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, bend forward front leg straight."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, come up. Turn to the left side."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, bend forward, leg straight."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      }
+    ],
+    "seq": 13,
+    "series": "fundamental"
+  },
+  {
+    "id": "utthitaHastaPadangusthasana",
+    "name": "Utthita Hasta Padangusthasana",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, catch the right big toe with the right hand, keep both legs straight."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, take the leg to the right side, look to the left"
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, bring the leg back to the front."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head. Place both hands on the waist."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, catch the left big toe with the left hand, keep both legs straight."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, take the leg to the left side, look to the right"
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, bring the leg to the front."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head. Place the hands on the waist."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      }
+    ],
+    "seq": 14,
+    "series": "primaryStanding"
+  },
+  {
+    "id": "ardhaBaddhaPadmottanasana",
+    "name": "Ardha Baddha Padmottanasana",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, take the right leg into half padmasana, bind."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, bend forward, place the left hand next to the left foot."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up only."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Exhale, release the right leg."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Inhale, take the left leg into half padmasana, bind."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Exhale, bend forward, place the right hand next to the right foot."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Breath five times."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, head up only."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, come up."
+      }
+    ],
+    "seq": 15,
+    "series": "primaryStanding"
+  },
+  {
+    "id": "utkatasana",
+    "name": "Utkatasana",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, hands up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up"
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump the feet forward to the hands, bend the legs, take the arms up to utkatasana"
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, hands down, lift up."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 16,
+    "series": "primaryStanding"
+  },
+  {
+    "id": "virabhadrasana",
+    "name": "Virabhadrasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, step the right leg forward and take the arms up to Virabhadrasana 1"
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, turn to the left side."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, spread the arms to the side (Virabhadrasana 2)."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, turn to the right side."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, place both hands down beside the front foot, lift the legs up."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 17,
+    "series": "primaryStanding"
+  },
+  {
+    "id": "dandasana",
+    "name": "Dandasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale. Jump through to seated, straighten the legs, keep the hands next to the hips, tuck the chin."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      }
+    ],
+    "seq": 18,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "paschimottanasanaA",
+    "name": "Paschimottanasana A",
+    "steps": [
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, catch the big toes and lift the head up."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, touch the head or chin to the knees."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      }
+    ],
+    "seq": 19,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "paschimottanasanaBorD",
+    "name": "Paschimottanasana B or D",
+    "steps": [
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lock the hands around the feet, lift the head up."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knees."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 20,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "purvottanasana",
+    "name": "Purvottanasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, straighten the legs."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift the hips up."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, come down."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 21,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "ardhaBaddhaPadmaPaschimottanasana",
+    "name": "Ardha Baddha Padma Paschimottanasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, right leg into half padmasana, bind. Left hand to left foot."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, left leg into half padmasana, bind. Right hand to right foot."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 22,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "triyangaMukhaEkaPadaPaschimottanasana",
+    "name": "Triyanga Mukha Eka Pada Paschimottanasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through with right leg folded back. Catch the left foot with both hands, head up."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump through with left leg folded back. Catch the right foot with both hands, head up."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 23,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "januSirsasanaA",
+    "name": "Janu Sirsasana A",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Jump through to seated, fold the right leg to the side. Catch the left foot with both hands, head up."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, fold the left leg to the side. Catch the right foot with both hands, head up."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 24,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "januSirsasanaB",
+    "name": "Janu Sirsasana B",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, sit on right heel. Catch the left foot with both hands, head up."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, sit on left heel. Catch the right foot with both hands, head up."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 25,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "januSirsasanaC",
+    "name": "Janu Sirsasana C",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, right foot in with the heel up. Catch the left foot, head up."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, left foot in with the heel up. Catch the right foot, head up."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 26,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "maricasanaA",
+    "name": "Maricasana A",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, bend the right knee, bend forward, and bind."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, bend the left knee, bend forward, and bind."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 27,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "maricasanaB",
+    "name": "Maricasana B",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Take the left leg into half padmasana, bend the right knee, bend forward, and bind."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch the nose or chin to the floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Take the right leg into half padmasana, bend the left knee, bend forward, and bind."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, touch the nose or chin to the floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift up with crossed legs."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 28,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "maricasanaC",
+    "name": "Maricasana C",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Bend the right knee, twist right, and bind."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Bend the left knee, twist left, and bind."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 29,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "maricasanaD",
+    "name": "Maricasana D",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Take the left leg into half padmasana, twist right, and bind."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Take the right leg into half padmasana, twist left, and bind."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 30,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "navasana",
+    "name": "Navasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Legs up, arms straight."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lower down."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Legs up, arms straight."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lower down."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Legs up, arms straight."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lower down."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Legs up, arms straight."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lower down."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Legs up, arms straight."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lower down."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 31,
+    "series": "primarySeated1"
+  },
+  {
+    "id": "bhujapidasana",
+    "name": "Bhujapidasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump and wrap the legs around the arms. Lock the feet in front of you with the right on top of the left."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, place the head or chin on the floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head or chin up off the floor."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, take bakasana."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 32,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "kurmasana",
+    "name": "Kurmasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump and place the legs around the arms. Go down and straighten the arms and legs."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      }
+    ],
+    "seq": 33,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "suptaKurmasana",
+    "name": "Supta Kurmasana",
+    "steps": [
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, take the arms behind the back and lock the hands."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, cross the feet, and take them behind the head. The right leg should be on top of the left."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift up."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, take the legs to bakasana position."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 34,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "garbhaPindasana",
+    "name": "Garbha Pindasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, take padmasana position, thread the arms through the legs, place the hands over the ears."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, roll down onto the back."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, roll down onto the back."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, roll down onto the back."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, roll down onto the back."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, roll down onto the back."
+      }
+    ],
+    "seq": 35,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "kukkutasana",
+    "name": "Kukkutasana",
+    "steps": [
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift up and balance."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift up in padmasana or with crossed legs."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 36,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "baddhaKonasana",
+    "name": "Baddha Konasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Pull your heels in."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin on the floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, sit up."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, touch the head to the toes."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 37,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "upavisthaKonasanaA",
+    "name": "Upavistha Konasana A",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated. Spread the legs, catch the heels with the hands, and lift the head up."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      }
+    ],
+    "seq": 38,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "upavisthaKonasanaB",
+    "name": "Upavistha Konasana B",
+    "steps": [
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift both of the legs up and balance."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 39,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "suptaKonasana",
+    "name": "Supta Konasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Jump through to seated and lie down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, take both legs back over the head, spread the legs, and catch the big toes."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, roll up while holding the toes. "
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift the head up only."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 40,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "suptaPadangusthasana",
+    "name": "Supta Padangusthasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated and lie down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, catch the right big toe with the right hand while keeping both legs straight."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lower the head only."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, take the right leg to the right side, look to the left."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, bring the right leg back to the center."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, lower the head only."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, release the right toe and lower the right leg to the floor."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, catch the left big toe with the left hand while keeping both legs straight."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Inhale, lower the head to the floor."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Exhale, take the left leg to the left side, look to the right."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Inhale, bring the left leg back to center."
+      },
+      {
+        "count": "21",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "count": "22",
+        "breaths": 0.5,
+        "text": "Inhale, lower the head only."
+      },
+      {
+        "count": "23",
+        "breaths": 0.5,
+        "text": "Exhale, release the left toe and lower the left leg to the floor."
+      },
+      {
+        "count": "24",
+        "breaths": 0.5,
+        "text": "Inhale, take the feet over the head."
+      },
+	  {
+        "breaths": 0.5,
+        "text": "Exhale, take cakrasana back into chaturanga dandasana."
+      },
+      {
+        "count": "25",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "26",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 41,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "ubhayaPadangusthasana",
+    "name": "Ubhaya Padangusthasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated, lie down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, bring both legs over the head, catch the big toes."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, roll up with straight legs and look up."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 42,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "urdhvaMukhaPaschimottanasana",
+    "name": "Urdhva Mukha Paschimottanasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated and lie down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, bring both legs over the head, catch the heels."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, roll up with straight legs."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knees."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, straighten the arms, head back, exhale."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 43,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "setthuBandhasana",
+    "name": "Setthu Bandhasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated and lie down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, bend the knees slightly with the heels together, take back the head, and cross the arms over the chest."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the hips off the floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, come down."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, take the feet back over the head and cakrasana, roll back into chaturanga dandasana."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 44,
+    "series": "primarySeated2"
+  },
+  {
+    "id": "urdhvaDhanurasana",
+    "name": "Urdhva Dhanurasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated and lie down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, bend the knees, take the hands back behind the shoulders."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the body up off the floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, come down to the floor. Repeat two to four more times."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, take the feet back over the head and cakrasana. roll back into chaturanga dandasana."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 45,
+    "series": "closing1"
+  },
+  {
+    "id": "paschimottanasana",
+    "name": "Paschimottanasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Jump through to seated and straighten the legs."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lock the hands around the feet and lift the head up."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, touch the head or chin to the knees."
+      },
+      {
+        "breaths": 10,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 46,
+    "series": "closing1"
+  },
+  {
+    "id": "salambaSarvangasana",
+    "name": "Salamba Sarvangasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated and lie down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift the legs straight up."
+      },
+      {
+        "breaths": 10,
+        "counted": true
+      }
+    ],
+    "seq": 47,
+    "series": "closing1"
+  },
+  {
+    "id": "halasana",
+    "name": "Halasana",
+    "steps": [
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, lower the legs over the head and touch the toes to the floor."
+      },
+      {
+        "breaths": 8,
+        "counted": true
+      }
+    ],
+    "seq": 48,
+    "series": "closing1"
+  },
+  {
+    "id": "karnapidasana",
+    "name": "Karnapidasana",
+    "steps": [
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, bend the knees around the head and press them to the ears."
+      },
+      {
+        "breaths": 8,
+        "counted": true
+      }
+    ],
+    "seq": 49,
+    "series": "closing1"
+  },
+  {
+    "id": "urdhvaPadmasana",
+    "name": "Urdhva Padmasana",
+    "steps": [
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the legs up and take padmasana. Place the hands on the knees."
+      },
+      {
+        "breaths": 8,
+        "counted": true
+      }
+    ],
+    "seq": 50,
+    "series": "closing1"
+  },
+  {
+    "id": "pindasana",
+    "name": "Pindasana",
+    "steps": [
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, wrap the arms around padmasana and lock the hands."
+      },
+      {
+        "breaths": 8,
+        "counted": true
+      }
+    ],
+    "seq": 51,
+    "series": "closing1"
+  },
+  {
+    "id": "matsyasana",
+    "name": "Matsyasana",
+    "steps": [
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, lower padmasana to the floor, arch back, top of head on floor."
+      },
+      {
+        "breaths": 8,
+        "counted": true
+      }
+    ],
+    "seq": 52,
+    "series": "closing1"
+  },
+  {
+    "id": "uttanaPadasana",
+    "name": "Uttana Padasana",
+    "steps": [
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, straighten lift the legs and arms, and press the hands together."
+      },
+      {
+        "breaths": 8,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, take the feet back over the head and cakrasana, roll back to chaturanga dandasana."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 53,
+    "series": "closing1"
+  },
+  {
+    "id": "sirsasana",
+    "name": "Sirsasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, take sirsasana position."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift the legs straight up."
+      },
+      {
+        "breaths": 15,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, lower the legs half way, point the toes."
+      },
+      {
+        "breaths": 10,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, come down, sit on the heels with the head remaining down."
+      },
+      {
+        "breaths": 10,
+        "counted": true
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, exhale, push back to downward dog."
+      }
+    ],
+    "seq": 54,
+    "series": "closing1"
+  },
+  {
+    "id": "baddhaPadmasana",
+    "name": "Baddha Padmasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, take padmasana position, wrap the left arm and then the right around to bind."
+      }
+    ],
+    "seq": 55,
+    "series": "closing2"
+  },
+  {
+    "id": "yogaMudra",
+    "name": "Yoga Mudra",
+    "steps": [
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the floor."
+      },
+      {
+        "breaths": 10,
+        "counted": true
+      }
+    ],
+    "seq": 56,
+    "series": "closing2"
+  },
+  {
+    "id": "padmasana",
+    "name": "Padmasana",
+    "steps": [
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, come up. Straighten the arms and breathe deeply with sound."
+      },
+      {
+        "breaths": 10,
+        "counted": true
+      }
+    ],
+    "seq": 57,
+    "series": "closing2"
+  },
+  {
+    "id": "utpluthih",
+    "name": "Utpluthih",
+    "steps": [
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift up and balance."
+      },
+      {
+        "breaths": 10,
+        "counted": true
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump to standing."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knees."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samasthitih."
+      }
+    ],
+    "seq": 58,
+    "series": "closing2"
+  },
+  {
+    "id": "pasasana",
+    "name": "Pasasana",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, hands up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump to crouch, right arm wraps to bind."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, left arm wraps to bind."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift legs up, balance on straight arms."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, drop to chaturanga."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 59,
+    "series": "intermediate"
+  },
+  {
+    "id": "krounshasana",
+    "name": "Krounshasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through, right leg bent beside right hip, left leg up, head up."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch your chin to shin, look toward toes."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift legs up, balance on straight arms."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, drop back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Jump through to left side position, toes point, head up."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, touch your chin to chin, look toward toes."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift legs up, balance on straight arms."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Drop back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 60,
+    "series": "intermediate"
+  },
+  {
+    "id": "shalabhasana",
+    "name": "Shalabhasana",
+    "steps": [
+      {
+        "breaths": 0.5,
+        "text": "Inhale, high plank."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, lower to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, tops of hands to mat beside hips, feet and chest up."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Inhale, hands palms down at waist, keep feet and chest up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 61,
+    "series": "intermediate"
+  },
+  {
+    "id": "bhekasana",
+    "name": "Bhekasana",
+    "steps": [
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Inhale to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Exhale, grab tops of feet and push down, elbows up, head up."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 62,
+    "series": "intermediate"
+  },
+  {
+    "id": "dhanurasana",
+    "name": "Dhanurasana",
+    "steps": [
+      {
+        "breaths": 0.5,
+        "text": "Inhale, high plank."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, lift feet off floor."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, grasp ankles, arch upwards."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 63,
+    "series": "intermediate"
+  },
+  {
+    "id": "parshvaDhanurasana",
+    "name": "Parshva Dhanurasana",
+    "steps": [
+      {
+        "breaths": 0.5,
+        "text": "Inhale, high plank."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, grasp ankles, arch upwards."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, roll to right side, knees together."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, roll back to center."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, roll to left side."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, roll back to center."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 64,
+    "series": "intermediate"
+  },
+  {
+    "id": "ustrasana",
+    "name": "Ustrasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump to kneeling, hands on hips."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, arch back, hands on heels."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, come back up, hands on hips."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, legs up."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 65,
+    "series": "intermediate"
+  },
+  {
+    "id": "laghuvajrasana",
+    "name": "Laghuvajrasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump to kneeling, hands on hips."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, arch back, hands on ankles, top of head to floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, come back up, hands on hips."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, legs up."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 66,
+    "series": "intermediate"
+  },
+  {
+    "id": "kapotasana",
+    "name": "Kapotasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump to kneeling, hands on hips."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, arch back, hands through prayer to grasp ankles, elbows on floor, head back to floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, push up, hands on floor, arms straight, head off floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, come back up, hands on hips."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, legs up."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 67,
+    "series": "intermediate"
+  },
+  {
+    "id": "suptaVadrasana",
+    "name": "Supta Vadrasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through, straight legs, sit down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, baddha padmasana."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, lean back, head to floor, hold for five breaths."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, sit up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, arch back, one."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, sit up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, arch back, two."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, sit up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, arch back, three."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, sit up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, arch back, four."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, sit up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, arch back, five."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, sit up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, arch back, hold for five breaths."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, sit back up to baddha padmasana."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, lift up, balance on straight arms."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 68,
+    "series": "intermediate"
+  },
+  {
+    "id": "bakasanaA",
+    "name": "Bakasana A",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, push forward, straight arms, legs bent in air."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, squat down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, rise to position, head up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 69,
+    "series": "intermediate"
+  },
+  {
+    "id": "bakasanaB",
+    "name": "Bakasana B",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump to Bakasana."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift legs up."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 70,
+    "series": "intermediate"
+  },
+  {
+    "id": "bharadvajasana",
+    "name": "Bharadvajasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through, dandasana."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, fold left leg back, right leg lotus."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, legs up."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, jump through, dandasana."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, fold right leg back, left leg lotus."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Inhale, legs up."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 71,
+    "series": "intermediate"
+  },
+  {
+    "id": "ardhaMatsyendrasana",
+    "name": "Ardha Matsyendrasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through, dandasana."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, left leg under and right leg over."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, legs up."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, jump through, dandasana."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, right leg under, left over."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Inhale, legs up."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 72,
+    "series": "intermediate"
+  },
+  {
+    "id": "ekaPadaSirsasana",
+    "name": "Eka Pada Sirsasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Jump through, right foot behind head."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, touch your chin to shin."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, look up, hands in prayer."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, hands to floor."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, swing leg up."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, legs up, left leg over arm."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, sit down, left foot behind head."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, hand in prayer."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, chin to shin."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, sit up, hands in prayer."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift up, bend legs in air."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 73,
+    "series": "intermediate"
+  },
+  {
+    "id": "dviPadaSirsasana",
+    "name": "Dvi Pada Sirsasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward, bend legs in the air."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, bring legs to Tittibhasana, and put feet behind head, hands in prayer."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, plance hands on floor."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lift up with feet behind head."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, straighten legs to Tittibhasana."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, legs to Bakasana."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, legs up."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 74,
+    "series": "intermediate"
+  },
+  {
+    "id": "yogaNidrasana",
+    "name": "Yoga Nidrasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward, feet up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, swing through, lay down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift both legs."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, left, then right foot behind head."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, cakrasana."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 75,
+    "series": "intermediate"
+  },
+  {
+    "id": "tittibhasana",
+    "name": "Tittibhasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward, feet up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, place straight legs over upper arms."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, place feet on floor, head between legs, lock arms around back."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, head up and take five steps."
+      },
+      {
+        "breaths": 0.5,
+        "text": "One."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Two."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Three."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Four."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Five."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Walk back."
+      },
+      {
+        "breaths": 0.5,
+        "text": "One."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Two."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Three."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Four."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Five."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Close your feet, Lock back your hands. head down, straight knees."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, legs up to Tittibhasana."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, legs to Bakasana position."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 76,
+    "series": "intermediate"
+  },
+  {
+    "id": "pinchaMayurasana",
+    "name": "Pincha Mayurasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, kneel down."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, elbows down, forearms parallel on floor."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift up to balance."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 77,
+    "series": "intermediate"
+  },
+  {
+    "id": "karandavasana",
+    "name": "Karandavasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, kneel down."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, elbows down, forearms parallel on floor."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift up to pincha mayurasana."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, fold legs to padmasana, lower to chest."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, extend back to Pincha Mayurasana."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump to standing, head up."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, forward fold."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
+      }
+    ],
+    "seq": 78,
+    "series": "intermediate"
+  },
+  {
+    "id": "mayurasana",
+    "name": "Mayurasana",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, feet shoulder width."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, hands between feet, fingers to back, head up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, head stays lifted."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, head between arms."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up again."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back, balance weight on elbows."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, hold mayurasana position."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Inhale, feet on floor push to upward dog (hands stay reversed)"
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog (hands stay reversed)"
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, jump to standing (hands stay reversed), head up."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, forward fold, hands reversed."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
+      }
+    ],
+    "seq": 79,
+    "series": "intermediate"
+  },
+  {
+    "id": "nakrasana",
+    "name": "Nakrasana",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, hands up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale,  head up."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to Chaturanga, close your feet."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Hop forward, One."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Two."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Three."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Four."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Five."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Hop back, One."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Two."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Three."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Four."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Five."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump to half-standing, head up."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
+      }
+    ],
+    "seq": 80,
+    "series": "intermediate"
+  },
+  {
+    "id": "vatayanasana",
+    "name": "Vatayanasana",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, right leg to half lotus bind, standing."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, both hands to mat."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back, right leg in lotus."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog, right leg in lotus."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog, right leg in lotus."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Jump, to one leg standing."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lower, left foot points out, right knee to floor, right arm over left, raise them."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift up to standing forward fold, right leg in lotus."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, jump to chaturanga, right leg in lotus."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push to upward dog, right leg in lotus."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog, right leg in lotus."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, right foot to floor."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, left leg in lotus."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Jump to half standing, left leg in lotus."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lower, right foot points out, left knee to floor, left arm over right, raise them."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, lift up, left leg in lotus."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga, left leg in lotus."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog, left leg in lotus."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog, left leg in lotus."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, jump to half standing, left leg in lotus."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, lower head to shin, left leg in lotus."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, straighten back, head up, left leg in lotus."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, left arm behind back, grab left foot."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Inhale. straighten, left foot in lotus, right arm up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lower leg and arm."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
+      }
+    ],
+    "seq": 81,
+    "series": "intermediate"
+  },
+  {
+    "id": "parighasana",
+    "name": "Parighasana",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, arms up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward legs up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, bend right leg, left leg straight to side."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, left hand to right knee, right hand over head to right foot."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, left hand grabs inside of left foot."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, sit up, hands to waist."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, hands to floor, lift."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, legs up, balance on arms."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward legs up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, bend left leg, right leg straight to side."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, right hand to left knee, left hand over head to left foot."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, right hand grabs inside of right foot."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, sit up, hands to waist."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, hands to floor, lift."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, legs up, balance on arms."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 82,
+    "series": "intermediate"
+  },
+  {
+    "id": "gomukhasana",
+    "name": "Gomukhasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, right knee over left, hands around right knee, chin down."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, right arm up, left arm down, clasp hands behind back."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift up on straight arms, legs up."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward on straight arms, legs up."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, left knee over right, hands around left knee, chin down."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, left arm up, right arm down, clasp hands behind back."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, hands to floor"
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift up on straight arms, legs up."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 83,
+    "series": "intermediate"
+  },
+  {
+    "id": "suptaUrdhvaPadaVajrasana",
+    "name": "Supta Urdhva Pada Vajrasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale jump through, lay down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift both legs to Halasana."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, right leg lotus, right hand bind, left hand grabs left big toe."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, roll up, balance."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, bend left leg next to left hip."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, bring left hand under right knee, turn to right."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, turn back to center, hands on floor."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, lift up, balance on straight arms."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, lower to chaturanga."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward balancing on straight arms."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, swing through, lie down."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Inhale, lift both legs to Halasana."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, left leg lotus, left hand bind, right hand grabs right big toe."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, roll up and balance."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, bend right leg next to right hip."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, bring right hand under left knee, turn to left."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, turn back to center, hands on floor."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Inhale, lift up, balance on straight arms."
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Exhale, lower to chaturanga."
+      },
+      {
+        "count": "19",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "20",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 84,
+    "series": "intermediate"
+  },
+  {
+    "id": "muktaHastaSirsasanaA",
+    "name": "Mukta Hasta Sirsasana A",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward balancing on straight arms."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, kneel down, set hands in tripod, place head on floor, pike with straight legs."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift straight legs."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, lower to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 85,
+    "series": "intermediate"
+  },
+  {
+    "id": "muktaHastaSirsasanaB",
+    "name": "Mukta Hasta Sirsasana B",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward balancing on straight arms."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, kneel down, set hands toward front, palms up, place head on floor, pike with straight legs."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift straight legs."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, lower to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 86,
+    "series": "intermediate"
+  },
+  {
+    "id": "muktaHastaSirsasanaC",
+    "name": "Mukta Hasta Sirsasana C",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward balancing on straight arms."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, kneel down, set hands palms down to side, place head on floor, pike with straight legs."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift straight legs."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, lower to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 87,
+    "series": "intermediate"
+  },
+  {
+    "id": "baddhaHastaSirsansaA",
+    "name": "Baddha Hasta Sirsansa A",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward balancing on straight arms."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, kneel down, set hands, cup back of head, place head on floor, pike with straight legs."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift straight legs."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, lower to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 88,
+    "series": "intermediate"
+  },
+  {
+    "id": "baddhaHastaSirsansaB",
+    "name": "Baddha Hasta Sirsansa B",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward balancing on straight arms."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, kneel down, set hands, grasp elbows, place head on floor, pike with straight legs."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift straight legs."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, lower to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 89,
+    "series": "intermediate"
+  },
+  {
+    "id": "baddhaHastaSirsansaC",
+    "name": "Baddha Hasta Sirsansa C",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward balancing on straight arms."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, kneel down, set hands, arms parallel, place head on floor, pike with straight legs."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift straight legs."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, lower to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 90,
+    "series": "intermediate"
+  },
+  {
+    "id": "baddhaHastaSirsansaD",
+    "name": "Baddha Hasta Sirsansa D",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward balancing on straight arms."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, kneel down, set hands, elbows on floor, place head on floor, pike with straight legs."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, lift straight legs."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, lower to chaturanga."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 91,
+    "series": "intermediate"
+  }
+]
