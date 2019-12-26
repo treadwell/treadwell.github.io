@@ -40,7 +40,7 @@ function AsanaSelector (db) {
     }
 
     function getChosen () {
-        return chosen
+        return $chosen
             .find("option")
             .toArray()
             .map(x => $(x).data("asana"))

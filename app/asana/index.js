@@ -14,5 +14,6 @@ fetch("/app/asana/data.json")
                 controls.$html,
                 asanaSelector.$html,
                 status.$html
+            )
 
     }))
