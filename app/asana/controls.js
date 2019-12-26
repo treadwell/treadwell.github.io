@@ -1,4 +1,4 @@
-function Controls () {
+function Controls (player) {
 
     const hooks = []
 
@@ -25,16 +25,13 @@ function Controls () {
             $("<div>").append(
                 $("<button>")
                     .html("Start Reading")
-                    .on("click", () => console.log("Start Reading")),
+                    .on("click", () => player.play()),
                 $("<button>")
                     .html("Pause")
-                    .on("click", () => console.log("Pause")),
-                $("<button>")
-                    .html("Resume")
-                    .on("click", () => console.log("Resume")),
+                    .on("click", () => player.pause()),
                 $("<button>")
                     .html("Reset")
-                    .on("click", () => console.log("Reset"))))
+                    .on("click", () => player.reset())))
 
     function getCycle () {
         return +$cycle.val()
