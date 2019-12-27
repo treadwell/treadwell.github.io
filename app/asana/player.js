@@ -1,13 +1,11 @@
 function Player(asanaSelector) {
 
-    const hooks = []
-
     const $cycle =
       $("<input>")
           .prop("type", "number")
           .prop("id", "secPerBreath")
           .prop("value", 6)
-          .on("input", () => hooks.forEach(fn => fn()))
+          .on("input", () => $html.trigger("change-cycle-duration"))
 
     const $html =
         $("<div>").append(
@@ -25,60 +23,45 @@ function Player(asanaSelector) {
             $("<div>").append(
                 $("<button>")
                     .html("Start")
-                    .on("click", () => play()),
+                    .on("click", () => $html.play()),
                 $("<button>")
                     .html("Pause")
-                    .on("click", () => pause()),
+                    .on("click", () => $html.pause()),
                 $("<button>")
                     .html("Reset")
-                    .on("click", () => reset())))
+                    .on("click", () => $html.reset())))
 
-    function getCycle () {
+    $html.getCycle = function () {
         return +$cycle.val()
     }
 
-    function registerChangeCallback (fn) {
-        hooks.push(fn)
-    }
-
-    function calcTotalTime () {
+    $html.calcTotalTime = function () {
         console.log("total time")
     }
 
-    function calcElapsedTime () {
+    $html.calcElapsedTime = function () {
         console.log("elapsed time")
     }
 
-    function calcCurrentAsana () {
+    $html.calcCurrentAsana = function () {
         console.log("current asana")
     }
 
-    function calcCurrentStep () {
+    $html.calcCurrentStep = function () {
         console.log("current step")
     }
     
-    function play () {
+    $html.play = function () {
         console.log("play")
     }
 
-    function pause () {
+    $html.pause = function () {
         console.log("pause")
     }
 
-    function reset () {
+    $html.reset = function () {
         console.log("reset")
     }
 
-    return {
-        $html,
-        getCycle,
-        registerChangeCallback,
-        calcTotalTime,
-        calcElapsedTime,
-        calcCurrentAsana,
-        calcCurrentStep,
-        play,
-        pause,
-        reset
-    }
+    return $html
 }

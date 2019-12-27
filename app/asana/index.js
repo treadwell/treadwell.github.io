@@ -10,8 +10,8 @@ fetch("/app/asana/data.json")
         $(document).ready(() =>
             $(document.body).append(
                 $("<h1>").append("Ashtanga Series Builder"),
-                player.$html,
-                asanaSelector.$html,
-                status.$html))
+                player,
+                asanaSelector,
+                status))
 
     })

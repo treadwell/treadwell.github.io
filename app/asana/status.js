@@ -28,11 +28,8 @@ function Status (player, asanaSelector) {
                     a1 + step.breaths, 0), 0)))
     }
 
-    asanaSelector.registerChangeCallback(updateTime)
-    player.registerChangeCallback(updateTime)
+    asanaSelector.on("change-chosen", updateTime)
+    player.on("change-cycle-duration", updateTime)
 
-    return {
-        $html,
-    }
-
+    return $html
 }

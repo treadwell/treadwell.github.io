@@ -1,7 +1,5 @@
 function AsanaSelector (db) {
 
-    const hooks = []
-
     const $choices =
         $("<select>")
             .prop("multiple", "multiple")
@@ -36,24 +34,15 @@ function AsanaSelector (db) {
         b.find("option")
             .sort((x, y) => $(x).data("asana").seq - $(y).data("asana").seq)
             .appendTo(b)
-        hooks.forEach(fn => fn())
+        $html.trigger("change-chosen")
     }
 
-    function getChosen () {
+    $html.getChosen = function () {
         return $chosen
             .find("option")
             .toArray()
             .map(x => $(x).data("asana"))
     }
 
-    function registerChangeCallback (fn) {
-        hooks.push(fn)
-    }
-
-    return {
-        $html,
-        getChosen,
-        registerChangeCallback
-    }
-
+    return $html
 }
