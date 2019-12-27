@@ -1,4 +1,4 @@
-function Player(asanaSelector) {
+function Player(asanaSelector, speaker) {
 
     const $cycle =
       $("<input>")
@@ -36,7 +36,10 @@ function Player(asanaSelector) {
     }
 
     $html.calcTotalTime = function () {
-        console.log("total time")
+        return $html.getCycle() *
+            asanaSelector.getChosen().reduce((a0, asana) =>
+                a0 + asana.steps.reduce((a1, step) =>
+                    a1 + step.breaths, 0), 0)
     }
 
     $html.calcElapsedTime = function () {
@@ -51,9 +54,36 @@ function Player(asanaSelector) {
         console.log("current step")
     }
     
-    $html.play = function () {
-        console.log("play")
+    $html.play = function ([asana, ...asanas] = asanaSelector.getChosen()) {
+        // TODO: Say name of asana
+        if (!asana) return
+        playSteps(asana.steps, asanas)
     }
+
+    function playSteps ([step, ...steps] = [], asanas, remainingCount) {
+        
+        if (!step) {
+            $html.play(asanas)
+            return
+        }
+        
+        let args = [ steps, asanas ]
+        let breaths = 0
+        
+        if (!step.counted) {
+            speaker.speak(step.count, step.text)
+            breaths = step.breaths
+        } else if (remainingCount == undefined) {
+            args = [ [step, ...steps], asanas, step.breaths ]
+        } else if (remainingCount != 0) {
+            speaker.speak(remainingCount)
+            args = [ [step, ...steps], asanas, remainingCount - 1 ]
+            breaths = 1
+        }  
+
+        setTimeout(playSteps, breaths * $html.getCycle() * 1000, ...args)
+    }
+
 
     $html.pause = function () {
         console.log("pause")

@@ -22,10 +22,7 @@ function Status (player, asanaSelector) {
     }
 
     function updateTime() {
-        $time.text(formatTime(player.getCycle() *
-            asanaSelector.getChosen().reduce((a0, asana) =>
-                a0 + asana.steps.reduce((a1, step) =>
-                    a1 + step.breaths, 0), 0)))
+        $time.text(formatTime(player.calcTotalTime()))
     }
 
     asanaSelector.on("change-chosen", updateTime)
