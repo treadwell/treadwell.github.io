@@ -1,4 +1,4 @@
-function Status (controls, asanaSelector) {
+function Status (player) {
 
     const $time =
         $("<span>").text(formatTime(0))
