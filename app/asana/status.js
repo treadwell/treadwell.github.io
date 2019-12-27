@@ -1,4 +1,4 @@
-function Status (player) {
+function Status (player, asanaSelector) {
 
     const $time =
         $("<span>").text(formatTime(0))
@@ -22,14 +22,14 @@ function Status (player) {
     }
 
     function updateTime() {
-        $time.text(formatTime(controls.getCycle() *
+        $time.text(formatTime(player.getCycle() *
             asanaSelector.getChosen().reduce((a0, asana) =>
                 a0 + asana.steps.reduce((a1, step) =>
                     a1 + step.breaths, 0), 0)))
     }
 
-    // asanaSelector.registerChangeCallback(updateTime)
-    // controls.registerChangeCallback(updateTime)
+    asanaSelector.registerChangeCallback(updateTime)
+    player.registerChangeCallback(updateTime)
 
     return {
         $html,
