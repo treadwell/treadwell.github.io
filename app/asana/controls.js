@@ -24,7 +24,7 @@ function Controls (player) {
                     .prop("id", "volSlide")),
             $("<div>").append(
                 $("<button>")
-                    .html("Start Reading")
+                    .html("Start")
                     .on("click", () => player.play()),
                 $("<button>")
                     .html("Pause")
