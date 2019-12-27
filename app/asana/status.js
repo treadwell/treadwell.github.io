@@ -28,8 +28,8 @@ function Status (player) {
                     a1 + step.breaths, 0), 0)))
     }
 
-    asanaSelector.registerChangeCallback(updateTime)
-    controls.registerChangeCallback(updateTime)
+    // asanaSelector.registerChangeCallback(updateTime)
+    // controls.registerChangeCallback(updateTime)
 
     return {
         $html,
