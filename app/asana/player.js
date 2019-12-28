@@ -61,6 +61,8 @@ function Player(asanaSelector, speaker) {
     $html.play = function ([asana, ...asanas] = asanaSelector.getChosen()) {
         // TODO: Say name of asana
         if (!asana) return
+        console.log(asana.name)
+        speaker.speak(asana.name)
         playSteps(asana.steps, asanas)
     }
 
@@ -75,17 +77,19 @@ function Player(asanaSelector, speaker) {
         let breaths = 0
         
         if (!step.counted) {
+            console.log(step.count, step.text)
             speaker.speak(step.count, step.text)
             breaths = step.breaths
         } else if (remainingCount == undefined) {
             args = [ [step, ...steps], asanas, step.breaths ]
         } else if (remainingCount != 0) {
+            console.log(remainingCount)
             speaker.speak(remainingCount)
             args = [ [step, ...steps], asanas, remainingCount - 1 ]
             breaths = 1
         }  
 
-        setTimeout(playSteps, breaths * $html.getCycle() * 1000, ...args)
+        setTimeout(playSteps, breaths * +$html.getCycle() * 1000, ...args)
     }
 
 

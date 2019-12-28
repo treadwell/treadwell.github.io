@@ -1,5 +1,35 @@
 [
   {
+    "id": "aaa",
+    "name": "Test Asana",
+    "steps": [
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale, release the right toe and lower the right leg to the floor."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, catch the left big toe with the left hand while keeping both legs straight."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Exhale, touch the chin to the knee."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Inhale, lower the head to the floor."
+      }],
+      "seq": 0
+    },
+    {
     "id": "suryA",
     "name": "Surya Namaskara A",
     "steps": [
@@ -300,7 +330,7 @@
       {
         "count": "2",
         "breaths": 0.5,
-        "text": "Exhale, bend the right knee, place the right hand outside the right foot, reach the left arm over the head."
+        "text": "Exhale, bend the right knee, place the right hand outside the right foot, extend the left arm over the head."
       },
       {
         "breaths": 5,
@@ -314,7 +344,7 @@
       {
         "count": "4",
         "breaths": 0.5,
-        "text": "Exhale, bend the left knee, place the left hand outside the left foot, reach the right arm over the head."
+        "text": "Exhale, bend the left knee, place the left hand outside the left foot, extend the right arm over the head."
       },
       {
         "breaths": 5,
@@ -451,7 +481,7 @@
       {
         "count": "3",
         "breaths": 0.5,
-        "text": "Exhale, place the head on the floor between the feet and reach the hands toward the floor."
+        "text": "Exhale, place the head on the floor between the feet, extend the hands toward the floor."
       },
       {
         "breaths": 5,
@@ -845,7 +875,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale. Jump through to seated, straighten the legs, keep the hands next to the hips, tuck the chin."
+        "text": "Inhale. Jump to seated, straighten the legs, keep the hands next to the hips, tuck the chin."
       },
       {
         "breaths": 5,
@@ -936,7 +966,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, straighten the legs."
+        "text": "Inhale, jump to seated, straighten the legs."
       },
       {
         "count": "8",
@@ -983,7 +1013,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, right leg into half padmasana, bind. Left hand to left foot."
+        "text": "Inhale, jump to seated, right leg into half padmasana, bind. Left hand to left foot."
       },
       {
         "count": "8",
@@ -1022,7 +1052,7 @@
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, left leg into half padmasana, bind. Right hand to right foot."
+        "text": "Inhale, jump to seated, left leg into half padmasana, bind. Right hand to right foot."
       },
       {
         "count": "15",
@@ -1155,7 +1185,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Jump through to seated, fold the right leg to the side. Catch the left foot with both hands, head up."
+        "text": "Jump to seated, fold the right leg to the side. Catch the left foot with both hands, head up."
       },
       {
         "count": "8",
@@ -1194,7 +1224,7 @@
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, fold the left leg to the side. Catch the right foot with both hands, head up."
+        "text": "Inhale, jump to seated, fold the left leg to the side. Catch the right foot with both hands, head up."
       },
       {
         "count": "15",
@@ -1241,7 +1271,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, sit on right heel. Catch the left foot with both hands, head up."
+        "text": "Inhale, jump to seated, sit on right heel. Catch the left foot with both hands, head up."
       },
       {
         "count": "8",
@@ -1280,7 +1310,7 @@
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, sit on left heel. Catch the right foot with both hands, head up."
+        "text": "Inhale, jump to seated, sit on left heel. Catch the right foot with both hands, head up."
       },
       {
         "count": "15",
@@ -1327,7 +1357,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, right foot in with the heel up. Catch the left foot, head up."
+        "text": "Inhale, jump to seated, right foot in with the heel up. Catch the left foot, head up."
       },
       {
         "count": "8",
@@ -1366,7 +1396,7 @@
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, left foot in with the heel up. Catch the right foot, head up."
+        "text": "Inhale, jump to seated, left foot in with the heel up. Catch the right foot, head up."
       },
       {
         "count": "15",
@@ -1413,7 +1443,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, bend the right knee, bend forward, and bind."
+        "text": "Inhale, jump to seated, bend the right knee, bend forward, and bind."
       },
       {
         "count": "8",
@@ -1452,7 +1482,7 @@
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, bend the left knee, bend forward, and bind."
+        "text": "Inhale, jump to seated, bend the left knee, bend forward, and bind."
       },
       {
         "count": "15",
@@ -1499,7 +1529,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Take the left leg into half padmasana, bend the right knee, bend forward, and bind."
+        "text": "Inhale, jump to seated. Left leg to padmasana, bend right knee, bend forward, and bind."
       },
       {
         "count": "8",
@@ -1538,7 +1568,7 @@
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Take the right leg into half padmasana, bend the left knee, bend forward, and bind."
+        "text": "Inhale, jump to seated. Right leg to padmasana, bend left knee, bend forward, and bind."
       },
       {
         "count": "15",
@@ -1585,7 +1615,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Bend the right knee, twist right, and bind."
+        "text": "Inhale, jump to seated. Bend the right knee, twist right, and bind."
       },
       {
         "breaths": 5,
@@ -1614,7 +1644,7 @@
       {
         "count": "12",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Bend the left knee, twist left, and bind."
+        "text": "Inhale, jump to seated. Bend the left knee, twist left, and bind."
       },
       {
         "breaths": 5,
@@ -1651,7 +1681,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Take the left leg into half padmasana, twist right, and bind."
+        "text": "Inhale, jump to seated. Left leg to padmasana, twist right, and bind."
       },
       {
         "breaths": 5,
@@ -1680,7 +1710,7 @@
       {
         "count": "12",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Take the right leg into half padmasana, twist left, and bind."
+        "text": "Inhale, jump to seated. Right leg to padmasana, twist left, bind."
       },
       {
         "breaths": 5,
@@ -1717,7 +1747,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Legs up, arms straight."
+        "text": "Inhale, jump to seated. Legs up, arms straight."
       },
       {
         "breaths": 5,
@@ -1735,7 +1765,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Legs up, arms straight."
+        "text": "Inhale, jump to seated. Legs up, arms straight."
       },
       {
         "breaths": 5,
@@ -1753,7 +1783,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Legs up, arms straight."
+        "text": "Inhale, jump to seated. Legs up, arms straight."
       },
       {
         "breaths": 5,
@@ -1771,7 +1801,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Legs up, arms straight."
+        "text": "Inhale, jump to seated. Legs up, arms straight."
       },
       {
         "breaths": 5,
@@ -1789,7 +1819,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Legs up, arms straight."
+        "text": "Inhale, jump to seated. Legs up, arms straight."
       },
       {
         "breaths": 5,
@@ -1830,7 +1860,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump and wrap the legs around the arms. Lock the feet in front of you with the right on top of the left."
+        "text": "Inhale, jump legs around arms. Lock the feet in front."
       },
       {
         "count": "8",
@@ -1877,7 +1907,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump and place the legs around the arms. Go down and straighten the arms and legs."
+        "text": "Inhale, jump legs around the arms. Go down, straighten arms and legs."
       },
       {
         "breaths": 5,
@@ -1894,12 +1924,12 @@
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Exhale, take the arms behind the back and lock the hands."
+        "text": "Exhale, arms behind back, lock the hands."
       },
       {
         "count": "9",
         "breaths": 0.5,
-        "text": "Inhale, cross the feet, and take them behind the head. The right leg should be on top of the left."
+        "text": "Inhale, feet behind the head. Right on top of left."
       },
       {
         "breaths": 5,
@@ -1941,12 +1971,12 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated."
+        "text": "Inhale, jump to seated."
       },
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, take padmasana position, thread the arms through the legs, place the hands over the ears."
+        "text": "Inhale, take padmasana, thread the arms through, hands over ears."
       },
       {
         "breaths": 5,
@@ -2021,7 +2051,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Pull your heels in."
+        "text": "Inhale, jump to seated. Pull your heels in."
       },
       {
         "count": "8",
@@ -2082,7 +2112,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated. Spread the legs, catch the heels with the hands, and lift the head up."
+        "text": "Inhale, jump through. Spread legs, catch heels, lift head up."
       },
       {
         "count": "8",
@@ -2146,12 +2176,12 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Jump through to seated and lie down."
+        "text": "Jump to seated and lie down."
       },
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, take both legs back over the head, spread the legs, and catch the big toes."
+        "text": "Inhale, legs back over head, spread legs, catch big toes."
       },
       {
         "breaths": 5,
@@ -2198,12 +2228,12 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated and lie down."
+        "text": "Inhale, jump to seated and lie down."
       },
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, catch the right big toe with the right hand while keeping both legs straight."
+        "text": "Inhale, catch the right big toe."
       },
       {
         "count": "9",
@@ -2222,7 +2252,7 @@
       {
         "count": "11",
         "breaths": 0.5,
-        "text": "Exhale, take the right leg to the right side, look to the left."
+        "text": "Exhale, right leg to the right side."
       },
       {
         "breaths": 5,
@@ -2231,7 +2261,7 @@
       {
         "count": "12",
         "breaths": 0.5,
-        "text": "Inhale, bring the right leg back to the center."
+        "text": "Inhale, right leg back to the center."
       },
       {
         "count": "13",
@@ -2246,12 +2276,12 @@
       {
         "count": "15",
         "breaths": 0.5,
-        "text": "Exhale, release the right toe and lower the right leg to the floor."
+        "text": "Exhale, lower the right leg."
       },
       {
         "count": "16",
         "breaths": 0.5,
-        "text": "Inhale, catch the left big toe with the left hand while keeping both legs straight."
+        "text": "Inhale, catch the left big toe."
       },
       {
         "count": "17",
@@ -2270,7 +2300,7 @@
       {
         "count": "19",
         "breaths": 0.5,
-        "text": "Exhale, take the left leg to the left side, look to the right."
+        "text": "Exhale, left leg to the left side."
       },
       {
         "breaths": 5,
@@ -2279,7 +2309,7 @@
       {
         "count": "20",
         "breaths": 0.5,
-        "text": "Inhale, bring the left leg back to center."
+        "text": "Inhale, left leg back to center."
       },
       {
         "count": "21",
@@ -2294,7 +2324,7 @@
       {
         "count": "23",
         "breaths": 0.5,
-        "text": "Exhale, release the left toe and lower the left leg to the floor."
+        "text": "Exhale, lower the left leg to the floor."
       },
       {
         "count": "24",
@@ -2303,7 +2333,7 @@
       },
 	    {
         "breaths": 0.5,
-        "text": "Exhale, take cakrasana back into chaturanga dandasana."
+        "text": "Exhale, take cakrasana."
       },
       {
         "count": "25",
@@ -2326,12 +2356,12 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated, lie down."
+        "text": "Inhale, jump to seated, lie down."
       },
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, bring both legs over the head, catch the big toes."
+        "text": "Inhale, both legs over the head, catch the big toes."
       },
       {
         "count": "9",
@@ -2373,12 +2403,12 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated and lie down."
+        "text": "Inhale, jump to seated and lie down."
       },
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, bring both legs over the head, catch the heels."
+        "text": "Inhale, both legs over the head, catch the heels."
       },
       {
         "count": "9",
@@ -2430,7 +2460,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated and lie down."
+        "text": "Inhale, jump to seated and lie down."
       },
       {
         "count": "8",
@@ -2477,7 +2507,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated and lie down."
+        "text": "Inhale, jump to seated and lie down."
       },
       {
         "count": "8",
@@ -2524,7 +2554,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Jump through to seated and straighten the legs."
+        "text": "Jump to seated and straighten the legs."
       },
       {
         "count": "8",
@@ -2576,7 +2606,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated and lie down."
+        "text": "Inhale, jump to seated and lie down."
       },
       {
         "count": "8",
@@ -2770,7 +2800,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through to seated."
+        "text": "Inhale, jump to seated."
       },
       {
         "count": "8",
@@ -2987,7 +3017,7 @@
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Jump through to left side position, toes point, head up."
+        "text": "Jump to left side position, toes point, head up."
       },
       {
         "count": "15",
