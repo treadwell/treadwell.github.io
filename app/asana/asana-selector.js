@@ -4,6 +4,7 @@ function AsanaSelector (db) {
         $("<select>")
             .prop("multiple", "multiple")
             .css("width", "40%")
+            .css("height", "2in")
             .append(db.asanas.map(asana =>
                 $("<option>")
                     .data("asana", asana)
@@ -13,6 +14,7 @@ function AsanaSelector (db) {
         $("<select>")
             .prop("multiple", "multiple")
             .css("width", "40%")
+            .css("height", "2in")
 
     const $html =
         $("<div>").append(
@@ -21,16 +23,24 @@ function AsanaSelector (db) {
                 $chosen),
             $("<div>").append(
                 $("<button>")
-                    .html("<-")
-                    .on("click", () => moveSelected($chosen, $choices)),
+                    .html("Add")
+                    .on("click", () => moveSelected($choices, $chosen)),
                 $("<button>")
-                    .html("->")
-                    .on("click", () => moveSelected($choices, $chosen))))
+                    .html("Remove")
+                    .on("click", () => removeSelected($chosen))
+                    ))
+
+    function removeSelected (a) {
+        a.find("option").filter(function () {
+            return this.selected
+        }).remove()
+        $html.trigger("change-chosen")
+    }
 
     function moveSelected (a, b) {
         a.find("option").filter(function () {
             return this.selected
-        }).appendTo(b)
+        }).clone(true).appendTo(b)
         b.find("option")
             .sort((x, y) => $(x).data("asana").seq - $(y).data("asana").seq)
             .appendTo(b)
