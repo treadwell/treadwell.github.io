@@ -11,6 +11,7 @@ function Speaker (numbers) {
         lang = "en-US",
         onEnd = () => {}
     }) {
+        // speechSynthesis.cancel()
         var voices = window.speechSynthesis.getVoices();
         speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance(), {
             voice: voices[voice],  // en has 1, 10, 17, hi-IN is 20
