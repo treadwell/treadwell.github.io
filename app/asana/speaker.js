@@ -12,7 +12,8 @@ function Speaker (numbers) {
         onEnd = () => {}
     }) {
         // speechSynthesis.cancel()
-        var voices = window.speechSynthesis.getVoices();
+        var voices = window.speechSynthesis.getVoices()
+        const timeStart = Date.now()
         speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance(), {
             voice: voices[voice],  // en has 1, 10, 17, hi-IN is 20
             //voiceURI: voiceURI,
@@ -21,7 +22,7 @@ function Speaker (numbers) {
             //pitch: pitch,
             text: m,
             //lang: lang,
-            onend: onEnd,
+            onend: () => onEnd(Date.now() - timeStart),
         }))
     }
 
@@ -29,17 +30,19 @@ function Speaker (numbers) {
         volume = v
     }
 
-    function speak (count, text) {
+    function speak (count, text, callback) {
         if (!count && text) {
             say({
-                m: text
+                m: text,
+                onEnd: callback
             })
         } else {
             say({ 
                 m: text ? numbers[count] + "." : count,
-                onEnd: !text ? undefined : () => 
+                onEnd: !text ? callback : () => 
                     say({ 
-                        m: text
+                        m: text,
+                        onEnd: callback
                     }) 
             })
         }

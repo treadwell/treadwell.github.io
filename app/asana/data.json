@@ -6,7 +6,7 @@
       {
         "count": "15",
         "breaths": 0.5,
-        "text": "Exhale, release the right toe and lower the right leg to the floor."
+        "text": "Exhale."
       },
       {
         "count": "16",
@@ -16,7 +16,7 @@
       {
         "count": "17",
         "breaths": 0.5,
-        "text": "Exhale, touch the chin to the knee."
+        "text": "Exhale."
       },
       {
         "breaths": 5,
@@ -26,8 +26,10 @@
         "count": "18",
         "breaths": 0.5,
         "text": "Inhale, lower the head to the floor."
-      }],
-      "seq": 0
+      }
+    ],
+      "seq": 0,
+      "series": "test"
     },
     {
     "id": "suryA",

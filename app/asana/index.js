@@ -8,8 +8,6 @@ Promise.all([
 
 ]).then(([asanas, numbers]) => {
 
-    console.log(asanas, numbers)
-
     const db = Db(asanas)
     const speaker = Speaker(numbers)
     const asanaSelector = AsanaSelector(db)

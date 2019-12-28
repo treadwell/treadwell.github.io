@@ -61,9 +61,11 @@ function Player(asanaSelector, speaker) {
     $html.play = function ([asana, ...asanas] = asanaSelector.getChosen()) {
         // TODO: Say name of asana
         if (!asana) return
-        console.log(asana.name)
-        speaker.speak(asana.name)
-        playSteps(asana.steps, asanas)
+        
+        speaker.speak(undefined, asana.name, () => {
+            console.log(asana.name)
+            playSteps(asana.steps, asanas)
+        })
     }
 
     function playSteps ([step, ...steps] = [], asanas, remainingCount) {
@@ -73,25 +75,24 @@ function Player(asanaSelector, speaker) {
             return
         }
         
-        let args = [ steps, asanas ]
-        let breaths = 0
-        
         if (!step.counted) {
             console.log(step.count, step.text)
-            speaker.speak(step.count, step.text)
-            breaths = step.breaths
+            speaker.speak(step.count, step.text, time => {
+                setTimeout(playSteps, (step.breaths * +$html.getCycle() * 1000) - time, 
+                    steps, asanas)
+            })
         } else if (remainingCount == undefined) {
-            args = [ [step, ...steps], asanas, step.breaths ]
+            playSteps([step, ...steps], asanas, step.breaths)
         } else if (remainingCount != 0) {
-            console.log(remainingCount)
-            speaker.speak(remainingCount)
-            args = [ [step, ...steps], asanas, remainingCount - 1 ]
-            breaths = 1
-        }  
-
-        setTimeout(playSteps, breaths * +$html.getCycle() * 1000, ...args)
+            console.log(remainingCount) 
+            speaker.speak(remainingCount, undefined, time => {
+                setTimeout(playSteps, (+$html.getCycle() * 1000) - time, 
+                    [step, ...steps], asanas, remainingCount - 1)
+            })
+        } else {
+            playSteps(steps, asanas)
+        }
     }
-
 
     $html.pause = function () {
         console.log("pause")
