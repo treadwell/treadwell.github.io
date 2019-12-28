@@ -1,7 +1,7 @@
 [
   {
     "id": "aaa",
-    "name": "Test Asana",
+    "name": "For Testing Only",
     "steps": [
       {
         "count": "15",
@@ -28,7 +28,7 @@
         "text": "Inhale, lower the head to the floor."
       }
     ],
-      "seq": 0,
+      "seq": 500,
       "series": "test"
     },
     {
