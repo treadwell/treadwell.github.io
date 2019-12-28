@@ -7,19 +7,23 @@ function Player(asanaSelector, speaker) {
           .prop("value", 6)
           .on("input", () => $html.trigger("change-cycle-duration"))
 
+    const $volume = 
+        $("<input>")
+            .prop("type", "range")
+            .prop("min", 0.0)
+            .prop("max", 1.0)
+            .prop("step", 0.1)
+            .prop("value", 0.5)
+            .prop("id", "volSlide")
+            .on("change", () => speaker.setVolume($volume.val()))
+
     const $html =
         $("<div>").append(
             $("<div>").append(
                 "Seconds per breath cycle: ", $cycle),
             $("<div>").append(
                 "Volume: ",
-                $("<input>")
-                    .prop("type", "range")
-                    .prop("min", 0.0)
-                    .prop("max", 1.0)
-                    .prop("step", 0.1)
-                    .prop("value", 0.5)
-                    .prop("id", "volSlide")),
+                $volume),
             $("<div>").append(
                 $("<button>")
                     .html("Start")
