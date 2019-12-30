@@ -50,8 +50,8 @@ function Player(asanaSelector, speaker) {
         console.log("elapsed time")
     }
 
-    $html.calcCurrentAsana = function () {
-        console.log("current asana")
+    $html.calcCurrentAsana = function (asana) {
+        return asana.name
     }
 
     $html.calcCurrentStep = function () {
@@ -64,6 +64,7 @@ function Player(asanaSelector, speaker) {
         
         speaker.speak(undefined, asana.name, () => {
             console.log(asana.name)
+            $html.trigger("change-asana")
             playSteps(asana.steps, asanas)
         })
     }
