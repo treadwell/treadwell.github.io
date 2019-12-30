@@ -5,10 +5,10 @@ function AsanaSelector (db) {
             .prop("multiple", "multiple")
             .css("width", "25%")
             .css("height", "2in")
-            .append(db.asanas.map(asana =>
+            .append(db.groups.map(group =>
                 $("<option>")
-                    .data("asana", asana)
-                    .html(asana.name)))
+                    .data("asana", group)
+                    .html(group.name)))
 
     const $choices =
         $("<select>")
