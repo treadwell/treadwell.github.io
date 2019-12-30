@@ -1,9 +1,19 @@
 function AsanaSelector (db) {
 
+    const $groups =
+        $("<select>")
+            .prop("multiple", "multiple")
+            .css("width", "25%")
+            .css("height", "2in")
+            .append(db.asanas.map(asana =>
+                $("<option>")
+                    .data("asana", asana)
+                    .html(asana.name)))
+
     const $choices =
         $("<select>")
             .prop("multiple", "multiple")
-            .css("width", "40%")
+            .css("width", "25%")
             .css("height", "2in")
             .append(db.asanas.map(asana =>
                 $("<option>")
@@ -13,22 +23,30 @@ function AsanaSelector (db) {
     const $chosen =
         $("<select>")
             .prop("multiple", "multiple")
-            .css("width", "40%")
+            .css("width", "25%")
             .css("height", "2in")
 
     const $html =
         $("<div>").append(
             $("<div>").append(
+                $groups,
                 $choices,
                 $chosen),
             $("<div>").append(
                 $("<button>")
-                    .html("Add")
+                    .html("Add Group")
+                    .on("click", () => console.log("Not Implemented")),
+                $("<button>")
+                    .html("Add Individual")
                     .on("click", () => moveSelected($choices, $chosen)),
                 $("<button>")
                     .html("Remove")
                     .on("click", () => removeSelected($chosen))
                     ))
+
+    function addGroup (a) {
+        
+    }
 
     function removeSelected (a) {
         a.find("option").filter(function () {
