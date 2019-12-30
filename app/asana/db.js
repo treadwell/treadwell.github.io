@@ -10,15 +10,8 @@ function Db (asanas, groups) {
         })
     }
 
-    addGroup ("testGroup", "Test Group", ["suryA", "suryB", "aaaTest"])
-  
-    console.log(groups[0])
-    console.log(groups[groups.length - 1])
-
     return {
         asanas,
-        groups,
-        addGroup
-
+        groups
     }
 }
