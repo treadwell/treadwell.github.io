@@ -4,11 +4,14 @@ Promise.all([
         .then(resp => resp.json()),
     
     fetch("/app/asana/sanskrit_numbers.json")
+        .then(resp => resp.json()),
+
+    fetch("/app/asana/groups.json")
         .then(resp => resp.json())
 
-]).then(([asanas, numbers]) => {
+]).then(([asanas, numbers, groups]) => {
 
-    const db = Db(asanas)
+    const db = Db(asanas, groups)
     const speaker = Speaker(numbers)
     const asanaSelector = AsanaSelector(db)
     const player = Player(asanaSelector, speaker)
