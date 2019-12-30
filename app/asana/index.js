@@ -12,7 +12,6 @@ Promise.all([
 ]).then(([asanas, numbers, groups]) => {
 
     const db = Db(asanas, groups)
-    console.log(db.groups)
     const speaker = Speaker(numbers)
     const asanaSelector = AsanaSelector(db)
     const player = Player(asanaSelector, speaker)
