@@ -7,7 +7,7 @@ function AsanaSelector (db) {
             .css("height", "2in")
             .append(db.groups.map(group =>
                 $("<option>")
-                    .data("asana", group)
+                    .data("group", group)
                     .html(group.name)))
 
     const $choices =
@@ -35,7 +35,7 @@ function AsanaSelector (db) {
             $("<div>").append(
                 $("<button>")
                     .html("Add Group")
-                    .on("click", () => console.log("Not Implemented")),
+                    .on("click", () => addGroup($groups, $chosen)),
                 $("<button>")
                     .html("Add Individual")
                     .on("click", () => moveSelected($choices, $chosen)),
@@ -44,8 +44,18 @@ function AsanaSelector (db) {
                     .on("click", () => removeSelected($chosen))
                     ))
 
-    function addGroup (a) {
-        
+    function addGroup (a, b) {
+        a.find("option")
+            .filter(function () {
+                return this.selected})              // gets selected options
+            .clone(true)                            // copies them (not necessary)
+            .appendTo(b)                            // add the options to b
+            // extract the id's in each group
+            // get the associated asana
+            // rebuild the option
+
+        b.find("option")
+            .map(x => console.log($(x).data("group").series))
     }
 
     function removeSelected (a) {
