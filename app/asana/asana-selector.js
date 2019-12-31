@@ -35,7 +35,7 @@ function AsanaSelector (db) {
             $("<div>").append(
                 $("<button>")
                     .html("Add Group")
-                    .on("click", () => addGroup($groups, $chosen)),
+                    .on("click", () => addGroup($groups, $chosen, db.asanas)),
                 $("<button>")
                     .html("Add Individual")
                     .on("click", () => moveSelected($choices, $chosen)),
@@ -44,19 +44,33 @@ function AsanaSelector (db) {
                     .on("click", () => removeSelected($chosen))
                     ))
 
-    function addGroup (a, b) {
-        a.find("option")
-            .filter(function () {
-                return this.selected})              // gets selected options
-            .clone(true)                            // copies them (not necessary)
-            .appendTo(b)                            // add the options to b
-            // extract the id's in each group
-            // get the associated asana
-            // rebuild the option
+    function addGroup (groups, chosen, asanas) {
+        
+        // extract the id's from selected groups
+        ids = []
 
-        b.find("option")
+        groups.find("option")
+            .filter(function () {
+                return this.selected})  // gets selected options
             .toArray()
-            .map(x => console.log($(x).data("group").series))
+            .map(x => $(x).data("group").series
+                .map(x => ids.push(x))  // put ids in an array
+            )
+  
+        // turn into the actual asana
+        function find_asana(id, asanas) {
+            return asanas.find(a => a.id === id)
+        }
+
+        selected_asanas = ids.map(id => find_asana(id, db.asanas))
+        
+        // rebuild the options
+        chosen.append(selected_asanas.map(asana =>
+            $("<option>")
+                .data("asana", asana)
+                .html(asana.name)))
+
+        $html.trigger("change-chosen")
     }
 
     function removeSelected (a) {
