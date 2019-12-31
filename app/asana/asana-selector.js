@@ -55,6 +55,7 @@ function AsanaSelector (db) {
             // rebuild the option
 
         b.find("option")
+            .toArray()
             .map(x => console.log($(x).data("group").series))
     }
 

@@ -3,8 +3,8 @@ function Status (player, asanaSelector) {
     const $time =
         $("<span>").text(formatTime(0))
 
-    const $currentAsana =
-        $("<span>").text(player.$html.calcCurrentAsana(asana))
+    const $currentAsana = "None"
+        // $("<span>").text(player.calcCurrentAsana(asana))
 
     const $html =
         $("<div>").append(
@@ -29,7 +29,7 @@ function Status (player, asanaSelector) {
 
     asanaSelector.on("change-chosen", updateTime)
     player.on("change-cycle-duration", updateTime)
-    player.on("change-asana", calcCurrentAsana)
+    // player.on("change-asana", calcCurrentAsana(asana))
 
     return $html
 }
