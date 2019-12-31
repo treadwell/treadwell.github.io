@@ -84,9 +84,9 @@ function AsanaSelector (db) {
         a.find("option").filter(function () {
             return this.selected
         }).clone(true).appendTo(b)
-        b.find("option")
-            .sort((x, y) => $(x).data("asana").seq - $(y).data("asana").seq)
-            .appendTo(b)
+        // b.find("option")
+        //     .sort((x, y) => $(x).data("asana").seq - $(y).data("asana").seq)
+        //     .appendTo(b)
         $html.trigger("change-chosen")
     }
 
