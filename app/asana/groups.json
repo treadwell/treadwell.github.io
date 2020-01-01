@@ -31,10 +31,6 @@
 "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
 
 
-
-
-
-
 {"id": "intermediate", "name": "Intermediate Series", "series": [
 "suryA", "suryA", "suryA", "suryA", "suryA",
 "suryB", "suryB", "suryB",
@@ -47,6 +43,12 @@
 "baddhaHastaSirsansaA", "baddhaHastaSirsansaB", "baddhaHastaSirsansaC", "baddhaHastaSirsansaD",
 "urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
 "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
+
+{"id": "matts", "name": "Matt's Warmup", "series": ["suryA", "suryA", "suryA", "suryA", "suryA",
+"suryB", "suryB", "suryB",
+ "pigeon", "lizard"]},
+ 
+{"id": "components", "name": "**** Series Components ****", "series": ["suryA"]},
 
 {"id": "suryAs", "name": "5 x Sury A", "series": ["suryA", "suryA", "suryA", "suryA", "suryA" ]},
 {"id": "suryBs", "name": "3 x Sury B", "series": [ "suryB", "suryB", "suryB"]},
