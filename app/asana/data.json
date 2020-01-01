@@ -5449,5 +5449,52 @@
     ],
     "seq": 602,
     "series": "none"
+  },
+  {
+    "id": "padmasanaMatt",
+    "name": "Padmasana",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through, legs straight."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, take legs into padmasana."
+      },
+      {
+        "breaths": 10,
+        "counted": true
+      },
+      
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Exhale, step back to downward dog."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward, head up."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
+      }
+    ],
+    "seq": 603,
+    "series": "none"
   }
 ]

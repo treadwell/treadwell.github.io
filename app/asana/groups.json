@@ -44,9 +44,8 @@
 "urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
 "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
 
-{"id": "matts", "name": "Matt's Warmup", "series": ["suryA", "suryA", "suryA", "suryA", "suryA",
-"suryB", "suryB", "suryB",
- "pigeon", "lizard"]},
+{"id": "matts", "name": "Matt's Warmup", "series": ["suryA", "suryA", "padangusthasana", "padahastasana",
+ "lizard", "pigeon", "maricasanaA", "maricasanaD", "padmasanaMatt"]},
  
 {"id": "components", "name": "**** Series Components ****", "series": []},
 
