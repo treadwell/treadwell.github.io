@@ -5186,7 +5186,7 @@
   },
     {
     "id": "aaa",
-    "name": "For Testing Only",
+    "name": "**** For Testing Only ****",
     "steps": [
       {
         "count": "15",
@@ -5262,6 +5262,192 @@
       }
     ],
     "seq": 501,
+    "series": "none"
+  },
+  {
+    "id": "pigeon",
+    "name": "Pigeon Pose",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up only."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, step right foot forward to left wrist."
+      },
+        {
+        "breaths": 0.5,
+        "text": "Exhale, collapse right knee to right wrist. Lower"
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, step back to downward dog."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, step left foot forward to right wrist."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, collapse left knee to left wrist. Lower"
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, step back to downward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward, head up."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
+      }
+    ],
+    "seq": 601,
+    "series": "none"
+  },
+  {
+    "id": "lizard",
+    "name": "Lizard Pose",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up only."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, step right foot forward to outside of right wrist."
+      },
+        {
+        "breaths": 0.5,
+        "text": "Exhale, lower body and elbows to floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, step back to downward dog."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, step left foot forward to outside of left wrist."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lower body and elbows to floor."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, step back to downward dog."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward, head up."
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
+      }
+    ],
+    "seq": 602,
     "series": "none"
   }
 ]
