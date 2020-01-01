@@ -48,7 +48,7 @@
 "suryB", "suryB", "suryB",
  "pigeon", "lizard"]},
  
-{"id": "components", "name": "**** Series Components ****", "series": ["suryA"]},
+{"id": "components", "name": "**** Series Components ****", "series": []},
 
 {"id": "suryAs", "name": "5 x Sury A", "series": ["suryA", "suryA", "suryA", "suryA", "suryA" ]},
 {"id": "suryBs", "name": "3 x Sury B", "series": [ "suryB", "suryB", "suryB"]},
