@@ -2,12 +2,12 @@
 
 {"id": "shortest", "name": "5xA, 3xB, 3-Close", "series": ["suryA", "suryA", "suryA", "suryA", "suryA",
 "suryB", "suryB", "suryB",
- "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
+ "baddhaPadmasanaSolo", "yogaMudra", "padmasana", "utpluthih"]},
  
  {"id": "fundamentalSeries", "name": "Fundamental Series", "series": ["suryA", "suryA", "suryA", "suryA", "suryA",
 "suryB", "suryB", "suryB",
 "padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
-"baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
+"baddhaPadmasanaSolo", "yogaMudra", "padmasana", "utpluthih"]},
 
 
 

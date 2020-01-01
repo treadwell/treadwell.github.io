@@ -1,36 +1,4 @@
 [
-  {
-    "id": "aaa",
-    "name": "For Testing Only",
-    "steps": [
-      {
-        "count": "15",
-        "breaths": 0.5,
-        "text": "Exhale."
-      },
-      {
-        "count": "16",
-        "breaths": 0.5,
-        "text": "Inhale, catch the left big toe with the left hand while keeping both legs straight."
-      },
-      {
-        "count": "17",
-        "breaths": 0.5,
-        "text": "Exhale."
-      },
-      {
-        "breaths": 5,
-        "counted": true
-      },
-      {
-        "count": "18",
-        "breaths": 0.5,
-        "text": "Inhale, lower the head to the floor."
-      }
-    ],
-      "seq": 500,
-      "series": "test"
-    },
     {
     "id": "suryA",
     "name": "Surya Namaskara A",
@@ -83,6 +51,10 @@
         "count": "9",
         "breaths": 0.5,
         "text": "Inhale, lift the arms up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
       }
     ],
     "seq": 1,
@@ -180,6 +152,10 @@
         "count": "17",
         "breaths": 0.5,
         "text": "Inhale, hands up, bent knees, utkatasana."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
       }
     ],
     "seq": 2,
@@ -211,6 +187,10 @@
         "count": "3",
         "breaths": 0.5,
         "text": "Inhale, lift the head up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       }
     ],
     "seq": 3,
@@ -238,6 +218,10 @@
         "count": "3",
         "breaths": 0.5,
         "text": "Inhale, head up,"
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
       }
     ],
     "seq": 4,
@@ -315,6 +299,10 @@
         "count": "5",
         "breaths": 0.5,
         "text": "Inhale, come up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
       }
     ],
     "seq": 6,
@@ -392,6 +380,10 @@
         "count": "5",
         "breaths": 0.5,
         "text": "Inhale, come up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
       }
     ],
     "seq": 8,
@@ -429,6 +421,10 @@
         "breaths": 0.5,
         "text": "Inhale, lift the head only, keep the hands on the floor."
       },
+    {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
       {
         "count": "5",
         "breaths": 0.5,
@@ -451,6 +447,10 @@
         "count": "2",
         "breaths": 0.5,
         "text": "Exhale, place the hands on the waist."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale."
       },
       {
         "count": "3",
@@ -483,6 +483,10 @@
         "count": "2",
         "breaths": 0.5,
         "text": "Exhale, clasp hands behind the back."
+      },
+    {
+        "breaths": 0.5,
+        "text": "Inhale."
       },
       {
         "count": "3",
@@ -535,9 +539,17 @@
         "text": "Inhale, lift the head only."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "5",
         "breaths": 0.5,
         "text": "Inhale, hands to waist, come up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, samastitih."
       }
     ],
     "seq": 12,
@@ -579,6 +591,10 @@
         "count": "5",
         "breaths": 0.5,
         "text": "Inhale, come up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, samastitih."
       }
     ],
     "seq": 13,
@@ -681,6 +697,10 @@
       {
         "breaths": 5,
         "counted": true
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
       }
     ],
     "seq": 14,
@@ -742,6 +762,10 @@
         "count": "9",
         "breaths": 0.5,
         "text": "Inhale, come up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
       }
     ],
     "seq": 15,
@@ -2890,10 +2914,6 @@
       },
       {
         "count": "15",
-        "breaths": 0.5,
-        "text": "Exhale, touch the chin to the knees."
-      },
-      {
         "breaths": 0.5,
         "text": "Samasthitih."
       }
@@ -5163,5 +5183,85 @@
     ],
     "seq": 91,
     "series": "intermediate"
+  },
+    {
+    "id": "aaa",
+    "name": "For Testing Only",
+    "steps": [
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, catch the left big toe with the left hand while keeping both legs straight."
+      },
+      {
+        "count": "17",
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "18",
+        "breaths": 0.5,
+        "text": "Inhale, lower the head to the floor."
+      }
+    ],
+      "seq": 500,
+      "series": "test"
+    },
+  {
+    "id": "baddhaPadmasanaSolo",
+    "name": "Baddha Padmasana",
+    "steps": [
+    {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up only."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump to seated."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Inhale, take padmasana position, wrap the left arm and then the right around to bind."
+      }
+    ],
+    "seq": 501,
+    "series": "none"
   }
 ]
