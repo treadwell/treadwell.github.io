@@ -50,8 +50,8 @@ function Player(asanaSelector, speaker) {
         console.log("elapsed time")
     }
 
-    $html.calcCurrentAsana = function (asana) {
-        return asana.name
+    $html.getCurrentAsana = function () {
+        return $html.currentAsana
     }
 
     $html.calcCurrentStep = function () {
@@ -60,10 +60,15 @@ function Player(asanaSelector, speaker) {
     
     $html.play = function ([asana, ...asanas] = asanaSelector.getChosen()) {
         // TODO: Say name of asana
-        if (!asana) return
+        if (!asana) {
+            $html.currentAsana = "None"
+            $html.trigger("change-asana")
+            return
+        }
         
         speaker.speak(undefined, asana.name, () => {
             console.log(asana.name)
+            $html.currentAsana = asana.name
             $html.trigger("change-asana")
             playSteps(asana.steps, asanas)
         })
@@ -96,11 +101,11 @@ function Player(asanaSelector, speaker) {
     }
 
     $html.pause = function () {
-        console.log("pause")
+        console.log("pause not implemented")
     }
 
     $html.reset = function () {
-        console.log("reset")
+        console.log("reset not implemented")
     }
 
     return $html
