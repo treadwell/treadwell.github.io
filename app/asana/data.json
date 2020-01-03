@@ -759,6 +759,10 @@
         "text": "Inhale, head up only."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "9",
         "breaths": 0.5,
         "text": "Inhale, come up."
@@ -1000,7 +1004,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to seated, straighten the legs."
+        "text": "Inhale, jump to seated, straighten the legs, place hands 12 inches behind back."
       },
       {
         "count": "8",
@@ -1064,6 +1068,10 @@
         "text": "Inhale, lift the head up only."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "10",
         "breaths": 0.5,
         "text": "Inhale, lift."
@@ -1101,6 +1109,10 @@
         "count": "16",
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
+      },      
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "17",
@@ -1149,6 +1161,10 @@
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
       },
+     {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
       {
         "count": "10",
         "breaths": 0.5,
@@ -1187,6 +1203,10 @@
         "count": "16",
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
+      },      
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "17",
@@ -1234,6 +1254,10 @@
         "count": "9",
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
+      },      
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "10",
@@ -1273,6 +1297,10 @@
         "count": "16",
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
+      },
+        {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "17",
@@ -1360,6 +1388,10 @@
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
       },
+        {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
       {
         "count": "17",
         "breaths": 0.5,
@@ -1408,6 +1440,10 @@
         "text": "Inhale, lift the head up only."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "10",
         "breaths": 0.5,
         "text": "Inhale, lift."
@@ -1445,6 +1481,10 @@
         "count": "16",
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "17",
@@ -1494,6 +1534,10 @@
         "text": "Inhale, lift the head up only."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "10",
         "breaths": 0.5,
         "text": "Inhale, lift."
@@ -1531,6 +1575,10 @@
         "count": "16",
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
+      },
+    {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "17",
@@ -1579,6 +1627,10 @@
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
       },
+        {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
       {
         "count": "10",
         "breaths": 0.5,
@@ -1617,6 +1669,10 @@
         "count": "16",
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
+      },
+        {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "17",
@@ -2170,6 +2226,10 @@
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
       },
+    {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
       {
         "count": "10",
         "breaths": 0.5,
@@ -2230,6 +2290,10 @@
         "count": "10",
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
+      },
+        {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "11",
@@ -5451,41 +5515,21 @@
     "series": "none"
   },
   {
-    "id": "padmasanaMatt",
-    "name": "Padmasana",
+    "id": "finishMatt",
+    "name": "DD to standing",
     "steps": [
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump through, legs straight."
+        "text": "Inhale, jump forward, head up."
       },
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, take legs into padmasana."
-      },
-      {
-        "breaths": 10,
-        "counted": true
-      },
-      
-      {
-        "count": "9",
-        "breaths": 0.5,
-        "text": "Exhale, step back to downward dog."
-      },
-      {
-        "count": "10",
-        "breaths": 0.5,
-        "text": "Inhale, jump forward, head up."
-      },
-      {
-        "count": "11",
-        "breaths": 0.5,
         "text": "Exhale, fold forward."
       },
       {
-        "count": "12",
+        "count": "9",
         "breaths": 0.5,
         "text": "Inhale, lift the arms up."
       },
