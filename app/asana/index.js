@@ -15,13 +15,15 @@ Promise.all([
     const speaker = Speaker(numbers)
     const asanaSelector = AsanaSelector(db)
     const player = Player(asanaSelector, speaker)
+    const instructions = Instructions(asanaSelector)
     const status = Status(player, asanaSelector)
 
     $(document).ready(() =>
         $(document.body).append(
             $("<h1>").append("Ashtanga Series Builder"),
-            player,
             asanaSelector,
-            status))
+            status,
+            player,
+            instructions))
 
 })

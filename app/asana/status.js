@@ -8,6 +8,7 @@ function Status (player, asanaSelector) {
 
     const $html =
         $("<div>").append(
+            $("<h2>").append("Status"),
             $("<div>").append(
                 $("<span>")
                     .text("Expected time: "),
