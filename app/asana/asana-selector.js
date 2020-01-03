@@ -28,6 +28,7 @@ function AsanaSelector (db) {
 
     const $html =
         $("<div>").append(
+            $("<h2>").append("Select Asanas"),
             $("<div>").append(
                 $groups,
                 $choices,

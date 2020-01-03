@@ -19,6 +19,7 @@ function Player(asanaSelector, speaker) {
 
     const $html =
         $("<div>").append(
+            $("<h2>").append("Player Controls"),
             $("<div>").append(
                 "Seconds per breath cycle: ", $cycle),
             $("<div>").append(
