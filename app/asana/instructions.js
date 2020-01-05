@@ -1,6 +1,7 @@
 function Instructions(asanaSelector) {
     
-    let $instructions = null
+    let $instructions = 
+        $("<h3>").append("test")
             
     const $html = $("<div>").append(
         $("<div>").append(
@@ -20,6 +21,8 @@ function Instructions(asanaSelector) {
                 $("<h3>").append("New update happened"
                     // asanas[0]["name"]
                 )
+
+            // console.log($instructions)
         }
     }
 
