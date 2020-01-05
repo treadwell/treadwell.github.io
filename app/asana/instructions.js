@@ -1,20 +1,32 @@
 function Instructions(asanaSelector) {
     
+    let $instructions = null
+            
     const $html = $("<div>").append(
         $("<div>").append(
             $("<h2>").append("Instructions"),
-            $("<p>").append(showChosen)
+            $instructions
             ))
 
     function showChosen() {
-        asanas = asanaSelector.getChosen()
+        asanas = asanaSelector.getChosen()  // this is an array of asana objects
+
         if (asanas[0] === undefined) {
             return 
         } else {
             console.log(asanas[0]["name"])
+
+            $instructions =
+                $("<h3>").append("New update happened"
+                    // asanas[0]["name"]
+                )
         }
-        // return asanas.map(a => a.name)
     }
+
+    // figure out how to rerender instructions.$html via showChosen()
+    //     same way that I change the current asana span
+    // take first object in array, turn it into a table
+    // map through entire array with a series of tables
 
     asanaSelector.on("change-chosen", showChosen)
 
