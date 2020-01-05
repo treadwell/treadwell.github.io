@@ -1,7 +1,6 @@
 function Instructions(asanaSelector) {
     
-    let $instructions = 
-        $("<h3>").append("test")
+    let $instructions = $("<h3>")
             
     const $html = $("<div>").append(
         $("<div>").append(
@@ -17,10 +16,15 @@ function Instructions(asanaSelector) {
         } else {
             console.log(asanas[0]["name"])
 
-            $instructions =
-                $("<h3>").append("New update happened"
-                    // asanas[0]["name"]
-                )
+            $instructions.html(
+                asanas.map(a =>
+                    $("<h3>").append(a["name"])
+                ))
+
+            // $instructions =
+            //     $("<h3>").append("New update happened"
+            //         // asanas[0]["name"]
+            //     )
 
             // console.log($instructions)
         }
