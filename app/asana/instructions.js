@@ -1,6 +1,6 @@
 function Instructions(asanaSelector) {
     
-    let $instructions = $("<h3>")
+    let $instructions = $("<div>")
             
     const $html = $("<div>").append(
         $("<div>").append(
@@ -8,25 +8,39 @@ function Instructions(asanaSelector) {
             $instructions
             ))
 
+    function addSteps(asana) {
+        return asana["steps"].map(s => 
+            $("<tr>").append(
+                $("<td>").append(s["count"]),
+                $("<td>").append(s["breaths"]),
+                $("<td>").append(s["text"])
+            ))
+    }
+
     function showChosen() {
         asanas = asanaSelector.getChosen()  // this is an array of asana objects
 
         if (asanas[0] === undefined) {
-            return 
+            $instructions.html($("<div>"))
         } else {
             console.log(asanas[0]["name"])
+            console.log(asanas[0])
 
             $instructions.html(
                 asanas.map(a =>
-                    $("<h3>").append(a["name"])
+                    $("<div>").append(
+                        $("<h3>").append(a["name"]),
+                        $("<table>").append(
+                            $("<tr>").append(
+                                $("<th>").append("Count"),        // Vinyasa count
+                                $("<th>").append("Breath"),       // will be inhale or exhale or nBR
+                                $("<th>").append("Instruction")  // step text
+                            ),
+                            addSteps(a)
+                        )
+                    )
+                    
                 ))
-
-            // $instructions =
-            //     $("<h3>").append("New update happened"
-            //         // asanas[0]["name"]
-            //     )
-
-            // console.log($instructions)
         }
     }
 
