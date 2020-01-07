@@ -5,15 +5,13 @@ function Instructions(asanaSelector) {
     const $html = $("<div>").append(
         $("<div>").append(
             $("<h2>").append("Instructions"),
-            $instructions
-            ))
+            $instructions))
 
     function addSteps(asana) {
         return asana["steps"].map(s => 
             $("<tr>").append(
                 $("<td>").append(s["count"]),
-                $("<td>").append(!s["counted"] ? s["text"] : "Breathe " + s["breaths"] + " times")
-            ))
+                $("<td>").append(!s["counted"] ? s["text"] : "Breathe " + s["breaths"] + " times")))
     }
 
     function showChosen() {
@@ -22,9 +20,6 @@ function Instructions(asanaSelector) {
         if (asanas[0] === undefined) {
             $instructions.html($("<div>"))
         } else {
-            console.log(asanas[0]["name"])
-            console.log(asanas[0])
-
             $instructions.html(
                 asanas.map(a =>
                     $("<div>").append(
@@ -35,17 +30,9 @@ function Instructions(asanaSelector) {
                                 $("<th>").append("Instruction")  // step text
                             ),
                             addSteps(a)
-                        )
-                    )
-                    
-                ))
+                        ))))
         }
     }
-
-    // figure out how to rerender instructions.$html via showChosen()
-    //     same way that I change the current asana span
-    // take first object in array, turn it into a table
-    // map through entire array with a series of tables
 
     asanaSelector.on("change-chosen", showChosen)
 
