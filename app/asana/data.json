@@ -645,7 +645,11 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, lift the head. Place both hands on the waist."
+        "text": "Inhale, lift the head."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, place both hands on the waist."
       },
       {
         "breaths": 5,
@@ -692,7 +696,11 @@
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Inhale, lift the head. Place the hands on the waist."
+        "text": "Inhale, lift the head."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, place both hands on the waist."
       },
       {
         "breaths": 5,
@@ -750,8 +758,8 @@
         "text": "Exhale, bend forward, place the right hand next to the right foot."
       },
       {
-        "breaths": 0.5,
-        "text": "Breath five times."
+        "breaths": 5,
+        "counted": true
       },
       {
         "count": "8",
@@ -849,7 +857,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, step the right leg forward and take the arms up to Virabhadrasana 1"
+        "text": "Inhale, step the right leg forward and take the arms up to Warrior 1"
       },
       {
         "breaths": 5,
@@ -867,7 +875,7 @@
       {
         "count": "9",
         "breaths": 0.5,
-        "text": "Exhale, spread the arms to the side (Virabhadrasana 2)."
+        "text": "Exhale, spread the arms to the side for Warrior 2."
       },
       {
         "breaths": 5,
@@ -1350,6 +1358,10 @@
         "text": "Inhale, lift the head up."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "10",
         "breaths": 0.5,
         "text": "Inhale, lift."
@@ -1677,7 +1689,7 @@
       {
         "count": "17",
         "breaths": 0.5,
-        "text": "Inhale, lift up with crossed legs."
+        "text": "Inhale, lift."
       },
       {
         "count": "18",
@@ -1850,12 +1862,12 @@
       },
       {
         "breaths": 0.5,
-        "text": "Exhale, lower down."
+        "text": "Exhale, lower."
       },
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to seated. Legs up, arms straight."
+        "text": "Inhale, legs up."
       },
       {
         "breaths": 5,
@@ -1868,12 +1880,12 @@
       },
       {
         "breaths": 0.5,
-        "text": "Exhale, lower down."
+        "text": "Exhale, lower."
       },
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to seated. Legs up, arms straight."
+        "text": "Inhale, legs up."
       },
       {
         "breaths": 5,
@@ -1886,12 +1898,12 @@
       },
       {
         "breaths": 0.5,
-        "text": "Exhale, lower down."
+        "text": "Exhale, lower."
       },
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to seated. Legs up, arms straight."
+        "text": "Inhale, legs up."
       },
       {
         "breaths": 5,
@@ -1904,12 +1916,12 @@
       },
       {
         "breaths": 0.5,
-        "text": "Exhale, lower down."
+        "text": "Exhale, lower."
       },
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to seated. Legs up, arms straight."
+        "text": "Inhale, legs up."
       },
       {
         "breaths": 5,
@@ -1919,10 +1931,6 @@
         "count": "8",
         "breaths": 0.5,
         "text": "Inhale, lift."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, lower down."
       },
       {
         "count": "9",
@@ -2624,12 +2632,40 @@
       {
         "count": "10",
         "breaths": 0.5,
-        "text": "Exhale, come down to the floor. Repeat two to four more times."
+        "text": "Exhale, touch head to floor."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, touch head to floor."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, lower body to floor."
       },
       {
         "count": "11",
         "breaths": 0.5,
-        "text": "Inhale, take the feet back over the head and cakrasana. roll back into chaturanga dandasana."
+        "text": "Inhale, take the feet back over the head and roll into chaturanga."
       },
       {
         "count": "12",
@@ -2866,7 +2902,7 @@
       {
         "count": "10",
         "breaths": 0.5,
-        "text": "Exhale, come down, sit on the heels with the head remaining down."
+        "text": "Exhale, come down into child's pose."
       },
       {
         "breaths": 10,
@@ -2875,7 +2911,7 @@
       {
         "count": "11",
         "breaths": 0.5,
-        "text": "Exhale, jump back to chaturanga."
+        "text": "Exhale, extend back to chaturanga."
       },
       {
         "count": "12",
@@ -2885,7 +2921,7 @@
       {
         "count": "13",
         "breaths": 0.5,
-        "text": "Exhale, exhale, push back to downward dog."
+        "text": "Exhale, push back to downward dog."
       }
     ],
     "seq": 154,
@@ -2971,15 +3007,20 @@
         "breaths": 0.5,
         "text": "Exhale, push back to downward dog."
       },
+
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Inhale, jump to standing."
+        "text": "Inhale, jump forward, head up."
       },
       {
         "count": "15",
         "breaths": 0.5,
-        "text": "Samasthitih."
+        "text": "Exhale, fold forward."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
       }
     ],
     "seq": 158,

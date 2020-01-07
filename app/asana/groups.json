@@ -9,8 +9,6 @@
 "padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
 "baddhaPadmasanaSolo", "yogaMudra", "padmasana", "utpluthih"]},
 
-
-
 {"id": "halfPrimary", "name": "Half Primary Series", "series": [
 "suryA", "suryA", "suryA", "suryA", "suryA",
 "suryB", "suryB", "suryB",
@@ -43,6 +41,16 @@
 "baddhaHastaSirsansaA", "baddhaHastaSirsansaB", "baddhaHastaSirsansaC", "baddhaHastaSirsansaD",
 "urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
 "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
+
+{"id": "kbPrimary", "name": "KB Primary Series", "series": [
+    "suryA", "suryA", "suryA", "suryA", "suryA",
+    "suryB", "suryB", "suryB",
+    "padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
+    "utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana",
+    "dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana",
+    "bhujapidasana", "kurmasana", "suptaKurmasana",
+    "urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
+    "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
 
 {"id": "matts", "name": "Matt's Warmup", "series": ["suryA", "suryA", "padangusthasana", "padahastasana",
  "lizard", "pigeon", "maricasanaA", "maricasanaD", "finishMatt"]},
