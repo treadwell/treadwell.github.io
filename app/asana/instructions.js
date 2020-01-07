@@ -12,8 +12,7 @@ function Instructions(asanaSelector) {
         return asana["steps"].map(s => 
             $("<tr>").append(
                 $("<td>").append(s["count"]),
-                $("<td>").append(s["breaths"]),
-                $("<td>").append(s["text"])
+                $("<td>").append(!s["counted"] ? s["text"] : "Breathe " + s["breaths"] + " times")
             ))
     }
 
@@ -33,7 +32,6 @@ function Instructions(asanaSelector) {
                         $("<table>").append(
                             $("<tr>").append(
                                 $("<th>").append("Count"),        // Vinyasa count
-                                $("<th>").append("Breath"),       // will be inhale or exhale or nBR
                                 $("<th>").append("Instruction")  // step text
                             ),
                             addSteps(a)
