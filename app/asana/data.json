@@ -1975,6 +1975,10 @@
         "text": "Inhale, lift the head or chin up off the floor."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "10",
         "breaths": 0.5,
         "text": "Inhale, take bakasana."
@@ -2039,6 +2043,10 @@
         "text": "Inhale, lift up."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "11",
         "breaths": 0.5,
         "text": "Inhale, take the legs to bakasana position."
@@ -2083,27 +2091,27 @@
       {
         "count": "9",
         "breaths": 0.5,
-        "text": "Exhale, roll down onto the back."
+        "text": "Exhale, roll back. One."
       },
       {
         "count": "9",
         "breaths": 0.5,
-        "text": "Exhale, roll down onto the back."
+        "text": "Exhale, roll back. Two."
       },
       {
         "count": "9",
         "breaths": 0.5,
-        "text": "Exhale, roll down onto the back."
+        "text": "Exhale, roll back. Three."
       },
       {
         "count": "9",
         "breaths": 0.5,
-        "text": "Exhale, roll down onto the back."
+        "text": "Exhale, roll back. Four."
       },
       {
         "count": "9",
         "breaths": 0.5,
-        "text": "Exhale, roll down onto the back."
+        "text": "Exhale, roll back. Five."
       }
     ],
     "seq": 35,
@@ -2119,9 +2127,13 @@
         "text": "Inhale, lift up and balance."
       },
       {
+        "breaths": 5,
+        "counted": true
+      },
+      {
         "count": "10",
         "breaths": 0.5,
-        "text": "Inhale, lift up in padmasana or with crossed legs."
+        "text": "Inhale, lift."
       },
       {
         "count": "11",
@@ -2178,6 +2190,10 @@
         "count": "11",
         "breaths": 0.5,
         "text": "Inhale, lift the head up only."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "12",
@@ -2292,7 +2308,11 @@
       {
         "count": "9",
         "breaths": 0.5,
-        "text": "Inhale, roll up while holding the toes. "
+        "text": "Inhale, roll up while holding the toes."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "10",
@@ -2335,6 +2355,10 @@
         "count": "7",
         "breaths": 0.5,
         "text": "Inhale, jump to seated and lie down."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "8",
@@ -2439,7 +2463,7 @@
       },
 	    {
         "breaths": 0.5,
-        "text": "Exhale, take cakrasana."
+        "text": "Exhale, take cakrasana to chaturanga."
       },
       {
         "count": "25",
@@ -2465,9 +2489,17 @@
         "text": "Inhale, jump to seated, lie down."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "8",
         "breaths": 0.5,
         "text": "Inhale, both legs over the head, catch the big toes."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "9",
@@ -2512,9 +2544,17 @@
         "text": "Inhale, jump to seated and lie down."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "8",
         "breaths": 0.5,
         "text": "Inhale, both legs over the head, catch the heels."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "9",
@@ -2533,7 +2573,11 @@
       {
         "count": "11",
         "breaths": 0.5,
-        "text": "Inhale, straighten the arms, head back, exhale."
+        "text": "Inhale, straighten the arms, head back."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "12",
@@ -2590,7 +2634,11 @@
       {
         "count": "11",
         "breaths": 0.5,
-        "text": "Inhale, take the feet back over the head and cakrasana, roll back into chaturanga dandasana."
+        "text": "Inhale, take the feet back over the head."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, take cakrasana to chaturanga."
       },
       {
         "count": "12",
@@ -2665,7 +2713,11 @@
       {
         "count": "11",
         "breaths": 0.5,
-        "text": "Inhale, take the feet back over the head and roll into chaturanga."
+        "text": "Inhale, take the feet back over the head."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, take cakrasana to chaturanga."
       },
       {
         "count": "12",
@@ -2710,6 +2762,10 @@
         "text": "Inhale, head up."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "11",
         "breaths": 0.5,
         "text": "Inhale, lift."
@@ -2741,6 +2797,10 @@
         "count": "7",
         "breaths": 0.5,
         "text": "Inhale, jump to seated and lie down."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "8",
@@ -2856,7 +2916,11 @@
       {
         "count": "10",
         "breaths": 0.5,
-        "text": "Inhale, take the feet back over the head and cakrasana, roll back to chaturanga dandasana."
+        "text": "Inhale, take the feet back over the head."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, take cakrasana to chaturanga."
       },
       {
         "count": "11",
@@ -2880,6 +2944,10 @@
         "count": "7",
         "breaths": 0.5,
         "text": "Inhale, take sirsasana position."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "8",
@@ -2935,6 +3003,10 @@
         "count": "7",
         "breaths": 0.5,
         "text": "Inhale, jump to seated."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "8",
