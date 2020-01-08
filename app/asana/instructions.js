@@ -9,9 +9,9 @@ function Instructions(asanaSelector) {
 
     function addSteps(asana) {
         return asana["steps"].map(s => 
-            $("<tr>").append(
-                $("<td>").append(s["count"]),
-                $("<td>").append(!s["counted"] ? s["text"] : "Breathe " + s["breaths"] + " times")))
+            $("<span class=\"asana_step\">").append(
+                $("<span class=\"asana_count\">").append(s["count"]),
+                $("<span  class=\"asana_text\">").append(!s["counted"] ? s["text"] : "Breathe " + s["breaths"] + " times")))
     }
 
     function showChosen() {
@@ -22,12 +22,12 @@ function Instructions(asanaSelector) {
         } else {
             $instructions.html(
                 asanas.map(a =>
-                    $("<div>").append(
-                        $("<h3>").append(a["name"]),
-                        $("<table>").append(
-                            $("<tr>").append(
-                                $("<th>").append("Count"),        // Vinyasa count
-                                $("<th>").append("Instruction")  // step text
+                    $("<div class=\"asana\">").append(
+                        $("<h3 class=\"asana_name\">").append(a["name"]),
+                        $("<div class=\"asana_steps\">").append(
+                            $("<span class=\"asana_step_header\">").append(
+                                $("<span class=\"asana_count_header\">").append("Count"),        // Vinyasa count
+                                $("<span class=\"asana_text_header\">").append("Instruction")  // step text
                             ),
                             addSteps(a)
                         ))))
