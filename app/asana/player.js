@@ -1,5 +1,6 @@
 function Player(asanaSelector, speaker) {
 
+
     const $cycle =
       $("<input>")
           .prop("type", "number")
@@ -27,7 +28,7 @@ function Player(asanaSelector, speaker) {
                 $volume),
             $("<div>").append(
                 $("<button>")
-                    .html("Start")
+                    .html("Play / Resume")
                     .on("click", () => $html.play()),
                 $("<button>")
                     .html("Pause")
@@ -55,12 +56,16 @@ function Player(asanaSelector, speaker) {
         return $html.currentAsana
     }
 
+    $html.getCurrentStep = function () {
+        return $html.currentStep
+    }
+
     $html.calcCurrentStep = function () {
         console.log("current step")
     }
     
     $html.play = function ([asana, ...asanas] = asanaSelector.getChosen()) {
-        // TODO: Say name of asana
+
         if (!asana) {
             $html.currentAsana = "None"
             $html.trigger("change-asana")
@@ -70,6 +75,7 @@ function Player(asanaSelector, speaker) {
         speaker.speak(undefined, asana.name, () => {
             console.log(asana.name)
             $html.currentAsana = asana.name
+            $html.currentStep = 0
             $html.trigger("change-asana")
             playSteps(asana.steps, asanas)
         })
@@ -81,22 +87,26 @@ function Player(asanaSelector, speaker) {
             $html.play(asanas)
             return
         }
+
+        console.log("Current asana: ", $html.currentAsana, "Current step: ", $html.currentStep)
         
-        if (!step.counted) {
+        if (!step.counted) {  // normal step
+            $html.currentStep++
             console.log(step.count, step.text)
             speaker.speak(step.count, step.text, time => {
                 setTimeout(playSteps, (step.breaths * +$html.getCycle() * 1000) - time, 
                     steps, asanas)
             })
-        } else if (remainingCount == undefined) {
+        } else if (remainingCount == undefined) {  
             playSteps([step, ...steps], asanas, step.breaths)
-        } else if (remainingCount != 0) {
+        } else if (remainingCount != 0) {   // counting down
             console.log(remainingCount) 
             speaker.speak(remainingCount, undefined, time => {
                 setTimeout(playSteps, (+$html.getCycle() * 1000) - time, 
                     [step, ...steps], asanas, remainingCount - 1)
             })
         } else {
+            $html.currentStep++
             playSteps(steps, asanas)
         }
     }
