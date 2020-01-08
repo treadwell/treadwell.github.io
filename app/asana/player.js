@@ -66,7 +66,9 @@ function Player(asanaSelector, speaker) {
         console.log("current step")
     }
     
-    $html.play = function ([asana, ...asanas] = asanaSelector.getChosen(), asanaIdx = $html.asanaIdx ? $html.asanaIdx : 0) {
+    // read_asanas(asanas.slice($asanaIdx), cycle)
+
+    $html.play = function ([asana, ...asanas] = asanaSelector.getChosen().slice($html.asanaIdx), asanaIdx = $html.asanaIdx ? $html.asanaIdx : 0) {
 
         $html.asanaIdx = asanaIdx
 
@@ -82,7 +84,8 @@ function Player(asanaSelector, speaker) {
             $html.currentAsana = asana.name
             $html.stepIdx = 0
             $html.trigger("change-asana")
-            playSteps(asana.steps, asanas)
+            // read_lines(lines.slice($lineIdx), asanas, cycle)
+            playSteps(asana.steps.slice($html.stepIdx), asanas)
         })
     }
 
