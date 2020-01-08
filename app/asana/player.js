@@ -1,6 +1,5 @@
 function Player(asanaSelector, speaker) {
 
-
     const $cycle =
       $("<input>")
           .prop("type", "number")
@@ -37,6 +36,9 @@ function Player(asanaSelector, speaker) {
                     .html("Reset")
                     .on("click", () => $html.reset())))
 
+    $html.prop("asanaIdx", null)
+    $html.prop("stepIdx", null)
+
     $html.getCycle = function () {
         return +$cycle.val()
     }
@@ -57,7 +59,7 @@ function Player(asanaSelector, speaker) {
     }
 
     $html.getCurrentStep = function () {
-        return $html.currentStep
+        return $html.stepIdx
     }
 
     $html.calcCurrentStep = function () {
@@ -68,6 +70,7 @@ function Player(asanaSelector, speaker) {
 
         if (!asana) {
             $html.currentAsana = "None"
+            $html.asanaIdx = null
             $html.trigger("change-asana")
             return
         }
@@ -75,7 +78,7 @@ function Player(asanaSelector, speaker) {
         speaker.speak(undefined, asana.name, () => {
             console.log(asana.name)
             $html.currentAsana = asana.name
-            $html.currentStep = 0
+            $html.stepIdx = 0
             $html.trigger("change-asana")
             playSteps(asana.steps, asanas)
         })
@@ -84,14 +87,15 @@ function Player(asanaSelector, speaker) {
     function playSteps ([step, ...steps] = [], asanas, remainingCount) {
         
         if (!step) {
+            $html.asanaIdx++
             $html.play(asanas)
             return
         }
 
-        console.log("Current asana: ", $html.currentAsana, "Current step: ", $html.currentStep)
+        console.log("Asana idx: ", $html.asanaIdx, "Step idx: ", $html.stepIdx)
         
         if (!step.counted) {  // normal step
-            $html.currentStep++
+            $html.stepIdx++
             console.log(step.count, step.text)
             speaker.speak(step.count, step.text, time => {
                 setTimeout(playSteps, (step.breaths * +$html.getCycle() * 1000) - time, 
@@ -106,7 +110,7 @@ function Player(asanaSelector, speaker) {
                     [step, ...steps], asanas, remainingCount - 1)
             })
         } else {
-            $html.currentStep++
+            $html.stepIdx++
             playSteps(steps, asanas)
         }
     }
