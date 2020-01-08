@@ -66,7 +66,9 @@ function Player(asanaSelector, speaker) {
         console.log("current step")
     }
     
-    $html.play = function ([asana, ...asanas] = asanaSelector.getChosen()) {
+    $html.play = function ([asana, ...asanas] = asanaSelector.getChosen(), asanaIdx = $html.asanaIdx ? $html.asanaIdx : 0) {
+
+        $html.asanaIdx = asanaIdx
 
         if (!asana) {
             $html.currentAsana = "None"
