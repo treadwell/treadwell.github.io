@@ -81,6 +81,10 @@ function AsanaSelector (db) {
         $html.trigger("change-chosen")
     }
 
+    function removeAll () {
+        console.log("asanaSelector.removeAll")
+    }
+
     function moveSelected (a, b) {
         a.find("option").filter(function () {
             return this.selected
@@ -97,6 +101,8 @@ function AsanaSelector (db) {
             .toArray()
             .map(x => $(x).data("asana"))
     }
+
+    // player.on("reset", removeAll)
 
     return $html
 }
