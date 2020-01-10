@@ -5372,29 +5372,29 @@
       {
         "count": "15",
         "breaths": 0.5,
-        "text": "Exhale."
+        "text": "Step 1. Short line."
       },
       {
         "count": "16",
         "breaths": 0.5,
-        "text": "Inhale, catch the left big toe with the left hand while keeping both legs straight."
+        "text": "Step 2. This is a very long line that should exceed 3 seconds to fully narrate."
       },
       {
         "count": "17",
         "breaths": 0.5,
-        "text": "Exhale."
+        "text": "Step 3. Short line."
       },
       {
-        "breaths": 5,
+        "breaths": 3,
         "counted": true
       },
       {
         "count": "18",
         "breaths": 0.5,
-        "text": "Inhale, lower the head to the floor."
+        "text": "Step 4. Short line"
       }
     ],
-      "seq": 1003,
+      "seq": 999,
       "series": "test"
     },
   {
