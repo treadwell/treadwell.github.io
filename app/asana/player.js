@@ -129,8 +129,12 @@ function Player(asanaSelector, speaker) {
     }
 
     $html.reset = function () {
-        console.log("reset not implemented")
-        $html.trigger("reset")
+        console.log("reset clicked")
+        asanaSelector.removeAll()
+        $html.pause()
+        $html.asanaIdx = null
+        $html.stepIdx = null
+        $html.currentAsana = "None"
     }
 
     return $html
