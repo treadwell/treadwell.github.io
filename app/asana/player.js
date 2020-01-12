@@ -28,7 +28,9 @@ function Player(asanaSelector, speaker) {
             $("<div>").append(
                 $("<button>")
                     .html("Play / Resume")
-                    .on("click", () => $html.play()),
+                    .on("click", () => {
+                        $html.breakFlag = false
+                        $html.play()}),
                 $("<button>")
                     .html("Pause")
                     .on("click", () => $html.pause()),
@@ -72,6 +74,7 @@ function Player(asanaSelector, speaker) {
             asanaIdx = $html.asanaIdx ? $html.asanaIdx : 0,
             stepIdx = $html.stepIdx ? $html.stepIdx : 0 ) {
 
+        $html.breakFlag = false
         $html.asanaIdx = asanaIdx
         $html.stepIdx = stepIdx
 
@@ -86,6 +89,7 @@ function Player(asanaSelector, speaker) {
             console.log(asana.name)
             $html.currentAsana = asana.name
             $html.trigger("change-asana")
+            if ($html.breakFlag === true) return
             playSteps(asana.steps.slice($html.stepIdx), asanas)
         })
     }
@@ -100,6 +104,8 @@ function Player(asanaSelector, speaker) {
         }
 
         console.log("Asana idx: ", $html.asanaIdx, "Step idx: ", $html.stepIdx)
+
+        if ($html.breakFlag === true) return
         
         if (!step.counted) {  // normal step
             $html.stepIdx++
@@ -131,7 +137,8 @@ function Player(asanaSelector, speaker) {
     $html.reset = function () {
         console.log("reset clicked")
         asanaSelector.removeAll()
-        $html.pause()
+        $html.breakFlag = true
+        // $html.pause()
         $html.asanaIdx = null
         $html.stepIdx = null
         $html.currentAsana = "None"
