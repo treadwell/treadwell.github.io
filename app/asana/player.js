@@ -56,9 +56,9 @@ function Player(asanaSelector, speaker) {
         console.log("elapsed time")
     }
 
-    $html.getCurrentAsana = function () {
-        return $html.currentAsana
-    }
+    // $html.getCurrentAsana = function () {
+    //     return $html.currentAsana
+    // }
 
     $html.getCurrentStep = function () {
         return $html.stepIdx

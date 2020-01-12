@@ -29,8 +29,7 @@ function Status (player, asanaSelector) {
     }
 
     function updateAsana() {
-        // $currentAsana.text("None")
-        $currentAsana.text(player.getCurrentAsana())
+        $currentAsana.text(player.currentAsana)
     }
 
     asanaSelector.on("change-chosen", updateTime)
