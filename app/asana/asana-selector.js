@@ -5,6 +5,7 @@ function AsanaSelector (db) {
             .prop("multiple", "multiple")
             .css("width", "25%")
             .css("height", "2in")
+            .css("user-scalable", "no")
             .append(db.groups.map(group =>
                 $("<option>")
                     .data("group", group)
@@ -15,6 +16,7 @@ function AsanaSelector (db) {
             .prop("multiple", "multiple")
             .css("width", "25%")
             .css("height", "2in")
+            .css("user-scalable", "no")
             .append(db.asanas.map(asana =>
                 $("<option>")
                     .data("asana", asana)
@@ -25,6 +27,7 @@ function AsanaSelector (db) {
             .prop("multiple", "multiple")
             .css("width", "25%")
             .css("height", "2in")
+            .css("user-scalable", "no")
 
     const $html =
         $("<div>").append(
