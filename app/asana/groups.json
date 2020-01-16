@@ -53,9 +53,29 @@
     "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
 
 {"id": "matts", "name": "Matt's Warmup", "series": ["suryA", "suryA", "padangusthasana", "padahastasana",
- "lizard", "pigeon", "maricasanaA", "maricasanaD", "finishMatt"]},
+    "standToDd", "lizard", "pigeon", "maricasanaA", "maricasanaD", "ddToStand"]},
+
+ {"id": "swenson30", "name": "Swenson 30 minute", "series": [
+    "suryA", "suryA", "suryA", "suryB", "suryB", 
+    "padangusthasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", 
+    "utthitaHastaPadangusthasana", "virabhadrasana",
+    "dandasana", "paschimottanasanaA",  "januSirsasanaA", "januSirsasanaB",  "maricasanaA",  "maricasanaC",  "navasana",
+    "urdhvaDhanurasana", "salambaSarvangasana", "matsyasana", 
+    "padmasana", "utpluthih"]},
+
+{"id": "swenson15", "name": "Swenson 15 minute", "series": ["suryA", "suryA", "suryA", "suryA", "suryA", 
+    "suryB", "suryB", "suryB", "standToSit",
+    "paschimottanasanaBorD", "maricasanaC", "navasana",
+    "urdhvaDhanurasana", "padmasana", "utpluthih"]},
+
  
 {"id": "components", "name": "**** Series Components ****", "series": []},
+{"id": "transitions", "name": "Transitions", "series": [
+    "standToDd", "standToSit", "standToLay",
+    "ddToStand", "ddToSit", "ddToLay", 
+    "sitToStand", "sitToDd", "sitToLay", 
+    "layToStand", "layToDd", "layToSit"]},
+
 {"id": "test", "name": "Test", "series": ["aaa", "bbb", "ccc", "ddd" ]},
 
 {"id": "suryAs", "name": "5 x Sury A", "series": ["suryA", "suryA", "suryA", "suryA", "suryA" ]},

@@ -5437,6 +5437,10 @@
         "text": "Inhale, jump to seated."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "8",
         "breaths": 0.5,
         "text": "Inhale, take padmasana position, wrap the left arm and then the right around to bind."
@@ -5632,7 +5636,139 @@
     "series": "none"
   },
   {
-    "id": "finishMatt",
+    "id": "standToDd",
+    "name": "Standing to DD",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up only."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 701,
+    "series": "none"
+  },
+  {
+    "id": "standToSit",
+    "name": "Standing to Seated",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up only."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      }
+    ],
+    "seq": 702,
+    "series": "none"
+  },
+    {
+    "id": "standToLay",
+    "name": "Standing to Lay Down",
+    "steps": [
+      {
+        "count": "1",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "count": "2",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, head up only."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lay down."
+      }
+    ],
+    "seq": 703,
+    "series": "none"
+  },
+  	{
+    "id": "ddToStand",
     "name": "DD to standing",
     "steps": [
       {
@@ -5655,7 +5791,229 @@
         "text": "Samastitih."
       }
     ],
-    "seq": 603,
+    "seq": 711,
+    "series": "none"
+  },
+  {
+    "id": "ddToSit",
+    "name": "DD to seated",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated."
+      }
+    ],
+    "seq": 712,
+    "series": "none"
+  },
+  {
+    "id": "ddToLay",
+    "name": "DD to lay down",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lay down."
+      }
+    ],
+    "seq": 712,
+    "series": "none"
+  },
+  {
+    "id": "sitToStand",
+    "name": "Seated to standing",
+    "steps": [
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward, head up."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
+      }
+    ],
+    "seq": 721,
+    "series": "none"
+  },
+  {
+    "id": "sitToDd",
+    "name": "Seated to DD",
+    "steps": [
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 722,
+    "series": "none"
+  },
+  {
+    "id": "sitToLay",
+    "name": "Seated to lay down",
+    "steps": [
+      {
+        "breaths": 0.5,
+        "text": "Exhale, lay down."
+      }
+    ],
+    "seq": 723,
+    "series": "none"
+  },
+  {
+    "id": "layToStand",
+    "name": "Laying to Standing",
+    "steps": [
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Inhale, take the feet over the head."
+      },
+	    {
+        "breaths": 0.5,
+        "text": "Exhale, take cakrasana to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump forward, head up."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the arms up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Samastitih."
+      }
+    ],
+    "seq": 731,
+    "series": "none"
+  },
+    {
+    "id": "layToDd",
+    "name": "Laying to DD",
+    "steps": [
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Inhale, take the feet over the head."
+      },
+	    {
+        "breaths": 0.5,
+        "text": "Exhale, take cakrasana to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 732,
+    "series": "none"
+  },
+    {
+    "id": "layToSit",
+    "name": "Laying to seated",
+    "steps": [
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Inhale, take the feet over the head."
+      },
+	    {
+        "breaths": 0.5,
+        "text": "Exhale, take cakrasana to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated."
+      }
+    ],
+    "seq": 733,
     "series": "none"
   },
   {
