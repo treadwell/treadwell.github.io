@@ -7,7 +7,6 @@ function Speaker (numbers) {
         m = "Hello world.",
         onEnd = () => {}
     }) {
-        // speechSynthesis.cancel()
         var voices = window.speechSynthesis.getVoices()
         const timeStart = Date.now()
         speechSynthesis.speak(Object.assign(new SpeechSynthesisUtterance(), {
