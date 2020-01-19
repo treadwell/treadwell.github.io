@@ -3,8 +3,12 @@ function Speaker (numbers) {
     let volume = 0.5
 
     function say ({
-        voice = 10, 
+        voice = 10,
+        voiceURI = "native",
+        rate = 1.0,
+        pitch = 1.0,
         m = "Hello world.",
+        lang = "en-US",
         onEnd = () => {}
     }) {
         // speechSynthesis.cancel()
@@ -29,13 +33,13 @@ function Speaker (numbers) {
                 onEnd: callback
             })
         } else {
-            say({ 
+            say({
                 m: text ? numbers[count] + "." : count,
-                onEnd: !text ? callback : () => 
-                    say({ 
+                onEnd: !text ? callback : () =>
+                    say({
                         m: text,
                         onEnd: callback
-                    }) 
+                    })
             })
         }
     }
