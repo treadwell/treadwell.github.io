@@ -5,8 +5,13 @@ function AsanaSelector (db) {
             .prop("multiple", "multiple")
             .css("width", "25%")
             .css("height", "2in")
-            .css("user-scalable", "no")
             .append(db.groups.map(group =>
+                // COMMENT: This exact construction has been repeated a few times,
+                // perhaps we can factor out a 'makeOption(..)' function. See [1]
+                // at the end of the file.
+                //
+                // makeOption("group", group, group.name)
+                //
                 $("<option>")
                     .data("group", group)
                     .html(group.name)))
@@ -16,8 +21,14 @@ function AsanaSelector (db) {
             .prop("multiple", "multiple")
             .css("width", "25%")
             .css("height", "2in")
-            .css("user-scalable", "no")
             .append(db.asanas.map(asana =>
+                // COMMENT: This exact construction has been repeated a few times,
+                // perhaps we can factor out a 'makeOption(..)' function. See [1]
+                // at the end of the file.
+                //
+                // makeOption("asana", asana, asana.name)
+                //
+                //
                 $("<option>")
                     .data("asana", asana)
                     .html(asana.name)))
@@ -27,7 +38,6 @@ function AsanaSelector (db) {
             .prop("multiple", "multiple")
             .css("width", "25%")
             .css("height", "2in")
-            .css("user-scalable", "no")
 
     const $html =
         $("<div>").append(
@@ -48,28 +58,46 @@ function AsanaSelector (db) {
                     .on("click", () => removeSelected($chosen))))
 
     function addGroup (groups, chosen, asanas) {
-        
+
         // extract the id's from selected groups
         ids = []
 
+        // COMMMENT: Really nice job with this logic!
+        //
         groups.find("option")
             .filter(function () {
                 return this.selected  // gets selected options
             })
             .toArray()
+            // COMMENT: That dangling ')' can be brought up to the end of the
+            // ids.push((x)) line
+            //
             .map(x => $(x).data("group").series
-                .map(x => ids.push(x)))  // put ids in an array
-  
+                .map(x => ids.push(x))  // put ids in an array
+            )
+
+        // COMMENT: This can be removed. See the next comment
+        //
         // turn into the actual asana
         function find_asana(id, asanas) {
             return asanas.find(a => a.id === id)
         }
 
+        // COMMMENT: This can be written as follows to avoid the need to define
+        // find_asana above:
+        //   selected_asanas = db.asanas.filter(x => ids.includes(x.id))
+        // QUESTION: This only gets the first asana, where there can be duplicates
+        //
         selected_asanas = ids.map(id => find_asana(id, db.asanas))
-        // selected_asanas = db.asanas.filter(x => ids.includes(x.id))
-        
+
         // rebuild the options
         chosen.append(selected_asanas.map(asana =>
+            // COMMENT: This exact construction has been repeated a few times,
+            // perhaps we can factor out a 'makeOption(..)' function. See [1]
+            // at the end of the file.
+            //
+            // makeOption("asana", asana, asana.name)
+            //
             $("<option>")
                 .data("asana", asana)
                 .html(asana.name)))
@@ -105,3 +133,11 @@ function AsanaSelector (db) {
 
     return $html
 }
+
+// [1]: We can factor out the option creation with some function like this:
+//
+//   function makeOption(dataKey, dataVal, text) {
+//      return $("<option>")
+//          .data(dataKey, dataVal)
+//          .text(text)
+//   }
