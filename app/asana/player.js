@@ -39,10 +39,6 @@ function Player(asanaSelector, speaker) {
                     .html("Reset")
                     .on("click", () => $html.reset())))
 
-    
-    $html.reset(false)
-    //$html.asanaIdx = 0
-    //$html.stepIdx = 0
     let timer1 = null
     let timer2 = null
 
@@ -70,19 +66,7 @@ function Player(asanaSelector, speaker) {
     }
 
     $html.play = function (
-            [asana, ...asanas] = asanaSelector.getChosen().slice($html.asanaIdx), 
-            asanaIdx, // = $html.asanaIdx ? $html.asanaIdx : 0,
-            stepIdx) { // = $html.stepIdx ? $html.stepIdx : 0) {
-
-        //if (asanaIdx == undefined && !$html.asanaIdx)
-        //    $html.asanaIdx = 0
-        
-        //if (stepIdx == undefined && !html.stepIdx) 
-        //    $html.stepIdx = 0
-
-        //$html.breakFlag = false
-        //$html.asanaIdx = asanaIdx
-        //$html.stepIdx = stepIdx
+            [asana, ...asanas] = asanaSelector.getChosen().slice($html.asanaIdx)) { 
 
         if (!asana) {
             $html.reset(false)
@@ -95,9 +79,6 @@ function Player(asanaSelector, speaker) {
 
         speaker.speak(undefined, asana.name, () => {
             console.log(asana.name)
-
-            //if ($html.breakFlag) return
-            //if ($html.currentAsana == "None") return
 
             playSteps(asana.steps.slice($html.stepIdx), asanas)
         })
@@ -114,7 +95,6 @@ function Player(asanaSelector, speaker) {
 
         console.log("Asana idx: ", $html.asanaIdx, "Step idx: ", $html.stepIdx)
 
-        //if ($html.breakFlag) return
         if (!$html.currentAsana) return
 
         if (!step.counted) {  // normal step
@@ -148,12 +128,12 @@ function Player(asanaSelector, speaker) {
         console.log("reset clicked")
         if (clear)
             asanaSelector.removeAll()
-        //$html.breakFlag = true
-        // $html.pause()
         $html.asanaIdx = 0
         $html.stepIdx = 0
         $html.currentAsana = null
     }
+
+    $html.reset(false)
 
     return $html
 }
