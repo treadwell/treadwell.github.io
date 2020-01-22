@@ -122,6 +122,7 @@ function Player(asanaSelector, speaker) {
         console.log("timers 1 and 2: ", timer1, timer2)
         clearTimeout(timer1)
         clearTimeout(timer2)
+        window.speechSynthesis.cancel()
     }
 
     $html.reset = function (clear = true) {
