@@ -39,8 +39,7 @@ function Player(asanaSelector, speaker) {
                     .html("Reset")
                     .on("click", () => $html.reset())))
 
-    let timer1 = null
-    let timer2 = null
+    let timer = null
 
     $html.getCycle = function () {
         return +$cycle.val()
@@ -65,8 +64,7 @@ function Player(asanaSelector, speaker) {
         console.log("current step")
     }
 
-    $html.play = function (
-            [asana, ...asanas] = asanaSelector.getChosen().slice($html.asanaIdx)) { 
+    $html.play = function ([asana, ...asanas] = asanaSelector.getChosen().slice($html.asanaIdx)) { 
 
         if (!asana) {
             $html.reset(false)
@@ -101,7 +99,7 @@ function Player(asanaSelector, speaker) {
             $html.stepIdx++
             console.log(step.count, step.text)
             speaker.speak(step.count, step.text, time => {
-                timer1 = setTimeout(playSteps, (step.breaths * +$html.getCycle() * 1000) - time, 
+                timer = setTimeout(playSteps, (step.breaths * +$html.getCycle() * 1000) - time, 
                     steps, asanas)
             })
         } else if (remainingCount == undefined) {  
@@ -109,7 +107,7 @@ function Player(asanaSelector, speaker) {
         } else if (remainingCount != 0) {   // counting down
             console.log(remainingCount) 
             speaker.speak(remainingCount, undefined, time => {
-                timer2 = setTimeout(playSteps, (+$html.getCycle() * 1000) - time, 
+                timer = setTimeout(playSteps, (+$html.getCycle() * 1000) - time, 
                     [step, ...steps], asanas, remainingCount - 1)
             })
         } else {
@@ -119,22 +117,27 @@ function Player(asanaSelector, speaker) {
     }
 
     $html.pause = function () {
-        console.log("timers 1 and 2: ", timer1, timer2)
-        clearTimeout(timer1)
-        clearTimeout(timer2)
-        window.speechSynthesis.cancel()
+        console.log("timer: ", timer)
+        speaker.stop()
+        if ($html.stepIdx) 
+            $html.stepIdx--
+        $html.currentAsana = null
+        clearTimeout(timer)
     }
 
-    $html.reset = function (clear = true) {
+    $html.reset = function () {
         console.log("reset clicked")
-        if (clear)
-            asanaSelector.removeAll()
+        $html.pause()
+        $html.init()
+        asanaSelector.removeAll()
+    }
+
+    $html.init = function () {
         $html.asanaIdx = 0
         $html.stepIdx = 0
-        $html.currentAsana = null
     }
 
-    $html.reset(false)
+    $html.init()
 
     return $html
 }

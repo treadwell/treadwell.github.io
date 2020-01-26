@@ -1,5 +1,16 @@
 function AsanaSelector (db) {
 
+    const $presets =
+        $("<select>")
+            .prop("multiple", "multiple")
+            .css("width", "25%")
+            .css("height", "2in")
+            .css("user-scalable", "no")
+            .append(db.presets.map(preset =>
+                $("<option>")
+                    .data("preset", preset)
+                    .html(preset.name)))
+    
     const $groups =
         $("<select>")
             .prop("multiple", "multiple")
@@ -33,21 +44,40 @@ function AsanaSelector (db) {
         $("<div>").append(
             $("<h2>").append("Select Asanas"),
             $("<div>").append(
+                $presets, 
                 $groups,
                 $choices,
                 $chosen),
             $("<div>").append(
                 $("<button>")
+                    .html("Add Preset")
+                    .on("click", () => addGroup($presets, $chosen, "preset")),
+                $("<button>")
                     .html("Add Group")
-                    .on("click", () => addGroup($groups, $chosen, db.asanas)),
+                    .on("click", () => addGroup($groups, $chosen)),
                 $("<button>")
                     .html("Add Individual")
                     .on("click", () => moveSelected($choices, $chosen)),
                 $("<button>")
+                    .html("Save Preset")
+                    .on("click", () => savePreset()),
+                $("<button>")
                     .html("Remove")
                     .on("click", () => removeSelected($chosen))))
 
-    function addGroup (groups, chosen, asanas) {
+    function savePreset () { 
+        const p = {
+            name: prompt("Preset Name:"),
+            series: $chosen.find("option").toArray().map(x => $(x).data("asana").id)
+        }
+        db.addPreset(p)
+        $presets.append(
+            $("<option>")
+                .data("preset", p)
+                .html(p.name))
+    }
+
+    function addGroup (groups, chosen, prop = "group") {
         
         // extract the id's from selected groups
         ids = []
@@ -57,7 +87,7 @@ function AsanaSelector (db) {
                 return this.selected  // gets selected options
             })
             .toArray()
-            .map(x => $(x).data("group").series
+            .map(x => $(x).data(prop).series
                 .map(x => ids.push(x)))  // put ids in an array
   
         // turn into the actual asana
@@ -66,7 +96,7 @@ function AsanaSelector (db) {
         }
 
         selected_asanas = ids.map(id => find_asana(id, db.asanas))
-        // selected_asanas = db.asanas.filter(x => ids.includes(x.id))
+        // DISCUSS: selected_asanas = db.asanas.filter(x => ids.includes(x.id))
         
         // rebuild the options
         chosen.append(selected_asanas.map(asana =>
