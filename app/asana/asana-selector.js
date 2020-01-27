@@ -113,10 +113,6 @@ function AsanaSelector (db) {
 
     function removePreset () {
 
-        // Get the names of the presets to delete
-        // Put them in an array
-        // turn them into the preset objects
-
         function findObject(name, objects) {
             return objects.find(a => a.name === name)
         }
@@ -126,9 +122,7 @@ function AsanaSelector (db) {
                 return this.selected 
             })  
 
-        console.log("removal options: ", removalOptions)
-
-        removalOptions  // removes from local storage
+        removalOptions  // Turn into object and remove from local storage
             .toArray()
             .map(x => db.removePreset(findObject(x.innerText, db.presets)))
         
