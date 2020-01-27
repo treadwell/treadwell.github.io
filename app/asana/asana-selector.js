@@ -53,14 +53,18 @@ function AsanaSelector (db) {
                     .html("Add Preset")
                     .on("click", () => addGroup($presets, $chosen, "preset")),
                 $("<button>")
+                    .html("Save Preset")
+                    .on("click", () => savePreset()),
+                $("<button>")
+                    .html("Delete Preset")
+                    .on("click", () => removePreset()),
+                $("<button>")
                     .html("Add Group")
                     .on("click", () => addGroup($groups, $chosen)),
                 $("<button>")
                     .html("Add Individual")
                     .on("click", () => moveSelected($choices, $chosen)),
-                $("<button>")
-                    .html("Save Preset")
-                    .on("click", () => savePreset()),
+
                 $("<button>")
                     .html("Remove")
                     .on("click", () => removeSelected($chosen))))
@@ -105,6 +109,30 @@ function AsanaSelector (db) {
                 .html(asana.name)))
 
         $html.trigger("change-chosen")
+    }
+
+    function removePreset () {
+
+        // Get the names of the presets to delete
+        // Put them in an array
+        // turn them into the preset objects
+
+        function findObject(name, objects) {
+            return objects.find(a => a.name === name)
+        }
+
+        const removalOptions = $presets.find("option")  // gets selected options
+            .filter(function () {
+                return this.selected 
+            })  
+
+        console.log("removal options: ", removalOptions)
+
+        removalOptions  // removes from local storage
+            .toArray()
+            .map(x => db.removePreset(findObject(x.innerText, db.presets)))
+        
+        removalOptions.remove()  // remove the options from the select window
     }
 
     function removeSelected (a) {

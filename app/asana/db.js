@@ -11,6 +11,7 @@ function Db (asanas, groups) {
     }
 
     function removePreset (p) {
+        console.log("presets to remove: ", p)
         const idx = presets.indexOf(p)
         if (!~idx)
             return
