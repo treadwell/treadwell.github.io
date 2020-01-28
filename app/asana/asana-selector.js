@@ -50,7 +50,7 @@ function AsanaSelector (db) {
                 $chosen),
             $("<div>").append(
                 $("<button>")
-                    .html("Add Preset")
+                    .html("Add Preset to Playlist")
                     .on("click", () => addGroup($presets, $chosen, "preset")),
                 $("<button>")
                     .html("Save Preset")
@@ -59,14 +59,14 @@ function AsanaSelector (db) {
                     .html("Delete Preset")
                     .on("click", () => removePreset()),
                 $("<button>")
-                    .html("Add Group")
+                    .html("Add Group to Playlist")
                     .on("click", () => addGroup($groups, $chosen)),
                 $("<button>")
-                    .html("Add Individual")
+                    .html("Add Posture to Playlist")
                     .on("click", () => moveSelected($choices, $chosen)),
 
                 $("<button>")
-                    .html("Remove")
+                    .html("Remove from Playlist")
                     .on("click", () => removeSelected($chosen))))
 
     function savePreset () { 
