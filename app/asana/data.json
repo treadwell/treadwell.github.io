@@ -355,7 +355,7 @@
     "steps": [
       {
         "count": "2",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Exhale, bend the right knee, twist the body, and place the left hand outside the right foot."
       },
       {
@@ -369,7 +369,7 @@
       },
       {
         "count": "4",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Exhale, bend the left knee, twist the body, and place the right hand outside the left foot."
       },
       {
@@ -450,7 +450,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Inhale."
+        "text": "Inhale. Lengthen the spine."
       },
       {
         "count": "3",
@@ -486,7 +486,7 @@
       },
     {
         "breaths": 0.5,
-        "text": "Inhale."
+        "text": "Inhale. Lengthen the spine."
       },
       {
         "count": "3",
@@ -2094,28 +2094,24 @@
       },
       {
         "count": "9",
-        "breaths": 0.5,
-        "text": "Exhale, roll back. One."
+        "breaths": 1.0,
+        "text": "Exhale. Rolling. One."
       },
       {
-        "count": "9",
-        "breaths": 0.5,
-        "text": "Exhale, roll back. Two."
+        "breaths": 1.0,
+        "text": "Two."
       },
       {
-        "count": "9",
-        "breaths": 0.5,
-        "text": "Exhale, roll back. Three."
+        "breaths": 1.0,
+        "text": "Three."
       },
       {
-        "count": "9",
-        "breaths": 0.5,
-        "text": "Exhale, roll back. Four."
+        "breaths": 1.0,
+        "text": "Four."
       },
       {
-        "count": "9",
-        "breaths": 0.5,
-        "text": "Exhale, roll back. Five."
+        "breaths": 1.0,
+        "text": "Five."
       }
     ],
     "seq": 35,
@@ -2170,7 +2166,7 @@
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Exhale, touch the chin on the floor."
+        "text": "Exhale, back straight, touch the chin on the floor."
       },
       {
         "breaths": 5,
@@ -2261,7 +2257,7 @@
       {
         "count": "10",
         "breaths": 0.5,
-        "text": "Inhale, lift both of the legs up and balance."
+        "text": "Inhale, lift both of the legs up and balance. Head back."
       },
       {
         "breaths": 5,
@@ -2970,6 +2966,10 @@
       {
         "breaths": 10,
         "counted": true
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, lift legs back up."
       },
       {
         "count": "10",
