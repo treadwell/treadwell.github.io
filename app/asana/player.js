@@ -135,6 +135,8 @@ function Player(asanaSelector, speaker) {
     $html.init = function () {
         $html.asanaIdx = 0
         $html.stepIdx = 0
+        $html.currentAsana = null
+        $html.trigger("change-asana")
     }
 
     $html.init()
