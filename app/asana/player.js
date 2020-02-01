@@ -126,7 +126,6 @@ function Player(asanaSelector, speaker) {
     }
 
     $html.reset = function () {
-        console.log("reset clicked")
         $html.pause()
         $html.init()
         asanaSelector.removeAll()
