@@ -24,30 +24,45 @@ function Engine (callback) {
         console.log("rewind not implemented")
     }
 
-    function enqueue (id, asanas) {
+    function enqueue (id, asanas, groups) {
         // add individual asana or playlist / group to enqueuedAsanas
         // input: id, (group, stored playlist or asana)
         // output: enqueuedAsanas
-        // execute via:  "window.engine.enqueue("suryA", window.engine.asanas)" in console
-        
+        // "window.engine.enqueue("suryA", window.engine.asanas, window.engine.groups)" in console
+        // "window.engine.enqueue("shortest", window.engine.asanas, window.engine.groups)"
+
         // if id in asanas:  add it
-        enqueuedAsanas.push(asanas.find(a => a.id == id))
+        if (asanas.map(a => a.id).includes(id)) {
+            enqueuedAsanas.push(asanas.find(a => a.id == id))
+            console.log("asana added")
+        }
         
         // if id in groups:  add them
+        if (groups.map(g => g.id).includes(id)) {
+            // get the group with the id
+            groups.find(g => g.id == id).series  // ids
+                .map(id => asanas.find(a => a.id == id)) // asanas
+                .map(a => enqueuedAsanas.push(a))  // add to enqueuedAsanas
 
-        // if name in stored playlists  add them
+            console.log("group added")
+        }
 
-        console.log(id, asana, enqueuedAsanas)
+        // if name in stored playlists, add them (not inmplemented)
+
+        console.log(id, enqueuedAsanas)
  
         return enqueuedAsanas
     }
 
-    function dequeue () {
-        // remove individual asana from enqueuedAsanas
+    function dequeue (idx) {
+        // remove individual asana from enqueuedAsanas by index
         // input: single id
         // output: enqueuedAsanas
-        // if id in asanas:
-        console.log("dequeue not implemented")
+        if (!~idx)
+            return enqueuedAsanas
+            console.log("Index not found")
+        enqueuedAsanas.splice(idx, 1)
+        return enqueuedAsanas
     }
 
     function savePlaylist () {
@@ -73,6 +88,7 @@ function Engine (callback) {
         "asanas": asanas,
         "numbers": numbers,
         "groups" : groups,
+        "playlist": enqueuedAsanas,
         play,
         pause,
         reset,
