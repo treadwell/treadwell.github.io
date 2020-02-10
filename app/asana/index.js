@@ -1,5 +1,3 @@
-Engine(engine => window.engine = engine)
-
 Promise.all([
     
     fetch("/app/asana/data.json")
@@ -27,5 +25,26 @@ Promise.all([
             status,
             player,
             instructions))
+
+})
+
+Promise.all([
+    
+    fetch("/app/asana/data.json")
+        .then(resp => resp.json()),
+    
+    fetch("/app/asana/sanskrit_numbers.json")
+        .then(resp => resp.json()),
+
+    fetch("/app/asana/playlists.json")
+        .then(resp => resp.json())
+
+]).then(([asanas, numbers, playlists]) => {
+
+    const storage = Storage()
+    const speaker = Speaker(numbers)
+    const engine = Engine(asanas, playlists, speaker, storage)
+
+    window.engine = engine
 
 })

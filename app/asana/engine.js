@@ -1,101 +1,125 @@
-function Engine (callback) {
+function Engine (asanas, playlists, speaker, storage) {
 
-    const asanas = []
-    const currentAsana = null
-    const currentStep = null
-    const enqueuedAsanas = []
-    const totalTime = null
-    const remainingTime = null
-    const playlists = []
+    let asanaIdx = null
+    let stepIdx = null
+    const handlers = {}
+    let timer = null
+    
+    playlists.push(...storage.playlists)
 
-    function play () {
-        console.log("play not implemented")
+    function trigger (event) {
+        (handlers[event] || [])
+            .forEach(f => f())
     }
 
-    function pause () {
-        console.log("pause not implemented")
-    }
+    function playSteps ([currentStep, ...remainingSteps] = [], remainingAsanas, remainingCount) {
 
-    function reset () {
-        console.log("reset not implemented")
-    }
-
-    function rewind () {
-        console.log("rewind not implemented")
-    }
-
-    function enqueue (id, asanas, groups) {
-        // add individual asana or playlist / group to enqueuedAsanas
-        // input: id, (group, stored playlist or asana)
-        // output: enqueuedAsanas
-        // "window.engine.enqueue("suryA", window.engine.asanas, window.engine.groups)" in console
-        // "window.engine.enqueue("shortest", window.engine.asanas, window.engine.groups)"
-
-        // if id in asanas:  add it
-        if (asanas.map(a => a.id).includes(id)) {
-            enqueuedAsanas.push(asanas.find(a => a.id == id))
-            console.log("asana added")
-        }
-        
-        // if id in groups:  add them
-        if (groups.map(g => g.id).includes(id)) {
-            // get the group with the id
-            groups.find(g => g.id == id).series  // ids
-                .map(id => asanas.find(a => a.id == id)) // asanas
-                .map(a => enqueuedAsanas.push(a))  // add to enqueuedAsanas
-
-            console.log("group added")
+        if (!currentStep) {
+            asanaIdx++
+            stepIdx = null
+            play(remainingAsanas)
+            return
         }
 
-        // if name in stored playlists, add them (not inmplemented)
+        console.log("Asana idx: ", asanaIdx, "Step idx: ", stepIdx)
 
-        console.log(id, enqueuedAsanas)
- 
-        return enqueuedAsanas
+        if (!engine.currentAsana) return
+
+        if (!currentStep.counted) {  // normal step
+            stepIdx++
+            console.log(currentStep.count, currentStep.text)
+            speaker.speak(currentStep.count, currentStep.text, time => {
+                timer = setTimeout(playSteps, (currentStep.breaths * engine.cycle * 1000) - time,
+                remainingSteps, remainingAsanas)
+            })
+        } else if (remainingCount == undefined) {
+            playSteps([currentStep, ...remainingSteps], remainingAsanas, currentStep.breaths)
+        } else if (remainingCount != 0) {   // counting down
+            console.log(remainingCount)
+            speaker.speak(remainingCount, undefined, time => {
+                timer = setTimeout(playSteps, (engine.cycle * 1000) - time,
+                    [currentStep, ...remainingSteps], remainingAsanas, remainingCount - 1)
+            })
+        } else {
+            stepIdx++
+            playSteps(remainingSteps, remainingAsanas)
+        }
     }
 
-    function dequeue (idx) {
-        // remove individual asana from enqueuedAsanas by index
-        // input: single id
-        // output: enqueuedAsanas
-        if (!~idx)
-            return enqueuedAsanas
-            console.log("Index not found")
-        enqueuedAsanas.splice(idx, 1)
-        return enqueuedAsanas
+    const engine = {
+        asanas,
+        playlists,
+        queue: [],
+
+        currentAsana: null,
+        totalTime: null,
+        remainingTime: null,
+        cycle: 6,
+
+        setVolume: speaker.setVolume.bind(speaker),
+
+        on (event, handler) {
+            handlers[event] = handlers[event] || []
+            handlers[event].push(handler)
+        },
+
+        play ([currentAsana, ...remainingAsanas] = engine.queue.slice(asanaIdx)) {
+
+            if (!currentAsana) {
+                engine.reset(false)
+                trigger("change-asana")
+                return
+            }
+
+            engine.currentAsana = currentAsana
+            trigger("change-asana")
+
+            speaker.speak(undefined, currentAsana.name, () => {
+                console.log(currentAsana.name)
+                playSteps(currentAsana.steps.slice(stepIdx), remainingAsanas)
+            })
+
+        },
+
+        pause () {
+            speaker.stop()
+            if (stepIdx) 
+                stepIdx--
+            engine.currentAsana = null
+            clearTimeout(timer)
+        },
+
+        //clears everything
+        reset () {
+            engine.rewind()
+            engine.queue = []
+        },
+
+        // resets the counters on the current playlist
+        rewind () {
+            engine.pause()
+            asanaIdx = 0
+            stepIdx = 0
+        },
+
+        enqueue (obj) {
+            engine.queue.push(...(obj.asanas 
+                ? obj.asanas.map(id => asanas.find(a => a.id == id))
+                : [obj]))
+        },
+
+        dequeue (asana) {
+            const idx = engine.queue.indexOf(asana)
+            if (!~idx)
+                return 
+            engine.queue.splice(idx, 1)
+        },
+
+        savePlaylist: storage.savePlaylist.bind(storage),
+        deletePlaylist: storage.deletePlaylist.bind(storage)
+
     }
 
-    function savePlaylist () {
-        console.log("savePlaylist not implemented")
-    }
-
-    function deletePlaylist () {
-        console.log("deletePlaylist not implemented")
-    }
-
-    Promise.all([
+    return engine
     
-        fetch("/app/asana/data.json")
-            .then(resp => resp.json()),
-        
-        fetch("/app/asana/sanskrit_numbers.json")
-            .then(resp => resp.json()),
-    
-        fetch("/app/asana/groups.json")
-            .then(resp => resp.json())
-    
-    ]).then(([asanas, numbers, groups]) => callback({
-        "asanas": asanas,
-        "numbers": numbers,
-        "groups" : groups,
-        "playlist": enqueuedAsanas,
-        play,
-        pause,
-        reset,
-        rewind,
-        enqueue,
-        dequeue,
-        savePlaylist,
-        deletePlaylist
-        }))
 }
