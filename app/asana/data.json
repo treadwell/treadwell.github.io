@@ -5796,7 +5796,7 @@
   },
   {
     "id": "ddToSit",
-    "name": "DD to seated",
+    "name": "Downward dog to seated",
     "steps": [
       {
         "count": "7",
@@ -5826,7 +5826,7 @@
   },
   {
     "id": "sitToStand",
-    "name": "Seated to standing",
+    "name": "Vinyasa seated to standing",
     "steps": [
       {
         "count": "3",
@@ -5909,6 +5909,39 @@
       }
     ],
     "seq": 723,
+    "series": "none"
+  },
+  {
+    "id": "sitToSit",
+    "name": "Vinyasa seated to seated",
+    "steps": [
+      {
+        "count": "3",
+        "breaths": 0.5,
+        "text": "Inhale, lift."
+      },
+      {
+        "count": "4",
+        "breaths": 0.5,
+        "text": "Exhale, jump back to chaturanga."
+      },
+      {
+        "count": "5",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "6",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      },
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump through to seated."
+      }
+    ],
+    "seq": 724,
     "series": "none"
   },
   {
@@ -6110,6 +6143,19 @@
     }
   ],
     "seq": 1002,
+    "series": "test"
+  },
+  {
+  "id": "50breaths",
+  "name": "Take 50 breaths",
+  "steps": [
+    {
+      "count": "",
+      "breaths": 50.0,
+      "text": "Start"
+    }
+  ],
+    "seq": 1003,
     "series": "test"
   }
 ]
