@@ -47,4 +47,6 @@ Promise.all([
 
     window.engine = engine
 
+    module.exports = engine
+
 })
