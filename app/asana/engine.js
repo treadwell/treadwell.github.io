@@ -124,31 +124,28 @@ function Engine (asanas, playlists, speaker, storage) {
     
 }
 
+testAsanas = [
+    {"id": "bbb", "name": "Testing: short 1","steps": [{"count": "1", "breaths": 0.5,"text": "Step 1."},
+            { "count": "2", "breaths": 0.5,"text": "Step 2."},{ "count": "3","breaths": 0.5,"text": "Step 3."},
+            {"breaths": 3,"counted": true},{"count": "4","breaths": 0.5,"text": "Step 4"}],"seq": 1000,"series": "test"},
+    { "id": "ccc","name": "Testing: short 2","steps": [ {"count": "15","breaths": 0.5,"text": "Step 1."},
+            {"count": "16","breaths": 0.5,"text": "Step 2."},{"count": "17","breaths": 0.5,"text": "Step 3."},
+            {"breaths": 2,"counted": true},{"count": "18","breaths": 0.5,"text": "Step 4."}],"seq": 1001,"series": "test" },
+    {"id": "ddd","name": "Testing: short 3","steps": [
+            {"count": "15", "breaths": 0.5, "text": "Step 1."},
+            {"count": "16", "breaths": 0.5,"text": "Step 2."},
+            {"count": "17", "breaths": 0.5, "text": "Step 3."},
+            {"breaths": 2,"counted": true},
+            {"count": "18","breaths": 0.5,"text": "Step 4."}],"seq": 1002,"series": "test"}]
+
+testPlaylists = [{"name 1": "Test", "series": ["bbb", "ccc", "ddd" ]},
+            {"name 2": "Test", "series": ["ccc", "ddd" ]}]
 
 testEngine = {}
 testEngine.addOne = function (x) {return (x + 1)};
-// testEngine.engine = Engine(asanas, playlists, speaker, storage)
+testEngine.engine = Engine
+testEngine.asanas = testAsanas
+testEngine.playlists = testPlaylists
 
 module.exports = testEngine
-
-// testAsanas = [
-//     {"id": "bbb", "name": "Testing: short 1","steps": [{"count": "1", "breaths": 0.5,"text": "Step 1."},
-//             { "count": "2", "breaths": 0.5,"text": "Step 2."},{ "count": "3","breaths": 0.5,"text": "Step 3."},
-//             {"breaths": 3,"counted": true},{"count": "4","breaths": 0.5,"text": "Step 4"}],"seq": 1000,"series": "test"},
-//     { "id": "ccc","name": "Testing: short 2","steps": [ {"count": "15","breaths": 0.5,"text": "Step 1."},
-//             {"count": "16","breaths": 0.5,"text": "Step 2."},{"count": "17","breaths": 0.5,"text": "Step 3."},
-//             {"breaths": 2,"counted": true},{"count": "18","breaths": 0.5,"text": "Step 4."}],"seq": 1001,"series": "test" },
-//     {"id": "ddd","name": "Testing: short 3","steps": [
-//             {"count": "15", "breaths": 0.5, "text": "Step 1."},
-//             {"count": "16", "breaths": 0.5,"text": "Step 2."},
-//             {"count": "17", "breaths": 0.5, "text": "Step 3."},
-//             {"breaths": 2,"counted": true},
-//             {"count": "18","breaths": 0.5,"text": "Step 4."}],"seq": 1002,"series": "test"}]
-
-// testPlaylists = [{"name 1": "Test", "series": ["bbb", "ccc", "ddd" ]},
-//             {"name 2": "Test", "series": ["ccc", "ddd" ]}]
-
-// let testEngine = {}
-// testEngine.asanas = testAsanas
-// testEngine.playlists = testPlaylists
 
