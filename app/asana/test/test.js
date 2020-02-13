@@ -14,6 +14,7 @@ describe('Engine creation', function() {
   describe('loading', function() {
     it('currentAsana should be null when engine is first loaded', function() {
         assert(!testEngine.currentAsana);
+        console.log(testEngine)
     });
     it('engine.asanas should not be empty when engine is first loaded', function() {
       assert(testEngine.asanas);
@@ -24,14 +25,30 @@ describe('Engine creation', function() {
   });
   describe('playing', function() {
     beforeEach(function() {
-      testEngine.enqueue(testEngine.playlists[0])
-      testEngine.play()
+      testEngine.engine.enqueue(testEngine.playlists[0])
+      testEngine.engine.play()
       });
     it('currentAsana should not be null when engine.play() is triggered', function() {
-        assert(testEngine.currentAsana);
+        assert(testEngine.engine.currentAsana);
      });
      afterEach(function() {
-      testEngine.reset()
+      testEngine.engine.reset()
       });
   });
 });
+
+describe('Mocha testing', function() {
+  // beforeEach(function() {
+  //   engine.enqueue(engine.playlists[0])
+  //   engine.play()
+  // });
+  describe('addOne', function() {
+    it('addOne should return argument plus 1', function() {
+        assert.equal(1, testEngine.addOne(0));
+    });
+
+  });
+  
+});
+
+// try loading data and engine here.
