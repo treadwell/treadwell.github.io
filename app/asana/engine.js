@@ -143,7 +143,7 @@ testPlaylists = [{"name 1": "Test", "series": ["bbb", "ccc", "ddd" ]},
 
 testEngine = {}
 testEngine.addOne = function (x) {return (x + 1)};
-testEngine.engine = Engine
+testEngine.Engine = Engine
 testEngine.asanas = testAsanas
 testEngine.playlists = testPlaylists
 
