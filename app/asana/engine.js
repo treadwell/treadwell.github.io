@@ -141,11 +141,13 @@ testAsanas = [
 testPlaylists = [{"name 1": "Test", "series": ["bbb", "ccc", "ddd" ]},
             {"name 2": "Test", "series": ["ccc", "ddd" ]}]
 
-testEngine = {}
-testEngine.addOne = function (x) {return (x + 1)};
-testEngine.Engine = Engine
-testEngine.asanas = testAsanas
-testEngine.playlists = testPlaylists
 
-module.exports = testEngine
+function addOne (x) {return (x + 1)};
+
+module.exports = {
+    addOne,
+    Engine,
+    testAsanas,
+    testPlaylists
+}
 
