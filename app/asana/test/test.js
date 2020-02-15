@@ -50,5 +50,3 @@ describe('Mocha testing', function() {
   });
   
 });
-
-// try loading data and engine here.
