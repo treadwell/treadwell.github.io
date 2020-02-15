@@ -4,7 +4,7 @@ function Engine (asanas, playlists, speaker, storage) {
     let stepIdx = null
     const handlers = {}
     let timer = null
-    
+
     playlists.push(...storage.playlists)
 
     function trigger (event) {
@@ -83,7 +83,7 @@ function Engine (asanas, playlists, speaker, storage) {
 
         pause () {
             speaker.stop()
-            if (stepIdx) 
+            if (stepIdx)
                 stepIdx--
             engine.currentAsana = null
             clearTimeout(timer)
@@ -103,7 +103,7 @@ function Engine (asanas, playlists, speaker, storage) {
         },
 
         enqueue (obj) {
-            engine.queue.push(...(obj.asanas 
+            engine.queue.push(...(obj.asanas
                 ? obj.asanas.map(id => asanas.find(a => a.id == id))
                 : [obj]))
         },
@@ -111,7 +111,7 @@ function Engine (asanas, playlists, speaker, storage) {
         dequeue (asana) {
             const idx = engine.queue.indexOf(asana)
             if (!~idx)
-                return 
+                return
             engine.queue.splice(idx, 1)
         },
 
@@ -121,33 +121,8 @@ function Engine (asanas, playlists, speaker, storage) {
     }
 
     return engine
-    
 }
 
-testAsanas = [
-    {"id": "bbb", "name": "Testing: short 1","steps": [{"count": "1", "breaths": 0.5,"text": "Step 1."},
-            { "count": "2", "breaths": 0.5,"text": "Step 2."},{ "count": "3","breaths": 0.5,"text": "Step 3."},
-            {"breaths": 3,"counted": true},{"count": "4","breaths": 0.5,"text": "Step 4"}],"seq": 1000,"series": "test"},
-    { "id": "ccc","name": "Testing: short 2","steps": [ {"count": "15","breaths": 0.5,"text": "Step 1."},
-            {"count": "16","breaths": 0.5,"text": "Step 2."},{"count": "17","breaths": 0.5,"text": "Step 3."},
-            {"breaths": 2,"counted": true},{"count": "18","breaths": 0.5,"text": "Step 4."}],"seq": 1001,"series": "test" },
-    {"id": "ddd","name": "Testing: short 3","steps": [
-            {"count": "15", "breaths": 0.5, "text": "Step 1."},
-            {"count": "16", "breaths": 0.5,"text": "Step 2."},
-            {"count": "17", "breaths": 0.5, "text": "Step 3."},
-            {"breaths": 2,"counted": true},
-            {"count": "18","breaths": 0.5,"text": "Step 4."}],"seq": 1002,"series": "test"}]
-
-testPlaylists = [{"name 1": "Test", "series": ["bbb", "ccc", "ddd" ]},
-            {"name 2": "Test", "series": ["ccc", "ddd" ]}]
-
-
-function addOne (x) {return (x + 1)};
-
-module.exports = {
-    addOne,
-    Engine,
-    testAsanas,
-    testPlaylists
-}
-
+// module will be defined when running via node.js
+if (module)
+    module.exports = Engine
