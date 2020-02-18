@@ -56,9 +56,6 @@ function Engine (asanas, playlists, speaker, storage) {
         remainingTime: null,
         cycle: 6,
 
-        _asanaIdx: asanaIdx,
-        _stepIdx: stepIdx,
-
         setVolume: speaker.setVolume.bind(speaker),
 
         on (event, handler) {
@@ -88,7 +85,7 @@ function Engine (asanas, playlists, speaker, storage) {
             speaker.stop()
             if (stepIdx)
                 stepIdx--
-            engine.currentAsana = null
+            engine.currentAsana = null  // I don't think this is right
             clearTimeout(timer)
         },
 
