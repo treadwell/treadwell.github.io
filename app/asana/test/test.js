@@ -24,16 +24,15 @@ suite("Engine creation", function() {
         setup(function() {
             engine.enqueue(engine.asanas[0])
             engine.enqueue(engine.playlists[0])
-            console.log(engine.queue)
         })
         test("queue[] should be an array and length 4", function() {
             assert(Array.isArray(engine.queue) && engine.queue.length == 4)
         })
         test("queue[0] should equal asanas[0]", function() {
-            assert(engine.queue[0] == engine.asanas[0])
+            assert(engine.queue[0].name == engine.asanas[0].name)
         })
         test("queue[1] should equal playlists[0]", function() {
-            assert(engine.queue[1] == engine.playlists[0])
+            assert(engine.queue[1].id == engine.playlists[0].asanas[0])
         })
         teardown(function() {
             engine.reset()
