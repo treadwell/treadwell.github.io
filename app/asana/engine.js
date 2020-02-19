@@ -85,7 +85,6 @@ function Engine (asanas, playlists, speaker, storage) {
             speaker.stop()
             if (stepIdx)
                 stepIdx--
-            engine.currentAsana = null  // I don't think this is right
             clearTimeout(timer)
         },
 
@@ -100,6 +99,7 @@ function Engine (asanas, playlists, speaker, storage) {
             engine.pause()
             asanaIdx = 0
             stepIdx = 0
+            engine.currentAsana = null
         },
 
         enqueue (obj) {
