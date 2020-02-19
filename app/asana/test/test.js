@@ -20,9 +20,27 @@ suite("Engine creation", function() {
         })
     })
 
+    suite("Enqueue", function() {
+        setup(function() {
+            engine.enqueue(engine.asanas[0])
+            engine.enqueue(engine.playlists[0])
+            console.log(engine.queue)
+        })
+        test("queue[] should be an array and length 4", function() {
+            assert(Array.isArray(engine.queue) && engine.queue.length == 4)
+        })
+        test("queue[0] should equal asanas[0]", function() {
+            assert(engine.queue[0] == engine.asanas[0])
+        })
+        test("queue[1] should equal playlists[0]", function() {
+            assert(engine.queue[1] == engine.playlists[0])
+        })
+        teardown(function() {
+            engine.reset()
+        })
+    })
+
     suite("Playing", function() {
-        // how to check if this is actually playing?
-        // this needs a few enqueues...
         setup(function() {
             engine.enqueue(engine.playlists[0])
             engine.play()
@@ -60,6 +78,7 @@ suite("Engine creation", function() {
     suite("Rewind", function() {
         // needs to check that engine isn't actually playing
         // currentAsana should be null, there's stuff in the queue
+        // after pressing play, current asana is the first asana in the queue
         setup(function() {
             engine.enqueue(engine.playlists[0])
             engine.play()
@@ -79,6 +98,7 @@ suite("Engine creation", function() {
     suite("Reset", function() {
         // needs to check that engine isn't actually playing
         // currentAsana should be null, there's nothing in the queue
+        // after pressing play, current asana is still null and the queue is still empty
         setup(function() {
             engine.enqueue(engine.playlists[0])
             engine.play()
