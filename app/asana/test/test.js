@@ -56,8 +56,6 @@ suite("Engine creation", function() {
     })
 
     suite("Pause", function() {
-        // needs to check that engine isn't actually playing
-        // currentAsana shouldn't be null, there's stuff in the queue
         setup(function() {
             engine.enqueue(engine.playlists[0])
             engine.play()
@@ -75,8 +73,6 @@ suite("Engine creation", function() {
     })
 
     suite("Rewind", function() {
-        // needs to check that engine isn't actually playing
-        // currentAsana should be null, there's stuff in the queue
         // after pressing play, current asana is the first asana in the queue
         setup(function() {
             engine.enqueue(engine.playlists[0])
@@ -95,8 +91,6 @@ suite("Engine creation", function() {
     })
 
     suite("Reset", function() {
-        // needs to check that engine isn't actually playing
-        // currentAsana should be null, there's nothing in the queue
         // after pressing play, current asana is still null and the queue is still empty
         setup(function() {
             engine.enqueue(engine.playlists[0])

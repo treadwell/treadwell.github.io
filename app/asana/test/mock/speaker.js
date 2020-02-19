@@ -8,7 +8,7 @@ module.exports = function Speaker (numbers) {
         onEnd = () => {}
     }) {
         const timeStart = Date.now()
-        console.log(`Speaking: ${m}`)
+        console.log(`\t\tSpeaking: ${m}`)
         timer = setTimeout(() => {
             console.log("=> Done!")
             onEnd(Date.now() - timeStart)
