@@ -1,5 +1,7 @@
 module.exports = function Speaker (numbers) {
 
+    let timer = null
+
     function say ({
         voice = 10,
         m = "Hello world.",
