@@ -1,14 +1,14 @@
 [
    {
       "name 1" : "Test",
-      "series" : [
+      "asanas" : [
          "bbb",
          "ccc",
          "ddd"
       ]
    },
    {
-      "series" : [
+      "asanas" : [
          "ccc",
          "ddd"
       ],
