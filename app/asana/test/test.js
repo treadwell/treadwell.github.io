@@ -100,7 +100,7 @@ suite("Engine creation", function() {
         test("currentAsana should be null when engine.reset() is triggered", function() {
             assert(!engine.currentAsana)
         })
-        test("queue should not be empty when engine.reset() is triggered", function() {
+        test("queue should be empty when engine.reset() is triggered", function() {
             assert(Array.isArray(engine.queue) && engine.queue.length == 0)
         })
         teardown(function() {

@@ -17,7 +17,7 @@ function Engine (asanas, playlists, speaker, storage) {
         if (!currentStep) {
             asanaIdx++
             stepIdx = null
-            play(remainingAsanas)
+            engine.play(remainingAsanas)
             return
         }
 
