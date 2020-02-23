@@ -1,0 +1,17 @@
+[
+   {
+      "name 1" : "Test",
+      "asanas" : [
+         "bbb",
+         "ccc",
+         "ddd"
+      ]
+   },
+   {
+      "asanas" : [
+         "ccc",
+         "ddd"
+      ],
+      "name 2" : "Test"
+   }
+]
