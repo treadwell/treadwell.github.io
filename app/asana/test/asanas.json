@@ -1,0 +1,98 @@
+[
+   {
+      "steps" : [
+         {
+            "breaths" : 0.5,
+            "count" : "1",
+            "text" : "Step 1."
+         },
+         {
+            "count" : "2",
+            "breaths" : 0.5,
+            "text" : "Step 2."
+         },
+         {
+            "breaths" : 0.5,
+            "count" : "3",
+            "text" : "Step 3."
+         },
+         {
+            "counted" : true,
+            "breaths" : 3
+         },
+         {
+            "breaths" : 0.5,
+            "count" : "4",
+            "text" : "Step 4"
+         }
+      ],
+      "series" : "test",
+      "seq" : 1000,
+      "id" : "bbb",
+      "name" : "Testing: short 1"
+   },
+   {
+      "steps" : [
+         {
+            "count" : "15",
+            "breaths" : 0.5,
+            "text" : "Step 1."
+         },
+         {
+            "count" : "16",
+            "breaths" : 0.5,
+            "text" : "Step 2."
+         },
+         {
+            "text" : "Step 3.",
+            "breaths" : 0.5,
+            "count" : "17"
+         },
+         {
+            "counted" : true,
+            "breaths" : 2
+         },
+         {
+            "count" : "18",
+            "breaths" : 0.5,
+            "text" : "Step 4."
+         }
+      ],
+      "series" : "test",
+      "seq" : 1001,
+      "id" : "ccc",
+      "name" : "Testing: short 2"
+   },
+   {
+      "steps" : [
+         {
+            "text" : "Step 1.",
+            "count" : "15",
+            "breaths" : 0.5
+         },
+         {
+            "text" : "Step 2.",
+            "count" : "16",
+            "breaths" : 0.5
+         },
+         {
+            "count" : "17",
+            "breaths" : 0.5,
+            "text" : "Step 3."
+         },
+         {
+            "breaths" : 2,
+            "counted" : true
+         },
+         {
+            "count" : "18",
+            "breaths" : 0.5,
+            "text" : "Step 4."
+         }
+      ],
+      "series" : "test",
+      "id" : "ddd",
+      "seq" : 1002,
+      "name" : "Testing: short 3"
+   }
+]
