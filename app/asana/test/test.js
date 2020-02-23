@@ -50,7 +50,7 @@ suite("Engine creation", function() {
             assert(Array.isArray(engine.queue) && engine.queue.length == 3)
         })
         test("queue[0] should equal playlists[0]", function() {
-            assert(engine.queue[0].name == engine.asanas[0].name)
+            assert(engine.queue[0].name == engine.playlists[0].asanas[0].name)
         })
         teardown(function() {
             engine.reset()
