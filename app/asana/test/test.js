@@ -39,6 +39,24 @@ suite("Engine creation", function() {
         })
     })
 
+    suite("Dequeue", function() {
+        setup(function() {
+            engine.enqueue(engine.asanas[0])
+            engine.enqueue(engine.playlists[0])
+            console.log(engine.queue)
+            engine.dequeue(engine.queue[0])
+        })
+        test("queue[] should be an array and length 3", function() {
+            assert(Array.isArray(engine.queue) && engine.queue.length == 3)
+        })
+        test("queue[0] should equal playlists[0]", function() {
+            assert(engine.queue[0].name == engine.asanas[0].name)
+        })
+        teardown(function() {
+            engine.reset()
+        })
+    })
+
     suite("Playing", function() {
         setup(function() {
             engine.enqueue(engine.playlists[0])
