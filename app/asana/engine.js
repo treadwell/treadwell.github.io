@@ -124,5 +124,5 @@ function Engine (asanas, playlists, speaker, storage) {
 }
 
 // module will be defined when running via node.js
-if (module)
+if (typeof module != "undefined")
     module.exports = Engine
