@@ -1,0 +1,92 @@
+[
+
+{"id": "shortest", "name": "5xA, 3xB, 3-Close", "series": ["suryA", "suryA", "suryA", "suryA", "suryA",
+"suryB", "suryB", "suryB",
+ "baddhaPadmasanaSolo", "yogaMudra", "padmasana", "utpluthih"]},
+ 
+ {"id": "fundamentalSeries", "name": "Fundamental Series", "series": ["suryA", "suryA", "suryA", "suryA", "suryA",
+"suryB", "suryB", "suryB",
+"padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
+"baddhaPadmasanaSolo", "yogaMudra", "padmasana", "utpluthih"]},
+
+{"id": "halfPrimary", "name": "Half Primary Series", "series": [
+"suryA", "suryA", "suryA", "suryA", "suryA",
+"suryB", "suryB", "suryB",
+"padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
+"utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana",
+"dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana",
+"urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
+"baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
+
+{"id": "primary", "name": "Primary Series", "series": [
+"suryA", "suryA", "suryA", "suryA", "suryA",
+"suryB", "suryB", "suryB",
+"padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
+"utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana",
+"dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana",
+"bhujapidasana", "kurmasana", "suptaKurmasana", "garbhaPindasana", "kukkutasana", "baddhaKonasana", "upavisthaKonasanaA", "upavisthaKonasanaB", "suptaKonasana", "suptaPadangusthasana", "ubhayaPadangusthasana", "urdhvaMukhaPaschimottanasana", "setthuBandhasana",
+"urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
+"baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
+
+
+{"id": "intermediate", "name": "Intermediate Series", "series": [
+"suryA", "suryA", "suryA", "suryA", "suryA",
+"suryB", "suryB", "suryB",
+"padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
+"pasasana", "krounshasana", "shalabhasana", "bhekasana", "dhanurasana", "parshvaDhanurasana", 
+"ustrasana", "laghuvajrasana", "kapotasana", "suptaVadrasana", "bakasanaA", "bakasanaB", 
+"bharadvajasana", "ardhaMatsyendrasana", "ekaPadaSirsasana", "dviPadaSirsasana", "yogaNidrasana", 
+"tittibhasana", "pinchaMayurasana", "karandavasana", "mayurasana", "nakrasana", "vatayanasana", "parighasana", 
+"gomukhasana", "suptaUrdhvaPadaVajrasana", "muktaHastaSirsasanaA", "muktaHastaSirsasanaB", "muktaHastaSirsasanaC", 
+"baddhaHastaSirsansaA", "baddhaHastaSirsansaB", "baddhaHastaSirsansaC", "baddhaHastaSirsansaD",
+"urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
+"baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
+
+{"id": "kbPrimary", "name": "KB Primary Series", "series": [
+    "suryA", "suryA", "suryA", "suryA", "suryA",
+    "suryB", "suryB", "suryB",
+    "padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
+    "utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana",
+    "dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana",
+    "bhujapidasana", "kurmasana", "suptaKurmasana",
+    "urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
+    "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
+
+{"id": "matts", "name": "Matt's Warmup", "series": ["suryA", "suryA", "padangusthasana", "padahastasana",
+    "standToDd", "lizard", "pigeon", "maricasanaA", "maricasanaD", 
+    "ddToSit", "50breaths", "sitToSit", "50breaths", "sitToStand"]},
+
+ {"id": "swenson30", "name": "Swenson 30 minute", "series": [
+    "suryA", "suryA", "suryA", "suryB", "suryB", 
+    "padangusthasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", 
+    "utthitaHastaPadangusthasana", "virabhadrasana",
+    "dandasana", "paschimottanasanaA",  "januSirsasanaA", "januSirsasanaB",  "maricasanaA",  "maricasanaC",  "navasana",
+    "urdhvaDhanurasana", "salambaSarvangasana", "matsyasana", 
+    "padmasana", "utpluthih"]},
+
+{"id": "swenson15", "name": "Swenson 15 minute", "series": ["suryA", "suryA", "suryA", "suryA", "suryA", 
+    "suryB", "suryB", "suryB", "standToSit",
+    "paschimottanasanaBorD", "maricasanaC", "navasana",
+    "urdhvaDhanurasana", "padmasana", "utpluthih"]},
+
+ 
+{"id": "components", "name": "**** Series Components ****", "series": []},
+{"id": "transitions", "name": "Transitions", "series": [
+    "standToDd", "standToSit", "standToLay",
+    "ddToStand", "ddToSit", "ddToLay", 
+    "sitToStand", "sitToDd", "sitToLay", "sitToSit", 
+    "layToStand", "layToDd", "layToSit",
+    "50breaths"]},
+
+{"id": "test", "name": "Test", "series": ["aaa", "bbb", "ccc", "ddd" ]},
+
+{"id": "suryAs", "name": "5 x Sury A", "series": ["suryA", "suryA", "suryA", "suryA", "suryA" ]},
+{"id": "suryBs", "name": "3 x Sury B", "series": [ "suryB", "suryB", "suryB"]},
+{"id": "fundamentals", "name": "Fundamental Postures", "series": ["padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana"]},
+{"id": "standing", "name": "Standing Postures", "series": ["utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana"]},
+{"id": "seated_start", "name": "Start of Seated Postures", "series": ["dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana"]},
+{"id": "seated_end", "name": "End of Seated Postures", "series": ["bhujapidasana", "kurmasana", "suptaKurmasana", "garbhaPindasana", "kukkutasana", "baddhaKonasana", "upavisthaKonasanaA", "upavisthaKonasanaB", "suptaKonasana", "suptaPadangusthasana", "ubhayaPadangusthasana", "urdhvaMukhaPaschimottanasana", "setthuBandhasana"]},
+{"id": "finishing_start", "name": "Start of Finishing Postures", "series": ["urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana"]},
+{"id": "finishing_end", "name": "End of Finishing Postures", "series": ["baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]}
+
+]
