@@ -31,9 +31,47 @@ function NowPlaying (engine, toLibrary) {
 
 function Library (engine, toNowPlaying) {
 
+    const $subview = $("<div>")
+
     const $library = $("<div>")
         .text("Library")
         .on("click", toNowPlaying)
+        .append($subview)
+
+    const asanas = Asanas(engine, () => subview("playlists"))
+    const playlists = Playlists(engine, () => subview("asanas"))
+
+    
+    function subview (sv) {
+        $subview.children().detach()
+        $subview.append({
+            "asanas": asanas,
+            "playlists": playlists
+        }[sv])
+    }
+
+    // $(document.body).append($app)
+
+    subview("asanas")
+
 
     return () => $library
+}
+
+function Playlists (engine, toAsansas) {
+
+    const $playlists = $("<div>")
+        .text("Playlists")
+        .on("click", toAsanas)
+
+    return () => $playlists
+}
+
+function Asanas (engine, toPlaylists) {
+
+    const $asanas = $("<div>")
+        .text("Asanas")
+        .on("click", toPlaylists)
+
+    return () => $asanas
 }
