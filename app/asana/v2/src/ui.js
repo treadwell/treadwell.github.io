@@ -50,7 +50,7 @@ function Library (engine, toNowPlaying) {
         }[sv])
     }
 
-    // $(document.body).append($app)
+    // $($library).append($subview)
 
     subview("asanas")
 
@@ -58,7 +58,7 @@ function Library (engine, toNowPlaying) {
     return () => $library
 }
 
-function Playlists (engine, toAsansas) {
+function Playlists (engine, toAsanas) {
 
     const $playlists = $("<div>")
         .text("Playlists")
