@@ -2093,12 +2093,20 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to seated."
+        "text": "Inhale, jump to balance on straight arms, feet up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, pivot through to seated."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale, take dandasana."
       },
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, take padmasana, thread the arms through, hands over ears."
+        "text": "Exhale, take padmasana, push arms through, hands to chin."
       },
       {
         "breaths": 5,
@@ -2124,6 +2132,10 @@
       {
         "breaths": 1.0,
         "text": "Five."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale. Pull arms out."
       }
     ],
     "seq": 35,
