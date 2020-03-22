@@ -70,7 +70,7 @@ function Library(engine, toNowPlaying) {
         }
     }
 
-    const $tabs = mkTabs(pages)
+    const $tabs = Tabs(pages)
 
     const $library = $("<div>")
         .append(mkToolbar("Library", {
@@ -126,7 +126,7 @@ function mkToolbar(text, { shadow, left = [], right = [] } = {}) {
             mkToolbarButton(icon, action)))
 }
 
-function mkTabs(pages) {
+function Tabs(pages) {
     const $tabs = mkToolbarBase()
         .css("justify-content", "stretch")
         .css("align-items", "stretch")
