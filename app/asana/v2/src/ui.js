@@ -8,25 +8,31 @@ const shadows = {
     card1: "0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.24)"
 }
 
-function view ($view, $tabs, page) {
+function view ($view, $tabs, pages, requestedPageKey, tryLocal) {
+    const viewId = $view.prop("id") // Used as a key-suffix in local storage
+    const storageKey = `view-${viewId}` // The actual key in local storage
+    const pageKey = (tryLocal && localStorage.getItem(storageKey)) || requestedPageKey
+    localStorage.setItem(storageKey, pageKey)
     $view.children().detach()
-    $view.append(page.view)
+    $view.append(pages[pageKey].view)
     if ($tabs)
-        $tabs.activate(page)
+        $tabs.activate(pages[pageKey])
 }
 
-function Ui(engine) {
+function Ui (engine) {
 
     const pages = {
         nowPlaying: {
-            view: NowPlaying(engine, () => view($view, null, pages.library))
+            view: NowPlaying(engine, () => view($view, null, pages, "library"))
         },
         library: {
-            view: Library(engine, () => view($view, null, pages.nowPlaying))
-        }
+            view: Library(engine, () => view($view, null, pages, "nowPlaying"))
+        },
     }
 
     const $view = $("<div>")
+        .prop("id", "ui-view")
+
     const $app = $("<div>")
         .css("border-radius", "3px")
         .css("overflow", "hidden")
@@ -37,13 +43,12 @@ function Ui(engine) {
         .css("height", "100%")
         .append($view)
 
-
     $(document.body).append($app)
 
-    view($view, null, pages.nowPlaying)
+    view($view, null, pages, "nowPlaying", true)
 }
 
-function NowPlaying(engine, toLibrary) {
+function NowPlaying (engine, toLibrary) {
 
     const $nowPlaying = $("<div>")
         .append(mkToolbar("Now Playing", {
@@ -53,20 +58,21 @@ function NowPlaying(engine, toLibrary) {
     return $nowPlaying
 }
 
-function Library(engine, toNowPlaying) {
+function Library (engine, toNowPlaying) {
 
     const $view = $("<div>")
+        .prop("id", "library-view")
 
     const pages = {
-        "asanas": {
-            name: "Asanas",
+        asanas: {
+            tabTitle: "Asanas",
             view: Asanas(engine),
-            action: () => view($view, $tabs, pages.asanas)
+            action: () => view($view, $tabs, pages, "asanas")
         },
-        "playlists": {
-            name: "Playlists",
+        playlists: {
+            tabTitle: "Playlists",
             view: Playlists(engine),
-            action: () => view($view, $tabs, pages.playlists)
+            action: () => view($view, $tabs, pages, "playlists")
         }
     }
 
@@ -80,12 +86,12 @@ function Library(engine, toNowPlaying) {
         .append($tabs)
         .append($view)
 
-    view($view, $tabs, pages.asanas)
+    view($view, $tabs, pages, "asanas", true)
 
     return $library
 }
 
-function Playlists(engine) {
+function Playlists (engine) {
 
     const $playlists = $("<div>")
         .text("Playlists")
@@ -93,7 +99,7 @@ function Playlists(engine) {
     return $playlists
 }
 
-function Asanas(engine) {
+function Asanas (engine) {
 
     const $asanas = $("<div>")
         .text("Asanas")
@@ -101,7 +107,31 @@ function Asanas(engine) {
     return $asanas
 }
 
-function mkToolbarBase({ shadow = true } = {}) {
+function Tabs (pages) {
+    const $tabs = mkToolbarBase()
+        .css("justify-content", "stretch")
+        .css("align-items", "stretch")
+        .css("font-size", "1rem")
+        .append([... Object.values(pages)].map(page => {
+            const { tabTitle, action } = page
+            page.$el = $("<div>")
+                .css("display", "flex")
+                .css("align-items", "center")
+                .css("justify-content", "center")
+                .css("flex", "1")
+                .css("cursor", "pointer")
+                .text(tabTitle)
+                .on("click", action)
+            return page.$el
+        }))
+    $tabs.activate = page => {
+        $tabs.children().css("color", colors.offlight)
+        page.$el.css("color", colors.light)
+    }
+    return $tabs
+}
+
+function mkToolbarBase ({ shadow = true } = {}) {
     return $("<div>")
         .css("display", "flex")
         .css("align-items", "center")
@@ -113,7 +143,7 @@ function mkToolbarBase({ shadow = true } = {}) {
         .css("box-shadow", shadow ? shadows.card1 : undefined)
 }
 
-function mkToolbar(text, { shadow, left = [], right = [] } = {}) {
+function mkToolbar (text, { shadow, left = [], right = [] } = {}) {
     return mkToolbarBase({ shadow })
         .append(left.map(({ icon, action }) =>
             mkToolbarButton(icon, action)))
@@ -126,31 +156,7 @@ function mkToolbar(text, { shadow, left = [], right = [] } = {}) {
             mkToolbarButton(icon, action)))
 }
 
-function Tabs(pages) {
-    const $tabs = mkToolbarBase()
-        .css("justify-content", "stretch")
-        .css("align-items", "stretch")
-        .css("font-size", "1rem")
-        .append([... Object.values(pages)].map(page => {
-            const { name, action } = page
-            page.$el = $("<div>")
-                .css("display", "flex")
-                .css("align-items", "center")
-                .css("justify-content", "center")
-                .css("flex", "1")
-                .css("cursor", "pointer")
-                .text(name)
-                .on("click", action)
-            return page.$el
-        }))
-    $tabs.activate = page => {
-        $tabs.children().css("color", colors.offlight)
-        page.$el.css("color", colors.light)
-    }
-    return $tabs
-}
-
-function mkToolbarButton(icon, action) {
+function mkToolbarButton (icon, action) {
     return $("<div>")
         .css("padding", "1rem")
         .css("cursor", "pointer")
