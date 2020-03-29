@@ -1,39 +1,52 @@
 const colors = {
     primary: "#3f51b5",
     light: "#ffffff",
-    offlight: "#cccccc"
+    offlight: "#cccccc",
+    highlight: "rgba(0, 0, 0, 0.1)"
 }
 
 const shadows = {
     card1: "0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.24)"
 }
 
-function view ($view, $tabs, pages, requestedPageKey, tryLocal) {
-    const viewId = $view.prop("id") // Used as a key-suffix in local storage
-    const storageKey = `view-${viewId}` // The actual key in local storage
-    const pageKey = (tryLocal && localStorage.getItem(storageKey)) || requestedPageKey
-    localStorage.setItem(storageKey, pageKey)
-    $view.children().detach()
-    $view.append(pages[pageKey].view)
-    if ($tabs)
-        $tabs.activate(pages[pageKey])
+function View (
+    pages, 
+    $tabs, 
+    $view = $("<div>")
+        .css("display", "flex")
+        .css("flex-direction", "column")) 
+{
+    View.nextId = (View.nextId || 0) + 1
+
+    $view.id = View.nextId
+
+    $view.view = (requestedPageKey, tryLocal) => {
+        const storageKey = `view-${$view.id}` // The actual key in local storage
+        const pageKey = (tryLocal && localStorage.getItem(storageKey)) || requestedPageKey
+        localStorage.setItem(storageKey, pageKey)
+        $view.children().detach()
+        $view.append(pages[pageKey].view)
+        if ($tabs)
+            $tabs.activate(pages[pageKey])
+    }
+
+    return $view
 }
 
 function Ui (engine) {
 
     const pages = {
         nowPlaying: {
-            view: NowPlaying(engine, () => view($view, null, pages, "library"))
+            view: NowPlaying(engine, () => $view.view("library"))
         },
         library: {
-            view: Library(engine, () => view($view, null, pages, "nowPlaying"))
+            view: Library(engine, () => $view.view("nowPlaying"))
         },
     }
 
-    const $view = $("<div>")
-        .prop("id", "ui-view")
-
     const $app = $("<div>")
+        .css("display", "flex")
+        .css("flex-direction", "column")
         .css("border-radius", "3px")
         .css("overflow", "hidden")
         .css("box-shadow", shadows.card1)
@@ -41,11 +54,12 @@ function Ui (engine) {
         .css("max-height", "40rem")
         .css("width", "100%")
         .css("height", "100%")
-        .append($view)
 
-    $(document.body).append($app)
+    const $view = View(pages, null, $app)  // pages and $tabs
 
-    view($view, null, pages, "nowPlaying", true)
+    $(document.body).append($view)
+
+    $view.view("nowPlaying", true)
 }
 
 function NowPlaying (engine, toLibrary) {
@@ -60,35 +74,33 @@ function NowPlaying (engine, toLibrary) {
 
 function Library (engine, toNowPlaying) {
 
-    const $view = $("<div>")
-        .prop("id", "library-view")
-
     const pages = {
         asanas: {
             tabTitle: "Asanas",
             view: Asanas(engine),
-            action: () => view($view, $tabs, pages, "asanas")
+            action: () => $view.view("asanas")
         },
         playlists: {
             tabTitle: "Playlists",
             view: Playlists(engine),
-            action: () => view($view, $tabs, pages, "playlists")
+            action: () => $view.view("playlists")
         }
     }
 
     const $tabs = Tabs(pages)
+    const $view = View(pages, $tabs)
+        .css("overflow-y", "scroll")
 
-    const $library = $("<div>")
-        .append(mkToolbar("Library", {
+    $view.view("asanas", true)
+
+    return [
+        mkToolbar("Library", {
             shadow: false,
             left: [{ icon: "arrow-left", action: toNowPlaying }]
-        }))
-        .append($tabs)
-        .append($view)
-
-    view($view, $tabs, pages, "asanas", true)
-
-    return $library
+        }),
+        $tabs,
+        $view
+    ]
 }
 
 function Playlists (engine) {
@@ -100,11 +112,24 @@ function Playlists (engine) {
 }
 
 function Asanas (engine) {
-
-    const $asanas = $("<div>")
-        .text("Asanas")
-
-    return $asanas
+    function mkEntry (a) {
+        return $("<div>")
+            .css("display", "flex")
+            .css("padding" , "1rem")
+            .css("cursor", "pointer")
+            .css("border-bottom", `1px solid ${colors.highlight}`)
+            .on("click", ev => {
+                engine.enqueue(a)
+                $(ev.currentTarget).replaceWith(mkEntry(a))
+            })
+            .append($("<span>").text(a.name))
+            .append($("<span>").css("flex", "1"))
+            .append($("<span>")
+                .css("color", colors.primary)
+                .text(engine.queue.filter(x => x == a).length))
+    }
+    return engine.asanas.map(a => 
+        mkEntry(a))
 }
 
 function Tabs (pages) {
@@ -135,6 +160,7 @@ function mkToolbarBase ({ shadow = true } = {}) {
     return $("<div>")
         .css("display", "flex")
         .css("align-items", "center")
+        .css("flex-shrink", "0")
         .css("width", "100%")
         .css("height", "3rem")
         .css("font-size", "1.5rem")
