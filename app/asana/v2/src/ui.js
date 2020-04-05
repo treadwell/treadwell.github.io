@@ -68,8 +68,11 @@ function NowPlaying (engine, toLibrary) {
         .append(mkToolbar("Now Playing", {
             right: [{ icon: "plus", action: toLibrary }]
         }))
-        .append($("<div>")
-            .append(engine.queue.map(a => $(div).text(a.name))))
+        .append($("<div>").text("List Queue"))
+
+        console.log(engine.queue)
+
+        engine.queue.map(a => console.log(a.name))
 
     return $nowPlaying
 }
