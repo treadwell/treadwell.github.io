@@ -46,6 +46,8 @@ function Engine (asanas, playlists, speaker, storage) {
         }
     }
 
+    const hooks = {}
+
     const engine = {
         asanas,
         playlists,
@@ -103,9 +105,17 @@ function Engine (asanas, playlists, speaker, storage) {
         },
 
         enqueue (obj) {
-            engine.queue.push(...(obj.asanas
+            const enqueued = obj.asanas
                 ? obj.asanas.map(id => asanas.find(a => a.id == id))
-                : [obj]))
+                : [obj]
+            engine.queue.push(...enqueued)
+            ;(hooks.enqueue || []).forEach(fn => 
+                fn(enqueued))
+        },
+
+        on (eventName, fn) {
+            hooks[eventName] = hooks[eventName] || []
+            hooks[eventName].push(fn)
         },
 
         dequeue (asana) {

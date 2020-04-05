@@ -37,10 +37,14 @@ function Ui (engine) {
 
     const pages = {
         nowPlaying: {
-            view: NowPlaying(engine, () => $view.view("library"))
+            view: NowPlaying(engine, {
+                onAdd: () => $view.view("library")
+            })
         },
         library: {
-            view: Library(engine, () => $view.view("nowPlaying"))
+            view: Library(engine, {
+                onBack: () => $view.view("nowPlaying")
+            })
         },
     }
 
@@ -62,22 +66,21 @@ function Ui (engine) {
     $view.view("nowPlaying", true)
 }
 
-function NowPlaying (engine, toLibrary) {
+function NowPlaying (engine, { onAdd }) {
 
     const $nowPlaying = $("<div>")
         .append(mkToolbar("Now Playing", {
-            right: [{ icon: "plus", action: toLibrary }]
+            right: [{ icon: "plus", action: onAdd }]
         }))
-        .append($("<div>").text("List Queue"))
 
-        console.log(engine.queue)
-
-        engine.queue.map(a => console.log(a.name))
+    engine.on("enqueue", as => 
+        $nowPlaying.append(as.map(a => 
+            $("<div>").text(a.name))))
 
     return $nowPlaying
 }
 
-function Library (engine, toNowPlaying) {
+function Library (engine, { onBack }) {
 
     const pages = {
         asanas: {
@@ -101,7 +104,7 @@ function Library (engine, toNowPlaying) {
     return [
         mkToolbar("Library", {
             shadow: false,
-            left: [{ icon: "arrow-left", action: toNowPlaying }]
+            left: [{ icon: "arrow-left", action: onBack }]
         }),
         $tabs,
         $view
@@ -115,34 +118,54 @@ function Playlists (engine) {
             .css("padding" , "1rem")
             .css("cursor", "pointer")
             .css("border-bottom", `1px solid ${colors.highlight}`)
-            .on("click", engine.enqueue(p))
+            .on("click", () => {
+                engine.enqueue(p)
+            })
             .append($("<span>").text(p.name))
             .append($("<span>").css("flex", "1"))
             .append($("<span>"))
+    
     }
     return engine.playlists.map(p => 
         mkEntry(p))
 }
 
 function Asanas (engine) {
+
+    const displayedAsanas = engine.asanas.map(a => mkEntry(a))
+   
     function mkEntry (a) {
         return $("<div>")
             .css("display", "flex")
             .css("padding" , "1rem")
             .css("cursor", "pointer")
             .css("border-bottom", `1px solid ${colors.highlight}`)
-            .on("click", ev => {
-                engine.enqueue(a)
-                $(ev.currentTarget).replaceWith(mkEntry(a))
-            })
+            .data("id", a.id)
+            .on("click", ev => engine.enqueue(a))
             .append($("<span>").text(a.name))
             .append($("<span>").css("flex", "1"))
             .append($("<span>")
                 .css("color", colors.primary)
                 .text(engine.queue.filter(x => x == a).length))
     }
-    return engine.asanas.map(a => 
-        mkEntry(a))
+
+    engine.on("enqueue", as => 
+        as.forEach(a => {
+            const idx = displayedAsanas
+                .findIndex(x => x.data("id") == a.id)
+
+            if (!~idx) {
+                console.log(`Asanas ${a.id} not found. This is probably a bug.`)
+                return
+            }
+
+            const updated = mkEntry(a)
+            displayedAsanas[idx].replaceWith(updated)
+            displayedAsanas[idx] = updated
+
+        }))
+
+    return displayedAsanas
 }
 
 function Tabs (pages) {

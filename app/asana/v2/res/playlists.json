@@ -52,7 +52,7 @@
     "urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
     "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
 
-{"name": "Matt's Warmup", "series": ["suryA", "suryA", "padangusthasana", "padahastasana",
+{"name": "Matt's Warmup", "asanas": ["suryA", "suryA", "padangusthasana", "padahastasana",
         "standToDd", "lizard", "pigeon", "maricasanaA", "maricasanaD", 
         "ddToSit", "50breaths", "sitToSit", "50breaths", "sitToStand"]},
 
