@@ -68,6 +68,8 @@ function NowPlaying (engine, toLibrary) {
         .append(mkToolbar("Now Playing", {
             right: [{ icon: "plus", action: toLibrary }]
         }))
+        .append($("<div>")
+            .append(engine.queue.map(a => $(div).text(a.name))))
 
     return $nowPlaying
 }
@@ -104,11 +106,19 @@ function Library (engine, toNowPlaying) {
 }
 
 function Playlists (engine) {
-
-    const $playlists = $("<div>")
-        .text("Playlists")
-
-    return $playlists
+    function mkEntry (p) {
+        return $("<div>")
+            .css("display", "flex")
+            .css("padding" , "1rem")
+            .css("cursor", "pointer")
+            .css("border-bottom", `1px solid ${colors.highlight}`)
+            .on("click", engine.enqueue(p))
+            .append($("<span>").text(p.name))
+            .append($("<span>").css("flex", "1"))
+            .append($("<span>"))
+    }
+    return engine.playlists.map(p => 
+        mkEntry(p))
 }
 
 function Asanas (engine) {
