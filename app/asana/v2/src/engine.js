@@ -48,6 +48,11 @@ function Engine (asanas, playlists, speaker, storage) {
 
     const hooks = {}
 
+    function trigger (event, ...args) {
+        for (fn of (hooks[event] || []))
+            fn(...args)
+    }
+
     const engine = {
         asanas,
         playlists,
@@ -109,8 +114,8 @@ function Engine (asanas, playlists, speaker, storage) {
                 ? obj.asanas.map(id => asanas.find(a => a.id == id))
                 : [obj]
             engine.queue.push(...enqueued)
-            ;(hooks.enqueue || []).forEach(fn => 
-                fn(enqueued))
+            for (let e of enqueued)
+                trigger("enqueue", e)
         },
 
         on (eventName, fn) {
@@ -123,6 +128,7 @@ function Engine (asanas, playlists, speaker, storage) {
             if (!~idx)
                 return
             engine.queue.splice(idx, 1)
+            trigger("dequeue", asana)
         },
 
         savePlaylist: storage.savePlaylist.bind(storage),

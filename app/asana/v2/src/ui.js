@@ -2,7 +2,8 @@ const colors = {
     primary: "#3f51b5",
     light: "#ffffff",
     offlight: "#cccccc",
-    highlight: "rgba(0, 0, 0, 0.1)"
+    highlight: "rgba(0, 0, 0, 0.1)",
+    danger: "#f44336"
 }
 
 const shadows = {
@@ -73,9 +74,21 @@ function NowPlaying (engine, { onAdd }) {
             right: [{ icon: "plus", action: onAdd }]
         }))
 
-    engine.on("enqueue", as => 
-        $nowPlaying.append(as.map(a => 
-            $("<div>").text(a.name))))
+    engine.on("enqueue", a => {
+        const $asana = mkEntry(a.name, {
+            right: [{
+                icon: "minus",
+                color: colors.danger,
+                action: () => engine.dequeue(a)
+            }]
+        })
+        $nowPlaying.append($asana)   
+    })
+
+    engine.on("dequeue", a => {
+        console.log("Unimplemented: now playing dequeue")
+        // Maybe use a proxy object (new Proxy(...))
+    })
 
     return $nowPlaying
 }
@@ -132,40 +145,56 @@ function Playlists (engine) {
 
 function Asanas (engine) {
 
-    const displayedAsanas = engine.asanas.map(a => mkEntry(a))
-   
-    function mkEntry (a) {
-        return $("<div>")
-            .css("display", "flex")
-            .css("padding" , "1rem")
-            .css("cursor", "pointer")
-            .css("border-bottom", `1px solid ${colors.highlight}`)
-            .data("id", a.id)
-            .on("click", ev => engine.enqueue(a))
-            .append($("<span>").text(a.name))
-            .append($("<span>").css("flex", "1"))
-            .append($("<span>")
-                .css("color", colors.primary)
-                .text(engine.queue.filter(x => x == a).length))
+    function mkEntryAsana (a) {
+        return mkEntry(a.name, {
+            data: { id: a.id },
+            action: () => engine.enqueue(a),
+            right: [{
+                el: $("<span>")
+                    .css("color", colors.primary)
+                    .text(engine.queue.filter(x => x == a).length)
+            }]
+        })
     }
 
-    engine.on("enqueue", as => 
-        as.forEach(a => {
-            const idx = displayedAsanas
-                .findIndex(x => x.data("id") == a.id)
+    const displayedAsanas = engine.asanas.map(a => 
+        mkEntryAsana(a))
+   
+    engine.on("enqueue", a =>  {
+        const idx = displayedAsanas
+            .findIndex(x => x.data("id") == a.id)
 
-            if (!~idx) {
-                console.log(`Asanas ${a.id} not found. This is probably a bug.`)
-                return
-            }
+        if (!~idx) {
+            console.log(`Asanas ${a.id} not found. This is probably a bug.`)
+            return
+        }
 
-            const updated = mkEntry(a)
-            displayedAsanas[idx].replaceWith(updated)
-            displayedAsanas[idx] = updated
-
-        }))
+        const updated = mkEntryAsana(a)
+        displayedAsanas[idx].replaceWith(updated)
+        displayedAsanas[idx] = updated
+    })
 
     return displayedAsanas
+}
+
+function mkEntry (text, { action, right = [], data = {} } = {}) {
+    return $("<div>")
+        .css("display", "flex")
+        .css("padding" , "1rem")
+        .css("cursor", "pointer")
+        .css("border-bottom", `1px solid ${colors.highlight}`)
+        .data(data)
+        .on("click", action)
+        .append($("<span>").text(text))
+        .append($("<span>").css("flex", "1"))
+        .append(right.map(({ action, el, icon, color }) => 
+            icon 
+                ? $("<i>")
+                    .addClass("fa")
+                    .addClass("fa-" + icon)
+                    .css("color", color)
+                    .on("click", action)
+                : el))
 }
 
 function Tabs (pages) {
