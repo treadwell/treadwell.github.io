@@ -99,6 +99,7 @@ function Engine (asanas, playlists, speaker, storage) {
         reset () {
             engine.rewind()
             engine.queue = []
+            trigger("reset")
         },
 
         // resets the counters on the current playlist
@@ -123,12 +124,9 @@ function Engine (asanas, playlists, speaker, storage) {
             hooks[eventName].push(fn)
         },
 
-        dequeue (asana) {
-            const idx = engine.queue.indexOf(asana)
-            if (!~idx)
-                return
+        dequeue (idx) {
             engine.queue.splice(idx, 1)
-            trigger("dequeue", asana)
+            trigger("dequeue", idx)
         },
 
         savePlaylist: storage.savePlaylist.bind(storage),

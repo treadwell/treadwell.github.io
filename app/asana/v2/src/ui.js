@@ -74,20 +74,21 @@ function NowPlaying (engine, { onAdd }) {
             right: [{ icon: "plus", action: onAdd }]
         }))
 
-    engine.on("enqueue", a => {
-        const $asana = mkEntry(a.name, {
+    const displayedAsanas = []
+
+    engine.on("enqueue", node => {
+        node.el = mkEntry(node.asana.name, {
             right: [{
                 icon: "minus",
                 color: colors.danger,
-                action: () => engine.dequeue(a)
+                action: () => engine.dequeue(node)
             }]
         })
-        $nowPlaying.append($asana)   
+        $nowPlaying.append(node.el)
     })
 
-    engine.on("dequeue", a => {
-        console.log("Unimplemented: now playing dequeue")
-        // Maybe use a proxy object (new Proxy(...))
+    engine.on("dequeue", node => {
+        node.el.remove()
     })
 
     return $nowPlaying
@@ -131,13 +132,10 @@ function Playlists (engine) {
             .css("padding" , "1rem")
             .css("cursor", "pointer")
             .css("border-bottom", `1px solid ${colors.highlight}`)
-            .on("click", () => {
-                engine.enqueue(p)
-            })
+            .on("click", () => engine.enqueue(p))
             .append($("<span>").text(p.name))
             .append($("<span>").css("flex", "1"))
             .append($("<span>"))
-    
     }
     return engine.playlists.map(p => 
         mkEntry(p))
@@ -145,36 +143,40 @@ function Playlists (engine) {
 
 function Asanas (engine) {
 
+    const asanaCounts = new Map()
+
     function mkEntryAsana (a) {
         return mkEntry(a.name, {
-            data: { id: a.id },
             action: () => engine.enqueue(a),
             right: [{
                 el: $("<span>")
                     .css("color", colors.primary)
-                    .text(engine.queue.filter(x => x == a).length)
+                    .text(asanaCounts.get(a) || 0)
             }]
         })
     }
 
-    const displayedAsanas = engine.asanas.map(a => 
-        mkEntryAsana(a))
+    const displayedAsanas = new Map()
    
-    engine.on("enqueue", a =>  {
-        const idx = displayedAsanas
-            .findIndex(x => x.data("id") == a.id)
+    engine.on("enqueue", node =>  {
+        
+        // Update count
+        const c = asanaCounts.get(node.asana) || 0
+        asanaCounts.set(node.asana, c + 1)
 
-        if (!~idx) {
-            console.log(`Asanas ${a.id} not found. This is probably a bug.`)
-            return
-        }
+        // Update DOM
+        const ent = displayedAsanas.get(node.asana)
+        const nent = mkEntryAsana(node.asana)
+        ent.replaceWith(nent)
+        displayedAsanas.set(node.asana, nent)
 
-        const updated = mkEntryAsana(a)
-        displayedAsanas[idx].replaceWith(updated)
-        displayedAsanas[idx] = updated
     })
 
-    return displayedAsanas
+    return engine.asanas.map(a => {
+        const ent = mkEntryAsana(a)
+        displayedAsanas.set(a, ent)
+        return ent
+    })
 }
 
 function mkEntry (text, { action, right = [], data = {} } = {}) {
