@@ -144,6 +144,7 @@ function Playlists (engine) {
 function Asanas (engine) {
 
     const asanaCounts = new Map()
+    const displayedAsanas = new Map()
 
     function mkEntryAsana (a) {
         return mkEntry(a.name, {
@@ -156,13 +157,11 @@ function Asanas (engine) {
         })
     }
 
-    const displayedAsanas = new Map()
-   
-    engine.on("enqueue", node =>  {
-        
+    function setCount (node, diff) {
+
         // Update count
         const c = asanaCounts.get(node.asana) || 0
-        asanaCounts.set(node.asana, c + 1)
+        asanaCounts.set(node.asana, c + diff)
 
         // Update DOM
         const ent = displayedAsanas.get(node.asana)
@@ -170,7 +169,10 @@ function Asanas (engine) {
         ent.replaceWith(nent)
         displayedAsanas.set(node.asana, nent)
 
-    })
+    }
+   
+    engine.on("enqueue", node => setCount(node, 1)) 
+    engine.on("dequeue", node => setCount(node, -1))
 
     return engine.asanas.map(a => {
         const ent = mkEntryAsana(a)

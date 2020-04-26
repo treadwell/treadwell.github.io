@@ -1,6 +1,6 @@
 function Engine (asanas, playlists, speaker, storage) {
 
-    let asanaIdx = null
+    let currentNode = null
     let stepIdx = null
     const handlers = {}
     let timer = null
@@ -12,16 +12,15 @@ function Engine (asanas, playlists, speaker, storage) {
             .forEach(f => f())
     }
 
-    function playSteps ([currentStep, ...remainingSteps] = [], remainingAsanas, remainingCount) {
+    function playSteps (node, [currentStep, ...remainingSteps] = [], remainingCount) {
 
         if (!currentStep) {
-            asanaIdx++
             stepIdx = null
-            engine.play(remainingAsanas)
+            engine.play(node.next)
             return
         }
 
-        console.log("Asana idx: ", asanaIdx, "Step idx: ", stepIdx)
+        console.log("Node: ", node, "Step idx: ", stepIdx)
 
         if (!engine.currentAsana) return
 
@@ -30,19 +29,19 @@ function Engine (asanas, playlists, speaker, storage) {
             console.log(currentStep.count, currentStep.text)
             speaker.speak(currentStep.count, currentStep.text, time => {
                 timer = setTimeout(playSteps, (currentStep.breaths * engine.cycle * 1000) - time,
-                remainingSteps, remainingAsanas)
+                    node.next, remainingSteps)
             })
         } else if (remainingCount == undefined) {
-            playSteps([currentStep, ...remainingSteps], remainingAsanas, currentStep.breaths)
+            playSteps(node.next, [currentStep, ...remainingSteps], currentStep.breaths)
         } else if (remainingCount != 0) {   // counting down
             console.log(remainingCount)
             speaker.speak(remainingCount, undefined, time => {
                 timer = setTimeout(playSteps, (engine.cycle * 1000) - time,
-                    [currentStep, ...remainingSteps], remainingAsanas, remainingCount - 1)
+                    node.next, [currentStep, ...remainingSteps], remainingCount - 1)
             })
         } else {
             stepIdx++
-            playSteps(remainingSteps, remainingAsanas)
+            playSteps(node.next, remainingSteps)
         }
     }
 
@@ -53,10 +52,12 @@ function Engine (asanas, playlists, speaker, storage) {
             fn(...args)
     }
 
+    let qStart = null
+    let qEnd = null
+
     const engine = {
         asanas,
         playlists,
-        queue: [],
 
         currentAsana: null,
         totalTime: null,
@@ -65,25 +66,22 @@ function Engine (asanas, playlists, speaker, storage) {
 
         setVolume: speaker.setVolume.bind(speaker),
 
-        on (event, handler) {
-            handlers[event] = handlers[event] || []
-            handlers[event].push(handler)
-        },
+        play (node = currentNode || qStart) {
 
-        play ([currentAsana, ...remainingAsanas] = engine.queue.slice(asanaIdx)) {
+            currentNode = node
 
-            if (!currentAsana) {
-                engine.reset(false)
+            if (!node) {
+                engine.reset()
                 trigger("change-asana")
                 return
             }
 
-            engine.currentAsana = currentAsana
+            engine.currentAsana = node.asana
             trigger("change-asana")
 
-            speaker.speak(undefined, currentAsana.name, () => {
-                console.log(currentAsana.name)
-                playSteps(currentAsana.steps.slice(stepIdx), remainingAsanas)
+            speaker.speak(undefined, node.asana.name, () => {
+                console.log(node.asana.name)
+                playSteps(node, node.asana.steps.slice(stepIdx))
             })
 
         },
@@ -98,7 +96,7 @@ function Engine (asanas, playlists, speaker, storage) {
         //clears everything
         reset () {
             engine.rewind()
-            engine.queue = []
+            qStart = qEnd = null
             trigger("reset")
         },
 
@@ -114,23 +112,37 @@ function Engine (asanas, playlists, speaker, storage) {
             const enqueued = obj.asanas
                 ? obj.asanas.map(id => asanas.find(a => a.id == id))
                 : [obj]
-            engine.queue.push(...enqueued)
-            for (let e of enqueued)
-                trigger("enqueue", e)
+            for (let asana of enqueued) {
+                const node = {
+                    prev: qEnd,
+                    next: null,
+                    asana
+                }
+                if (!qStart) qStart = node
+                if (qEnd) qEnd.next = node
+                qEnd = node
+                trigger("enqueue", node)
+            }
+                
         },
+
+        dequeue (node) {
+            if (node == qStart) qStart = node.next
+            if (node == qEnd) qEnd = node.prev
+            if (node.next) node.next.prev = node.prev
+            if (node.prev) node.prev.next = node.next
+            node.prev = null
+            node.next = null
+            trigger("dequeue", node)
+        },
+
+        savePlaylist: storage.savePlaylist.bind(storage),
+        deletePlaylist: storage.deletePlaylist.bind(storage),
 
         on (eventName, fn) {
             hooks[eventName] = hooks[eventName] || []
             hooks[eventName].push(fn)
         },
-
-        dequeue (idx) {
-            engine.queue.splice(idx, 1)
-            trigger("dequeue", idx)
-        },
-
-        savePlaylist: storage.savePlaylist.bind(storage),
-        deletePlaylist: storage.deletePlaylist.bind(storage)
 
     }
 
