@@ -1,0 +1,25 @@
+MVP
+
+  - Asanas/Playlists: Add effects to clicks
+  - Asanas/Playlists: Add hover highlight
+  - NowPlaying: Clear
+  - NowPlaying: Toolbar (play, pause, stop, etc)
+  - NowPlaying: Breaths per minute
+  - NowPlaying: Save a playlist to local storage
+  - NowPlaying: Total time & time remaining
+  - NowPlaying: Re-order
+  - Asanas: Show asana steps
+  - Playlists: Show playlist contents
+  - NowPlaying: Highlight active asana
+  - NowPlaying: Highlight active step
+  - All: Native UX (animations)
+  - All: Packaging with webpack
+  - All: Deploying to Android/iOS
+
+Post-MVP
+
+  - User profiles
+  - Community asanas & playlist w/ upvoting & downvoting
+  - Report an error w/ asana or playlist
+  - Automated transitions dynamically added to playlists to
+    ensure smooth transitions

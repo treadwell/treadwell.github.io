@@ -69,12 +69,10 @@ function Ui (engine) {
 
 function NowPlaying (engine, { onAdd }) {
 
-    const $nowPlaying = $("<div>")
-        .append(mkToolbar("Now Playing", {
-            right: [{ icon: "plus", action: onAdd }]
-        }))
-
-    const displayedAsanas = []
+    const $scroll = $("<div>")
+        .css("display", "flex")
+        .css("flex-direction", "column")
+        .css("overflow-y", "scroll")
 
     engine.on("enqueue", node => {
         node.el = mkEntry(node.asana.name, {
@@ -84,14 +82,19 @@ function NowPlaying (engine, { onAdd }) {
                 action: () => engine.dequeue(node)
             }]
         })
-        $nowPlaying.append(node.el)
+        $scroll.append(node.el)
     })
 
     engine.on("dequeue", node => {
         node.el.remove()
     })
 
-    return $nowPlaying
+    return [
+        mkToolbar("Now Playing", {
+            right: [{ icon: "plus", action: onAdd }]
+        }),
+        $scroll
+    ]
 }
 
 function Library (engine, { onBack }) {
@@ -126,19 +129,10 @@ function Library (engine, { onBack }) {
 }
 
 function Playlists (engine) {
-    function mkEntry (p) {
-        return $("<div>")
-            .css("display", "flex")
-            .css("padding" , "1rem")
-            .css("cursor", "pointer")
-            .css("border-bottom", `1px solid ${colors.highlight}`)
-            .on("click", () => engine.enqueue(p))
-            .append($("<span>").text(p.name))
-            .append($("<span>").css("flex", "1"))
-            .append($("<span>"))
-    }
     return engine.playlists.map(p => 
-        mkEntry(p))
+        mkEntry(p.name, {
+            action: () => engine.enqueue(p),
+        }))
 }
 
 function Asanas (engine) {
@@ -166,9 +160,12 @@ function Asanas (engine) {
         // Update DOM
         const ent = displayedAsanas.get(node.asana)
         const nent = mkEntryAsana(node.asana)
-        ent.replaceWith(nent)
-        displayedAsanas.set(node.asana, nent)
 
+        // NOTE: since ent.replaceWith(nent) doesn't work for detached nodes, 
+        // we have to replace the contents of ent with the contents of nent. As 
+        // a result, changes to properties, classes, etc. will not be changed. 
+        ent.children().remove()
+        ent.append(nent.contents())
     }
    
     engine.on("enqueue", node => setCount(node, 1)) 
