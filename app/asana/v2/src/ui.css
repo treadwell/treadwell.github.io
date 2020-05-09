@@ -12,3 +12,41 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.entry {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.entry--main {
+    padding: 1rem;
+    flex: 1;
+}
+
+.entry--main__action {
+    cursor: pointer;
+}
+
+.entry--action {
+    color: #f44336;
+    padding: 1rem;
+}
+
+.entry--action__action {
+    cursor: pointer;
+}
+
+.entry--main__action,
+.entry--action__action {
+    transition: background 100ms ease;
+}
+
+.entry--main__action:hover, 
+.entry--action__action:hover {
+    background: #dddddd;
+}
+
+.entry--main__action:active,
+.entry-action__action:active {
+    background: #bbbbbb;
+}

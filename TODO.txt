@@ -1,7 +1,9 @@
 MVP
 
-  - Asanas/Playlists: Add effects to clicks
-  - Asanas/Playlists: Add hover highlight
+  - All: Replace inline styles with CSS
+    - Asanas/Playlists: Add effects to clicks
+    - Asanas/Playlists: Add hover highlight
+    - do them all
   - NowPlaying: Clear
   - NowPlaying: Toolbar (play, pause, stop, etc)
   - NowPlaying: Breaths per minute
@@ -12,8 +14,9 @@ MVP
   - Playlists: Show playlist contents
   - NowPlaying: Highlight active asana
   - NowPlaying: Highlight active step
-  - All: Native UX (animations)
   - All: Packaging with webpack
+  - All: Replace CSS with SASS/SCSS
+  - All: Native UX (animations)
   - All: Deploying to Android/iOS
 
 Post-MVP

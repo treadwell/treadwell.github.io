@@ -89,9 +89,22 @@ function NowPlaying (engine, { onAdd }) {
         node.el.remove()
     })
 
+    engine.on("reset", () => {
+        $scroll.children().remove()
+    })
+
     return [
         mkToolbar("Now Playing", {
-            right: [{ icon: "plus", action: onAdd }]
+            right: [{ 
+                icon: "plus", 
+                action: onAdd 
+            }, { 
+                icon: "ellipsis-v", 
+                dropdown: [{
+                    text: "Clear", 
+                    action: () => engine.reset()
+                }] 
+            }]
         }),
         $scroll
     ]
@@ -145,21 +158,27 @@ function Asanas (engine) {
             action: () => engine.enqueue(a),
             right: [{
                 el: $("<span>")
+                    .css("padding", "1rem")
                     .css("color", colors.primary)
                     .text(asanaCounts.get(a) || 0)
             }]
         })
     }
 
-    function setCount (node, diff) {
+    function setCount (asana, diff) {
 
         // Update count
-        const c = asanaCounts.get(node.asana) || 0
-        asanaCounts.set(node.asana, c + diff)
+        let c = asanaCounts.get(asana) || 0
+        c = diff ? c + diff : 0
+
+        if (c) 
+            asanaCounts.set(asana, c)
+        else
+            asanaCounts.delete(asana)
 
         // Update DOM
-        const ent = displayedAsanas.get(node.asana)
-        const nent = mkEntryAsana(node.asana)
+        const ent = displayedAsanas.get(asana)
+        const nent = mkEntryAsana(asana)
 
         // NOTE: since ent.replaceWith(nent) doesn't work for detached nodes, 
         // we have to replace the contents of ent with the contents of nent. As 
@@ -168,8 +187,14 @@ function Asanas (engine) {
         ent.append(nent.contents())
     }
    
-    engine.on("enqueue", node => setCount(node, 1)) 
-    engine.on("dequeue", node => setCount(node, -1))
+    engine.on("enqueue", node => setCount(node.asana, 1)) 
+    engine.on("dequeue", node => setCount(node.asana, -1))
+    
+    engine.on("reset", () => {
+        for (const asana of asanaCounts.keys())
+            setCount(asana, 0)
+        asanaCounts.clear()
+    })
 
     return engine.asanas.map(a => {
         const ent = mkEntryAsana(a)
@@ -180,20 +205,16 @@ function Asanas (engine) {
 
 function mkEntry (text, { action, right = [], data = {} } = {}) {
     return $("<div>")
-        .css("display", "flex")
-        .css("padding" , "1rem")
-        .css("cursor", "pointer")
-        .css("border-bottom", `1px solid ${colors.highlight}`)
+        .addClass("entry")
         .data(data)
-        .on("click", action)
-        .append($("<span>").text(text))
-        .append($("<span>").css("flex", "1"))
+        .append($("<div>")
+            .addClass("entry--main " + (action ? "entry--main__action" : ""))
+            .on("click", action)
+            .text(text))
         .append(right.map(({ action, el, icon, color }) => 
             icon 
                 ? $("<i>")
-                    .addClass("fa")
-                    .addClass("fa-" + icon)
-                    .css("color", color)
+                    .addClass(`fa fa-${icon} entry--action ` + (action ? "entry--action__action" : ""))
                     .on("click", action)
                 : el))
 }
