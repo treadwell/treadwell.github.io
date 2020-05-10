@@ -13,6 +13,18 @@ body {
     align-items: center;
 }
 
+.app {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.24);
+    max-width: 26rem;
+    max-height: 40rem;
+    width: 100%;
+    height: 100%;
+}
+
 .entry {
     display: flex;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -36,6 +48,11 @@ body {
     cursor: pointer;
 }
 
+.entry--el {
+    padding: 1rem;
+    color: #3f51b5;
+}
+
 .entry--main__action,
 .entry--action__action {
     transition: background 100ms ease;
@@ -49,4 +66,60 @@ body {
 .entry--main__action:active,
 .entry-action__action:active {
     background: #bbbbbb;
+}
+
+.nowplaying--scroll {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.tab {
+    justify-content: stretch;
+    align-items: stretch;
+    font-size: 1rem;
+}
+
+.tab__active {
+    color: #ffffff;
+}
+
+.tab__inactive {
+    color: #cccccc;
+}
+
+.tab--el {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+.toolbar--base {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: #3f51b5;
+}
+
+.toolbar--button {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.toolbar--spacerleft {
+    margin-left: 1rem;
+}
+
+.toolbar--spacerright {
+    flex: 1;
+}
+
+.view {
+    overflow-y: scroll;
 }

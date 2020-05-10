@@ -50,15 +50,16 @@ function Ui (engine) {
     }
 
     const $app = $("<div>")
-        .css("display", "flex")
-        .css("flex-direction", "column")
-        .css("border-radius", "3px")
-        .css("overflow", "hidden")
-        .css("box-shadow", shadows.card1)
-        .css("max-width", "26rem")
-        .css("max-height", "40rem")
-        .css("width", "100%")
-        .css("height", "100%")
+        .addClass("app")
+        // .css("display", "flex")
+        // .css("flex-direction", "column")
+        // .css("border-radius", "3px")
+        // .css("overflow", "hidden")
+        // .css("box-shadow", shadows.card1)
+        // .css("max-width", "26rem")
+        // .css("max-height", "40rem")
+        // .css("width", "100%")
+        // .css("height", "100%")
 
     const $view = View(pages, null, $app)  // pages and $tabs
 
@@ -70,9 +71,10 @@ function Ui (engine) {
 function NowPlaying (engine, { onAdd }) {
 
     const $scroll = $("<div>")
-        .css("display", "flex")
-        .css("flex-direction", "column")
-        .css("overflow-y", "scroll")
+        .addClass("nowplaying--scroll")
+        // .css("display", "flex")
+        // .css("flex-direction", "column")
+        // .css("overflow-y", "scroll")
 
     engine.on("enqueue", node => {
         node.el = mkEntry(node.asana.name, {
@@ -127,7 +129,8 @@ function Library (engine, { onBack }) {
 
     const $tabs = Tabs(pages)
     const $view = View(pages, $tabs)
-        .css("overflow-y", "scroll")
+        .addClass("view")
+        // .css("overflow-y", "scroll")
 
     $view.view("asanas", true)
 
@@ -158,8 +161,9 @@ function Asanas (engine) {
             action: () => engine.enqueue(a),
             right: [{
                 el: $("<span>")
-                    .css("padding", "1rem")
-                    .css("color", colors.primary)
+                    .addClass("entry--el")
+                    // .css("padding", "1rem")
+                    // .css("color", colors.primary)
                     .text(asanaCounts.get(a) || 0)
             }]
         })
@@ -221,38 +225,45 @@ function mkEntry (text, { action, right = [], data = {} } = {}) {
 
 function Tabs (pages) {
     const $tabs = mkToolbarBase()
-        .css("justify-content", "stretch")
-        .css("align-items", "stretch")
-        .css("font-size", "1rem")
+        .addClass("tab")
+        // .css("justify-content", "stretch")
+        // .css("align-items", "stretch")
+        // .css("font-size", "1rem")
         .append([... Object.values(pages)].map(page => {
             const { tabTitle, action } = page
             page.$el = $("<div>")
-                .css("display", "flex")
-                .css("align-items", "center")
-                .css("justify-content", "center")
-                .css("flex", "1")
-                .css("cursor", "pointer")
+                .addClass("tab--el")
+                // .css("display", "flex")
+                // .css("align-items", "center")
+                // .css("justify-content", "center")
+                // .css("flex", "1")
+                // .css("cursor", "pointer")
                 .text(tabTitle)
                 .on("click", action)
             return page.$el
         }))
     $tabs.activate = page => {
-        $tabs.children().css("color", colors.offlight)
-        page.$el.css("color", colors.light)
+        $tabs.children()
+            .addClass("tab__inactive")
+            .removeClass("tab__active")
+        page.$el
+            .addClass("tab__active")
+            .removeClass("tab__inactive")
     }
     return $tabs
 }
 
 function mkToolbarBase ({ shadow = true } = {}) {
     return $("<div>")
-        .css("display", "flex")
-        .css("align-items", "center")
-        .css("flex-shrink", "0")
-        .css("width", "100%")
-        .css("height", "3rem")
-        .css("font-size", "1.5rem")
-        .css("color", colors.light)
-        .css("background", colors.primary)
+        .addClass("toolbar--base")
+        // .css("display", "flex")
+        // .css("align-items", "center")
+        // .css("flex-shrink", "0")
+        // .css("width", "100%")
+        // .css("height", "3rem")
+        // .css("font-size", "1.5rem")
+        // .css("color", colors.light)
+        // .css("background", colors.primary)
         .css("box-shadow", shadow ? shadows.card1 : undefined)
 }
 
@@ -261,18 +272,19 @@ function mkToolbar (text, { shadow, left = [], right = [] } = {}) {
         .append(left.map(({ icon, action }) =>
             mkToolbarButton(icon, action)))
         .append($("<span>")
-            .css("margin-left", "1rem")
+            .addClass("toolbar--spacerleft")
             .text(text))
         .append($("<span>")
-            .css("flex", "1"))
+            .addClass("toolbar--spacerright"))
         .append(right.map(({ icon, action }) =>
             mkToolbarButton(icon, action)))
 }
 
 function mkToolbarButton (icon, action) {
     return $("<div>")
-        .css("padding", "1rem")
-        .css("cursor", "pointer")
+        .addClass("toolbar--button")
+        // .css("padding", "1rem")
+        // .css("cursor", "pointer")
         .append($("<i>")
             .addClass("fa")
             .addClass("fa-" + icon))
