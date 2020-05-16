@@ -1,9 +1,4 @@
 MVP
-
-  - All: Replace inline styles with CSS
-    - Asanas/Playlists: Add effects to clicks
-    - Asanas/Playlists: Add hover highlight
-    - do them all
   - NowPlaying: Clear
   - NowPlaying: Toolbar (play, pause, stop, etc)
   - NowPlaying: Breaths per minute
