@@ -1,21 +1,8 @@
-const colors = {
-    primary: "#3f51b5",
-    light: "#ffffff",
-    offlight: "#cccccc",
-    highlight: "rgba(0, 0, 0, 0.1)",
-    danger: "#f44336"
-}
-
-const shadows = {
-    card1: "0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.24)"
-}
-
 function View (
     pages, 
     $tabs, 
     $view = $("<div>")
-        .css("display", "flex")
-        .css("flex-direction", "column")) 
+        .addClass("view")) 
 {
     View.nextId = (View.nextId || 0) + 1
 
@@ -51,15 +38,6 @@ function Ui (engine) {
 
     const $app = $("<div>")
         .addClass("app")
-        // .css("display", "flex")
-        // .css("flex-direction", "column")
-        // .css("border-radius", "3px")
-        // .css("overflow", "hidden")
-        // .css("box-shadow", shadows.card1)
-        // .css("max-width", "26rem")
-        // .css("max-height", "40rem")
-        // .css("width", "100%")
-        // .css("height", "100%")
 
     const $view = View(pages, null, $app)  // pages and $tabs
 
@@ -71,16 +49,13 @@ function Ui (engine) {
 function NowPlaying (engine, { onAdd }) {
 
     const $scroll = $("<div>")
-        .addClass("nowplaying--scroll")
-        // .css("display", "flex")
-        // .css("flex-direction", "column")
-        // .css("overflow-y", "scroll")
+        .addClass("nowplaying scroll-y")
 
     engine.on("enqueue", node => {
         node.el = mkEntry(node.asana.name, {
             right: [{
                 icon: "minus",
-                color: colors.danger,
+                classes: "danger",
                 action: () => engine.dequeue(node)
             }]
         })
@@ -102,9 +77,12 @@ function NowPlaying (engine, { onAdd }) {
                 action: onAdd 
             }, { 
                 icon: "ellipsis-v", 
-                dropdown: [{
+                action: [{
                     text: "Clear", 
                     action: () => engine.reset()
+                }, {
+                    text: "Save playlist",
+                    action: () => alert("Save playlist!")
                 }] 
             }]
         }),
@@ -129,8 +107,7 @@ function Library (engine, { onBack }) {
 
     const $tabs = Tabs(pages)
     const $view = View(pages, $tabs)
-        .addClass("view")
-        // .css("overflow-y", "scroll")
+        .addClass("scroll-y")
 
     $view.view("asanas", true)
 
@@ -161,9 +138,7 @@ function Asanas (engine) {
             action: () => engine.enqueue(a),
             right: [{
                 el: $("<span>")
-                    .addClass("entry--el")
-                    // .css("padding", "1rem")
-                    // .css("color", colors.primary)
+                    .addClass("entry--asana-count " + (asanaCounts.get(a) ? "entry--asana-count__nonzero" : ""))
                     .text(asanaCounts.get(a) || 0)
             }]
         })
@@ -215,56 +190,40 @@ function mkEntry (text, { action, right = [], data = {} } = {}) {
             .addClass("entry--main " + (action ? "entry--main__action" : ""))
             .on("click", action)
             .text(text))
-        .append(right.map(({ action, el, icon, color }) => 
+        .append(right.map(({ action, el, icon, classes = "" }) => 
             icon 
                 ? $("<i>")
-                    .addClass(`fa fa-${icon} entry--action ` + (action ? "entry--action__action" : ""))
+                    .addClass(`fa fa-fw fa-${icon} ${classes} entry--action ` + (action ? "entry--action__action" : ""))
                     .on("click", action)
-                : el))
+                : el
+                    .addClass("entry--action")))
 }
 
 function Tabs (pages) {
     const $tabs = mkToolbarBase()
-        .addClass("tab")
-        // .css("justify-content", "stretch")
-        // .css("align-items", "stretch")
-        // .css("font-size", "1rem")
+        .addClass("tabs")
         .append([... Object.values(pages)].map(page => {
             const { tabTitle, action } = page
             page.$el = $("<div>")
-                .addClass("tab--el")
-                // .css("display", "flex")
-                // .css("align-items", "center")
-                // .css("justify-content", "center")
-                // .css("flex", "1")
-                // .css("cursor", "pointer")
+                .addClass("tabs--tab")
                 .text(tabTitle)
                 .on("click", action)
             return page.$el
         }))
     $tabs.activate = page => {
         $tabs.children()
-            .addClass("tab__inactive")
-            .removeClass("tab__active")
+            .addClass("tabs--tab__inactive")
+            .removeClass("tabs--tab__active")
         page.$el
-            .addClass("tab__active")
-            .removeClass("tab__inactive")
+            .addClass("tabs--tab__active")
+            .removeClass("tabs--tab__inactive")
     }
     return $tabs
 }
 
 function mkToolbarBase ({ shadow = true } = {}) {
     return $("<div>")
-        .addClass("toolbar--base")
-        // .css("display", "flex")
-        // .css("align-items", "center")
-        // .css("flex-shrink", "0")
-        // .css("width", "100%")
-        // .css("height", "3rem")
-        // .css("font-size", "1.5rem")
-        // .css("color", colors.light)
-        // .css("background", colors.primary)
-        .css("box-shadow", shadow ? shadows.card1 : undefined)
+        .addClass("toolbar " + (shadow ? "toolbar__shadow" : ""))
 }
 
 function mkToolbar (text, { shadow, left = [], right = [] } = {}) {
@@ -272,21 +231,41 @@ function mkToolbar (text, { shadow, left = [], right = [] } = {}) {
         .append(left.map(({ icon, action }) =>
             mkToolbarButton(icon, action)))
         .append($("<span>")
-            .addClass("toolbar--spacerleft")
+            .addClass("toolbar--text")
             .text(text))
-        .append($("<span>")
-            .addClass("toolbar--spacerright"))
         .append(right.map(({ icon, action }) =>
             mkToolbarButton(icon, action)))
 }
 
 function mkToolbarButton (icon, action) {
-    return $("<div>")
+    
+    const $button = $("<div>")
         .addClass("toolbar--button")
-        // .css("padding", "1rem")
-        // .css("cursor", "pointer")
         .append($("<i>")
-            .addClass("fa")
-            .addClass("fa-" + icon))
-        .on("click", action)
+            .addClass("fa fa-fw fa-" + icon))
+
+    if (Array.isArray(action)) {
+
+        const $dropdown = $("<div>")
+            .addClass("dropdown")
+            .append(action.map(({ text, action }) => $("<div>")
+                .addClass("dropdown--action")
+                .text(text)
+                .on("click", ev => {
+                    action()
+                    $(ev.target.parentNode)
+                        .removeClass("dropdown__active")
+                })))
+
+        $button
+            .append($dropdown)
+            .on("click", () => $dropdown
+                .addClass("dropdown__active"))
+
+    } else {
+        $button.on("click", action)
+    }
+    
+     return $button
+
 }
