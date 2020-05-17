@@ -54,7 +54,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 1,
@@ -155,7 +155,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 2,
@@ -221,7 +221,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 4,
@@ -234,7 +234,7 @@
       {
         "count": "1",
         "breaths": 0.5,
-        "text": "Inhale, jump to the right side, legs three feet apart, arms out."
+        "text": "Inhale, step to the right side, legs three feet apart, arms out."
       },
       {
         "count": "2",
@@ -302,7 +302,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 6,
@@ -315,7 +315,7 @@
       {
         "count": "1",
         "breaths": 0.5,
-        "text": "Inhale, jump to the right side with the legs five feet apart and arms out."
+        "text": "Inhale, step to the right side with the legs five feet apart and arms out."
       },
       {
         "count": "2",
@@ -383,7 +383,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 8,
@@ -396,7 +396,7 @@
       {
         "count": "1",
         "breaths": 0.5,
-        "text": "Inhale, jump to the right side, place the hands on the waist."
+        "text": "Inhale, step to the right side, place the hands on the waist."
       },
       {
         "count": "2",
@@ -562,7 +562,7 @@
       {
         "count": "1",
         "breaths": 0.5,
-        "text": "Inhale, jump to the right side with the feet three feet apart, palms together behind back"
+        "text": "Inhale, step to the right side with the feet three feet apart, palms together behind back"
       },
       {
         "count": "2",
@@ -712,7 +712,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 14,
@@ -724,7 +724,7 @@
     "steps": [
       {
         "count": "1",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Inhale, take the right leg into half padmasana, bind."
       },
       {
@@ -753,7 +753,7 @@
       },
       {
         "count": "6",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Inhale, take the left leg into half padmasana, bind."
       },
       {
@@ -781,7 +781,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 15,
@@ -928,6 +928,10 @@
         "text": "Inhale. Jump to seated, straighten the legs, keep the hands next to the hips, tuck the chin."
       },
       {
+         "breaths": 0.5,
+         "text": "Exhale."
+       },
+      {
         "breaths": 5,
         "counted": true
       }
@@ -957,7 +961,11 @@
         "count": "10",
         "breaths": 0.5,
         "text": "Inhale, head up."
-      }
+      },
+      {
+         "breaths": 0.5,
+         "text": "Exhale."
+       }
     ],
     "seq": 19,
     "series": "primarySeated1"
@@ -1062,7 +1070,7 @@
     "steps": [
       {
         "count": "7",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Inhale, jump to seated, right leg into half padmasana, bind. Left hand to left foot."
       },
       {
@@ -1105,7 +1113,7 @@
       },
       {
         "count": "14",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Inhale, jump to seated, left leg into half padmasana, bind. Right hand to right foot."
       },
       {
@@ -1532,7 +1540,7 @@
     "steps": [
       {
         "count": "7",
-        "breaths": 1.0,
+        "breaths": 1.5,
         "text": "Inhale, jump to seated, bend the right knee, bend forward, and bind."
       },
       {
@@ -1575,7 +1583,7 @@
       },
       {
         "count": "14",
-        "breaths": 1.0,
+        "breaths": 1.5,
         "text": "Inhale, jump to seated, bend the left knee, bend forward, and bind."
       },
       {
@@ -1626,7 +1634,7 @@
     "steps": [
       {
         "count": "7",
-        "breaths": 1.0,
+        "breaths": 1.5,
         "text": "Inhale, jump to seated. Left leg to padmasana, bend right knee, bend forward, and bind."
       },
       {
@@ -1669,7 +1677,7 @@
       },
       {
         "count": "14",
-        "breaths": 1.0,
+        "breaths": 1.5,
         "text": "Inhale, jump to seated. Right leg to padmasana, bend left knee, bend forward, and bind."
       },
       {
@@ -1720,7 +1728,7 @@
     "steps": [
       {
         "count": "7",
-        "breaths": 1.0,
+        "breaths": 1.5,
         "text": "Inhale, jump to seated. Bend the right knee, twist right, and bind."
       },
       {
@@ -1749,7 +1757,7 @@
       },
       {
         "count": "12",
-        "breaths": 1.0,
+        "breaths": 1.5,
         "text": "Inhale, jump to seated. Bend the left knee, twist left, and bind."
       },
       {
@@ -1786,7 +1794,7 @@
     "steps": [
       {
         "count": "7",
-        "breaths": 1.0,
+        "breaths": 1.5,
         "text": "Inhale, jump to seated. Left leg to padmasana, twist right, and bind."
       },
       {
@@ -1815,7 +1823,7 @@
       },
       {
         "count": "12",
-        "breaths": 1.0,
+        "breaths": 1.5,
         "text": "Inhale, jump to seated. Right leg to padmasana, twist left, bind."
       },
       {
@@ -2021,10 +2029,10 @@
       },
       {
         "breaths": 0.5,
-        "text": "Inhale, extent legs to tittibhasana."
+        "text": "Inhale, extend legs to tittibhasana."
       },
       {
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Exhale, lower to ground."
       },
       {
@@ -2041,13 +2049,13 @@
     "steps": [
       {
         "count": "8",
-        "breaths": 0.5,
-        "text": "Exhale, arms behind back, lock the hands."
+        "breaths": 1.5,
+        "text": "Inhale, arms behind back, lock the hands."
       },
       {
         "count": "9",
-        "breaths": 0.5,
-        "text": "Inhale, feet behind the head. Right on top of left."
+        "breaths": 1.5,
+        "text": "Exhale, feet behind the head. Right on top of left."
       },
       {
         "breaths": 5,
@@ -2318,12 +2326,20 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Jump to seated and lie down."
+        "text": "Inhale. Jump to seated and lie down."
       },
+      {
+         "breaths": 0.5,
+         "text": "Exhale."
+       },
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, legs back over head, spread legs, catch big toes."
+        "text": "Inhale, legs back over head, spread legs."
+      },
+     {
+        "breaths": 0.5,
+        "text": "Exhale. Catch big toes."
       },
       {
         "breaths": 5,
@@ -2387,7 +2403,7 @@
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, catch the right big toe."
+        "text": "Inhale, catch the right big toe. Left hand on thigh."
       },
       {
         "count": "9",
@@ -2435,7 +2451,7 @@
       {
         "count": "16",
         "breaths": 0.5,
-        "text": "Inhale, catch the left big toe."
+        "text": "Inhale, catch the left big toe. Right hand on thigh."
       },
       {
         "count": "17",
@@ -2764,7 +2780,11 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Jump to seated and straighten the legs."
+        "text": "Inhale. Jump to seated and straighten the legs."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "count": "8",
@@ -3038,7 +3058,7 @@
       },
       {
         "count": "8",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Inhale, take padmasana position, wrap the left arm and then the right around to bind."
       }
     ],
@@ -3120,7 +3140,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Inhale. Rise to samastitih."
       }
     ],
     "seq": 158,
@@ -4423,7 +4443,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 78,
@@ -4496,7 +4516,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 79,
@@ -4588,7 +4608,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 80,
@@ -4732,7 +4752,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 81,
@@ -5560,7 +5580,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 601,
@@ -5653,7 +5673,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 602,
@@ -5812,7 +5832,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 711,
@@ -5889,7 +5909,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 721,
@@ -6008,7 +6028,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Samastitih."
+        "text": "Exhale. Samastitih."
       }
     ],
     "seq": 731,
