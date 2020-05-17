@@ -1,5 +1,5 @@
 MVP
-  - NowPlaying: Clear
+  - NowPlaying: Bug: Dropdown doesn't close when clicking off to the right
   - NowPlaying: Toolbar (play, pause, stop, etc)
   - NowPlaying: Breaths per minute
   - NowPlaying: Save a playlist to local storage
