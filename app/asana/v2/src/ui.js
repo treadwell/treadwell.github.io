@@ -246,19 +246,29 @@ function mkToolbarButton (icon, action) {
 
     if (Array.isArray(action)) {
 
+        const $antidrop = $("<div>")
+            .addClass("dropdown--antidrop")
+            .on("click", ev => {
+                ev.stopPropagation()
+                $dropdown
+                    .removeClass("dropdown__active")
+            })
+
         const $dropdown = $("<div>")
             .addClass("dropdown")
             .append(action.map(({ text, action }) => $("<div>")
                 .addClass("dropdown--action")
                 .text(text)
                 .on("click", ev => {
+                    ev.stopPropagation()
                     action()
-                    $(ev.target.parentNode)
+                    $dropdown
                         .removeClass("dropdown__active")
                 })))
 
         $button
             .append($dropdown)
+            .append($antidrop)
             .on("click", () => $dropdown
                 .addClass("dropdown__active"))
 
