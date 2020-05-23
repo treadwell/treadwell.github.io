@@ -1,7 +1,7 @@
 MVP
   - NowPlaying: Highlight active asana
   - NowPlaying: Previous & next
-  - NowPlaying: Breaths per minute
+  - NowPlaying: Change breaths per minute
   - NowPlaying: Save a playlist to local storage
   - NowPlaying: Total time & time remaining
   - NowPlaying: Re-order
