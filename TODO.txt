@@ -1,13 +1,12 @@
 MVP
-  - NowPlaying: Bug: Dropdown doesn't close when clicking off to the right
-  - NowPlaying: Toolbar (play, pause, stop, etc)
+  - NowPlaying: Highlight active asana
+  - NowPlaying: Previous & next
   - NowPlaying: Breaths per minute
   - NowPlaying: Save a playlist to local storage
   - NowPlaying: Total time & time remaining
   - NowPlaying: Re-order
   - Asanas: Show asana steps
   - Playlists: Show playlist contents
-  - NowPlaying: Highlight active asana
   - NowPlaying: Highlight active step
   - All: Packaging with webpack
   - All: Replace CSS with SASS/SCSS
@@ -15,9 +14,12 @@ MVP
   - All: Deploying to Android/iOS
 
 Post-MVP
-
   - User profiles
   - Community asanas & playlist w/ upvoting & downvoting
   - Report an error w/ asana or playlist
   - Automated transitions dynamically added to playlists to
     ensure smooth transitions
+
+Tech Debt
+    - NowPlaying: Bug: Dropdown doesn't close when clicking 
+      off to the right

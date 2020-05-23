@@ -70,8 +70,21 @@ function NowPlaying (engine, { onAdd }) {
         $scroll.children().remove()
     })
 
+    let playAction = null
+
+    engine.on("pause", () => {
+        playAction.el.find("i").removeClass("fa-pause")
+        playAction.el.find("i").addClass("fa-play")
+    })
+
+    engine.on("play", () => {
+        playAction.el.find("i").removeClass("fa-play")
+        playAction.el.find("i").addClass("fa-pause")
+    })
+
     return [
-        mkToolbar("Now Playing", {
+        mkToolbar({
+            text: "Now Playing",
             right: [{ 
                 icon: "plus", 
                 action: onAdd 
@@ -86,7 +99,32 @@ function NowPlaying (engine, { onAdd }) {
                 }] 
             }]
         }),
-        $scroll
+        $scroll,
+        mkToolbar({
+            shadow: "top",
+            text: $("<span>")
+                .addClass("toolbar--timer")
+                .text("9:24/12:50"),
+            left: [{
+                icon: "chevron-left",
+                action: () => engine.previous()
+            }, playAction = {
+                icon: "play",
+                action: () => {
+                    if (engine.isPlaying)
+                        engine.pause()
+                    else
+                        engine.play()
+                },
+            }, {
+                icon: "chevron-right",
+                action: () => engine.next()
+            }],
+            right: [{
+                icon: "stop",
+                action: () => engine.rewind()
+            }]
+        })
     ]
 }
 
@@ -112,7 +150,8 @@ function Library (engine, { onBack }) {
     $view.view("asanas", true)
 
     return [
-        mkToolbar("Library", {
+        mkToolbar({
+            text: "Library",
             shadow: false,
             left: [{ icon: "arrow-left", action: onBack }]
         }),
@@ -223,18 +262,20 @@ function Tabs (pages) {
 
 function mkToolbarBase ({ shadow = true } = {}) {
     return $("<div>")
-        .addClass("toolbar " + (shadow ? "toolbar__shadow" : ""))
+        .addClass("toolbar " + (
+            shadow == "top" ? "toolbar__shadow-top" : 
+            shadow          ? "toolbar__shadow"     : ""))
 }
 
-function mkToolbar (text, { shadow, left = [], right = [] } = {}) {
+function mkToolbar ({ text = "", shadow, left = [], right = [] } = {}) {
     return mkToolbarBase({ shadow })
-        .append(left.map(({ icon, action }) =>
-            mkToolbarButton(icon, action)))
+        .append(left.map((opts) =>
+            opts.el = mkToolbarButton(opts.icon, opts.action)))
         .append($("<span>")
             .addClass("toolbar--text")
-            .text(text))
-        .append(right.map(({ icon, action }) =>
-            mkToolbarButton(icon, action)))
+            .append(text))
+        .append(right.map((opts) =>
+            opts.el = mkToolbarButton(opts.icon, opts.action)))
 }
 
 function mkToolbarButton (icon, action) {
