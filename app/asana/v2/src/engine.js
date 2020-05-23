@@ -22,7 +22,10 @@ function Engine (asanas, playlists, speaker, storage) {
 
         console.log("Node: ", node, "Step idx: ", stepIdx)
 
-        if (!engine.currentAsana) return
+        if (!engine.currentAsana) {
+            engine.rewind()
+            return
+        }
 
         if (!currentStep.counted) {  // normal step
             stepIdx++
@@ -68,6 +71,9 @@ function Engine (asanas, playlists, speaker, storage) {
 
         play (node = currentNode || qStart) {
 
+            engine.isPlaying = true
+            trigger("play")
+
             currentNode = node
 
             if (!node) {
@@ -87,10 +93,12 @@ function Engine (asanas, playlists, speaker, storage) {
         },
 
         pause () {
+            engine.isPlaying = false
             speaker.stop()
             if (stepIdx)
                 stepIdx--
             clearTimeout(timer)
+            trigger("pause")
         },
 
         //clears everything
