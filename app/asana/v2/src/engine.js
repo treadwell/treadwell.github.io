@@ -103,15 +103,16 @@ function Engine (asanas, playlists, speaker, storage) {
 
         //clears everything
         reset () {
-            engine.rewind()
+            engine.pause()
             engine.currentAsana = qStart = qEnd = null
+            stepIdx = 0
             trigger("reset")
         },
 
         // resets the counters on the current playlist
         rewind () {
             engine.pause()
-            asanaIdx = 0
+            // asanaIdx = 0
             stepIdx = 0
             engine.currentAsana = qStart
         },
