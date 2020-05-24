@@ -104,7 +104,7 @@ function Engine (asanas, playlists, speaker, storage) {
         //clears everything
         reset () {
             engine.pause()
-            engine.currentAsana = qStart = qEnd = null
+            currentNode = engine.currentAsana = qStart = qEnd = null
             stepIdx = 0
             trigger("reset")
         },
