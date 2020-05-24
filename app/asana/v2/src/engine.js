@@ -32,19 +32,19 @@ function Engine (asanas, playlists, speaker, storage) {
             console.log(currentStep.count, currentStep.text)
             speaker.speak(currentStep.count, currentStep.text, time => {
                 timer = setTimeout(playSteps, (currentStep.breaths * engine.cycle * 1000) - time,
-                    node.next, remainingSteps)
+                    node, remainingSteps)
             })
         } else if (remainingCount == undefined) {
-            playSteps(node.next, [currentStep, ...remainingSteps], currentStep.breaths)
+            playSteps(node, [currentStep, ...remainingSteps], currentStep.breaths)
         } else if (remainingCount != 0) {   // counting down
             console.log(remainingCount)
             speaker.speak(remainingCount, undefined, time => {
                 timer = setTimeout(playSteps, (engine.cycle * 1000) - time,
-                    node.next, [currentStep, ...remainingSteps], remainingCount - 1)
+                    node, [currentStep, ...remainingSteps], remainingCount - 1)
             })
         } else {
             stepIdx++
-            playSteps(node.next, remainingSteps)
+            playSteps(node, remainingSteps)
         }
     }
 
@@ -104,7 +104,7 @@ function Engine (asanas, playlists, speaker, storage) {
         //clears everything
         reset () {
             engine.rewind()
-            qStart = qEnd = null
+            engine.currentAsana = qStart = qEnd = null
             trigger("reset")
         },
 
@@ -113,7 +113,7 @@ function Engine (asanas, playlists, speaker, storage) {
             engine.pause()
             asanaIdx = 0
             stepIdx = 0
-            engine.currentAsana = null
+            engine.currentAsana = qStart
         },
 
         enqueue (obj) {
