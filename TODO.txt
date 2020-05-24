@@ -1,4 +1,5 @@
 MVP
+  - NowPlaying: Bug: Clear doesn't clear nodes
   - NowPlaying: Highlight active asana
   - NowPlaying: Previous & next
   - NowPlaying: Change breaths per minute
@@ -12,6 +13,7 @@ MVP
   - All: Replace CSS with SASS/SCSS
   - All: Native UX (animations)
   - All: Deploying to Android/iOS
+  - NowPlaying: Preload voices
 
 Post-MVP
   - User profiles
