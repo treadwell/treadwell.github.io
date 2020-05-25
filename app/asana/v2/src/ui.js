@@ -60,10 +60,12 @@ function NowPlaying (engine, { onAdd }) {
             }]
         })
         $scroll.append(node.el)
+        updateTime()
     })
 
     engine.on("dequeue", node => {
         node.el.remove()
+        updateTime()
     })
 
     engine.on("reset", () => {
@@ -71,6 +73,7 @@ function NowPlaying (engine, { onAdd }) {
     })
 
     let playAction = null
+    let timeDisplay = null
 
     engine.on("pause", () => {
         playAction.el.find("i").removeClass("fa-pause")
@@ -82,48 +85,86 @@ function NowPlaying (engine, { onAdd }) {
         playAction.el.find("i").addClass("fa-pause")
     })
 
+    engine.on("rewind", () => {
+        updateTime()
+    })
+
+    engine.on("change-step", () => {
+        updateTime()
+    })
+
+    function formatTime (s) {
+        let m = Math.trunc(s / 60)
+        s -= m * 60
+        let h = Math.trunc(m / 60)
+        m -= h * 60
+        const fmt = x => 
+            String(x).padStart(2, "0")
+        return `${fmt(h)}:${fmt(m)}:${fmt(s)}`
+    }
+
+    function updateTime () {
+        const rem = formatTime(engine.calcTimeRemaining())
+        const tot = formatTime(engine.calcTimeTotal())
+        timeDisplay.text(`${rem}/${tot}`)
+    }
+
+    requestAnimationFrame(() => 
+        updateTime())
+
     return [
         mkToolbar({
             text: "Now Playing",
-            right: [{ 
-                icon: "plus", 
-                action: onAdd 
-            }, { 
-                icon: "ellipsis-v", 
-                action: [{
-                    text: "Clear", 
-                    action: () => engine.reset()
-                }, {
-                    text: "Save playlist",
-                    action: () => alert("Save playlist!")
-                }] 
-            }]
+            right: [
+                {
+                    icon: "plus",
+                    action: onAdd
+                },
+                {
+                    icon: "ellipsis-v",
+                    action: [
+                        {
+                            text: "Clear",
+                            action: () => engine.reset()
+                        },
+                        {
+                            text: "Save playlist",
+                            action: () => alert("Save playlist!")
+                        }
+                    ]
+                }
+            ]
         }),
         $scroll,
         mkToolbar({
             shadow: "top",
-            text: $("<span>")
-                .addClass("toolbar--timer")
-                .text("9:24/12:50"),
-            left: [{
-                icon: "chevron-left",
-                action: () => engine.previous()
-            }, playAction = {
-                icon: "play",
-                action: () => {
-                    if (engine.isPlaying)
-                        engine.pause()
-                    else
-                        engine.play()
+            text: timeDisplay = $("<span>")
+                .addClass("toolbar--timer"),
+            left: [
+                {
+                    icon: "chevron-left",
+                    action: () => engine.prev()
                 },
-            }, {
-                icon: "chevron-right",
-                action: () => engine.next()
-            }],
-            right: [{
-                icon: "stop",
-                action: () => engine.rewind()
-            }]
+                playAction = {
+                    icon: "play",
+                    action: () => {
+                        if (engine.isPlaying)
+                            engine.pause()
+                        else
+                            engine.play()
+                    },
+                },
+                {
+                    icon: "chevron-right",
+                    action: () => engine.next()
+                }
+            ],
+            right: [
+                {
+                    icon: "stop",
+                    action: () => engine.rewind()
+                }
+            ]
         })
     ]
 }
