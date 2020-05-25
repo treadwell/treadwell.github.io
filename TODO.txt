@@ -1,10 +1,8 @@
 MVP
-  - NowPlaying: Bug: Clear doesn't clear nodes
+  - NowPlaying: Remaining time not decremented for counted breaths 
   - NowPlaying: Highlight active asana
-  - NowPlaying: Previous & next
   - NowPlaying: Change breaths per minute
   - NowPlaying: Save a playlist to local storage
-  - NowPlaying: Total time & time remaining
   - NowPlaying: Re-order
   - Asanas: Show asana steps
   - Playlists: Show playlist contents

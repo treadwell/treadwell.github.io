@@ -2,15 +2,9 @@ function Engine (asanas, playlists, speaker, storage) {
 
     let currentNode = null
     let stepIdx = null
-    const handlers = {}
     let timer = null
 
     playlists.push(...storage.playlists)
-
-    function trigger (event) {
-        (handlers[event] || [])
-            .forEach(f => f())
-    }
 
     function playSteps (node, [currentStep, ...remainingSteps] = [], remainingCount) {
 
@@ -26,6 +20,8 @@ function Engine (asanas, playlists, speaker, storage) {
             engine.rewind()
             return
         }
+
+        trigger("change-step")
 
         if (!currentStep.counted) {  // normal step
             stepIdx++
@@ -63,8 +59,8 @@ function Engine (asanas, playlists, speaker, storage) {
         playlists,
 
         currentAsana: null,
-        totalTime: null,
-        remainingTime: null,
+        timeTotal: 0,
+        timeRemaining: 0,
         cycle: 6,
 
         setVolume: speaker.setVolume.bind(speaker),
@@ -112,9 +108,10 @@ function Engine (asanas, playlists, speaker, storage) {
         // resets the counters on the current playlist
         rewind () {
             engine.pause()
-            // asanaIdx = 0
             stepIdx = 0
-            engine.currentAsana = qStart
+            currentNode = qStart
+            engine.currentAsana = null
+            trigger("rewind")
         },
 
         enqueue (obj) {
@@ -136,6 +133,8 @@ function Engine (asanas, playlists, speaker, storage) {
         },
 
         dequeue (node) {
+            if (node == currentNode)
+                engine.next()
             if (node == qStart) qStart = node.next
             if (node == qEnd) qEnd = node.prev
             if (node.next) node.next.prev = node.prev
@@ -145,6 +144,22 @@ function Engine (asanas, playlists, speaker, storage) {
             trigger("dequeue", node)
         },
 
+        prev () {
+            const cn = currentNode || {}
+            const ip = engine.isPlaying
+            engine.rewind()
+            currentNode = cn.prev
+            if (ip) engine.play()
+        },
+
+        next () {
+            const cn = currentNode || {}
+            const ip = engine.isPlaying
+            engine.rewind()
+            currentNode = cn.next
+            if (ip) engine.play()
+        },
+
         savePlaylist: storage.savePlaylist.bind(storage),
         deletePlaylist: storage.deletePlaylist.bind(storage),
 
@@ -152,6 +167,22 @@ function Engine (asanas, playlists, speaker, storage) {
             hooks[eventName] = hooks[eventName] || []
             hooks[eventName].push(fn)
         },
+
+        calcTimeTotal(n, i = 0) {
+            n = n || qStart
+            let total = 0
+            while (n) {
+                total += n.asana.steps.slice(i).reduce((a, s) =>
+                    a + s.breaths * engine.cycle, 0)
+                i = 0
+                n = n.next
+            }
+            return total
+        },
+
+        calcTimeRemaining() {
+            return engine.calcTimeTotal(currentNode, stepIdx)
+        }
 
     }
 
