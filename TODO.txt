@@ -4,6 +4,7 @@ MVP
   - NowPlaying: Change breaths per minute
   - NowPlaying: Save a playlist to local storage
   - NowPlaying: Re-order
+  - NowPlaying: voice preloading  
   - Asanas: Show asana steps
   - Playlists: Show playlist contents
   - NowPlaying: Highlight active step
@@ -14,6 +15,7 @@ MVP
   - NowPlaying: Preload voices
 
 Post-MVP
+  - NowPlaying: integrating a 3rd party text to speech engine
   - User profiles
   - Community asanas & playlist w/ upvoting & downvoting
   - Report an error w/ asana or playlist
