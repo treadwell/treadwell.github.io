@@ -1,4 +1,5 @@
 MVP
+  - NowPlaying: when completing now playing, rewind instead of clear
   - NowPlaying: Remaining time not decremented for counted breaths 
   - NowPlaying: Highlight active asana
   - NowPlaying: Change breaths per minute
@@ -13,6 +14,9 @@ MVP
   - All: Native UX (animations)
   - All: Deploying to Android/iOS
   - NowPlaying: Preload voices
+  - NowPlaying: Add instructions to main page:
+    - Click "+" above to add asanas or playlists from Library view
+    - return here by clicking "<-" from Library view
 
 Post-MVP
   - NowPlaying: integrating a 3rd party text to speech engine
