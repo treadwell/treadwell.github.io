@@ -428,8 +428,12 @@
       {
         "count": "5",
         "breaths": 0.5,
-        "text": "Inhale, hands on waist, come up."
-      }
+        "text": "Inhale, hands on waist."
+      },
+      {
+         "breaths": 0.5,
+         "text": "Exhale, come up."
+       }
     ],
     "seq": 9,
     "series": "fundamental"
@@ -465,7 +469,11 @@
         "count": "4",
         "breaths": 0.5,
         "text": "Inhale, come up."
-      }
+      },
+      {
+         "breaths": 0.5,
+         "text": "Exhale."
+       }
     ],
     "seq": 10,
     "series": "fundamental"
@@ -501,7 +509,11 @@
         "count": "4",
         "breaths": 0.5,
         "text": "Inhale, come up."
-      }
+      },
+      {
+         "breaths": 0.5,
+         "text": "Exhale."
+       }
     ],
     "seq": 11,
     "series": "fundamental"
@@ -877,6 +889,10 @@
         "text": "Exhale, turn to the left side."
       },
       {
+        "breaths": 0.5,
+        "text": "Inhale."
+      },
+      {
         "breaths": 5,
         "counted": true
       },
@@ -886,6 +902,10 @@
         "text": "Exhale, spread the arms to the side for Warrior 2."
       },
       {
+        "breaths": 0.5,
+        "text": "Inhale."
+      },
+      {
         "breaths": 5,
         "counted": true
       },
@@ -893,6 +913,10 @@
         "count": "10",
         "breaths": 0.5,
         "text": "Exhale, turn to the right side."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Inhale."
       },
       {
         "breaths": 5,
@@ -998,6 +1022,10 @@
         "text": "Inhale, head up."
       },
       {
+         "breaths": 0.5,
+         "text": "Exhale."
+       },
+      {
         "count": "11",
         "breaths": 0.5,
         "text": "Inhale, lift."
@@ -1028,7 +1056,11 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to seated, straighten the legs, place hands 12 inches behind back."
+        "text": "Inhale, jump to seated, straighten the legs."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale. Place hands 12 inches behind back."
       },
       {
         "count": "8",
@@ -1263,7 +1295,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Jump to seated, fold the right leg to the side. Catch the left foot with both hands, head up."
+        "text": "Inhale. Jump to seated, fold the right leg to the side. Catch the left foot with both hands, head up."
       },
       {
         "count": "8",
@@ -1736,6 +1768,10 @@
         "text": "Inhale, jump to seated. Bend the right knee, twist right, and bind."
       },
       {
+      "breaths": 0.5,
+      "text": "Exhale."
+    },
+      {
         "breaths": 5,
         "counted": true
       },
@@ -1763,6 +1799,10 @@
         "count": "12",
         "breaths": 1.5,
         "text": "Inhale, jump to seated. Bend the left knee, twist left, and bind."
+      },
+      {
+      "breaths": 0.5,
+      "text": "Exhale."
       },
       {
         "breaths": 5,
@@ -1802,6 +1842,10 @@
         "text": "Inhale, jump to seated. Left leg to padmasana, twist right, and bind."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "breaths": 5,
         "counted": true
       },
@@ -1829,6 +1873,10 @@
         "count": "12",
         "breaths": 1.5,
         "text": "Inhale, jump to seated. Right leg to padmasana, twist left, bind."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "breaths": 5,

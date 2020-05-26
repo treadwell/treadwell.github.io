@@ -1,6 +1,6 @@
 Promise.all([
     
-    fetch("/app/asana/v1/data.json")
+    fetch("/app/asana/v2/res/data.json")
         .then(resp => resp.json()),
     
     fetch("/app/asana/v1/sanskrit_numbers.json")
