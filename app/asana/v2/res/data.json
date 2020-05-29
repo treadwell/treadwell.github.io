@@ -880,17 +880,21 @@
         "text": "Inhale, step the right leg forward and take the arms up to Warrior 1"
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "breaths": 5,
         "counted": true
       },
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Exhale, turn to the left side."
+        "text": "Inhale, turn to the left side."
       },
       {
         "breaths": 0.5,
-        "text": "Inhale."
+        "text": "Exhale."
       },
       {
         "breaths": 5,
@@ -899,11 +903,11 @@
       {
         "count": "9",
         "breaths": 0.5,
-        "text": "Exhale, spread the arms to the side for Warrior 2."
+        "text": "Inhale, spread the arms to the side for Warrior 2."
       },
       {
         "breaths": 0.5,
-        "text": "Inhale."
+        "text": "Exhale."
       },
       {
         "breaths": 5,
@@ -912,11 +916,11 @@
       {
         "count": "10",
         "breaths": 0.5,
-        "text": "Exhale, turn to the right side."
+        "text": "Inhale, turn to the right side."
       },
       {
         "breaths": 0.5,
-        "text": "Inhale."
+        "text": "Exhale."
       },
       {
         "breaths": 5,
