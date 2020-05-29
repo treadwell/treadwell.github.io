@@ -73,7 +73,7 @@ function Engine (asanas, playlists, speaker, storage) {
             currentNode = node
 
             if (!node) {
-                engine.reset()
+                engine.rewind()
                 trigger("change-asana")
                 return
             }
