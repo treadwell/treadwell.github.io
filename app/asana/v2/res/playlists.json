@@ -86,8 +86,8 @@
 {"name": "Standing Postures", "asanas": ["utthitaHastaPadangusthasana", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana"]},
 {"name": "Start of Seated Postures", "asanas": ["dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana"]},
 {"name": "End of Seated Postures", "asanas": ["bhujapidasana", "kurmasana", "suptaKurmasana", "garbhaPindasana", "kukkutasana", "baddhaKonasana", "upavisthaKonasanaA", "upavisthaKonasanaB", "suptaKonasana", "suptaPadangusthasana", "ubhayaPadangusthasana", "urdhvaMukhaPaschimottanasana", "setthuBandhasana"]},
-{"name": "Start of Finishing Postures", "asanas": ["urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana"]},
-{"name": "End of Finishing Postures", "asanas": ["baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
+{"name": "Start of Closing Postures", "asanas": ["urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana"]},
+{"name": "End of Closing Postures", "asanas": ["baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
 
 {"name": "**** Testing ****", "asanas": []},
 {"name": "Test", "asanas": ["aaa", "bbb", "ccc", "ddd" ]}
