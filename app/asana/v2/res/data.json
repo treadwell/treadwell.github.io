@@ -6246,11 +6246,23 @@
     "series": "test"
   },
   {
+  "id": "eee",
+  "name": "Testing: short short",
+  "steps": [
+    {
+      "count": "1",
+      "breaths": 0.5,
+      "text": "Step 1."
+    }
+  ],
+    "seq": 1003,
+    "series": "test"
+  },
+  {
   "id": "50breaths",
   "name": "Take 50 breaths",
   "steps": [
     {
-      "count": "",
       "breaths": 50.0,
       "text": "Start"
     }

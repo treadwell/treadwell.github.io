@@ -90,5 +90,5 @@
 {"name": "End of Closing Postures", "asanas": ["baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
 
 {"name": "**** Testing ****", "asanas": []},
-{"name": "Test", "asanas": ["aaa", "bbb", "ccc", "ddd" ]}
+{"name": "Test", "asanas": ["aaa", "bbb", "ccc", "ddd", "eee"]}
 ]

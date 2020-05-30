@@ -130,6 +130,71 @@ body {
     background: #bbbbbb;
 }
 
+.nowplaying > .entry {
+    cursor: pointer;
+}
+
+.entry-nowplaying--indicator {
+    margin-right: -1rem;
+}
+
+.entry-nowplaying--indicator > * {
+    color: white;
+    display: none;
+    transition: all 75ms ease;
+}
+
+.nowplaying > .entry:active > .entry-nowplaying--indicator > * {
+    transform: scale(1.25);
+    transform-origin: center center;
+}
+
+.nowplaying > .entry:hover > .entry-nowplaying--indicator > * {
+    color: #dddddd;
+}
+
+.nowplaying > .entry.entry-nowplaying__active > .entry-nowplaying--indicator > * {
+    color: #3f51b5;
+}
+
+.nowplaying__playing > .entry.entry-nowplaying__active > .entry-nowplaying--indicator > .entry-nowplaying--indicator--playing { display: flex; }
+.nowplaying__playing > .entry.entry-nowplaying__active:hover > .entry-nowplaying--indicator > .entry-nowplaying--indicator--pause { display: flex; }
+.nowplaying__playing > .entry.entry-nowplaying__active:hover > .entry-nowplaying--indicator > .entry-nowplaying--indicator--playing { display: none; }
+
+.nowplaying:not(.nowplaying__playing) > .entry.entry-nowplaying__active > .entry-nowplaying--indicator > .entry-nowplaying--indicator--paused { display: flex; }
+.nowplaying:not(.nowplaying__playing) > .entry.entry-nowplaying__active:hover > .entry-nowplaying--indicator > .entry-nowplaying--indicator--play { display: flex; }
+.nowplaying:not(.nowplaying__playing) > .entry.entry-nowplaying__active:hover > .entry-nowplaying--indicator > .entry-nowplaying--indicator--paused { display: none; }
+
+/*.nowplaying__playing > .entry:not(.entry-nowplaying__active) > .entry-nowplaying--indicator > .entry-nowplaying--indicator--paused { display: flex; };*/
+/*.nowplaying__playing > */ .entry:not(.entry-nowplaying__active):hover > .entry-nowplaying--indicator > .entry-nowplaying--indicator--play { display: flex; }
+/*.nowplaying__playing > .entry:not(.entry-nowplaying__active):hover > .entry-nowplaying--indicator > .entry-nowplaying--indicator--paused { display: none; }*/
+
+/* .nowplaying > .entry:active > .entry-nowplaying--indicator {
+    transform: scale(1.25);
+}
+
+.entry-nowplaying--indicator {
+    color: white;
+    transform-origin: center center;
+    transition: all 65ms ease;
+    margin-right: -1rem;
+}
+
+.entry-nowplaying--indicator {
+    visibility: hidden;
+}
+
+.nowplaying > .entry:hover > .entry-nowplaying--indicator {
+    visibility: visible;
+    color: #dddddd;
+}
+
+.nowplaying > .entry.entry-nowplaying__active > .entry-nowplaying--indicator {
+    visibility: visible;
+    color: #3f51b5;
+} */
+
+
 .nowplaying {
     display: flex;
     flex-direction: column;

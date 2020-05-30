@@ -1,7 +1,5 @@
 MVP
-  - NowPlaying: Bug: when completing now playing, reset clocks and rewind instead of clear
   - NowPlaying: Remaining time not decremented for counted breaths 
-  - NowPlaying: Highlight active asana
   - NowPlaying: Change breaths per minute
   - NowPlaying: Save a playlist to local storage
   - NowPlaying: Re-order
@@ -25,6 +23,7 @@ Post-MVP
   - Report an error w/ asana or playlist
   - Automated transitions dynamically added to playlists to
     ensure smooth transitions
+  - Add images and demo gifs
 
 Tech Debt
     - NowPlaying: Bug: Dropdown doesn't close when clicking 

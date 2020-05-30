@@ -53,6 +53,31 @@ function NowPlaying (engine, { onAdd }) {
 
     engine.on("enqueue", node => {
         node.el = mkEntry(node.asana.name, {
+            left: [{
+                action: () => {
+                    const ip = engine.isPlaying
+                    engine.pause()
+                    if (!ip || node != currentNode)
+                        engine.play(node)
+                },
+                el: $("<span>")
+                    .addClass("entry-nowplaying--indicator")
+                    .append([
+                        $("<i>")
+                            .addClass("entry-nowplaying--indicator--play")
+                            .addClass("fa fa-fw fa-play"),
+                        $("<i>")
+                            .addClass("entry-nowplaying--indicator--pause")
+                            .addClass("fa fa-fw fa-pause"),
+                        $("<i>")
+                            .addClass("entry-nowplaying--indicator--playing")
+                            .addClass("fa fa-fw fa-volume-up"),
+                        $("<i>")
+                            .addClass("entry-nowplaying--indicator--paused")
+                            .addClass("fa fa-fw fa-volume-off")
+                    ])
+                
+            }],
             right: [{
                 icon: "minus",
                 classes: "danger",
@@ -64,26 +89,38 @@ function NowPlaying (engine, { onAdd }) {
     })
 
     engine.on("dequeue", node => {
+        if (currentNode == node) {
+            currentNode = null
+            engine.pause()
+        }
         node.el.remove()
-        updateTime()
+        setTimeout(() => {
+            updateTime()
+        }, 0)
     })
 
     engine.on("reset", () => {
         $scroll.children().remove()
+        updateTime()
     })
 
     let playAction = null
     let timeDisplay = null
+    let currentNode = null
 
     engine.on("pause", () => {
+        $scroll
+            .removeClass("nowplaying__playing")
         playAction.el.find("i").removeClass("fa-pause")
         playAction.el.find("i").addClass("fa-play")
     })
 
     engine.on("play", () => {
+        $scroll
+            .addClass("nowplaying__playing")
         playAction.el.find("i").removeClass("fa-play")
         playAction.el.find("i").addClass("fa-pause")
-    })
+    })  
 
     engine.on("rewind", () => {
         updateTime()
@@ -91,6 +128,12 @@ function NowPlaying (engine, { onAdd }) {
 
     engine.on("change-step", () => {
         updateTime()
+    })
+
+    engine.on("change-asana", node => {
+        if (currentNode) currentNode.el.removeClass("entry-nowplaying__active")
+        currentNode = node
+        currentNode.el.addClass("entry-nowplaying__active")
     })
 
     function formatTime (s) {
@@ -262,21 +305,29 @@ function Asanas (engine) {
     })
 }
 
-function mkEntry (text, { action, right = [], data = {} } = {}) {
+function mkEntry (text, { action, left = [], right = [], data = {} } = {}) {
+    
+    function renderAction ({ action, el, icon, classes = "" }) {
+        if (action && el)
+            el.on("click", action)
+        return icon 
+            ? $("<i>")
+                .addClass(`fa fa-fw fa-${icon} ${classes} entry--action ` + (action ? "entry--action__action" : ""))
+                .on("click", action)
+            : el
+                .addClass("entry--action")
+    }
+
     return $("<div>")
         .addClass("entry")
         .data(data)
+        .append(left.map(o => renderAction(o)))
         .append($("<div>")
             .addClass("entry--main " + (action ? "entry--main__action" : ""))
             .on("click", action)
             .text(text))
-        .append(right.map(({ action, el, icon, classes = "" }) => 
-            icon 
-                ? $("<i>")
-                    .addClass(`fa fa-fw fa-${icon} ${classes} entry--action ` + (action ? "entry--action__action" : ""))
-                    .on("click", action)
-                : el
-                    .addClass("entry--action")))
+        .append(right.map(o => renderAction(o)))
+
 }
 
 function Tabs (pages) {
