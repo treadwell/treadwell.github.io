@@ -16,10 +16,8 @@ function Engine (asanas, playlists, speaker, storage) {
 
         console.log("Node: ", node, "Step idx: ", stepIdx)
 
-        if (!engine.currentAsana) {
-            engine.rewind()
+        if (!engine.currentAsana)
             return
-        }
 
         trigger("change-step")
 
@@ -74,12 +72,12 @@ function Engine (asanas, playlists, speaker, storage) {
 
             if (!node) {
                 engine.rewind()
-                trigger("change-asana")
+                trigger("playlist-end")
                 return
             }
 
             engine.currentAsana = node.asana
-            trigger("change-asana")
+            trigger("change-asana", node)
 
             speaker.speak(undefined, node.asana.name, () => {
                 console.log(node.asana.name)
@@ -133,6 +131,7 @@ function Engine (asanas, playlists, speaker, storage) {
         },
 
         dequeue (node) {
+            trigger("dequeue", node)
             if (node == currentNode)
                 engine.next()
             if (node == qStart) qStart = node.next
@@ -141,7 +140,6 @@ function Engine (asanas, playlists, speaker, storage) {
             if (node.prev) node.prev.next = node.next
             node.prev = null
             node.next = null
-            trigger("dequeue", node)
         },
 
         prev () {
