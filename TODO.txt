@@ -1,4 +1,5 @@
 MVP
+  - NowPlaying: Autoscroll to current asana
   - NowPlaying: Remaining time not decremented for counted breaths 
   - NowPlaying: Change breaths per minute
   - NowPlaying: Save a playlist to local storage
