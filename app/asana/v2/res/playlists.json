@@ -34,11 +34,11 @@
 "suryB", "suryB", "suryB",
 "padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
 "pasasana", "krounshasana", "shalabhasana", "bhekasana", "dhanurasana", "parshvaDhanurasana", 
-"ustrasana", "laghuvajrasana", "kapotasana", "suptaVadrasana", "bakasanaA", "bakasanaB", 
+"ustrasana", "laghuvajrasana", "kapotasana", "suptaVajrasana", "bakasanaA", "bakasanaB", 
 "bharadvajasana", "ardhaMatsyendrasana", "ekaPadaSirsasana", "dviPadaSirsasana", "yogaNidrasana", 
 "tittibhasana", "pinchaMayurasana", "karandavasana", "mayurasana", "nakrasana", "vatayanasana", "parighasana", 
 "gomukhasana", "suptaUrdhvaPadaVajrasana", "muktaHastaSirsasanaA", "muktaHastaSirsasanaB", "muktaHastaSirsasanaC", 
-"baddhaHastaSirsansaA", "baddhaHastaSirsansaB", "baddhaHastaSirsansaC", "baddhaHastaSirsansaD",
+"baddhaHastaSirsasanaA", "baddhaHastaSirsasanaB", "baddhaHastaSirsasanaC", "baddhaHastaSirsasanaD",
 "urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
 "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
 
@@ -63,7 +63,7 @@
     "padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
     "pasasana", "krounshasana", "shalabhasana", "bhekasana", "dhanurasana", "parshvaDhanurasana", 
     "ustrasana", "laghuvajrasana", "kapotasana", "suptaVajrasana", "bakasanaA", "bakasanaB", 
-    "parighasana", "muktaHastaSirsasanaA", "baddhaHastaSirsansaA",
+    "parighasana", "muktaHastaSirsasanaA", "baddhaHastaSirsasanaA",
     "urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
     "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
 
