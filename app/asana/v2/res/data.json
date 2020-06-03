@@ -3229,12 +3229,12 @@
       {
         "count": "5",
         "breaths": 0.5,
-        "text": "Inhale, push up."
+        "text": "Inhale, push up to upward dog."
       },
       {
         "count": "6",
         "breaths": 0.5,
-        "text": "Exhale, push back."
+        "text": "Exhale, push back to downward dog."
       },
       {
         "count": "7",
@@ -3328,12 +3328,12 @@
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Jump to left side position, toes point, head up."
+        "text": "Jump through, left leg bent beside left hip, right leg up, head up."
       },
       {
         "count": "15",
         "breaths": 0.5,
-        "text": "Exhale, touch your chin to chin, look toward toes."
+        "text": "Exhale, touch your chin to shin, look toward toes."
       },
       {
         "breaths": 5,
@@ -3391,6 +3391,10 @@
         "text": "Inhale, tops of hands to mat beside hips, feet and chest up."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "breaths": 5,
         "counted": true
       },
@@ -3426,14 +3430,22 @@
     "name": "Bhekasana",
     "steps": [
       {
+        "breaths": 0.5,
+        "text": "Inhale, high plank."
+      },
+      {
         "count": "4",
         "breaths": 0.5,
-        "text": "Inhale to chaturanga."
+        "text": "Exhale to chaturanga."
       },
       {
         "count": "5",
         "breaths": 0.5,
-        "text": "Exhale, grab tops of feet and push down, elbows up, head up."
+        "text": "Inhale, grab tops of feet and push down, elbows up, head up."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
       },
       {
         "breaths": 5,
@@ -3568,11 +3580,11 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to kneeling, hands on hips."
+        "text": "Inhale, jump to knees, hands on hips."
       },
       {
         "count": "8",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Exhale, arch back, hands on heels."
       },
       {
@@ -3614,16 +3626,16 @@
   },
   {
     "id": "laghuvajrasana",
-    "name": "Laghuvajrasana",
+    "name": "Laghu Vajrasana",
     "steps": [
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to kneeling, hands on hips."
+        "text": "Inhale, jump to knees, hands on hips."
       },
       {
         "count": "8",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Exhale, arch back, hands on ankles, top of head to floor."
       },
       {
@@ -3670,11 +3682,11 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to kneeling, hands on hips."
+        "text": "Inhale, jump to knees, hands on hips."
       },
       {
         "count": "8",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Exhale, arch back, hands through prayer to grasp ankles, elbows on floor, head back to floor."
       },
       {
@@ -3838,7 +3850,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, push forward, straight arms, legs bent in air."
+        "text": "Inhale, jump forward, straight arms, legs bent in air."
       },
       {
         "breaths": 0.5,
@@ -3859,7 +3871,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Inhale."
+        "text": "Inhale. Legs up."
       },
       {
         "count": "9",
