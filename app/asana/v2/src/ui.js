@@ -134,6 +134,7 @@ function NowPlaying (engine, { onAdd }) {
         if (currentNode) currentNode.el.removeClass("entry-nowplaying__active")
         currentNode = node
         currentNode.el.addClass("entry-nowplaying__active")
+        currentNode.el[0].scrollIntoView()
     })
 
     function formatTime (s) {
