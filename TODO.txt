@@ -1,5 +1,7 @@
 MVP
-  - Asanas: Show asana steps
+  - Asanas: Scroll full list of steps into view when opened, when list is 
+    larger than screen, position the asana at the top of the screen
+  - NowPlaying: Show asana steps
   - NowPlaying: Don't clear on refresh
   - NowPlaying: Remaining time not decremented for counted breaths 
   - NowPlaying: Change breaths per minute
