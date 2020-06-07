@@ -76,20 +76,77 @@ body {
 
 .entry {
     display: flex;
+    flex-direction: column;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.entry--open > i {
+    transition: transform 125ms ease;
+
+}
+
+.entry.entry__open > .entry--main > .entry--open > i {
+    transform: rotate(180deg);
+}
+
+.entry--content {
+    visibility: hidden;
+    height: 0;
+}
+
+.entry-asana--steps {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.entry-asana--step {
+    display: flex;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    padding: 0.25rem;
+}
+
+.entry-asana--step:last-child {
+    border-bottom: none;
+}
+
+.entry-asana--step--icon,
+.entry-asana--step--count {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    padding-right: 0.5rem;
+}
+
+.entry.entry__open > .entry--content {
+    visibility: visible;
+    height: auto;
+}
+
 .entry--main {
-    padding: 1rem;
-    flex: 1;
+    display: flex;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.entry--main:last-child {
+.entry--main > * {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.entry--content {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.entry--text {
+    padding: 1rem;
+    flex: 1;
+}
+
+.entry--main > *:last-child {
     border-right: none;
 }
 
-.entry--main__action {
+.entry--text__action {
     cursor: pointer;
 }
 
@@ -115,17 +172,17 @@ body {
     color: #3f51b5; 
 }
 
-.entry--main__action,
+.entry--text__action,
 .entry--action__action {
     transition: background 100ms ease;
 }
 
-.entry--main__action:hover, 
+.entry--text__action:hover, 
 .entry--action__action:hover {
     background: #dddddd;
 }
 
-.entry--main__action:active,
+.entry--text__action:active,
 .entry-action__action:active {
     background: #bbbbbb;
 }

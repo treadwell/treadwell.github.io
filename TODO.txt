@@ -1,11 +1,11 @@
 MVP
-  - NowPlaying: Autoscroll to current asana
+  - Asanas: Show asana steps
+  - NowPlaying: Don't clear on refresh
   - NowPlaying: Remaining time not decremented for counted breaths 
   - NowPlaying: Change breaths per minute
   - NowPlaying: Save a playlist to local storage
   - NowPlaying: Re-order
   - NowPlaying: voice preloading  
-  - Asanas: Show asana steps
   - Playlists: Show playlist contents
   - NowPlaying: Highlight active step
   - All: Packaging with webpack

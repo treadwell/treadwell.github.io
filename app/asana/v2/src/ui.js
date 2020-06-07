@@ -134,7 +134,10 @@ function NowPlaying (engine, { onAdd }) {
         if (currentNode) currentNode.el.removeClass("entry-nowplaying__active")
         currentNode = node
         currentNode.el.addClass("entry-nowplaying__active")
-        currentNode.el[0].scrollIntoView({behavior: "smooth"})
+        currentNode.el[0].scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        })
     })
 
     function formatTime (s) {
@@ -150,7 +153,7 @@ function NowPlaying (engine, { onAdd }) {
     function updateTime () {
         const rem = formatTime(engine.calcTimeRemaining())
         const tot = formatTime(engine.calcTimeTotal())
-        timeDisplay.text(`${rem}/${tot}`)
+        timeDisplay.text(`${rem} / ${tot}`)
     }
 
     requestAnimationFrame(() => 
@@ -260,6 +263,23 @@ function Asanas (engine) {
     function mkEntryAsana (a) {
         return mkEntry(a.name, {
             action: () => engine.enqueue(a),
+            content: $("<div>")
+                .addClass("entry-asana--steps")
+                .append(a.steps.map(s => $("<div>")
+                    .addClass("entry-asana--step")
+                    .append([
+                        s.counted 
+                            ? $("<i>")
+                                .addClass("entry-asana--step--icon fa fa-refresh")
+                            : $("<span>")
+                                .addClass("entry-asana--step--count")
+                                .text(s.count),
+                        $("<span>")
+                            .addClass("entry-asana--step-text")
+                            .text(s.counted
+                                ? `Breathe ${s.breaths} times`
+                                : s.text)
+                    ]))),
             right: [{
                 el: $("<span>")
                     .addClass("entry--asana-count " + (asanaCounts.get(a) ? "entry--asana-count__nonzero" : ""))
@@ -306,7 +326,7 @@ function Asanas (engine) {
     })
 }
 
-function mkEntry (text, { action, left = [], right = [], data = {} } = {}) {
+function mkEntry (text, { action, content, left = [], right = [], data = {} } = {}) {
     
     function renderAction ({ action, el, icon, classes = "" }) {
         if (action && el)
@@ -319,16 +339,24 @@ function mkEntry (text, { action, left = [], right = [], data = {} } = {}) {
                 .addClass("entry--action")
     }
 
-    return $("<div>")
+    const $entry = $("<div>")
         .addClass("entry")
         .data(data)
-        .append(left.map(o => renderAction(o)))
         .append($("<div>")
-            .addClass("entry--main " + (action ? "entry--main__action" : ""))
-            .on("click", action)
-            .text(text))
-        .append(right.map(o => renderAction(o)))
+            .addClass("entry--main")
+            .append(left.map(o => renderAction(o)))
+            .append($("<div>")
+                .addClass("entry--text " + (action ? "entry--text__action" : ""))
+                .on("click", action)
+                .text(text))
+            .append(!content ? [] : mkToolbarButton("chevron-down", ev => 
+                $(ev.target).closest(".entry").toggleClass("entry__open"))
+                    .addClass("entry--open"))
+            .append(right.map(o => renderAction(o))))
+        .append(!content ? [] : content
+            .addClass("entry--content"))
 
+    return $entry
 }
 
 function Tabs (pages) {
