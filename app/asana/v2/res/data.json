@@ -4862,21 +4862,13 @@
       },
       {
         "count": "7",
-        "breaths": 0.5,
-        "text": "Inhale, jump forward legs up."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, bend right leg, left leg straight to side."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Inhale, left hand to right knee, right hand over head to right foot."
+        "breaths": 1.5,
+        "text": "Inhale, jump forward, right foot behind right hip. Straighten left leg to side. Hands on floor between thighs."
       },
       {
         "count": "8",
-        "breaths": 0.5,
-        "text": "Exhale, left hand grabs inside of left foot."
+        "breaths": 1.5,
+        "text": "Exhale, left hand to right knee. Right hand over head to right foot. Left hand grabs inside of left foot."
       },
       {
         "breaths": 5,
@@ -4889,12 +4881,12 @@
       },
       {
         "breaths": 0.5,
-        "text": "Exhale, hands to floor, lift."
+        "text": "Exhale."
       },
       {
         "count": "10",
         "breaths": 0.5,
-        "text": "Inhale, legs up, balance on arms."
+        "text": "Inhale, legs up."
       },
       {
         "count": "11",
@@ -4913,21 +4905,13 @@
       },
       {
         "count": "14",
-        "breaths": 0.5,
-        "text": "Inhale, jump forward legs up."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, bend left leg, right leg straight to side."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Inhale, right hand to left knee, left hand over head to left foot."
+        "breaths": 1.5,
+        "text": "Inhale, jump forward, left foot behind left hip. Straighten right leg to side. Hands on floor between thighs."
       },
       {
         "count": "15",
-        "breaths": 0.5,
-        "text": "Exhale, right hand grabs inside of right foot."
+        "breaths": 1.5,
+        "text": "Exhale, right hand to left knee. Left hand over head to right foot. Right hand grabs inside of right foot."
       },
       {
         "breaths": 5,
@@ -4940,12 +4924,12 @@
       },
       {
         "breaths": 0.5,
-        "text": "Exhale, hands to floor, lift."
+        "text": "Exhale."
       },
       {
         "count": "17",
         "breaths": 0.5,
-        "text": "Inhale, legs up, balance on arms."
+        "text": "Inhale, legs up."
       },
       {
         "count": "18",
