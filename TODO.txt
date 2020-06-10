@@ -1,4 +1,5 @@
 MVP
+  - Bug: NowPlaying:  at end of playlist autoscroll causes top to disappear
   - Asanas: Scroll full list of steps into view when opened, when list is 
     larger than screen, position the asana at the top of the screen
   - NowPlaying: Show asana steps
