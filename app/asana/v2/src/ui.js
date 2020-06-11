@@ -134,10 +134,9 @@ function NowPlaying (engine, { onAdd }) {
         if (currentNode) currentNode.el.removeClass("entry-nowplaying__active")
         currentNode = node
         currentNode.el.addClass("entry-nowplaying__active")
-        currentNode.el[0].scrollIntoView({
-            behavior: "smooth",
-            block: "center"
-        })
+        currentNode.el[0].parentNode.scrollTop = 
+            currentNode.el[0].offsetTop -
+            4 * currentNode.el[0].offsetHeight
     })
 
     function formatTime (s) {
