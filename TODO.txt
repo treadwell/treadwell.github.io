@@ -1,12 +1,8 @@
 MVP
-  - Bug: NowPlaying:  at end of playlist autoscroll causes top to disappear
-  - Asanas: Scroll full list of steps into view when opened, when list is 
-    larger than screen, position the asana at the top of the screen
-  - NowPlaying: Show asana steps
   - NowPlaying: Don't clear on refresh
+  - NowPlaying: Save a playlist to local storage
   - NowPlaying: Remaining time not decremented for counted breaths 
   - NowPlaying: Change breaths per minute
-  - NowPlaying: Save a playlist to local storage
   - NowPlaying: Re-order
   - NowPlaying: voice preloading  
   - Playlists: Show playlist contents
@@ -16,9 +12,6 @@ MVP
   - All: Native UX (animations)
   - All: Deploying to Android/iOS
   - NowPlaying: Preload voices
-  - NowPlaying: Add instructions to main page:
-    - Click "+" above to add asanas or playlists from Library view
-    - return here by clicking "<-" from Library view
 
 Post-MVP
   - NowPlaying: integrating a 3rd party text to speech engine

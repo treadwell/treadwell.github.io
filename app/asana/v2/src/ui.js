@@ -48,11 +48,25 @@ function Ui (engine) {
 
 function NowPlaying (engine, { onAdd }) {
 
+    const $instructions = $("<div>")
+        .addClass("instructions")
+        .append($("<p>")
+            .append("Click ")
+            .append($("<i>").addClass("icon-inline fa fa-plus"))
+            .append(" above to add asanas or playlist from the Library view."))
+        .append($("<p>")
+            .append("Then, click ")
+            .append($("<i>").addClass("icon-inline fa fa-arrow-left"))
+            .append(" to return here."))
+
     const $scroll = $("<div>")
         .addClass("nowplaying scroll-y")
+        .append($instructions)
 
     engine.on("enqueue", node => {
         node.el = mkEntry(node.asana.name, {
+            scroll: $scroll,
+            content: mkAsanaSteps(node.asana),
             left: [{
                 action: () => {
                     const ip = engine.isPlaying
@@ -100,7 +114,7 @@ function NowPlaying (engine, { onAdd }) {
     })
 
     engine.on("reset", () => {
-        $scroll.children().remove()
+        $instructions.siblings().remove()
         updateTime()
     })
 
@@ -134,9 +148,7 @@ function NowPlaying (engine, { onAdd }) {
         if (currentNode) currentNode.el.removeClass("entry-nowplaying__active")
         currentNode = node
         currentNode.el.addClass("entry-nowplaying__active")
-        currentNode.el[0].parentNode.scrollTop = 
-            currentNode.el[0].offsetTop -
-            4 * currentNode.el[0].offsetHeight
+        revealScrollChild($scroll, currentNode.el)
     })
 
     function formatTime (s) {
@@ -262,23 +274,8 @@ function Asanas (engine) {
     function mkEntryAsana (a) {
         return mkEntry(a.name, {
             action: () => engine.enqueue(a),
-            content: $("<div>")
-                .addClass("entry-asana--steps")
-                .append(a.steps.map(s => $("<div>")
-                    .addClass("entry-asana--step")
-                    .append([
-                        s.counted 
-                            ? $("<i>")
-                                .addClass("entry-asana--step--icon fa fa-refresh")
-                            : $("<span>")
-                                .addClass("entry-asana--step--count")
-                                .text(s.count),
-                        $("<span>")
-                            .addClass("entry-asana--step-text")
-                            .text(s.counted
-                                ? `Breathe ${s.breaths} times`
-                                : s.text)
-                    ]))),
+            scroll: "parent",
+            content: mkAsanaSteps(a),
             right: [{
                 el: $("<span>")
                     .addClass("entry--asana-count " + (asanaCounts.get(a) ? "entry--asana-count__nonzero" : ""))
@@ -325,7 +322,7 @@ function Asanas (engine) {
     })
 }
 
-function mkEntry (text, { action, content, left = [], right = [], data = {} } = {}) {
+function mkEntry (text, { action, content, scroll, left = [], right = [], data = {} } = {}) {
     
     function renderAction ({ action, el, icon, classes = "" }) {
         if (action && el)
@@ -348,9 +345,16 @@ function mkEntry (text, { action, content, left = [], right = [], data = {} } = 
                 .addClass("entry--text " + (action ? "entry--text__action" : ""))
                 .on("click", action)
                 .text(text))
-            .append(!content ? [] : mkToolbarButton("chevron-down", ev => 
-                $(ev.target).closest(".entry").toggleClass("entry__open"))
-                    .addClass("entry--open"))
+            .append(!content ? [] : mkToolbarButton("chevron-down", ev => {
+                const $ent = $(ev.target)
+                    .closest(".entry")
+                $ent.toggleClass("entry__open")
+                if (scroll)
+                    setTimeout(() =>
+                        revealScrollChild(scroll == "parent"
+                            ? $ent.parent()
+                            : scroll, $ent))
+            }).addClass("entry--open"))
             .append(right.map(o => renderAction(o))))
         .append(!content ? [] : content
             .addClass("entry--content"))
@@ -378,6 +382,26 @@ function Tabs (pages) {
             .removeClass("tabs--tab__inactive")
     }
     return $tabs
+}
+
+function mkAsanaSteps (a) {
+    return $("<div>")
+        .addClass("entry-asana--steps")
+        .append(a.steps.map(s => $("<div>")
+            .addClass("entry-asana--step")
+            .append([
+                s.counted 
+                    ? $("<i>")
+                        .addClass("entry-asana--step--icon fa fa-refresh")
+                    : $("<span>")
+                        .addClass("entry-asana--step--count")
+                        .text(s.count),
+                $("<span>")
+                    .addClass("entry-asana--step-text")
+                    .text(s.counted
+                        ? `Breathe ${s.breaths} times`
+                        : s.text)
+            ])))
 }
 
 function mkToolbarBase ({ shadow = true } = {}) {
@@ -437,4 +461,23 @@ function mkToolbarButton (icon, action) {
     
      return $button
 
+}
+
+function revealScrollChild ($scroll, $child) {
+    const scrollHeight = $scroll[0].offsetHeight
+    const scrollTop = $scroll.scrollTop()
+    const scrollBottom = scrollTop + scrollHeight
+    const elHeight = $child[0].offsetHeight
+    const elTop = $child[0].offsetTop
+    const elBottom = elTop + elHeight
+    let newScrollTop = scrollTop
+    if (elHeight > scrollHeight)
+        newScrollTop = elTop
+    else if (elTop < scrollTop)
+        newScrollTop = scrollTop - (scrollTop - elTop)
+    else if (elBottom > scrollBottom)
+        newScrollTop = scrollTop + (elBottom - scrollBottom)
+    $scroll.animate({
+        scrollTop: newScrollTop
+    }, 250)
 }

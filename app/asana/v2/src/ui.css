@@ -198,6 +198,23 @@ body {
     transition: all 75ms ease;
 }
 
+.icon-inline {
+    margin-left: 0.125rem;
+    margin-right: 0.125rem;
+}
+
+.instructions {
+    text-align: center;
+    display: none;
+    margin: auto;
+    max-width: 75%;
+    font-size: 1.5rem;
+}
+
+.instructions:first-child:last-child {
+    display: block;
+}
+
 .nowplaying > .entry > .entry--main > .entry-nowplaying--indicator:active > * {
     transform: scale(1.25);
     transform-origin: center center;
@@ -334,4 +351,5 @@ body {
 .scroll-y {
     overflow-y: scroll;
     flex-grow: 1;
+    position: relative;
 }
