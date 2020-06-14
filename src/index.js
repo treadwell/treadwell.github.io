@@ -1,12 +1,12 @@
 Promise.all([
     
-    fetch("/app/asana/v2/res/data.json")
+    fetch("/res/data.json")
         .then(resp => resp.json()),
     
-    fetch("/app/asana/v2/res/sanskrit_numbers.json")
+    fetch("/res/sanskrit_numbers.json")
         .then(resp => resp.json()),
 
-    fetch("/app/asana/v2/res/playlists.json")
+    fetch("/res/playlists.json")
         .then(resp => resp.json())
 
 ]).then(([asanas, numbers, playlists]) => {

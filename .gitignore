@@ -1,4 +1,1 @@
-app/.DS_Store
-node_modules/*
-app/asana/v2/node_modules/*.*
-app/asana/v2/node_modules/brace-expansion/README.md
+node_modules
