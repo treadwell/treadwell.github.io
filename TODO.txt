@@ -12,6 +12,7 @@ MVP
   - All: Native UX (animations)
   - All: Deploying to Android/iOS
   - NowPlaying: Preload voices
+  - Git: purge .DS_Stores and images
 
 Post-MVP
   - NowPlaying: integrating a 3rd party text to speech engine
