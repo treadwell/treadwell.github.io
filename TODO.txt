@@ -5,8 +5,9 @@ MVP
   - NowPlaying: Change breaths per minute
   - NowPlaying: Re-order
   - NowPlaying: voice preloading  
-  - Playlists: Show playlist contents
+  - Playlists: Show playlist contents (asanas, then step w/i asana)
   - NowPlaying: Highlight active step
+  - NowPlaying: Show line drawing of active step 
   - All: Packaging with webpack
   - All: Replace CSS with SASS/SCSS
   - All: Native UX (animations)
