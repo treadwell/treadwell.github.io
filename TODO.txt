@@ -8,6 +8,7 @@ MVP
   - Playlists: Show playlist contents (asanas, then step w/i asana)
   - NowPlaying: Highlight active step
   - NowPlaying: Show line drawing of active step 
+  - NowPlaying: Add pronunciation to asana
   - All: Packaging with webpack
   - All: Replace CSS with SASS/SCSS
   - All: Native UX (animations)
