@@ -44,6 +44,8 @@ function Ui (engine) {
     $(document.body).append($view)
 
     $view.view("nowPlaying", true)
+
+    engine.init()
 }
 
 function NowPlaying (engine, { onAdd }) {

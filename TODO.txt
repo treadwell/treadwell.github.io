@@ -1,5 +1,4 @@
 MVP
-  - NowPlaying: Don't clear on refresh
   - NowPlaying: Save a playlist to local storage
   - NowPlaying: Remaining time not decremented for counted breaths 
   - NowPlaying: Change breaths per minute
@@ -7,7 +6,6 @@ MVP
   - NowPlaying: voice preloading  
   - Playlists: Show playlist contents (asanas, then step w/i asana)
   - NowPlaying: Highlight active step
-  - NowPlaying: Show line drawing of active step 
   - NowPlaying: Add pronunciation to asana
   - All: Packaging with webpack
   - All: Replace CSS with SASS/SCSS
@@ -23,7 +21,7 @@ Post-MVP
   - Report an error w/ asana or playlist
   - Automated transitions dynamically added to playlists to
     ensure smooth transitions
-  - Add images and demo gifs
+  - NowPlaying: Show line drawing of active step 
 
 Tech Debt
     - NowPlaying: Bug: Dropdown doesn't close when clicking 

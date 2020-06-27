@@ -4,8 +4,6 @@ function Engine (asanas, playlists, speaker, storage) {
     let stepIdx = null
     let timer = null
 
-    playlists.push(...storage.playlists)
-
     function playSteps (node, [currentStep, ...remainingSteps] = [], remainingCount) {
 
         if (!currentStep) {
@@ -39,6 +37,20 @@ function Engine (asanas, playlists, speaker, storage) {
         } else {
             stepIdx++
             playSteps(node, remainingSteps)
+        }
+    }
+
+    function serializeQueue () {
+        return {
+            asanas: (() => {
+                const xs = []
+                let n = qStart
+                while (n) {
+                    xs.push(n.asana.id)
+                    n = n.next
+                }
+                return xs
+            })()
         }
     }
 
@@ -101,6 +113,7 @@ function Engine (asanas, playlists, speaker, storage) {
             currentNode = engine.currentAsana = qStart = qEnd = null
             stepIdx = 0
             trigger("reset")
+            trigger("queue-modified")
         },
 
         // resets the counters on the current playlist
@@ -127,7 +140,7 @@ function Engine (asanas, playlists, speaker, storage) {
                 qEnd = node
                 trigger("enqueue", node)
             }
-                
+            trigger("queue-modified")
         },
 
         dequeue (node) {
@@ -140,6 +153,7 @@ function Engine (asanas, playlists, speaker, storage) {
             if (node.prev) node.prev.next = node.next
             node.prev = null
             node.next = null
+            trigger("queue-modified")
         },
 
         prev () {
@@ -157,9 +171,6 @@ function Engine (asanas, playlists, speaker, storage) {
             currentNode = cn.next
             if (ip) engine.play()
         },
-
-        savePlaylist: storage.savePlaylist.bind(storage),
-        deletePlaylist: storage.deletePlaylist.bind(storage),
 
         on (eventName, fn) {
             hooks[eventName] = hooks[eventName] || []
@@ -180,9 +191,17 @@ function Engine (asanas, playlists, speaker, storage) {
 
         calcTimeRemaining() {
             return engine.calcTimeTotal(currentNode, stepIdx)
+        },
+
+        init () {
+            if (storage.lastPlaylist)
+                engine.enqueue(storage.lastPlaylist)
         }
 
     }
+    
+    engine.on("queue-modified", () => 
+        storage.savePlaylist(serializeQueue()))
 
     return engine
 }
