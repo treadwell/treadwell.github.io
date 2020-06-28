@@ -2,6 +2,7 @@
     {
     "id": "suryA",
     "name": "Surya Namaskara A",
+    "pronunciation": "Sur ya Namaskara A",
     "steps": [
       {
         "count": "1",
@@ -63,11 +64,12 @@
   {
     "id": "suryB",
     "name": "Surya Namaskara B",
+    "pronunciation": "Sur ya Namaskara B",
     "steps": [
       {
         "count": "1",
         "breaths": 0.5,
-        "text": "Inhale, bend knees and lift arms to utkatasana"
+        "text": "Inhale, bend knees and lift arms."
       },
       {
         "count": "2",
@@ -151,7 +153,7 @@
       {
         "count": "17",
         "breaths": 0.5,
-        "text": "Inhale, bend knees and lift arms to utkatasana."
+        "text": "Inhale, bend knees and lift arms."
       },
       {
         "breaths": 0.5,
@@ -164,6 +166,7 @@
   {
     "id": "padangusthasana",
     "name": "Padangusthasana",
+    "pronunciation": "Padangoosta sana",
     "steps": [
       {
         "breaths": 0.5,
@@ -199,6 +202,7 @@
   {
     "id": "padahastasana",
     "name": "Padahastasana",
+    "pronunciation": "Padaha staasana",
     "steps": [
       {
         "count": "1",
@@ -230,6 +234,7 @@
   {
     "id": "utthitaTrikonasanaA",
     "name": "Utthita Trikonasana A",
+    "pronunciation": "ooteeta treekon asana A",
     "steps": [
       {
         "count": "1",
@@ -271,6 +276,7 @@
   {
     "id": "utthitaTrikonasanaB",
     "name": "Utthita Trikonasana B",
+    "pronunciation": "ooteeta treekon asana B",
     "steps": [
       {
         "count": "2",
@@ -311,6 +317,7 @@
   {
     "id": "utthitaParsvakonasanaA",
     "name": "Utthita Parsvakonasana A",
+    "pronunciation": "ooteeta Parsvakonasana A",
     "steps": [
       {
         "count": "1",
@@ -352,6 +359,7 @@
   {
     "id": "utthitaParsvakonasanaB",
     "name": "Utthita Parsvakonasana B",
+    "pronunciation": "ooteeta Parsvakonasana B",
     "steps": [
       {
         "count": "2",
@@ -392,6 +400,7 @@
   {
     "id": "prasaritaPadottanasanaA",
     "name": "Prasarita Padottanasana A",
+    "pronunciation": "Prasareeta Padottanasana A",
     "steps": [
       {
         "count": "1",
@@ -441,6 +450,7 @@
   {
     "id": "prasaritaPadottanasanaB",
     "name": "Prasarita Padottanasana B",
+    "pronunciation": "Prasareeta Padottanasana B",
     "steps": [
       {
         "count": "1",
@@ -481,6 +491,7 @@
   {
     "id": "prasaritaPadottanasanaC",
     "name": "Prasarita Padottanasana C",
+    "pronunciation": "Prasareeta Padottanasana C",
     "steps": [
       {
         "count": "1",
@@ -521,6 +532,7 @@
   {
     "id": "prasaritaPadottanasanaD",
     "name": "Prasarita Padottanasana D",
+    "pronunciation": "Prasareeta Padottanasana D",
     "steps": [
       {
         "count": "1",
@@ -570,6 +582,7 @@
   {
     "id": "parsvottanasana",
     "name": "Parsvottanasana",
+    "pronunciation": "Parsvottanasana",
     "steps": [
       {
         "count": "1",
@@ -615,6 +628,7 @@
   {
     "id": "utthitaHastaPadangusthasana",
     "name": "Utthita Hasta Padangusthasana",
+    "pronunciation": "ooteeta asta Padangoo sthasana",
     "steps": [
       {
         "count": "1",
@@ -733,6 +747,7 @@
   {
     "id": "ardhaBaddhaPadmottanasana",
     "name": "Ardha Baddha Padmottanasana",
+    "pronunciation": "Ardha Baddha Padmottanasana",
     "steps": [
       {
         "count": "1",
@@ -806,6 +821,7 @@
   {
     "id": "utkatasana",
     "name": "Utkatasana",
+    "pronunciation": "Utkatasana",
     "steps": [
       {
         "count": "1",
@@ -873,6 +889,7 @@
   {
     "id": "virabhadrasana",
     "name": "Virabhadrasana",
+    "pronunciation": "Vira badra sana",
     "steps": [
       {
         "count": "7",
@@ -953,6 +970,7 @@
   {
     "id": "dandasana",
     "name": "Dandasana",
+    "pronunciation": "Daan daassana",
     "steps": [
       {
         "count": "7",
@@ -974,6 +992,7 @@
   {
     "id": "paschimottanasanaA",
     "name": "Paschimottanasana A",
+    "pronunciation": "Paschimottanasana A",
     "steps": [
       {
         "count": "8",
@@ -1005,6 +1024,7 @@
   {
     "id": "paschimottanasanaBorD",
     "name": "Paschimottanasana B or D",
+    "pronunciation": "Paschimottanasana B or D",
     "steps": [
       {
         "count": "8",
@@ -1056,6 +1076,7 @@
   {
     "id": "purvottanasana",
     "name": "Purvottanasana",
+    "pronunciation": "Purvottanasana",
     "steps": [
       {
         "count": "7",
@@ -1107,6 +1128,7 @@
   {
     "id": "ardhaBaddhaPadmaPaschimottanasana",
     "name": "Ardha Baddha Padma Paschimottanasana",
+    "pronunciation": "Ardha Baddha Padma Paschimottanasana",
     "steps": [
       {
         "count": "7",
@@ -1201,6 +1223,7 @@
   {
     "id": "triyangaMukhaEkaPadaPaschimottanasana",
     "name": "Tirya Mukha Eka Pada Paschimottanasana",
+    "pronunciation": "Tirya Mukha Eka Pada Paschimottanasana",
     "steps": [
       {
         "count": "7",
@@ -1295,6 +1318,7 @@
   {
     "id": "januSirsasanaA",
     "name": "Janu Sirsasana A",
+    "pronunciation": "Janu Sirsasana A",
     "steps": [
       {
         "count": "7",
@@ -1389,6 +1413,7 @@
   {
     "id": "januSirsasanaB",
     "name": "Janu Sirsasana B",
+    "pronunciation": "Janu Sirsasana B",
     "steps": [
       {
         "count": "7",
@@ -1483,6 +1508,7 @@
   {
     "id": "januSirsasanaC",
     "name": "Janu Sirsasana C",
+    "pronunciation": "Janu Sirsasana C",
     "steps": [
       {
         "count": "7",
@@ -1577,6 +1603,7 @@
   {
     "id": "maricasanaA",
     "name": "Maricasana A",
+    "pronunciation": "Maricasana A",
     "steps": [
       {
         "count": "7",
@@ -1671,6 +1698,7 @@
   {
     "id": "maricasanaB",
     "name": "Maricasana B",
+    "pronunciation": "Maricasana B",
     "steps": [
       {
         "count": "7",
@@ -1765,6 +1793,7 @@
   {
     "id": "maricasanaC",
     "name": "Maricasana C",
+    "pronunciation": "Maricasana C",
     "steps": [
       {
         "count": "7",
@@ -1839,6 +1868,7 @@
   {
     "id": "maricasanaD",
     "name": "Maricasana D",
+    "pronunciation": "Maricasana D",
     "steps": [
       {
         "count": "7",
@@ -1913,6 +1943,7 @@
   {
     "id": "navasana",
     "name": "Navasana",
+    "pronunciation": "Navasana",
     "steps": [
       {
         "count": "7",
@@ -2022,6 +2053,7 @@
   {
     "id": "bhujapidasana",
     "name": "Bhujapidasana",
+    "pronunciation": "Bhujapidasana",
     "steps": [
       {
         "count": "7",
@@ -2073,6 +2105,7 @@
   {
     "id": "kurmasana",
     "name": "Kurmasana",
+    "pronunciation": "Kurmasana",
     "steps": [
       {
         "count": "7",
@@ -2102,6 +2135,7 @@
   {
     "id": "suptaKurmasana",
     "name": "Supta Kurmasana",
+    "pronunciation": "Supta Kurmasana",
     "steps": [
       {
         "count": "8",
@@ -2153,6 +2187,7 @@
   {
     "id": "garbhaPindasana",
     "name": "Garbha Pindasana",
+    "pronunciation": "Garbha Pindasana",
     "steps": [
       {
         "count": "7",
@@ -2208,6 +2243,7 @@
   {
     "id": "kukkutasana",
     "name": "Kukkutasana",
+    "pronunciation": "Kukkutasana",
     "steps": [
       {
         "count": "9",
@@ -2245,6 +2281,7 @@
   {
     "id": "baddhaKonasana",
     "name": "Baddha Konasana",
+    "pronunciation": "Baddha Konasana",
     "steps": [
       {
         "count": "7",
@@ -2310,6 +2347,7 @@
   {
     "id": "upavisthaKonasanaA",
     "name": "Upavistha Konasana A",
+    "pronunciation": "Upavistha Konasana A",
     "steps": [
       {
         "count": "7",
@@ -2332,6 +2370,7 @@
   {
     "id": "upavisthaKonasanaB",
     "name": "Upavistha Konasana B",
+    "pronunciation": "Upavistha Konasana B",
     "steps": [
       {
         "count": "9",
@@ -2378,6 +2417,7 @@
   {
     "id": "suptaKonasana",
     "name": "Supta Konasana",
+    "pronunciation": "Supta Konasana",
     "steps": [
       {
         "count": "7",
@@ -2446,6 +2486,7 @@
   {
     "id": "suptaPadangusthasana",
     "name": "Supta Padangusthasana",
+    "pronunciation": "Supta Padangusthasana",
     "steps": [
       {
         "count": "7",
@@ -2578,6 +2619,7 @@
   {
     "id": "ubhayaPadangusthasana",
     "name": "Ubhaya Padangusthasana",
+    "pronunciation": "Ubhaya Padangusthasana",
     "steps": [
       {
         "count": "7",
@@ -2633,6 +2675,7 @@
   {
     "id": "urdhvaMukhaPaschimottanasana",
     "name": "Urdhva Mukha Paschimottanasana",
+    "pronunciation": "Urdhva Mukha Paschimottanasana",
     "steps": [
       {
         "count": "7",
@@ -2702,6 +2745,7 @@
   {
     "id": "setthuBandhasana",
     "name": "Setthu Bandhasana",
+    "pronunciation": "Setthu Bandhasana",
     "steps": [
       {
         "count": "7",
@@ -2753,6 +2797,7 @@
   {
     "id": "urdhvaDhanurasana",
     "name": "Urdhva Dhanurasana",
+    "pronunciation": "Urdhva Dhanurasana",
     "steps": [
       {
         "count": "7",
@@ -2832,6 +2877,7 @@
   {
     "id": "paschimottanasana",
     "name": "Paschimottanasana",
+    "pronunciation": "Paschimottanasana",
     "steps": [
       {
         "count": "7",
@@ -2892,6 +2938,7 @@
   {
     "id": "salambaSarvangasana",
     "name": "Salamba Sarvangasana",
+    "pronunciation": "Salamba Sarvangasana",
     "steps": [
       {
         "count": "7",
@@ -2918,6 +2965,7 @@
   {
     "id": "halasana",
     "name": "Halasana",
+    "pronunciation": "Halasana",
     "steps": [
       {
         "count": "8",
@@ -2935,6 +2983,7 @@
   {
     "id": "karnapidasana",
     "name": "Karnapidasana",
+    "pronunciation": "Karnapidasana",
     "steps": [
       {
         "count": "8",
@@ -2952,6 +3001,7 @@
   {
     "id": "urdhvaPadmasana",
     "name": "Urdhva Padmasana",
+    "pronunciation": "Urdhva Padmasana",
     "steps": [
       {
         "count": "9",
@@ -2969,6 +3019,7 @@
   {
     "id": "pindasana",
     "name": "Pindasana",
+    "pronunciation": "Pindasana",
     "steps": [
       {
         "count": "9",
@@ -2986,6 +3037,7 @@
   {
     "id": "matsyasana",
     "name": "Matsyasana",
+    "pronunciation": "Matsyasana",
     "steps": [
       {
         "count": "9",
@@ -3003,6 +3055,7 @@
   {
     "id": "uttanaPadasana",
     "name": "Uttana Padasana",
+    "pronunciation": "Uttana Padasana",
     "steps": [
       {
         "count": "9",
@@ -3039,6 +3092,7 @@
   {
     "id": "sirsasana",
     "name": "Sirsasana",
+    "pronunciation": "Sirsasana",
     "steps": [
       {
         "count": "7",
@@ -3102,6 +3156,7 @@
   {
     "id": "baddhaPadmasana",
     "name": "Baddha Padmasana",
+    "pronunciation": "Baddha Padmasana",
     "steps": [
       {
         "count": "7",
@@ -3124,6 +3179,7 @@
   {
     "id": "yogaMudra",
     "name": "Yoga Mudra",
+    "pronunciation": "Yoga Mudra",
     "steps": [
       {
         "count": "9",
@@ -3141,6 +3197,7 @@
   {
     "id": "padmasana",
     "name": "Padmasana",
+    "pronunciation": "Padmasana",
     "steps": [
       {
         "count": "10",
@@ -3158,6 +3215,7 @@
   {
     "id": "utpluthih",
     "name": "Utpluthih",
+    "pronunciation": "Utpluthih",
     "steps": [
       {
         "count": "10",
@@ -3205,6 +3263,7 @@
   {
     "id": "pasasana",
     "name": "Pasasana",
+    "pronunciation": "Pasasana",
     "steps": [
       {
         "count": "1",
@@ -3281,6 +3340,7 @@
   {
     "id": "krounshasana",
     "name": "Krounshasana",
+    "pronunciation": "Krounshasana",
     "steps": [
       {
         "count": "7",
@@ -3375,6 +3435,7 @@
   {
     "id": "shalabhasana",
     "name": "Shalabhasana",
+    "pronunciation": "Shalabhasana",
     "steps": [
       {
         "breaths": 0.5,
@@ -3428,6 +3489,7 @@
   {
     "id": "bhekasana",
     "name": "Bhekasana",
+    "pronunciation": "Bhekasana",
     "steps": [
       {
         "breaths": 0.5,
@@ -3468,6 +3530,7 @@
   {
     "id": "dhanurasana",
     "name": "Dhanurasana",
+    "pronunciation": "Dhanurasana",
     "steps": [
       {
         "breaths": 0.5,
@@ -3508,6 +3571,7 @@
   {
     "id": "parshvaDhanurasana",
     "name": "Parshva Dhanurasana",
+    "pronunciation": "Parshva Dhanurasana",
     "steps": [
       {
         "breaths": 0.5,
@@ -3576,6 +3640,7 @@
   {
     "id": "ustrasana",
     "name": "Ustrasana",
+    "pronunciation": "Ustrasana",
     "steps": [
       {
         "count": "7",
@@ -3627,6 +3692,7 @@
   {
     "id": "laghuvajrasana",
     "name": "Laghu Vajrasana",
+    "pronunciation": "Laghu Vajrasana",
     "steps": [
       {
         "count": "7",
@@ -3678,6 +3744,7 @@
   {
     "id": "kapotasana",
     "name": "Kapotasana",
+    "pronunciation": "Kapotasana",
     "steps": [
       {
         "count": "7",
@@ -3738,6 +3805,7 @@
   {
     "id": "suptaVajrasana",
     "name": "Supta Vajrasana",
+    "pronunciation": "Supta Vajrasana",
     "steps": [
       {
         "count": "7",
@@ -3846,6 +3914,7 @@
   {
     "id": "bakasanaA",
     "name": "Bakasana A",
+    "pronunciation": "Bakasana A",
     "steps": [
       {
         "count": "7",
@@ -3895,6 +3964,7 @@
   {
     "id": "bakasanaB",
     "name": "Bakasana B",
+    "pronunciation": "Bakasana B",
     "steps": [
       {
         "count": "7",
@@ -3936,6 +4006,7 @@
   {
     "id": "bharadvajasana",
     "name": "Bharadvajasana",
+    "pronunciation": "Bharadvajasana",
     "steps": [
       {
         "count": "7",
@@ -4012,6 +4083,7 @@
   {
     "id": "ardhaMatsyendrasana",
     "name": "Ardha Matsyendrasana",
+    "pronunciation": "Ardha Matsyendrasana",
     "steps": [
       {
         "count": "7",
@@ -4088,6 +4160,7 @@
   {
     "id": "ekaPadaSirsasana",
     "name": "Eka Pada Sirsasana",
+    "pronunciation": "Eka Pada Sirsasana",
     "steps": [
       {
         "count": "7",
@@ -4190,6 +4263,7 @@
   {
     "id": "dviPadaSirsasana",
     "name": "Dvi Pada Sirsasana",
+    "pronunciation": "Dvi Pada Sirsasana",
     "steps": [
       {
         "count": "7",
@@ -4248,6 +4322,7 @@
   {
     "id": "yogaNidrasana",
     "name": "Yoga Nidrasana",
+    "pronunciation": "Yoga Nidrasana",
     "steps": [
       {
         "count": "7",
@@ -4297,6 +4372,7 @@
   {
     "id": "tittibhasana",
     "name": "Tittibhasana",
+    "pronunciation": "Tittibhasana",
     "steps": [
       {
         "count": "7",
@@ -4414,6 +4490,7 @@
   {
     "id": "pinchaMayurasana",
     "name": "Pincha Mayurasana",
+    "pronunciation": "Pincha Mayurasana",
     "steps": [
       {
         "count": "7",
@@ -4455,6 +4532,7 @@
   {
     "id": "karandavasana",
     "name": "Karandavasana",
+    "pronunciation": "Karandavasana",
     "steps": [
       {
         "count": "7",
@@ -4520,6 +4598,7 @@
   {
     "id": "mayurasana",
     "name": "Mayurasana",
+    "pronunciation": "Mayurasana",
     "steps": [
       {
         "count": "1",
@@ -4593,6 +4672,7 @@
   {
     "id": "nakrasana",
     "name": "Nakrasana",
+    "pronunciation": "Nakrasana",
     "steps": [
       {
         "count": "1",
@@ -4685,6 +4765,7 @@
   {
     "id": "vatayanasana",
     "name": "Vatayanasana",
+    "pronunciation": "Vatayanasana",
     "steps": [
       {
         "count": "1",
@@ -4829,6 +4910,7 @@
   {
     "id": "parighasana",
     "name": "Parighasana",
+    "pronunciation": "Parighasana",
     "steps": [
       {
         "count": "1",
@@ -4953,6 +5035,7 @@
   {
     "id": "gomukhasana",
     "name": "Gomukhasana",
+    "pronunciation": "Gomukhasana",
     "steps": [
       {
         "count": "7",
@@ -5055,6 +5138,7 @@
   {
     "id": "suptaUrdhvaPadaVajrasana",
     "name": "Supta Urdhva Pada Vajrasana",
+    "pronunciation": "Supta Urdhva Pada Vajrasana",
     "steps": [
       {
         "count": "7",
@@ -5177,6 +5261,7 @@
   {
     "id": "muktaHastaSirsasanaA",
     "name": "Mukta Hasta Sirsasana A",
+    "pronunciation": "Mukta Hasta Sirsasana A",
     "steps": [
       {
         "count": "7",
@@ -5218,6 +5303,7 @@
   {
     "id": "muktaHastaSirsasanaB",
     "name": "Mukta Hasta Sirsasana B",
+    "pronunciation": "Mukta Hasta Sirsasana B",
     "steps": [
       {
         "count": "7",
@@ -5259,6 +5345,7 @@
   {
     "id": "muktaHastaSirsasanaC",
     "name": "Mukta Hasta Sirsasana C",
+    "pronunciation": "Mukta Hasta Sirsasana C",
     "steps": [
       {
         "count": "7",
@@ -5300,6 +5387,7 @@
   {
     "id": "baddhaHastaSirsasanaA",
     "name": "Baddha Hasta Sirsasana A",
+    "pronunciation": "Baddha Hasta Sirsasana A",
     "steps": [
       {
         "count": "7",
@@ -5341,6 +5429,7 @@
   {
     "id": "baddhaHastaSirsasanaB",
     "name": "Baddha Hasta Sirsasana B",
+    "pronunciation": "Baddha Hasta Sirsasana B",
     "steps": [
       {
         "count": "7",
@@ -5382,6 +5471,7 @@
   {
     "id": "baddhaHastaSirsasanaC",
     "name": "Baddha Hasta Sirsasana C",
+    "pronunciation": "Baddha Hasta Sirsasana C",
     "steps": [
       {
         "count": "7",
@@ -5423,6 +5513,7 @@
   {
     "id": "baddhaHastaSirsasanaD",
     "name": "Baddha Hasta Sirsasana D",
+    "pronunciation": "Baddha Hasta Sirsasana D",
     "steps": [
       {
         "count": "7",
@@ -5464,6 +5555,7 @@
     {
     "id": "aaa",
     "name": "**** For Testing Only ****",
+    "pronunciation": "**** For Testing Only ****",
     "steps": [
       {
         "count": "15",
@@ -5496,6 +5588,7 @@
   {
     "id": "baddhaPadmasanaSolo",
     "name": "Baddha Padmasana",
+    "pronunciation": "Baddha Padmasana",
     "steps": [
     {
         "count": "1",
@@ -5548,6 +5641,7 @@
   {
     "id": "pigeon",
     "name": "Pigeon Pose",
+    "pronunciation": "Pigeon Pose",
     "steps": [
       {
         "count": "1",
@@ -5641,6 +5735,7 @@
   {
     "id": "lizard",
     "name": "Lizard Pose",
+    "pronunciation": "Lizard Pose",
     "steps": [
       {
         "count": "1",
@@ -5734,6 +5829,7 @@
   {
     "id": "standToDd",
     "name": "Standing to DD",
+    "pronunciation": "Standing to DD",
     "steps": [
       {
         "count": "1",
@@ -5772,6 +5868,7 @@
   {
     "id": "standToSit",
     "name": "Standing to Seated",
+    "pronunciation": "Standing to Seated",
     "steps": [
       {
         "count": "1",
@@ -5819,6 +5916,7 @@
     {
     "id": "standToLay",
     "name": "Standing to Lay Down",
+    "pronunciation": "Standing to Lay Down",
     "steps": [
       {
         "count": "1",
@@ -5866,6 +5964,7 @@
   	{
     "id": "ddToStand",
     "name": "DD to standing",
+    "pronunciation": "DD to standing",
     "steps": [
       {
         "count": "7",
@@ -5893,6 +5992,7 @@
   {
     "id": "ddToSit",
     "name": "Downward dog to seated",
+    "pronunciation": "Downward dog to seated",
     "steps": [
       {
         "count": "7",
@@ -5906,6 +6006,7 @@
   {
     "id": "ddToLay",
     "name": "DD to lay down",
+    "pronunciation": "DD to lay down",
     "steps": [
       {
         "count": "7",
@@ -5923,6 +6024,7 @@
   {
     "id": "sitToStand",
     "name": "Vinyasa seated to standing",
+    "pronunciation": "Vinyasa seated to standing",
     "steps": [
       {
         "count": "3",
@@ -5970,6 +6072,7 @@
   {
     "id": "sitToDd",
     "name": "Seated to DD",
+    "pronunciation": "Seated to DD",
     "steps": [
       {
         "count": "3",
@@ -5998,6 +6101,7 @@
   {
     "id": "sitToLay",
     "name": "Seated to lay down",
+    "pronunciation": "Seated to lay down",
     "steps": [
       {
         "breaths": 0.5,
@@ -6010,6 +6114,7 @@
   {
     "id": "sitToSit",
     "name": "Vinyasa seated to seated",
+    "pronunciation": "Vinyasa seated to seated",
     "steps": [
       {
         "count": "3",
@@ -6043,6 +6148,7 @@
   {
     "id": "layToStand",
     "name": "Laying to Standing",
+    "pronunciation": "Laying to Standing",
     "steps": [
       {
         "count": "4",
@@ -6089,6 +6195,7 @@
     {
     "id": "layToDd",
     "name": "Laying to DD",
+    "pronunciation": "Laying to DD",
     "steps": [
       {
         "count": "4",
@@ -6116,6 +6223,7 @@
     {
     "id": "layToSit",
     "name": "Laying to seated",
+    "pronunciation": "Laying to seated",
     "steps": [
       {
         "count": "4",
@@ -6148,6 +6256,7 @@
   {
   "id": "bbb",
   "name": "Testing: short 1",
+    "pronunciation": "Testing: short 1",
   "steps": [
     {
       "count": "1",
@@ -6180,6 +6289,7 @@
   {
   "id": "ccc",
   "name": "Testing: short 2",
+    "pronunciation": "Testing: short 2",
   "steps": [
     {
       "count": "15",
@@ -6212,6 +6322,7 @@
   {
   "id": "ddd",
   "name": "Testing: short 3",
+    "pronunciation": "Testing: short 3",
   "steps": [
     {
       "count": "15",
@@ -6244,6 +6355,7 @@
   {
   "id": "eee",
   "name": "Testing: short short",
+    "pronunciation": "Testing: short short",
   "steps": [
     {
       "count": "1",
@@ -6257,6 +6369,7 @@
   {
   "id": "50breaths",
   "name": "Take 50 breaths",
+    "pronunciation": "Take 50 breaths",
   "steps": [
     {
       "breaths": 50.0,

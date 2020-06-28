@@ -91,7 +91,7 @@ function Engine (asanas, playlists, speaker, storage) {
             engine.currentAsana = node.asana
             trigger("change-asana", node)
 
-            speaker.speak(undefined, node.asana.name, () => {
+            speaker.speak(undefined, node.asana.pronunciation, () => {
                 console.log(node.asana.name)
                 playSteps(node, node.asana.steps.slice(stepIdx))
             })
