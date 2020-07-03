@@ -166,7 +166,7 @@
   {
     "id": "padangusthasana",
     "name": "Padangusthasana",
-    "pronunciation": "Padangoosta sana",
+    "pronunciation": "Pádangoostásana",
     "steps": [
       {
         "breaths": 0.5,
@@ -202,7 +202,7 @@
   {
     "id": "padahastasana",
     "name": "Padahastasana",
-    "pronunciation": "Padaha staasana",
+    "pronunciation": "Padahastásana",
     "steps": [
       {
         "count": "1",
@@ -234,7 +234,7 @@
   {
     "id": "utthitaTrikonasanaA",
     "name": "Utthita Trikonasana A",
-    "pronunciation": "ooteeta treekon asana A",
+    "pronunciation": "ooteeta treekonásana A",
     "steps": [
       {
         "count": "1",
@@ -276,7 +276,7 @@
   {
     "id": "utthitaTrikonasanaB",
     "name": "Utthita Trikonasana B",
-    "pronunciation": "ooteeta treekon asana B",
+    "pronunciation": "ooteeta treekonásana B",
     "steps": [
       {
         "count": "2",
@@ -317,7 +317,7 @@
   {
     "id": "utthitaParsvakonasanaA",
     "name": "Utthita Parsvakonasana A",
-    "pronunciation": "ooteeta Parsvakonasana A",
+    "pronunciation": "ooteeta Parsvakonásana A",
     "steps": [
       {
         "count": "1",
@@ -359,7 +359,7 @@
   {
     "id": "utthitaParsvakonasanaB",
     "name": "Utthita Parsvakonasana B",
-    "pronunciation": "ooteeta Parsvakonasana B",
+    "pronunciation": "ooteeta Parsvakonásana B",
     "steps": [
       {
         "count": "2",
@@ -400,7 +400,7 @@
   {
     "id": "prasaritaPadottanasanaA",
     "name": "Prasarita Padottanasana A",
-    "pronunciation": "Prasareeta Padottanasana A",
+    "pronunciation": "Prasareeta Padottanásana A",
     "steps": [
       {
         "count": "1",
@@ -450,7 +450,7 @@
   {
     "id": "prasaritaPadottanasanaB",
     "name": "Prasarita Padottanasana B",
-    "pronunciation": "Prasareeta Padottanasana B",
+    "pronunciation": "Prasareeta Padottanásana B",
     "steps": [
       {
         "count": "1",
@@ -491,7 +491,7 @@
   {
     "id": "prasaritaPadottanasanaC",
     "name": "Prasarita Padottanasana C",
-    "pronunciation": "Prasareeta Padottanasana C",
+    "pronunciation": "Prasareeta Padottanásana C",
     "steps": [
       {
         "count": "1",
@@ -532,7 +532,7 @@
   {
     "id": "prasaritaPadottanasanaD",
     "name": "Prasarita Padottanasana D",
-    "pronunciation": "Prasareeta Padottanasana D",
+    "pronunciation": "Prasareeta Padottanásana D",
     "steps": [
       {
         "count": "1",
@@ -582,7 +582,7 @@
   {
     "id": "parsvottanasana",
     "name": "Parsvottanasana",
-    "pronunciation": "Parsvottanasana",
+    "pronunciation": "Parsvottanásana",
     "steps": [
       {
         "count": "1",
@@ -628,7 +628,7 @@
   {
     "id": "utthitaHastaPadangusthasana",
     "name": "Utthita Hasta Padangusthasana",
-    "pronunciation": "ooteeta asta Padangoo sthasana",
+    "pronunciation": "ooteeta hasta padangoos tásana",
     "steps": [
       {
         "count": "1",
@@ -747,7 +747,7 @@
   {
     "id": "ardhaBaddhaPadmottanasana",
     "name": "Ardha Baddha Padmottanasana",
-    "pronunciation": "Ardha Baddha Padmottanasana",
+    "pronunciation": "Arda Bada Padmo tanásana",
     "steps": [
       {
         "count": "1",
@@ -821,7 +821,7 @@
   {
     "id": "utkatasana",
     "name": "Utkatasana",
-    "pronunciation": "Utkatasana",
+    "pronunciation": "oot katásana",
     "steps": [
       {
         "count": "1",
@@ -889,7 +889,7 @@
   {
     "id": "virabhadrasana",
     "name": "Virabhadrasana",
-    "pronunciation": "Vira badra sana",
+    "pronunciation": "Vira badrásana",
     "steps": [
       {
         "count": "7",
@@ -970,7 +970,7 @@
   {
     "id": "dandasana",
     "name": "Dandasana",
-    "pronunciation": "Daan daassana",
+    "pronunciation": "dandásana",
     "steps": [
       {
         "count": "7",
@@ -992,7 +992,7 @@
   {
     "id": "paschimottanasanaA",
     "name": "Paschimottanasana A",
-    "pronunciation": "Paschimottanasana A",
+    "pronunciation": "Pashimot anásana A",
     "steps": [
       {
         "count": "8",
@@ -1024,7 +1024,7 @@
   {
     "id": "paschimottanasanaBorD",
     "name": "Paschimottanasana B or D",
-    "pronunciation": "Paschimottanasana B or D",
+    "pronunciation": "Pashimot anásana B or D",
     "steps": [
       {
         "count": "8",
@@ -1076,7 +1076,7 @@
   {
     "id": "purvottanasana",
     "name": "Purvottanasana",
-    "pronunciation": "Purvottanasana",
+    "pronunciation": "Purvottanásana",
     "steps": [
       {
         "count": "7",
@@ -1603,7 +1603,7 @@
   {
     "id": "maricasanaA",
     "name": "Maricasana A",
-    "pronunciation": "Maricasana A",
+    "pronunciation": "Mah ree chásana A",
     "steps": [
       {
         "count": "7",
@@ -1698,7 +1698,7 @@
   {
     "id": "maricasanaB",
     "name": "Maricasana B",
-    "pronunciation": "Maricasana B",
+    "pronunciation": "Mah ree chásana B",
     "steps": [
       {
         "count": "7",
@@ -1793,7 +1793,7 @@
   {
     "id": "maricasanaC",
     "name": "Maricasana C",
-    "pronunciation": "Maricasana C",
+    "pronunciation": "Mah ree chásana C",
     "steps": [
       {
         "count": "7",
@@ -1868,7 +1868,7 @@
   {
     "id": "maricasanaD",
     "name": "Maricasana D",
-    "pronunciation": "Maricasana D",
+    "pronunciation": "Mah ree chásana D",
     "steps": [
       {
         "count": "7",
@@ -1943,7 +1943,7 @@
   {
     "id": "navasana",
     "name": "Navasana",
-    "pronunciation": "Navasana",
+    "pronunciation": "Navásana",
     "steps": [
       {
         "count": "7",
@@ -2053,7 +2053,7 @@
   {
     "id": "bhujapidasana",
     "name": "Bhujapidasana",
-    "pronunciation": "Bhujapidasana",
+    "pronunciation": "Bhujapidásana",
     "steps": [
       {
         "count": "7",
@@ -2105,7 +2105,7 @@
   {
     "id": "kurmasana",
     "name": "Kurmasana",
-    "pronunciation": "Kurmasana",
+    "pronunciation": "Kurmásana",
     "steps": [
       {
         "count": "7",
@@ -2135,7 +2135,7 @@
   {
     "id": "suptaKurmasana",
     "name": "Supta Kurmasana",
-    "pronunciation": "Supta Kurmasana",
+    "pronunciation": "Soopta Kurmásana",
     "steps": [
       {
         "count": "8",
@@ -2186,7 +2186,7 @@
   },
   {
     "id": "garbhaPindasana",
-    "name": "Garbha Pindasana",
+    "name": "Garbha Pindásana",
     "pronunciation": "Garbha Pindasana",
     "steps": [
       {
@@ -2243,7 +2243,7 @@
   {
     "id": "kukkutasana",
     "name": "Kukkutasana",
-    "pronunciation": "Kukkutasana",
+    "pronunciation": "Kukkutásana",
     "steps": [
       {
         "count": "9",
@@ -2281,7 +2281,7 @@
   {
     "id": "baddhaKonasana",
     "name": "Baddha Konasana",
-    "pronunciation": "Baddha Konasana",
+    "pronunciation": "Baddha Konásana",
     "steps": [
       {
         "count": "7",
@@ -2347,7 +2347,7 @@
   {
     "id": "upavisthaKonasanaA",
     "name": "Upavistha Konasana A",
-    "pronunciation": "Upavistha Konasana A",
+    "pronunciation": "Upavishtha Konásana A",
     "steps": [
       {
         "count": "7",
@@ -2370,7 +2370,7 @@
   {
     "id": "upavisthaKonasanaB",
     "name": "Upavistha Konasana B",
-    "pronunciation": "Upavistha Konasana B",
+    "pronunciation": "Upavishtha Konásana B",
     "steps": [
       {
         "count": "9",
