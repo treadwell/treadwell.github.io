@@ -30,13 +30,22 @@ function Storage () {
     }
 
     return {
-        savePlaylist (playlist) {
-            if (!playlist.id) {
+        savePlaylist (playlist, name) {
+            let isUpdate = false
+            if (!name) {
                 writeLastPlaylist(playlist)
             } else {
-                playlists.push(playlist)
+                playlist.name = name
+                const idx = playlists.findIndex(p => p.name == name)
+                if (~idx) {
+                    isUpdate = true
+                    playlists[idx] = playlist
+                } else {
+                    playlists.push(playlist)
+                }
                 writePlaylists(playlists)
             }
+            return isUpdate
         },
         deletePlaylist (playlist) {
             const idx = playlists.indexOf(playlist)
@@ -44,6 +53,9 @@ function Storage () {
                 return
             playlists.splice(idx, 1)
             writePlaylists(playlists)
+        },
+        getPlaylist (name) {
+            return playlists.find(p => p.name == name)
         },
         playlists, 
         lastPlaylist

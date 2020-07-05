@@ -95,7 +95,7 @@ function NowPlaying (engine, { onAdd }) {
                 
             }],
             right: [{
-                icon: "minus",
+                icon: "times",
                 classes: "danger",
                 action: () => engine.dequeue(node)
             }]
@@ -123,6 +123,7 @@ function NowPlaying (engine, { onAdd }) {
     let playAction = null
     let timeDisplay = null
     let currentNode = null
+    let activePlaylistName = ""
 
     engine.on("pause", () => {
         $scroll
@@ -189,7 +190,10 @@ function NowPlaying (engine, { onAdd }) {
                         },
                         {
                             text: "Save playlist",
-                            action: () => alert("Save playlist!")
+                            action: () => {
+                                activePlaylistName = prompt("Name of Playlist?", activePlaylistName)
+                                engine.savePlaylist(activePlaylistName)
+                            }
                         }
                     ]
                 }
@@ -262,10 +266,45 @@ function Library (engine, { onBack }) {
 }
 
 function Playlists (engine) {
-    return engine.playlists.map(p => 
-        mkEntry(p.name, {
-            action: () => engine.enqueue(p),
-        }))
+    const playlistElements = new Map()
+    function mkEntryPlaylist (p) {
+        return mkEntry(p.name, {
+            action: () => engine.enqueue(engine.getSavedPlaylist(p.name)),
+            right: [{
+                icon: "times",
+                action: () => engine.deletePlaylist(p.name),
+                classes: "danger"
+            }]
+        })
+    }
+    let savedPlaylists = null
+    const elements = [
+        mkDivider("Saved Playlists"),
+        savedPlaylists = $("<div>")
+            .append(engine.savedPlaylists.map(p => {
+                const entry = mkEntryPlaylist(p)
+                playlistElements.set(p.name, entry)
+                return entry
+            })),
+        mkDivider("Default Playlists"),
+        $("<div>")
+            .append(engine.defaultPlaylists.map(p => mkEntry(p.name, {
+                action: () => engine.enqueue(p)
+            })))
+    ]
+    engine.on("playlist-saved", (p, isUpdate) => {
+        if (!isUpdate) {
+            const newEntry = mkEntryPlaylist(p)
+            savedPlaylists.append(newEntry) 
+            playlistElements.set(p.name, newEntry)
+        }
+        
+    })
+    engine.on("playlist-deleted", name => {
+        playlistElements.get(name).remove()
+        playlistElements.delete(name)
+    })
+    return elements
 }
 
 function Asanas (engine) {
@@ -463,6 +502,12 @@ function mkToolbarButton (icon, action) {
     
      return $button
 
+}
+
+function mkDivider (text) {
+    return $("<div>")
+        .addClass("divider")
+        .text(text)
 }
 
 function revealScrollChild ($scroll, $child) {

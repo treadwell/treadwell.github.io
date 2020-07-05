@@ -1,14 +1,13 @@
 MVP
-  - NowPlaying: Save a playlist to local storage
+  - NowPlaying: Highlight active step
+  - Playlists: Show playlist contents (asanas, then step w/i asana)
   - NowPlaying: Remaining time not decremented for counted breaths 
   - NowPlaying: Change breaths per minute
   - NowPlaying: Re-order
   - NowPlaying: voice preloading  
-  - Playlists: Show playlist contents (asanas, then step w/i asana)
-  - NowPlaying: Highlight active step
-  - NowPlaying: Add pronunciation to asana
   - All: Packaging with webpack
   - All: Replace CSS with SASS/SCSS
+  - Responsive design for mobile devices
   - All: Native UX (animations)
   - All: Deploying to Android/iOS
   - NowPlaying: Preload voices

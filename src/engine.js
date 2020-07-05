@@ -1,4 +1,4 @@
-function Engine (asanas, playlists, speaker, storage) {
+function Engine (asanas, defaultPlaylists, speaker, storage) {
 
     let currentNode = null
     let stepIdx = null
@@ -66,7 +66,8 @@ function Engine (asanas, playlists, speaker, storage) {
 
     const engine = {
         asanas,
-        playlists,
+        defaultPlaylists,
+        savedPlaylists: storage.playlists,
 
         currentAsana: null,
         timeTotal: 0,
@@ -171,6 +172,19 @@ function Engine (asanas, playlists, speaker, storage) {
             currentNode = cn.next
             if (ip) engine.play()
         },
+
+        savePlaylist (name) {
+            const playlist = serializeQueue()
+            const isUpdate = storage.savePlaylist(playlist, name)
+            trigger("playlist-saved", playlist, isUpdate)
+        },
+
+        deletePlaylist (name) {
+            storage.deletePlaylist(storage.getPlaylist(name))
+            trigger("playlist-deleted", name)
+        },
+
+        getSavedPlaylist: storage.getPlaylist.bind(storage),
 
         on (eventName, fn) {
             hooks[eventName] = hooks[eventName] || []
