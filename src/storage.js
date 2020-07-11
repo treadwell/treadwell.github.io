@@ -1,5 +1,5 @@
 // TODO: Validate correct playlist format on save/get
-function Storage () {
+module.exports = function () {
     
     const playlists = readPlaylists()
     const lastPlaylist = readLastPlaylist()

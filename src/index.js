@@ -1,20 +1,14 @@
-Promise.all([
-    
-    fetch("/res/data.json")
-        .then(resp => resp.json()),
-    
-    fetch("/res/sanskrit_numbers.json")
-        .then(resp => resp.json()),
+const Storage = require("./storage.js")
+const Speaker = require("./speaker.js")
+const Engine = require("./engine.js")
+const Ui = require("./ui.js")
 
-    fetch("/res/playlists.json")
-        .then(resp => resp.json())
+const asanas = require("../res/data.json")
+const numbers = require("../res/sanskrit_numbers.json")
+const playlists = require("../res/playlists.json")
 
-]).then(([asanas, numbers, playlists]) => {
+const storage = Storage()
+const speaker = Speaker(numbers)
 
-    const storage = Storage()
-    const speaker = Speaker(numbers)
-    
-    window.engine = Engine(asanas, playlists, speaker, storage)
-    window.ui = Ui(engine)
-
-})
+window.engine = Engine(asanas, playlists, speaker, storage)
+window.ui = Ui(engine)

@@ -1,3 +1,13 @@
+require("../node_modules/font-awesome/css/font-awesome.min.css")
+require("../node_modules/font-awesome/fonts/fontawesome-webfont.woff")
+require("../node_modules/font-awesome/fonts/fontawesome-webfont.woff2")
+require("../node_modules/font-awesome/fonts/fontawesome-webfont.eot")
+require("../node_modules/font-awesome/fonts/fontawesome-webfont.ttf")
+require("../node_modules/font-awesome/fonts/fontawesome-webfont.svg")
+require("./ui.css")
+
+const $ = require("jquery")
+
 function View (
     pages, 
     $tabs, 
@@ -21,7 +31,7 @@ function View (
     return $view
 }
 
-function Ui (engine) {
+module.exports = function (engine) {
 
     const pages = {
         nowPlaying: {

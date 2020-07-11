@@ -6,6 +6,10 @@ MVP
   - NowPlaying: Re-order
   - NowPlaying: voice preloading  
   - All: Packaging with webpack
+      x Compiling the app, serving from build/
+      - Import only the font-awesome icons we're using
+      - Break up engine, ui, etc. using require(...)
+      - Break up ui.css using require(...)
   - All: Replace CSS with SASS/SCSS
   - Responsive design for mobile devices
   - All: Native UX (animations)

@@ -1,4 +1,4 @@
-function Engine (asanas, defaultPlaylists, speaker, storage) {
+module.exports = function (asanas, defaultPlaylists, speaker, storage) {
 
     let currentNode = null
     let stepIdx = null
@@ -219,7 +219,3 @@ function Engine (asanas, defaultPlaylists, speaker, storage) {
 
     return engine
 }
-
-// module will be defined when running via node.js
-if (typeof module != "undefined")
-    module.exports = Engine

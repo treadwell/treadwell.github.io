@@ -1,4 +1,4 @@
-function Speaker (numbers) {
+module.exports = function (numbers) {
 
     let volume = 0.5
     let utterance = null
