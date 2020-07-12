@@ -1,18 +1,12 @@
-require("../node_modules/font-awesome/css/font-awesome.min.css")
-require("../node_modules/font-awesome/fonts/fontawesome-webfont.woff")
-require("../node_modules/font-awesome/fonts/fontawesome-webfont.woff2")
-require("../node_modules/font-awesome/fonts/fontawesome-webfont.eot")
-require("../node_modules/font-awesome/fonts/fontawesome-webfont.ttf")
-require("../node_modules/font-awesome/fonts/fontawesome-webfont.svg")
-require("./ui.css")
+require("./ui.scss")
 
 const $ = require("jquery")
 
 function View (
-    pages, 
-    $tabs, 
+    pages,
+    $tabs,
     $view = $("<div>")
-        .addClass("view")) 
+        .addClass("view"))
 {
     View.nextId = (View.nextId || 0) + 1
 
@@ -102,7 +96,7 @@ function NowPlaying (engine, { onAdd }) {
                             .addClass("entry-nowplaying--indicator--paused")
                             .addClass("fa fa-fw fa-volume-off")
                     ])
-                
+
             }],
             right: [{
                 icon: "times",
@@ -147,7 +141,7 @@ function NowPlaying (engine, { onAdd }) {
             .addClass("nowplaying__playing")
         playAction.el.find("i").removeClass("fa-play")
         playAction.el.find("i").addClass("fa-pause")
-    })  
+    })
 
     engine.on("rewind", () => {
         updateTime()
@@ -169,7 +163,7 @@ function NowPlaying (engine, { onAdd }) {
         s -= m * 60
         let h = Math.trunc(m / 60)
         m -= h * 60
-        const fmt = x => 
+        const fmt = x =>
             String(x).padStart(2, "0")
         return `${fmt(h)}:${fmt(m)}:${fmt(s)}`
     }
@@ -180,7 +174,7 @@ function NowPlaying (engine, { onAdd }) {
         timeDisplay.text(`${rem} / ${tot}`)
     }
 
-    requestAnimationFrame(() => 
+    requestAnimationFrame(() =>
         updateTime())
 
     return [
@@ -305,10 +299,10 @@ function Playlists (engine) {
     engine.on("playlist-saved", (p, isUpdate) => {
         if (!isUpdate) {
             const newEntry = mkEntryPlaylist(p)
-            savedPlaylists.append(newEntry) 
+            savedPlaylists.append(newEntry)
             playlistElements.set(p.name, newEntry)
         }
-        
+
     })
     engine.on("playlist-deleted", name => {
         playlistElements.get(name).remove()
@@ -341,7 +335,7 @@ function Asanas (engine) {
         let c = asanaCounts.get(asana) || 0
         c = diff ? c + diff : 0
 
-        if (c) 
+        if (c)
             asanaCounts.set(asana, c)
         else
             asanaCounts.delete(asana)
@@ -350,16 +344,16 @@ function Asanas (engine) {
         const ent = displayedAsanas.get(asana)
         const nent = mkEntryAsana(asana)
 
-        // NOTE: since ent.replaceWith(nent) doesn't work for detached nodes, 
-        // we have to replace the contents of ent with the contents of nent. As 
-        // a result, changes to properties, classes, etc. will not be changed. 
+        // NOTE: since ent.replaceWith(nent) doesn't work for detached nodes,
+        // we have to replace the contents of ent with the contents of nent. As
+        // a result, changes to properties, classes, etc. will not be changed.
         ent.children().remove()
         ent.append(nent.contents())
     }
-   
-    engine.on("enqueue", node => setCount(node.asana, 1)) 
+
+    engine.on("enqueue", node => setCount(node.asana, 1))
     engine.on("dequeue", node => setCount(node.asana, -1))
-    
+
     engine.on("reset", () => {
         for (const asana of asanaCounts.keys())
             setCount(asana, 0)
@@ -374,11 +368,11 @@ function Asanas (engine) {
 }
 
 function mkEntry (text, { action, content, scroll, left = [], right = [], data = {} } = {}) {
-    
+
     function renderAction ({ action, el, icon, classes = "" }) {
         if (action && el)
             el.on("click", action)
-        return icon 
+        return icon
             ? $("<i>")
                 .addClass(`fa fa-fw fa-${icon} ${classes} entry--action ` + (action ? "entry--action__action" : ""))
                 .on("click", action)
@@ -441,7 +435,7 @@ function mkAsanaSteps (a) {
         .append(a.steps.map(s => $("<div>")
             .addClass("entry-asana--step")
             .append([
-                s.counted 
+                s.counted
                     ? $("<i>")
                         .addClass("entry-asana--step--icon fa fa-refresh")
                     : $("<span>")
@@ -458,7 +452,7 @@ function mkAsanaSteps (a) {
 function mkToolbarBase ({ shadow = true } = {}) {
     return $("<div>")
         .addClass("toolbar " + (
-            shadow == "top" ? "toolbar__shadow-top" : 
+            shadow == "top" ? "toolbar__shadow-top" :
             shadow          ? "toolbar__shadow"     : ""))
 }
 
@@ -474,7 +468,7 @@ function mkToolbar ({ text = "", shadow, left = [], right = [] } = {}) {
 }
 
 function mkToolbarButton (icon, action) {
-    
+
     const $button = $("<div>")
         .addClass("toolbar--button")
         .append($("<i>")
@@ -509,7 +503,7 @@ function mkToolbarButton (icon, action) {
     } else {
         $button.on("click", action)
     }
-    
+
      return $button
 
 }

@@ -1,21 +1,21 @@
 MVP
+  - All: Packaging with webpack
+      - Break up engine, ui, etc. using require(...)
+      - Break up ui.css using require(...) & css modules
   - NowPlaying: Highlight active step
   - Playlists: Show playlist contents (asanas, then step w/i asana)
   - NowPlaying: Remaining time not decremented for counted breaths 
   - NowPlaying: Change breaths per minute
   - NowPlaying: Re-order
-  - NowPlaying: voice preloading  
-  - All: Packaging with webpack
-      x Compiling the app, serving from build/
-      - Import only the font-awesome icons we're using
-      - Break up engine, ui, etc. using require(...)
-      - Break up ui.css using require(...)
+  - NowPlaying: voice preloading
   - All: Replace CSS with SASS/SCSS
   - Responsive design for mobile devices
   - All: Native UX (animations)
   - All: Deploying to Android/iOS
   - NowPlaying: Preload voices
   - Git: purge .DS_Stores and images
+  - Prevent flash of no CSS when loading the page
+  - Import only the font-awesome icons we're using
 
 Post-MVP
   - NowPlaying: integrating a 3rd party text to speech engine
