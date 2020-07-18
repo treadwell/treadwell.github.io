@@ -15,11 +15,13 @@
     "jquery": "^3.5.0"
   },
   "devDependencies": {
-    "mocha": "^7.0.1",
     "@fortawesome/fontawesome-free": "^5.13.1",
     "base64-inline-loader": "^1.1.1",
     "css-loader": "^3.6.0",
+    "eslint": "^7.5.0",
+    "eslint-loader": "^4.0.2",
     "html-webpack-plugin": "^4.3.0",
+    "mocha": "^7.0.1",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
     "script-ext-html-webpack-plugin": "^2.1.4",

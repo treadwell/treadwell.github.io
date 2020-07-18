@@ -10,13 +10,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Asana Player",
+      title: "Asana Series Builder",
       filename: "index.html",
-    }),
+    })
+  ].concat(process.env.NODE_ENV == "development" ? [] : [
     new ScriptExtHtmlWebpackPlugin({
         inline: /.js$/
     })
-  ],
+  ]),
   module: {
     rules: [{
       test: /\.scss$/,
@@ -29,6 +30,12 @@ module.exports = {
       test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
       use: [
         { loader: "base64-inline-loader" }
+      ]
+    }, {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: [
+        { loader: "eslint-loader" }
       ]
     }]
   }

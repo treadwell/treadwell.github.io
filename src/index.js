@@ -1,5 +1,5 @@
-const Storage = require("./storage.js")
-const Speaker = require("./speaker.js")
+const Storage = require("./engine/storage.js")
+const Speaker = require("./engine/speaker.js")
 const Engine = require("./engine.js")
 const Ui = require("./ui.js")
 
@@ -11,4 +11,4 @@ const storage = Storage()
 const speaker = Speaker(numbers)
 
 window.engine = Engine(asanas, playlists, speaker, storage)
-window.ui = Ui(engine)
+window.ui = Ui(window.engine)

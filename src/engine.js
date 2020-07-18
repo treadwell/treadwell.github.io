@@ -57,7 +57,7 @@ module.exports = function (asanas, defaultPlaylists, speaker, storage) {
     const hooks = {}
 
     function trigger (event, ...args) {
-        for (fn of (hooks[event] || []))
+        for (let fn of (hooks[event] || []))
             fn(...args)
     }
 
