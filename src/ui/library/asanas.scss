@@ -1,0 +1,11 @@
+.instructions {
+    text-align: center;
+    display: none;
+    margin: auto;
+    max-width: 75%;
+    font-size: 1.5rem;
+}
+
+.instructions:first-child:last-child {
+    display: block;
+}

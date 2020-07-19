@@ -1,6 +1,8 @@
+require("./asanas.scss")
+
 const $ = require("jquery")
 
-const { mkEntry } = require("./common.js")
+const { mkEntry } = require("../common.js")
 
 const { 
     
@@ -72,7 +74,7 @@ const {
                 .append([
                     s.counted
                         ? $("<i>")
-                            .addClass("entry-asana--step--icon fa fa-refresh")
+                            .addClass("entry-asana--step--icon fa fa-sync")
                         : $("<span>")
                             .addClass("entry-asana--step--count")
                             .text(s.count),

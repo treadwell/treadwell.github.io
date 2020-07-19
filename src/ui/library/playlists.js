@@ -5,7 +5,7 @@ const {
     mkEntry,
     mkDivider
 
-} = require("./common.js")
+} = require("../common.js")
 
 module.exports = {
 

@@ -1,0 +1,27 @@
+.nowplaying > .entry > .entry--main > .entry-nowplaying--indicator:active > * {
+    transform: scale(1.25);
+    transform-origin: center center;
+}
+
+.nowplaying > .entry:hover > .entry--main > .entry-nowplaying--indicator > * {
+    color: #dddddd;
+}
+
+.nowplaying > .entry.entry-nowplaying__active > .entry--main > .entry-nowplaying--indicator > * {
+    color: #3f51b5;
+}
+
+.nowplaying__playing > .entry.entry-nowplaying__active > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--playing { display: flex; }
+.nowplaying__playing > .entry.entry-nowplaying__active:hover > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--pause { display: flex; }
+.nowplaying__playing > .entry.entry-nowplaying__active:hover > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--playing { display: none; }
+
+.nowplaying:not(.nowplaying__playing) > .entry.entry-nowplaying__active > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--paused { display: flex; }
+.nowplaying:not(.nowplaying__playing) > .entry.entry-nowplaying__active:hover > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--play { display: flex; }
+.nowplaying:not(.nowplaying__playing) > .entry.entry-nowplaying__active:hover > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--paused { display: none; }
+
+.entry:not(.entry-nowplaying__active):hover > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--play { display: flex; }
+
+.nowplaying {
+    display: flex;
+    flex-direction: column;
+}

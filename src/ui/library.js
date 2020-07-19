@@ -1,5 +1,5 @@
-const { Asanas } = require("./asanas.js")
-const { Playlists } = require("./playlists.js")
+const { Asanas } = require("./library/asanas.js")
+const { Playlists } = require("./library/playlists.js")
 
 const {
 

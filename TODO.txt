@@ -1,18 +1,17 @@
 MVP
   - All: Packaging with webpack
-      - Abstract common colors, paddings, etc. to common.scss
-      - Break up ui.css using require(...) & css modules
+      - Abstract common colors, paddings, etc. to common/vars.scss
+      - Utilize css modules
       - Add engine unit tests to webpack
+  - NowPlaying: voice preloading
   - NowPlaying: Highlight active step
   - Playlists: Show playlist contents (asanas, then step w/i asana)
   - NowPlaying: Remaining time not decremented for counted breaths 
   - NowPlaying: Change breaths per minute
   - NowPlaying: Re-order
-  - NowPlaying: voice preloading
   - Responsive design for mobile devices
   - All: Native UX (animations)
   - All: Deploying to Android/iOS
-  - NowPlaying: Preload voices
   - Git: purge .DS_Stores and images
   - Import only the font-awesome icons we're using
 

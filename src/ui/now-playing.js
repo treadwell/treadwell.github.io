@@ -1,6 +1,8 @@
+require("./now-playing.scss")
+
 const $ = require("jquery")
 
-const { mkAsanaSteps } = require("./asanas.js")
+const { mkAsanaSteps } = require("./library/asanas.js")
 
 const { 
     

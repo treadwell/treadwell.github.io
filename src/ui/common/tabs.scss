@@ -1,0 +1,31 @@
+.tabs {
+    justify-content: stretch;
+    align-items: stretch;
+    font-size: 1rem;
+}
+
+.tabs--tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tabs--tab:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.tabs--tab:active {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.tabs--tab__active {
+    color: #ffffff;
+}
+
+.tabs--tab__inactive {
+    color: #cccccc;
+}

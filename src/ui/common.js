@@ -1,3 +1,5 @@
+require("./common.scss")
+
 const $ = require("jquery")
 
 let { 
