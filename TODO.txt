@@ -1,13 +1,12 @@
 MVP
   - All: Packaging with webpack
-      - Abstract common colors, paddings, etc. to common/vars.scss
       - Utilize css modules
       - Add engine unit tests to webpack
+  - Settings: Change breaths per minute
   - NowPlaying: voice preloading
   - NowPlaying: Highlight active step
   - Playlists: Show playlist contents (asanas, then step w/i asana)
-  - NowPlaying: Remaining time not decremented for counted breaths 
-  - NowPlaying: Change breaths per minute
+  - NowPlaying: Remaining time not decremented for counted breaths
   - NowPlaying: Re-order
   - Responsive design for mobile devices
   - All: Native UX (animations)

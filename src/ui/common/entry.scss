@@ -1,7 +1,9 @@
+@import './vars.scss';
+
 .entry {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: $border-solid;
 }
 
 .entry--open > i {
@@ -20,12 +22,12 @@
 
 .entry-asana--steps {
     font-size: 0.75rem;
-    color: rgba(0, 0, 0, 0.5);
+    color: $offblack;
 }
 
 .entry-asana--step {
     display: flex;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    border-bottom: $border-dashed;
     padding: 0.25rem;
 }
 
@@ -48,17 +50,21 @@
     height: auto;
 }
 
+.entry:not(.entry__open) > .entry--content {
+    border-width: 0;
+}
+
 .entry--main {
     display: flex;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    //border-right: $border-solid;
 }
 
 .entry--main > * {
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: $border-solid;
 }
 
 .entry--content {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: $border-solid;
 }
 
 .entry--text {
@@ -75,7 +81,7 @@
 }
 
 .entry--action {
-    color: #f44336;
+    color: $danger;
     padding: 1rem;
     min-width: 1rem;
     max-width: 1rem;
@@ -89,11 +95,11 @@
 
 .entry--asana-count {
     padding: 1rem;
-    color: #cccccc;
+    color: $gray;
 }
 
 .entry--asana-count__nonzero {
-    color: #3f51b5; 
+    color: $indigo; 
 }
 
 .entry--text__action,
@@ -103,12 +109,12 @@
 
 .entry--text__action:hover, 
 .entry--action__action:hover {
-    background: #dddddd;
+    background: $gray-hover;
 }
 
 .entry--text__action:active,
 .entry-action__action:active {
-    background: #bbbbbb;
+    background: $gray-active;
 }
 
 .entry-nowplaying--indicator {

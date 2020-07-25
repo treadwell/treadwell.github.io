@@ -1,3 +1,5 @@
+@import "./vars.scss";
+
 .dropdown {
     position: absolute;
     display: flex;
@@ -20,7 +22,7 @@
     transition: all 250ms ease;
     transform-origin: top right;
     transform: scale(0);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $card1;
 }
 
 .dropdown__active > .dropdown--actions {
@@ -40,9 +42,9 @@
 }
 
 .dropdown--action:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: $gray-hover;
 }
 
 .dropdown--action:active {
-    background: rgba(0, 0, 0, 0.2);
+    background: $gray-active;
 }

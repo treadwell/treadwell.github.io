@@ -19,7 +19,7 @@ body {
 }
 
 .danger {
-    color: #f44336;
+    color: $danger;
 }
 
 .divider {
@@ -27,7 +27,7 @@ body {
     padding-right: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background: rgba(0, 0, 0, 0.1);
+    background: $gray;
 }
 
 .icon-inline {
@@ -48,8 +48,8 @@ body {
     width: 100%;
     height: max-content;
     font-size: 1.5rem;
-    color: #ffffff;
-    background: #3f51b5;
+    color: $white;
+    background: $indigo;
 }
 
 .toolbar:not(.tabs) {
@@ -57,11 +57,11 @@ body {
 }
 
 .toolbar__shadow {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $card1;
 }
 
 .toolbar__shadow-top {
-    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.24), 0 -1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: $card1;
 }
 
 .toolbar--timer {
@@ -80,11 +80,11 @@ body {
 }
 
 .toolbar--button:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: $gray-hover;
 }
 
 .toolbar--button:active {
-    background: rgba(0, 0, 0, 0.2);
+    background: $gray-active;
 }
 
 .toolbar--text {

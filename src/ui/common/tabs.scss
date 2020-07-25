@@ -1,3 +1,5 @@
+@import "./vars.scss";
+
 .tabs {
     justify-content: stretch;
     align-items: stretch;
@@ -15,17 +17,17 @@
 }
 
 .tabs--tab:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: $gray-hover;
 }
 
 .tabs--tab:active {
-    background: rgba(0, 0, 0, 0.2);
+    background: $gray-active;
 }
 
 .tabs--tab__active {
-    color: #ffffff;
+    color: $white;
 }
 
 .tabs--tab__inactive {
-    color: #cccccc;
+    color: $offwhite;
 }
