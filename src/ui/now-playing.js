@@ -1,11 +1,11 @@
-require("./now-playing.scss")
+const css = require("./now-playing.scss")
 
 const $ = require("jquery")
 
 const { mkAsanaSteps } = require("./library/asanas.js")
 
-const { 
-    
+const {
+
     mkToolbar,
     mkEntry,
     revealScrollChild,
@@ -18,7 +18,7 @@ module.exports = {
     NowPlaying (engine, { onAdd }) {
 
         const $instructions = $("<div>")
-            .addClass("instructions")
+            .addClass(css["instructions"])
             .append($("<p>")
                 .append("Click ")
                 .append($("<i>").addClass("icon-inline fa fa-plus"))
@@ -29,7 +29,7 @@ module.exports = {
                 .append(" to return here."))
 
         const $scroll = $("<div>")
-            .addClass("nowplaying scroll-y")
+            .addClass(`${css["nowplaying"]} scroll-y`)
             .append($instructions)
 
         engine.on("enqueue", node => {
@@ -44,19 +44,19 @@ module.exports = {
                             engine.play(node)
                     },
                     el: $("<span>")
-                        .addClass("entry-nowplaying--indicator")
+                        .addClass(`${css["entry-nowplaying--indicator"]}`)
                         .append([
                             $("<i>")
-                                .addClass("entry-nowplaying--indicator--play")
+                                .addClass(`${css["entry-nowplaying--indicator--play"]}`)
                                 .addClass("fa fa-fw fa-play"),
                             $("<i>")
-                                .addClass("entry-nowplaying--indicator--pause")
+                                .addClass(`${css["entry-nowplaying--indicator--pause"]}`)
                                 .addClass("fa fa-fw fa-pause"),
                             $("<i>")
-                                .addClass("entry-nowplaying--indicator--playing")
+                                .addClass(`${css["entry-nowplaying--indicator--playing"]}`)
                                 .addClass("fa fa-fw fa-volume-up"),
                             $("<i>")
-                                .addClass("entry-nowplaying--indicator--paused")
+                                .addClass(`${css["entry-nowplaying--indicator--paused"]}`)
                                 .addClass("fa fa-fw fa-volume-off")
                         ])
 
@@ -94,14 +94,14 @@ module.exports = {
 
         engine.on("pause", () => {
             $scroll
-                .removeClass("nowplaying__playing")
+                .removeClass(`${css["nowplaying__playing"]}`)
             playAction.el.find("i").removeClass("fa-pause")
             playAction.el.find("i").addClass("fa-play")
         })
 
         engine.on("play", () => {
             $scroll
-                .addClass("nowplaying__playing")
+                .addClass(`${css["nowplaying__playing"]}`)
             playAction.el.find("i").removeClass("fa-play")
             playAction.el.find("i").addClass("fa-pause")
         })
@@ -115,9 +115,9 @@ module.exports = {
         })
 
         engine.on("change-asana", node => {
-            if (currentNode) currentNode.el.removeClass("entry-nowplaying__active")
+            if (currentNode) currentNode.el.removeClass(`${css["entry-nowplaying__active"]}`)
             currentNode = node
-            currentNode.el.addClass("entry-nowplaying__active")
+            currentNode.el.addClass(`${css["entry-nowplaying__active"]}`)
             revealScrollChild($scroll, currentNode.el)
         })
 

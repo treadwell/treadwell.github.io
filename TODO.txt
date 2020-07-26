@@ -2,6 +2,7 @@ MVP
   - All: Packaging with webpack
       - Utilize css modules
       - Add engine unit tests to webpack
+      - Move instructions class from asanas.scss to now-playing.scss
   - Settings: Change breaths per minute
   - NowPlaying: voice preloading
   - NowPlaying: Highlight active step
