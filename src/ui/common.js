@@ -44,7 +44,7 @@ let {
         return `${fmt(h)}:${fmt(m)}:${fmt(s)}`
     },
 
-    mkEntry (text, { action, content, scroll, left = [], right = [], data = {} } = {}) {
+    mkEntry (text, { action, classes: { entry: classEntry = "", main: classMain = "" } = {}, content, scroll, left = [], right = [], data = {} } = {}) {
 
         function renderAction ({ action, el, icon, classes = "" }) {
             if (action && el)
@@ -58,10 +58,10 @@ let {
         }
     
         const $entry = $("<div>")
-            .addClass("entry")
+            .addClass("entry " + classEntry)
             .data(data)
             .append($("<div>")
-                .addClass("entry--main")
+                .addClass("entry--main " + classMain)
                 .append(left.map(o => renderAction(o)))
                 .append($("<div>")
                     .addClass("entry--text " + (action ? "entry--text__action" : ""))

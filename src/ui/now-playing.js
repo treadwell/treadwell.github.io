@@ -36,6 +36,9 @@ module.exports = {
             node.el = mkEntry(node.asana.name, {
                 scroll: $scroll,
                 content: mkAsanaSteps(node.asana),
+                classes: {
+                    entry: css["track"]
+                },
                 left: [{
                     action: () => {
                         const ip = engine.isPlaying
@@ -44,19 +47,19 @@ module.exports = {
                             engine.play(node)
                     },
                     el: $("<span>")
-                        .addClass(`${css["entry-nowplaying--indicator"]}`)
+                        .addClass(`${css["indicator"]}`)
                         .append([
                             $("<i>")
-                                .addClass(`${css["entry-nowplaying--indicator--play"]}`)
+                                .addClass(`${css["indicator-play"]}`)
                                 .addClass("fa fa-fw fa-play"),
                             $("<i>")
-                                .addClass(`${css["entry-nowplaying--indicator--pause"]}`)
+                                .addClass(`${css["indicator-pause"]}`)
                                 .addClass("fa fa-fw fa-pause"),
                             $("<i>")
-                                .addClass(`${css["entry-nowplaying--indicator--playing"]}`)
+                                .addClass(`${css["indicator-playing"]}`)
                                 .addClass("fa fa-fw fa-volume-up"),
                             $("<i>")
-                                .addClass(`${css["entry-nowplaying--indicator--paused"]}`)
+                                .addClass(`${css["indicator-paused"]}`)
                                 .addClass("fa fa-fw fa-volume-off")
                         ])
 
@@ -94,14 +97,14 @@ module.exports = {
 
         engine.on("pause", () => {
             $scroll
-                .removeClass(`${css["nowplaying__playing"]}`)
+                .removeClass(`${css["playing"]}`)
             playAction.el.find("i").removeClass("fa-pause")
             playAction.el.find("i").addClass("fa-play")
         })
 
         engine.on("play", () => {
             $scroll
-                .addClass(`${css["nowplaying__playing"]}`)
+                .addClass(`${css["playing"]}`)
             playAction.el.find("i").removeClass("fa-play")
             playAction.el.find("i").addClass("fa-pause")
         })
@@ -115,9 +118,9 @@ module.exports = {
         })
 
         engine.on("change-asana", node => {
-            if (currentNode) currentNode.el.removeClass(`${css["entry-nowplaying__active"]}`)
+            if (currentNode) currentNode.el.removeClass(`${css["active"]}`)
             currentNode = node
-            currentNode.el.addClass(`${css["entry-nowplaying__active"]}`)
+            currentNode.el.addClass(`${css["active"]}`)
             revealScrollChild($scroll, currentNode.el)
         })
 

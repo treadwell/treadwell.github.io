@@ -1,5 +1,4 @@
 @import "./common/vars.scss";
-@import "./common.scss";
 
 .instructions {
     text-align: center;
@@ -13,30 +12,41 @@
     display: block;
 }
 
-.nowplaying > .entry > .entry--main > .entry-nowplaying--indicator:active > * {
+.nowplaying .indicator:active > * {
     transform: scale(1.25);
     transform-origin: center center;
 }
 
-.nowplaying > .entry:hover > .entry--main > .entry-nowplaying--indicator > * {
+.nowplaying .track:hover .indicator > * {
     color: $gray-hover;
 }
 
-.nowplaying > .entry.entry-nowplaying__active > .entry--main > .entry-nowplaying--indicator > * {
+.nowplaying .track.active .indicator > * {
     color: $indigo;
 }
 
-.nowplaying__playing > .entry.entry-nowplaying__active > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--playing { display: flex; }
-.nowplaying__playing > .entry.entry-nowplaying__active:hover > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--pause { display: flex; }
-.nowplaying__playing > .entry.entry-nowplaying__active:hover > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--playing { display: none; }
+.nowplaying.playing .track.active .indicator .indicator-playing { display: flex; }
+.nowplaying.playing .track.active:hover .indicator .indicator-pause { display: flex; }
+.nowplaying.playing .track.active:hover .indicator .indicator-playing { display: none; }
 
-.nowplaying:not(.nowplaying__playing) > .entry.entry-nowplaying__active > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--paused { display: flex; }
-.nowplaying:not(.nowplaying__playing) > .entry.entry-nowplaying__active:hover > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--play { display: flex; }
-.nowplaying:not(.nowplaying__playing) > .entry.entry-nowplaying__active:hover > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--paused { display: none; }
+.nowplaying:not(.playing) .track.active .indicator .indicator-paused { display: flex; }
+.nowplaying:not(.playing) .track.active:hover .indicator .indicator-play { display: flex; }
+.nowplaying:not(.playing) .track.active:hover .indicator .indicator-paused { display: none; }
 
-.entry:not(.entry-nowplaying__active):hover > .entry--main > .entry-nowplaying--indicator > .entry-nowplaying--indicator--play { display: flex; }
+.track:not(.active):hover .indicator .indicator-play { display: flex; }
 
 .nowplaying {
     display: flex;
     flex-direction: column;
+}
+
+.indicator {
+    padding-right: -1rem;
+    cursor: pointer;
+}
+
+.indicator > * {
+    color: white;
+    display: none;
+    transition: all 75ms ease;
 }
