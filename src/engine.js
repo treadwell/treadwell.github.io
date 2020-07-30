@@ -72,7 +72,7 @@ module.exports = function (asanas, defaultPlaylists, speaker, storage) {
         currentAsana: null,
         timeTotal: 0,
         timeRemaining: 0,
-        cycle: 6,
+        cycle: 5,
 
         setVolume: speaker.setVolume.bind(speaker),
 

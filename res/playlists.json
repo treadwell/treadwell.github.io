@@ -57,6 +57,19 @@
 
 {"name": "**** Specialty Series ****", "asanas": []},
 
+{"name": "KB Primary Series", "asanas": [
+    "suryA", "suryA", "suryA", "suryA", "suryA",
+    "suryB", "suryB", "suryB",
+    "padangusthasana", "padahastasana", "utthitaTrikonasanaA", "utthitaTrikonasanaB", "utthitaParsvakonasanaA", "utthitaParsvakonasanaB", "prasaritaPadottanasanaA", "prasaritaPadottanasanaB", "prasaritaPadottanasanaC", "prasaritaPadottanasanaD", "parsvottanasana",
+    "utthitaHastaPadangusthasana", "doublePigeon", "ardhaBaddhaPadmottanasana", "utkatasana", "virabhadrasana",
+    "dandasana", "paschimottanasanaA", "paschimottanasanaBorD", "purvottanasana", "ardhaBaddhaPadmaPaschimottanasana", "triyangaMukhaEkaPadaPaschimottanasana", "januSirsasanaA", "januSirsasanaB", "januSirsasanaC", "maricasanaA", "maricasanaB", "maricasanaC", "maricasanaD", "navasana",
+    "bhujapidasana", "muktaHastaSirsasanaBakasanaDrill",
+    "kurmasana", "suptaKurmasana", "ekaPadaSirsasanaDrill",
+    "garbhaPindasana", "kukkutasana", "baddhaKonasana", "upavisthaKonasanaA", "upavisthaKonasanaB", "suptaKonasana", "suptaPadangusthasana", "ubhayaPadangusthasana", "urdhvaMukhaPaschimottanasana", "setthuBandhasana",
+    "urdhvaDhanurasana", "paschimottanasana", "salambaSarvangasana", "halasana", "karnapidasana", "urdhvaPadmasana", "pindasana", "matsyasana", "uttanaPadasana", "sirsasana",
+    "sirsasanaCrunch",
+    "baddhaPadmasana", "yogaMudra", "padmasana", "utpluthih"]},
+
 {"name": "KB Intermediate Series", "asanas": [
     "suryA", "suryA", "suryA", "suryA", "suryA",
     "suryB", "suryB", "suryB",
