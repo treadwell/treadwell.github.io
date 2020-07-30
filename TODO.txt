@@ -4,6 +4,8 @@ MVP
       - Add engine unit tests to webpack
       - Move instructions class from asanas.scss to now-playing.scss
   - Settings: Change breaths per minute
+  - NowPlaying Bug: When you hit pause on one asana and start playing another one,
+    the new one resumes at the old step count vs at the first step
   - NowPlaying: voice preloading
   - NowPlaying: Highlight active step
   - Playlists: Show playlist contents (asanas, then step w/i asana)

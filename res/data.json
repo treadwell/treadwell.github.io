@@ -5959,7 +5959,7 @@
       {
         "count": "10",
         "breaths": 1.5,
-        "text": "Inhale, push up to bakasana position."
+        "text": "Inhale, push up to bakásana position."
       },
       {
         "breaths": 0.5,
@@ -6120,7 +6120,7 @@
       {
         "count": "10",
         "breaths": 1.5,
-        "text": "Inhale, place left hand on floor pull leg behind head."
+        "text": "Inhale, place left hand on floor, pull leg behind head."
       },
       {
         "breaths": 0.5,
@@ -6160,7 +6160,7 @@
       {
         "count": "14",
         "breaths": 1.5,
-        "text": "Inhale, place right hand on floor pull leg behind head."
+        "text": "Inhale, place right hand on floor, pull leg behind head."
       },
       {
         "breaths": 0.5,
@@ -6176,9 +6176,13 @@
         "text": "Inhale, return to seated."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "16",
         "breaths": 0.5,
-        "text": "Exhale, lift up."
+        "text": "Inhale, lift up."
       },
       {
         "count": "17",
@@ -6197,6 +6201,77 @@
       }
     ],
     "seq": 606,
+    "series": "none"
+  },
+  {
+    "id": "dviPadaViparitaDrill",
+    "name": "Dvi Pada Viparita Drill",
+    "pronunciation": "Dwee Pada Viparita Drill",
+    "steps": [
+      {
+        "count": "7",
+        "breaths": 0.5,
+        "text": "Inhale, jump to seated and lie down."
+      },
+      {
+        "count": "8",
+        "breaths": 0.5,
+        "text": "Exhale, bend the knees, take the hands back behind the shoulders."
+      },
+      {
+        "count": "9",
+        "breaths": 0.5,
+        "text": "Inhale, lift the body up off the floor to rest on the head."
+      },
+      {
+        "count": "10",
+        "breaths": 0.5,
+        "text": "Exhale, take hands behind head as in sirsasana."
+      },
+      {
+        "count": "11",
+        "breaths": 0.5,
+        "text": "Inhale, walk feet out, legs together."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
+        "breaths": 5,
+        "counted": true
+      },
+      {
+        "count": "12",
+        "breaths": 0.5,
+        "text": "Inhale, recover urdhva dhanurasana position."
+      },
+      {
+        "count": "13",
+        "breaths": 0.5,
+        "text": "Exhale, lower body to floor."
+      },
+      {
+        "count": "14",
+        "breaths": 0.5,
+        "text": "Inhale, take the feet back over the head."
+      },
+      {
+        "breaths": 0.5,
+        "text": "Exhale, take cakrasana to chaturanga."
+      },
+      {
+        "count": "15",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "16",
+        "breaths": 0.5,
+        "text": "Exhale, push back to downward dog."
+      }
+    ],
+    "seq": 607,
     "series": "none"
   },
 
