@@ -675,7 +675,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Exhale, place both hands on the waist."
+        "text": "Exhale, place both hands on the waist. Leg stays up."
       },
       {
         "breaths": 5,
@@ -730,7 +730,7 @@
       },
       {
         "breaths": 0.5,
-        "text": "Exhale, place both hands on the waist."
+        "text": "Exhale, place both hands on the waist. Leg stays up."
       },
       {
         "breaths": 5,
@@ -2231,10 +2231,6 @@
       {
         "breaths": 1.0,
         "text": "Five."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale. Pull arms out."
       }
     ],
     "seq": 35,
@@ -5872,12 +5868,12 @@
         "text": "Exhale, fold forward."
       },
       {
-        "breaths": 5,
+        "breaths": 10,
         "counted": true
       },
       {
         "count": "9",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Inhale, come up. Place left ankle on top of right knee. Keep feet flexed."
       },
       {
@@ -5886,7 +5882,7 @@
         "text": "Exhale, fold forward."
       },
       {
-        "breaths": 5,
+        "breaths": 10,
         "counted": true
       },
       {
@@ -5895,32 +5891,41 @@
         "text": "Inhale, come up."
       },
       {
+        "breaths": 0.5,
+        "text": "Exhale."
+      },
+      {
         "count": "12",
         "breaths": 0.5,
-        "text": "Exhale, jump back to downward dog."
+        "text": "Inhale, lift."
       },
       {
         "count": "13",
         "breaths": 0.5,
-        "text": "Inhale, push up to upward dog."
+        "text": "Exhale, jump back to downward dog."
       },
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Exhale, push back to downward dog."
+        "text": "Inhale, push up to upward dog."
       },
       {
         "count": "15",
         "breaths": 0.5,
-        "text": "Inhale, jump forward, head up."
+        "text": "Exhale, push back to downward dog."
       },
       {
         "count": "16",
         "breaths": 0.5,
-        "text": "Exhale, fold forward."
+        "text": "Inhale, jump forward, head up."
       },
       {
         "count": "17",
+        "breaths": 0.5,
+        "text": "Exhale, fold forward."
+      },
+      {
+        "count": "18",
         "breaths": 0.5,
         "text": "Inhale, lift the arms up."
       },
@@ -5948,7 +5953,7 @@
       },
       {
         "count": "8",
-        "breaths": 0.5,
+        "breaths": 1.5,
         "text": "Inhale, lift the legs straight up."
       },
       {
@@ -5959,7 +5964,7 @@
       {
         "count": "10",
         "breaths": 1.5,
-        "text": "Inhale, push up to bakásana position."
+        "text": "Inhale, push up to bakasana position."
       },
       {
         "breaths": 0.5,
@@ -5985,21 +5990,22 @@
         "text": "Exhale, lower the legs to rest on arms, tight crunch."
       },
       {
-        "breaths": 0.5,
-        "text": "Inhale."
-      },
-      {
         "count": "14",
-        "breaths": 0.5,
-        "text": "Exhale, jump back to chaturanga."
+        "breaths": 1.5,
+        "text": "Inhale, push up to bakasana position."
       },
       {
         "count": "15",
         "breaths": 0.5,
-        "text": "Inhale, push up to upward dog."
+        "text": "Exhale, jump back to chaturanga."
       },
       {
         "count": "16",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "17",
         "breaths": 0.5,
         "text": "Exhale, push back to downward dog."
       }
@@ -6069,15 +6075,24 @@
       {
         "count": "13",
         "breaths": 0.5,
-        "text": "Exhale, extend back to chaturanga."
+        "text": "Exhale, slowly lower legs into child's pose."
+      },
+      {
+        "breaths": 10,
+        "counted": true
       },
       {
         "count": "14",
         "breaths": 0.5,
-        "text": "Inhale, push up to upward dog."
+        "text": "Exhale, extend back to chaturanga."
       },
       {
         "count": "15",
+        "breaths": 0.5,
+        "text": "Inhale, push up to upward dog."
+      },
+      {
+        "count": "16",
         "breaths": 0.5,
         "text": "Exhale, push back to downward dog."
       }
@@ -6206,7 +6221,7 @@
   {
     "id": "dviPadaViparitaDrill",
     "name": "Dvi Pada Viparita Drill",
-    "pronunciation": "Dwee Pada Viparita Drill",
+    "pronunciation": "Dwee Pada Vipárita Drill",
     "steps": [
       {
         "count": "7",
@@ -6226,7 +6241,7 @@
       {
         "count": "10",
         "breaths": 0.5,
-        "text": "Exhale, take hands behind head as in sirsasana."
+        "text": "Exhale, take hands behind head as in sirsásana."
       },
       {
         "count": "11",
@@ -6244,7 +6259,7 @@
       {
         "count": "12",
         "breaths": 0.5,
-        "text": "Inhale, recover urdhva dhanurasana position."
+        "text": "Inhale, recover urdhva dhanurásana position."
       },
       {
         "count": "13",
@@ -6253,12 +6268,8 @@
       },
       {
         "count": "14",
-        "breaths": 0.5,
-        "text": "Inhale, take the feet back over the head."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, take cakrasana to chaturanga."
+        "breaths": 1.0,
+        "text": "Take chakrásana to chaturanga."
       },
       {
         "count": "15",
@@ -6274,6 +6285,90 @@
     "seq": 607,
     "series": "none"
   },
+  {
+    "id": "virasanaBreak",
+    "name": "Virasana Break",
+      "pronunciation": "Virasana break",
+    "steps": [
+      {
+        "breaths": 1.0,
+        "text": "Take virasana position. Breathe."
+      },
+      {
+        "breaths": 10,
+        "counted": true
+      }
+    ],
+      "seq": 608,
+      "series": "none"
+    },
+    {
+      "id": "utthitaParsvakonasanaBKB",
+      "name": "Modified Utthita Parsvakonasana B",
+      "pronunciation": "ooteeta Parsvakonásana B",
+      "steps": [
+        {
+          "count": "2",
+          "breaths": 1.5,
+          "text": "Exhale, bend the right knee, twist the body, and take prayer position."
+        },
+        {
+          "breaths": 5,
+          "counted": true
+        },
+        {
+          "breaths": 0.5,
+          "text": "Inhale."
+        },
+        {
+          "count": "2",
+          "breaths": 1.5,
+          "text": "Exhale, place the left hand outside the right foot."
+        },
+        {
+          "breaths": 5,
+          "counted": true
+        },
+        {
+          "count": "3",
+          "breaths": 0.5,
+          "text": "Inhale, come up."
+        },
+        {
+          "count": "4",
+          "breaths": 1.5,
+          "text": "Exhale, bend the left knee, twist the body, and take prayer position."
+        },
+        {
+          "breaths": 5,
+          "counted": true
+        },
+        {
+          "breaths": 0.5,
+          "text": "Inhale."
+        },
+        {
+          "count": "4",
+          "breaths": 1.5,
+          "text": "Exhale, place the right hand outside the left foot."
+        },
+        {
+          "breaths": 5,
+          "counted": true
+        },
+        {
+          "count": "5",
+          "breaths": 0.5,
+          "text": "Inhale, come up."
+        },
+        {
+          "breaths": 0.5,
+          "text": "Exhale. Samastitih."
+        }
+      ],
+      "seq": 8,
+      "series": "fundamental"
+    },
 
 
   {

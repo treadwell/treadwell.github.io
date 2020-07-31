@@ -10,6 +10,7 @@ MVP
   - NowPlaying: Highlight active step
   - Playlists: Show playlist contents (asanas, then step w/i asana)
   - NowPlaying: Remaining time not decremented for counted breaths
+  - NowPlaying: Total time != actual total time
   - NowPlaying: Re-order
   - Responsive design for mobile devices
   - All: Native UX (animations)
@@ -25,6 +26,7 @@ Post-MVP
   - Automated transitions dynamically added to playlists to
     ensure smooth transitions
   - NowPlaying: Show line drawing of active step 
+  - NowPlaying: Voice control of app (to avoid having to make mods in practice)
 
 Tech Debt
     - NowPlaying: Bug: Dropdown doesn't close when clicking 
