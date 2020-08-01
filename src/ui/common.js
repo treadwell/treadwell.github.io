@@ -1,5 +1,10 @@
 require("./common.scss")
 
+const css = {
+    dropdown: require("./common/dropdown.scss"),
+    entry: require("./common/entry.scss")
+}
+
 const $ = require("jquery")
 
 let { 
@@ -44,42 +49,55 @@ let {
         return `${fmt(h)}:${fmt(m)}:${fmt(s)}`
     },
 
-    mkEntry (text, { action, classes: { entry: classEntry = "", main: classMain = "" } = {}, content, scroll, left = [], right = [], data = {} } = {}) {
+    mkEntry (text, { 
+
+        action, 
+        classes: { 
+            main: classMain = "",
+            header: classHeader = ""
+        } = {}, 
+        content, 
+        scroll, 
+        left = [], 
+        right = [], 
+        data = {} 
+
+    } = {}) {
 
         function renderAction ({ action, el, icon, classes = "" }) {
             if (action && el)
                 el.on("click", action)
             return icon
                 ? $("<i>")
-                    .addClass(`fa fa-fw fa-${icon} ${classes} entry--action ` + (action ? "entry--action__action" : ""))
+                    .addClass(`fa fa-fw fa-${icon} ${classes} ${css.entry.action} ${action ? css.entry.clickable : ""}`)
                     .on("click", action)
                 : el
-                    .addClass("entry--action")
+                    .addClass(css.entry.action)
         }
     
         const $entry = $("<div>")
-            .addClass("entry " + classEntry)
+            .addClass(`${css.entry.main} ${classMain}`)
             .data(data)
             .append($("<div>")
-                .addClass("entry--main " + classMain)
+                .addClass(`${css.entry.header} ${classHeader}`)
                 .append(left.map(o => renderAction(o)))
                 .append($("<div>")
-                    .addClass("entry--text " + (action ? "entry--text__action" : ""))
+                    .addClass(`${css.entry.text} ${action ? css.entry.clickable : ""}`)
                     .on("click", action)
                     .text(text))
                 .append(!content ? [] : mkToolbarButton("chevron-down", ev => {
                     const $ent = $(ev.target)
-                        .closest(".entry")
-                    $ent.toggleClass("entry__open")
+                        .closest(`.${css.entry.main}`)
+                    $ent.toggleClass(css.entry.open)
                     if (scroll)
                         setTimeout(() =>
                             revealScrollChild(scroll == "parent"
                                 ? $ent.parent()
                                 : scroll, $ent))
-                }).addClass("entry--open"))
+                }).addClass(css.entry.opener))
                 .append(right.map(o => renderAction(o))))
             .append(!content ? [] : content
-                .addClass("entry--content"))
+                .addClass(css.entry.content))
     
         return $entry
     },
@@ -129,33 +147,33 @@ let {
         const $button = $("<div>")
             .addClass("toolbar--button")
             .append($("<i>")
-                .addClass("fa fa-fw fa-" + icon))
-    
+            .addClass("fa fa-fw fa-" + icon))
+
         if (Array.isArray(action)) {
     
             const $dropdown = $("<div>")
-                .addClass("dropdown")
+                .addClass(css.dropdown.main)
                 .append($("<div>")
-                    .addClass("dropdown--actions")
+                    .addClass(css.dropdown.actions)
                     .append(action.map(({ text, action }) => $("<div>")
-                        .addClass("dropdown--action")
+                        .addClass(css.dropdown.action)
                         .text(text)
                         .on("click", ev => {
                             ev.stopPropagation()
                             action()
                             $dropdown
-                                .removeClass("dropdown__active")
+                                .removeClass(css.dropdown.active)
                         }))))
                 .on("click", ev => {
                     ev.stopPropagation()
                     $dropdown
-                        .removeClass("dropdown__active")
+                        .removeClass(css.dropdown.active)
                 })
     
             $button
                 .append($dropdown)
                 .on("click", () => $dropdown
-                    .addClass("dropdown__active"))
+                    .addClass(css.dropdown.active))
     
         } else {
             $button.on("click", action)

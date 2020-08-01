@@ -37,7 +37,7 @@ module.exports = {
                 scroll: $scroll,
                 content: mkAsanaSteps(node.asana),
                 classes: {
-                    entry: css["track"]
+                    main: css["track"]
                 },
                 left: [{
                     action: () => {

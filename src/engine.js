@@ -81,6 +81,9 @@ module.exports = function (asanas, defaultPlaylists, speaker, storage) {
             engine.isPlaying = true
             trigger("play")
 
+            if (node != currentNode)
+                stepIdx = 0
+                
             currentNode = node
 
             if (!node) {

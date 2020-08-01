@@ -1,3 +1,5 @@
+require("./asanas.scss")
+
 const $ = require("jquery")
 
 const { mkEntry } = require("../common.js")

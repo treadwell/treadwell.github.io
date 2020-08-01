@@ -1,6 +1,6 @@
 @import "./vars.scss";
 
-.dropdown {
+.main {
     position: absolute;
     display: flex;
     align-items: flex-start;
@@ -13,11 +13,11 @@
     transform: translateX(-100%);
 }
 
-.dropdown--actions {
+.actions {
     border-radius: 3px;
     margin-right: 0.5rem;
     margin-top: 1rem;
-    background: white;
+    background: $white;
     opacity: 0;
     transition: all 250ms ease;
     transform-origin: top right;
@@ -25,26 +25,26 @@
     box-shadow: $card1;
 }
 
-.dropdown__active > .dropdown--actions {
+.main.active > .actions {
     opacity: 1;
     transform: scale(1);
 }
 
-.dropdown__active {
+.main.active {
     pointer-events: all;
 }
 
-.dropdown--action {
+.action {
     padding: 0.5rem 1rem;
-    color: black;
+    color: $black;
     font-size: 1rem;
     white-space: nowrap;
 }
 
-.dropdown--action:hover {
+.action:hover {
     background: $gray-hover;
 }
 
-.dropdown--action:active {
+.action:active {
     background: $gray-active;
 }

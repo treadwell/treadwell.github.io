@@ -2,7 +2,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin")
 
 const moddedCSS = [
-  "src/ui/now-playing.scss"
+  "src/ui/now-playing.scss",
+  "src/ui/common/dropdown.scss",
+  "src/ui/common/entry.scss"
 ].map(x => `${__dirname}/${x}`)
 
 module.exports = {
