@@ -1,6 +1,11 @@
 const { Asanas } = require("./library/asanas.js")
 const { Playlists } = require("./library/playlists.js")
 
+const css = {
+    icons: require("./common/icons.scss"),
+    common: require("./common.scss"),
+}
+
 const {
 
     Tabs,
@@ -28,14 +33,13 @@ module.exports = {
 
         const $tabs = Tabs(pages)
         const $view = View(pages, $tabs)
-            .addClass("scroll-y")
+            .addClass(css.common.scrollY)
 
         $view.view("asanas", true)
 
         return [
             mkToolbar({
                 text: "Library",
-                shadow: false,
                 left: [{ icon: "arrow-left", action: onBack }]
             }),
             $tabs,

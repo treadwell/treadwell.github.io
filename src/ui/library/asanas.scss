@@ -1,22 +1,22 @@
 @import "../common/vars.scss";
 
-.entry-asana--steps {
+.steps {
     font-size: 0.75rem;
     color: $offblack;
 }
 
-.entry-asana--step {
+.steps .step {
     display: flex;
     border-bottom: $border-dashed;
     padding: 0.25rem;
 }
 
-.entry-asana--step:last-child {
+.steps .step:last-child {
     border-bottom: none;
 }
 
-.entry-asana--step--icon,
-.entry-asana--step--count {
+.steps .step .icon,
+.steps .step .count {
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -25,11 +25,11 @@
     padding-right: 0.5rem;
 }
 
-.entry--asana-count {
+.count {
     padding: 1rem;
     color: $gray !important;
 }
 
-.entry--asana-count__nonzero {
-    color: $indigo !important; 
+.count.nonzero {
+    color: $indigo !important;
 }

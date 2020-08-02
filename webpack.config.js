@@ -1,12 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin")
 
-const moddedCSS = [
-  "src/ui/now-playing.scss",
-  "src/ui/common/dropdown.scss",
-  "src/ui/common/entry.scss"
-].map(x => `${__dirname}/${x}`)
-
 module.exports = {
   entry: __dirname + "/src/index.js",
   mode: process.env.NODE_ENV,
@@ -26,14 +20,7 @@ module.exports = {
   ]),
   module: {
     rules: [{
-      test: x => /\.scss$/.test(x) && !moddedCSS.includes(x),
-      use: [
-        { loader: "style-loader" },
-        { loader: "css-loader" },
-        { loader: "sass-loader"}
-      ]
-    }, {
-      test: x => moddedCSS.includes(x),
+      test: /\.scss$/,
       use: [
         { loader: "style-loader" },
         { loader: "css-loader", options: { modules: true } },

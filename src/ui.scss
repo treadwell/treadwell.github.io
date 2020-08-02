@@ -1,10 +1,6 @@
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "~@fortawesome/fontawesome-free/scss/solid.scss";
-
 @import "./ui/common/vars.scss";
 
-.app {
+.main {
     display: flex;
     flex-direction: column;
     border-radius: 3px;

@@ -1,85 +1,51 @@
 @import './vars.scss';
 
 .main {
-
     display: flex;
     flex-direction: column;
     border-bottom: $border-solid;
-
-    .header {
-
-        display: flex;
-    
-        > * {
-            
-            border-right: $border-solid;
-
-            &:last-child {
-                border-right: none;
-            }
-
-        } 
-
-        .opener i {
-            transition: transform 125ms ease;
-        }
-
-        .text {
-            padding: 1rem;
-            flex: 1;
-        }
-
-        .action {
-            color: $danger;
-            padding: 1rem;
-            min-width: 1rem;
-            max-width: 1rem;
-            display: flex;
-            justify-content: center;
-        }
-        
-    }
-
-    .content {
-        visibility: hidden;
-        height: 0;
-        border-top: $border-solid;
-    }
-
-    &.open {
-
-        .opener i {
-            transform: rotate(180deg);
-        }
-
-        .content {
-            visibility: visible;
-            height: auto;
-        }
-
-    }
-
-    &:not(.open) {
-
-        .content {
-            border-width: 0;
-        }
-
-    }
-
 }
+
+.main .header { display: flex; }
+
+.main .header > * { border-right: $border-solid; }
+.main .header > *:last-child { border-right: none; }
+
+.main .header .opener i { transition: transform 125ms ease; }
+
+.main .header .text {
+    padding: 1rem;
+    flex: 1;
+}
+
+.main .header .action {
+    color: $danger;
+    padding: 1rem;
+    min-width: 1rem;
+    max-width: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main .content {
+    visibility: hidden;
+    height: 0;
+    border-top: $border-solid;
+}
+
+.main.open .header .opener i { transform: rotate(180deg); }
+
+.main.open .content {
+    visibility: visible;
+    height: auto;
+}
+
+.main:not(.open) .content { border-width: 0; }
 
 .clickable {
-
     cursor: pointer;
     transition: background 100ms ease;
-
-    &:hover {
-        background: $gray-hover;
-    }
-
-    &:active {
-        background: $gray-active;
-    }
-
 }
+
+.clickable:hover { background: $gray-hover; }
+.clickable:active { background: $gray-active; }

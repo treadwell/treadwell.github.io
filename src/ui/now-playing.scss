@@ -25,15 +25,15 @@
     color: $indigo;
 }
 
-.nowplaying.playing .track.active .indicator .indicator-playing { display: flex; }
-.nowplaying.playing .track.active:hover .indicator .indicator-pause { display: flex; }
-.nowplaying.playing .track.active:hover .indicator .indicator-playing { display: none; }
+.nowplaying.playing .track.active .indicator .playing { display: flex; }
+.nowplaying.playing .track.active:hover .indicator .pause { display: flex; }
+.nowplaying.playing .track.active:hover .indicator .playing { display: none; }
 
-.nowplaying:not(.playing) .track.active .indicator .indicator-paused { display: flex; }
-.nowplaying:not(.playing) .track.active:hover .indicator .indicator-play { display: flex; }
-.nowplaying:not(.playing) .track.active:hover .indicator .indicator-paused { display: none; }
+.nowplaying:not(.playing) .track.active .indicator .paused { display: flex; }
+.nowplaying:not(.playing) .track.active:hover .indicator .play { display: flex; }
+.nowplaying:not(.playing) .track.active:hover .indicator .paused { display: none; }
 
-.track:not(.active):hover .indicator .indicator-play { display: flex; }
+.track:not(.active):hover .indicator .play { display: flex; }
 
 .nowplaying {
     display: flex;

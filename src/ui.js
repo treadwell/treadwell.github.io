@@ -1,4 +1,4 @@
-require("./ui.scss")
+const css = require("./ui.scss")
 
 const { NowPlaying } = require("./ui/now-playing.js")
 const { Library } = require("./ui/library.js")
@@ -22,7 +22,7 @@ module.exports = function (engine) {
     }
 
     const $app = $("<div>")
-        .addClass("app")
+        .addClass(css.main)
 
     const $view = View(pages, null, $app)  // pages and $tabs
 

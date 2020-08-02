@@ -1,12 +1,12 @@
 @import "./vars.scss";
 
-.tabs {
+.main {
     justify-content: stretch;
     align-items: stretch;
     font-size: 1rem;
 }
 
-.tabs--tab {
+.tab {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,20 +14,10 @@
     padding: 1rem;
     font-size: 1rem;
     cursor: pointer;
+    border-bottom: 2px solid transparent;
 }
 
-.tabs--tab:hover {
-    background: $gray-hover;
-}
-
-.tabs--tab:active {
-    background: $gray-active;
-}
-
-.tabs--tab__active {
-    color: $white;
-}
-
-.tabs--tab__inactive {
-    color: $offwhite;
-}
+.tab:hover { background: $gray-hover; }
+.tab:active { background: $gray-active; }
+.tab.active { color: $white; border-color: $white; }
+.tab:not(.active) { color: $offwhite; }

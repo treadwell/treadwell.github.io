@@ -1,7 +1,12 @@
 const $ = require("jquery")
 
-const { 
-    
+const css = {
+    icons: require("../common/icons.scss"),
+    common: require("../common.scss"),
+}
+
+const {
+
     mkEntry,
     mkDivider
 
@@ -19,7 +24,7 @@ module.exports = {
                 right: [{
                     icon: "times",
                     action: () => engine.deletePlaylist(p.name),
-                    classes: "danger"
+                    classes: css.common.danger
                 }]
             })
         }
@@ -47,7 +52,7 @@ module.exports = {
                 savedPlaylists.append(newEntry)
                 playlistElements.set(p.name, newEntry)
             }
-    
+
         })
 
         engine.on("playlist-deleted", name => {

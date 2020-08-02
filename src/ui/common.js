@@ -1,14 +1,15 @@
-require("./common.scss")
-
 const css = {
     dropdown: require("./common/dropdown.scss"),
-    entry: require("./common/entry.scss")
+    entry: require("./common/entry.scss"),
+    tabs: require("./common/tabs.scss"),
+    icons: require("./common/icons.scss"),
+    common: require("./common.scss"),
 }
 
 const $ = require("jquery")
 
-let { 
-    
+let {
+
     View,
     mkToolbarButton,
     revealScrollChild,
@@ -20,12 +21,12 @@ let {
         pages,
         $tabs,
         $view = $("<div>")
-            .addClass("view"))
+            .addClass(css.common.view))
     {
         View.nextId = (View.nextId || 0) + 1
-    
+
         $view.id = View.nextId
-    
+
         $view.view = (requestedPageKey, tryLocal) => {
             const storageKey = `view-${$view.id}` // The actual key in local storage
             const pageKey = (tryLocal && localStorage.getItem(storageKey)) || requestedPageKey
@@ -35,7 +36,7 @@ let {
             if ($tabs)
                 $tabs.activate(pages[pageKey])
         }
-    
+
         return $view
     },
 
@@ -49,18 +50,18 @@ let {
         return `${fmt(h)}:${fmt(m)}:${fmt(s)}`
     },
 
-    mkEntry (text, { 
+    mkEntry (text, {
 
-        action, 
-        classes: { 
+        action,
+        classes: {
             main: classMain = "",
             header: classHeader = ""
-        } = {}, 
-        content, 
-        scroll, 
-        left = [], 
-        right = [], 
-        data = {} 
+        } = {},
+        content,
+        scroll,
+        left = [],
+        right = [],
+        data = {}
 
     } = {}) {
 
@@ -69,12 +70,12 @@ let {
                 el.on("click", action)
             return icon
                 ? $("<i>")
-                    .addClass(`fa fa-fw fa-${icon} ${classes} ${css.entry.action} ${action ? css.entry.clickable : ""}`)
+                    .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-" + icon]} ${classes} ${css.entry.action} ${action ? css.entry.clickable : ""}`)
                     .on("click", action)
                 : el
                     .addClass(css.entry.action)
         }
-    
+
         const $entry = $("<div>")
             .addClass(`${css.entry.main} ${classMain}`)
             .data(data)
@@ -98,59 +99,57 @@ let {
                 .append(right.map(o => renderAction(o))))
             .append(!content ? [] : content
                 .addClass(css.entry.content))
-    
+
         return $entry
     },
 
     Tabs (pages) {
         const $tabs = mkToolbarBase()
-            .addClass("tabs")
+            .addClass(css.tabs.main)
             .append([... Object.values(pages)].map(page => {
                 const { tabTitle, action } = page
                 page.$el = $("<div>")
-                    .addClass("tabs--tab")
+                    .addClass(css.tabs.tab)
                     .text(tabTitle)
                     .on("click", action)
                 return page.$el
             }))
         $tabs.activate = page => {
             $tabs.children()
-                .addClass("tabs--tab__inactive")
-                .removeClass("tabs--tab__active")
+                .removeClass(css.tabs.active)
             page.$el
-                .addClass("tabs--tab__active")
-                .removeClass("tabs--tab__inactive")
+                .addClass(css.tabs.active)
         }
         return $tabs
     },
 
     mkToolbarBase ({ shadow = true } = {}) {
         return $("<div>")
-            .addClass("toolbar " + (
-                shadow == "top" ? "toolbar__shadow-top" :
-                shadow          ? "toolbar__shadow"     : ""))
+            .addClass(`${css.common.toolbar} ` + (
+                shadow == "top" ? css.common.shadowTop :
+                shadow          ? css.common.shadow    : ""))
     },
-    
+
     mkToolbar ({ text = "", shadow, left = [], right = [] } = {}) {
         return mkToolbarBase({ shadow })
             .append(left.map((opts) =>
                 opts.el = mkToolbarButton(opts.icon, opts.action)))
             .append($("<span>")
-                .addClass("toolbar--text")
+                .addClass(css.common.text)
                 .append(text))
             .append(right.map((opts) =>
                 opts.el = mkToolbarButton(opts.icon, opts.action)))
     },
-    
+
     mkToolbarButton (icon, action) {
-    
+
         const $button = $("<div>")
-            .addClass("toolbar--button")
+            .addClass(css.common.button)
             .append($("<i>")
-            .addClass("fa fa-fw fa-" + icon))
+            .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-" + icon]}`))
 
         if (Array.isArray(action)) {
-    
+
             const $dropdown = $("<div>")
                 .addClass(css.dropdown.main)
                 .append($("<div>")
@@ -169,26 +168,26 @@ let {
                     $dropdown
                         .removeClass(css.dropdown.active)
                 })
-    
+
             $button
                 .append($dropdown)
                 .on("click", () => $dropdown
                     .addClass(css.dropdown.active))
-    
+
         } else {
             $button.on("click", action)
         }
-    
+
          return $button
-    
+
     },
-    
+
     mkDivider (text) {
         return $("<div>")
-            .addClass("divider")
+            .addClass(css.common.divider)
             .text(text)
     },
-    
+
     revealScrollChild ($scroll, $child) {
         const scrollHeight = $scroll[0].offsetHeight
         const scrollTop = $scroll.scrollTop()
