@@ -1128,7 +1128,7 @@
   {
     "id": "ardhaBaddhaPadmaPaschimottanasana",
     "name": "Ardha Baddha Padma Paschimottanasana",
-    "pronunciation": "Ardha Baddha Padma Paschimottanasana",
+    "pronunciation": "Ardha Baddha Padma Pashimot anásana",
     "steps": [
       {
         "count": "7",
@@ -1223,7 +1223,7 @@
   {
     "id": "triyangaMukhaEkaPadaPaschimottanasana",
     "name": "Tirya Mukha Eka Pada Paschimottanasana",
-    "pronunciation": "Tirya Mukha Eka Pada Paschimottanasana",
+    "pronunciation": "Tirya Mukha Eka Pada Pashimot anásana",
     "steps": [
       {
         "count": "7",
@@ -1318,7 +1318,7 @@
   {
     "id": "januSirsasanaA",
     "name": "Janu Sirsasana A",
-    "pronunciation": "Janu Sirsasana A",
+    "pronunciation": "Janu sheer shásana A",
     "steps": [
       {
         "count": "7",
@@ -1413,7 +1413,7 @@
   {
     "id": "januSirsasanaB",
     "name": "Janu Sirsasana B",
-    "pronunciation": "Janu Sirsasana B",
+    "pronunciation": "Janu sheer shásana B",
     "steps": [
       {
         "count": "7",
@@ -1508,7 +1508,7 @@
   {
     "id": "januSirsasanaC",
     "name": "Janu Sirsasana C",
-    "pronunciation": "Janu Sirsasana C",
+    "pronunciation": "Janu sheer shásana C",
     "steps": [
       {
         "count": "7",
@@ -1797,7 +1797,7 @@
     "steps": [
       {
         "count": "7",
-        "breaths": 1.5,
+        "breaths": 2.5,
         "text": "Inhale, jump to seated. Bend the right knee, twist right, and bind."
       },
       {
@@ -1830,7 +1830,7 @@
       },
       {
         "count": "12",
-        "breaths": 1.5,
+        "breaths": 2.5,
         "text": "Inhale, jump to seated. Bend the left knee, twist left, and bind."
       },
       {
@@ -1872,7 +1872,7 @@
     "steps": [
       {
         "count": "7",
-        "breaths": 1.5,
+        "breaths": 2.5,
         "text": "Inhale, jump to seated. Left leg to padmasana, twist right, and bind."
       },
       {
@@ -1905,7 +1905,7 @@
       },
       {
         "count": "12",
-        "breaths": 1.5,
+        "breaths": 2.5,
         "text": "Inhale, jump to seated. Right leg to padmasana, twist left, bind."
       },
       {
@@ -2053,7 +2053,7 @@
   {
     "id": "bhujapidasana",
     "name": "Bhujapidasana",
-    "pronunciation": "Bhujapidásana",
+    "pronunciation": "Bhuja peedásana",
     "steps": [
       {
         "count": "7",
@@ -2204,7 +2204,7 @@
       },
       {
         "count": "8",
-        "breaths": 0.5,
+        "breaths": 2.5,
         "text": "Exhale, take padmasana, push arms through, hands to chin."
       },
       {
@@ -2239,7 +2239,7 @@
   {
     "id": "kukkutasana",
     "name": "Kukkutasana",
-    "pronunciation": "Kukkutásana",
+    "pronunciation": "Koo koo tásana",
     "steps": [
       {
         "count": "9",
@@ -2591,12 +2591,8 @@
       },
       {
         "count": "24",
-        "breaths": 0.5,
-        "text": "Inhale, take the feet over the head."
-      },
-	    {
-        "breaths": 0.5,
-        "text": "Exhale, take cakrasana to chaturanga."
+        "breaths": 2.0,
+        "text": "Inhale, take cakrasana. And exhale to chaturanga."
       },
       {
         "count": "25",
@@ -2769,12 +2765,8 @@
       },
       {
         "count": "11",
-        "breaths": 0.5,
-        "text": "Inhale, take the feet back over the head."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, take cakrasana to chaturanga."
+        "breaths": 2.0,
+        "text": "Inhale, take cakrasana. And exhale to chaturanga."
       },
       {
         "count": "12",
@@ -2849,12 +2841,8 @@
       },
       {
         "count": "11",
-        "breaths": 0.5,
-        "text": "Inhale, take the feet back over the head."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, take cakrasana to chaturanga."
+        "breaths": 2.0,
+        "text": "Inhale, take cakrasana. And exhale to chaturanga."
       },
       {
         "count": "12",
@@ -2961,7 +2949,7 @@
   {
     "id": "halasana",
     "name": "Halasana",
-    "pronunciation": "Halasana",
+    "pronunciation": "Ha lásana",
     "steps": [
       {
         "count": "8",
@@ -3037,8 +3025,8 @@
     "steps": [
       {
         "count": "9",
-        "breaths": 0.5,
-        "text": "Exhale, lower padmasana to the floor, arch back, top of head on floor."
+        "breaths": 2.5,
+        "text": "Exhale, slowly lower padmasana to the floor, arch back, top of head on floor."
       },
       {
         "breaths": 8,
@@ -3051,7 +3039,7 @@
   {
     "id": "uttanaPadasana",
     "name": "Uttana Padasana",
-    "pronunciation": "Uttana Padásana",
+    "pronunciation": "Uttána Padásana",
     "steps": [
       {
         "count": "9",
@@ -3064,12 +3052,8 @@
       },
       {
         "count": "10",
-        "breaths": 0.5,
-        "text": "Inhale, take the feet back over the head."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, take cakrasana to chaturanga."
+        "breaths": 2.0,
+        "text": "Inhale, take cakrasana. And exhale to chaturanga."
       },
       {
         "count": "11",
@@ -4344,12 +4328,8 @@
       },
       {
         "count": "9",
-        "breaths": 0.5,
-        "text": "Inhale, cakrasana."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale to chaturanga."
+        "breaths": 2.0,
+        "text": "Inhale, take cakrasana. And exhale to chaturanga."
       },
       {
         "count": "10",
@@ -6697,12 +6677,8 @@
     "steps": [
       {
         "count": "4",
-        "breaths": 0.5,
-        "text": "Inhale, take the feet over the head."
-      },
-	    {
-        "breaths": 0.5,
-        "text": "Exhale, take cakrasana to chaturanga."
+        "breaths": 2.0,
+        "text": "Inhale, take cakrasana. And exhale to chaturanga."
       },
       {
         "count": "5",
@@ -6744,12 +6720,8 @@
     "steps": [
       {
         "count": "4",
-        "breaths": 0.5,
-        "text": "Inhale, take the feet over the head."
-      },
-	    {
-        "breaths": 0.5,
-        "text": "Exhale, take cakrasana to chaturanga."
+        "breaths": 2.0,
+        "text": "Inhale, take cakrasana. And exhale to chaturanga."
       },
       {
         "count": "5",
@@ -6772,12 +6744,8 @@
     "steps": [
       {
         "count": "4",
-        "breaths": 0.5,
-        "text": "Inhale, take the feet over the head."
-      },
-	    {
-        "breaths": 0.5,
-        "text": "Exhale, take cakrasana to chaturanga."
+        "breaths": 2.0,
+        "text": "Inhale, take cakrasana. And exhale to chaturanga."
       },
       {
         "count": "5",
@@ -6885,12 +6853,8 @@
       },
       {
         "count": "11",
-        "breaths": 0.5,
-        "text": "Inhale, take the feet back over the head."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, take cakrasana to chaturanga."
+        "breaths": 2.0,
+        "text": "Inhale, take cakrasana. And exhale to chaturanga."
       },
       {
         "count": "12",
