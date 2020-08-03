@@ -6201,7 +6201,7 @@
   {
     "id": "dviPadaViparitaDrill",
     "name": "Dvi Pada Viparita Drill",
-    "pronunciation": "Dwee Pada Vipárita Drill",
+    "pronunciation": "Dwee Pada Viparíta Drill",
     "steps": [
       {
         "count": "7",
@@ -6221,7 +6221,7 @@
       {
         "count": "10",
         "breaths": 0.5,
-        "text": "Exhale, take hands behind head as in sirsásana."
+        "text": "Exhale, take hands behind head as in sirsasana."
       },
       {
         "count": "11",
@@ -6239,7 +6239,7 @@
       {
         "count": "12",
         "breaths": 0.5,
-        "text": "Inhale, recover urdhva dhanurásana position."
+        "text": "Inhale, recover urdhva dhanurasana position."
       },
       {
         "count": "13",
@@ -6268,7 +6268,7 @@
   {
     "id": "virasanaBreak",
     "name": "Virasana Break",
-      "pronunciation": "Virasana break",
+      "pronunciation": "Virásana break",
     "steps": [
       {
         "breaths": 1.0,
