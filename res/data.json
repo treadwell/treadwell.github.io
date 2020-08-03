@@ -3072,7 +3072,7 @@
   {
     "id": "sirsasana",
     "name": "Sirsasana",
-    "pronunciation": "Sirsásana",
+    "pronunciation": "Sheer shásana",
     "steps": [
       {
         "count": "7",
@@ -5804,8 +5804,8 @@
   },
   {
     "id": "doublePigeon",
-    "name": "Double Pigeon Pose",
-    "pronunciation": "Double Pigeon Pose",
+    "name": "Agnistambhasana",
+    "pronunciation": "Agni stambhásana",
     "steps": [
       {
         "count": "1",
@@ -5882,7 +5882,7 @@
       {
         "count": "13",
         "breaths": 0.5,
-        "text": "Exhale, jump back to downward dog."
+        "text": "Exhale, jump back to chaturanga."
       },
       {
         "count": "14",
