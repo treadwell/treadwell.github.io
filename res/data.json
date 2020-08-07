@@ -1132,7 +1132,7 @@
     "steps": [
       {
         "count": "7",
-        "breaths": 1.5,
+        "breaths": 2.5,
         "text": "Inhale, jump to seated, right leg into half padmasana, bind. Left hand to left foot."
       },
       {
@@ -1175,7 +1175,7 @@
       },
       {
         "count": "14",
-        "breaths": 1.5,
+        "breaths": 2.5,
         "text": "Inhale, jump to seated, left leg into half padmasana, bind. Right hand to right foot."
       },
       {
@@ -1801,10 +1801,6 @@
         "text": "Inhale, jump to seated. Bend the right knee, twist right, and bind."
       },
       {
-      "breaths": 0.5,
-      "text": "Exhale."
-    },
-      {
         "breaths": 5,
         "counted": true
       },
@@ -1832,10 +1828,6 @@
         "count": "12",
         "breaths": 2.5,
         "text": "Inhale, jump to seated. Bend the left knee, twist left, and bind."
-      },
-      {
-      "breaths": 0.5,
-      "text": "Exhale."
       },
       {
         "breaths": 5,
@@ -1876,10 +1868,6 @@
         "text": "Inhale, jump to seated. Left leg to padmasana, twist right, and bind."
       },
       {
-        "breaths": 0.5,
-        "text": "Exhale."
-      },
-      {
         "breaths": 5,
         "counted": true
       },
@@ -1907,10 +1895,6 @@
         "count": "12",
         "breaths": 2.5,
         "text": "Inhale, jump to seated. Right leg to padmasana, twist left, bind."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale."
       },
       {
         "breaths": 5,
@@ -1948,7 +1932,7 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to seated. Legs up, arms straight."
+        "text": "Inhale, jump through. Legs up, arms up."
       },
       {
         "breaths": 5,
@@ -2093,20 +2077,8 @@
     "steps": [
       {
         "count": "7",
-        "breaths": 0.5,
-        "text": "Inhale, jump legs up."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, lower legs around arms."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Inhale, extend legs to tittibhasana."
-      },
-      {
-        "breaths": 1.5,
-        "text": "Exhale, lower to ground."
+        "breaths": 2.5,
+        "text": "Inhale, jump, lower all the way down."
       },
       {
         "breaths": 5,
@@ -2147,7 +2119,7 @@
       {
         "count": "11",
         "breaths": 0.5,
-        "text": "Inhale, take the legs to bakasana position."
+        "text": "Inhale, take the legs back to bakasana."
       },
       {
         "count": "12",
@@ -2176,20 +2148,16 @@
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, jump to balance on straight arms, feet up."
+        "text": "Inhale, jump through to dandasana."
       },
       {
         "breaths": 0.5,
-        "text": "Exhale, pivot through to seated."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Inhale, take dandasana."
+        "text": "Exhale."
       },
       {
         "count": "8",
         "breaths": 2.5,
-        "text": "Exhale, take padmasana, push arms through, hands to chin."
+        "text": "Inhale, take padmasana, push arms through, hands to chin."
       },
       {
         "breaths": 5,
@@ -2198,7 +2166,7 @@
       {
         "count": "9",
         "breaths": 1.0,
-        "text": "Exhale. Rolling. One."
+        "text": "Rocking. Exhale. One."
       },
       {
         "breaths": 1.0,
@@ -2466,7 +2434,7 @@
   {
     "id": "suptaPadangusthasana",
     "name": "Supta Padangusthasana",
-    "pronunciation": "Supta Padangusthásana",
+    "pronunciation": "Soopta Padan goos tásana",
     "steps": [
       {
         "count": "7",
@@ -6093,17 +6061,9 @@
         "text": "Inhale, grasp top of left foot with right hand. Extend left hand forward."
       },
       {
-        "breaths": 0.5,
-        "text": "Exhale."
-      },
-      {
         "count": "10",
         "breaths": 1.5,
-        "text": "Inhale, place left hand on floor, pull leg behind head."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale."
+        "text": "Exhale, place left hand on floor, pull leg behind head."
       },
       {
         "breaths": 5,
@@ -6133,17 +6093,9 @@
         "text": "Inhale, grasp top of right foot with left hand. Extend right hand forward."
       },
       {
-        "breaths": 0.5,
-        "text": "Exhale."
-      },
-      {
         "count": "14",
         "breaths": 1.5,
-        "text": "Inhale, place right hand on floor, pull leg behind head."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale."
+        "text": "Exhale, place right hand on floor, pull leg behind head."
       },
       {
         "breaths": 5,
