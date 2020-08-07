@@ -1957,16 +1957,12 @@
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, lift."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, lower."
+        "text": "Lift."
       },
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, legs up."
+        "text": "Again, legs up."
       },
       {
         "breaths": 5,
@@ -1975,16 +1971,12 @@
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, lift."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, lower."
+        "text": "Lift."
       },
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, legs up."
+        "text": "Again, legs up."
       },
       {
         "breaths": 5,
@@ -1993,16 +1985,12 @@
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, lift."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, lower."
+        "text": "Lift."
       },
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, legs up."
+        "text": "Again, legs up."
       },
       {
         "breaths": 5,
@@ -2011,16 +1999,12 @@
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, lift."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, lower."
+        "text": "Lift."
       },
       {
         "count": "7",
         "breaths": 0.5,
-        "text": "Inhale, legs up."
+        "text": "Again, legs up."
       },
       {
         "breaths": 5,
@@ -2029,7 +2013,7 @@
       {
         "count": "8",
         "breaths": 0.5,
-        "text": "Inhale, lift."
+        "text": "Lift."
       },
       {
         "count": "9",
@@ -6784,10 +6768,6 @@
         "count": "8",
         "breaths": 0.5,
         "text": "Inhale, lift."
-      },
-      {
-        "breaths": 0.5,
-        "text": "Exhale, lower."
       },
       {
         "count": "7",
