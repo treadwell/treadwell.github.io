@@ -6,7 +6,8 @@ MVP
   - NowPlaying: Highlight active step
   - Playlists: Show playlist contents (asanas, then step w/i asana)
   - NowPlaying: Remaining time not decremented for counted breaths
-  - NowPlaying: Total time != actual total time
+  - NowPlaying: Total time != actual total time  (82 minutes is
+    actually 93 minutes)
   - NowPlaying: Re-order
   - Responsive design for mobile devices
   - All: Native UX (animations)
