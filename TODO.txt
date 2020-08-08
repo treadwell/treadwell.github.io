@@ -9,6 +9,7 @@ MVP
   - NowPlaying: Total time != actual total time  (82 minutes is
     actually 93 minutes)
   - NowPlaying: Re-order
+  - Settings: change counts (maybe with a multiplier?)
   - Responsive design for mobile devices
   - All: Native UX (animations)
   - All: Deploying to Android/iOS
@@ -22,9 +23,9 @@ Post-MVP
   - Report an error w/ asana or playlist
   - Automated transitions dynamically added to playlists to
     ensure smooth transitions
-  - NowPlaying: Show line drawing of active step 
+  - NowPlaying: Show line drawing of active step
   - NowPlaying: Voice control of app (to avoid having to make mods in practice)
 
 Tech Debt
-    - NowPlaying: Bug: Dropdown doesn't close when clicking 
+    - NowPlaying: Bug: Dropdown doesn't close when clicking
       off to the right
