@@ -50,23 +50,21 @@ module.exports = {
                         if (!ip || node != currentNode)
                             engine.play(node)
                     },
-                    el: $("<span>")
-                        .addClass(css.nowPlaying.indicator)
-                        .append([
-                            $("<i>")
-                                .addClass(css.nowPlaying.play)
-                                .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-play"]}`),
-                            $("<i>")
-                                .addClass(css.nowPlaying.pause)
-                                .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-pause"]}`),
-                            $("<i>")
-                                .addClass(css.nowPlaying.playing)
-                                .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-volume-up"]}`),
-                            $("<i>")
-                                .addClass(css.nowPlaying.paused)
-                                .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-volume-off"]}`)
-                        ])
-
+                    classes: css.nowPlaying.indicator,
+                    el: [
+                        $("<i>")
+                            .addClass(css.nowPlaying.play)
+                            .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-play"]}`),
+                        $("<i>")
+                            .addClass(css.nowPlaying.pause)
+                            .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-pause"]}`),
+                        $("<i>")
+                            .addClass(css.nowPlaying.playing)
+                            .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-volume-up"]}`),
+                        $("<i>")
+                            .addClass(css.nowPlaying.paused)
+                            .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-volume-off"]}`)
+                    ]
                 }],
                 right: [{
                     icon: "times",

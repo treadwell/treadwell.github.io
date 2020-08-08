@@ -66,14 +66,11 @@ let {
     } = {}) {
 
         function renderAction ({ action, el, icon, classes = "" }) {
-            if (action && el)
-                el.on("click", action)
-            return icon
-                ? $("<i>")
-                    .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-" + icon]} ${classes} ${css.entry.action} ${action ? css.entry.clickable : ""}`)
-                    .on("click", action)
-                : el
-                    .addClass(css.entry.action)
+            return $("<div>")
+                .on("click", action)
+                .addClass(`${css.entry.action} ${action ? css.entry.clickable : ""} ${classes}`)
+                .append(el || $("<i>")
+                    .addClass(`${css.icons.fa} ${css.icons["fa-fw"]} ${css.icons["fa-" + icon]}`))
         }
 
         const $entry = $("<div>")
@@ -86,16 +83,20 @@ let {
                     .addClass(`${css.entry.text} ${action ? css.entry.clickable : ""}`)
                     .on("click", action)
                     .text(text))
-                .append(!content ? [] : mkToolbarButton("chevron-down", ev => {
-                    const $ent = $(ev.target)
-                        .closest(`.${css.entry.main}`)
-                    $ent.toggleClass(css.entry.open)
-                    if (scroll)
-                        setTimeout(() =>
-                            revealScrollChild(scroll == "parent"
-                                ? $ent.parent()
-                                : scroll, $ent))
-                }).addClass(css.entry.opener))
+                .append(!content ? [] : renderAction({
+                    icon: "chevron-down", 
+                    classes: css.entry.opener,
+                    action: ev => {
+                        const $ent = $(ev.target)
+                            .closest(`.${css.entry.main}`)
+                        $ent.toggleClass(css.entry.open)
+                        if (scroll)
+                            setTimeout(() =>
+                                revealScrollChild(scroll == "parent"
+                                    ? $ent.parent()
+                                    : scroll, $ent))
+                    },
+                }))
                 .append(right.map(o => renderAction(o))))
             .append(!content ? [] : content
                 .addClass(css.entry.content))

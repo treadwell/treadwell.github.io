@@ -1,12 +1,6 @@
 MVP
   - All: Packaging with webpack
-      - Utilize css modules
-          - Toolbars/buttons
-          - Steps
       - Add engine unit tests to webpack
-      - Remove !important from asanas.scss
-      - Resolve issues with opener and step icons
-          - Try diffing previous two commits 
   - Settings: Change breaths per minute
   - NowPlaying: voice preloading
   - NowPlaying: Highlight active step
