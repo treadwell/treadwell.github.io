@@ -11,6 +11,7 @@ MVP
   - NowPlaying: Remaining time not decremented for counted breaths
   - NowPlaying: Total time != actual total time
   - NowPlaying: Re-order
+  - Settings: change counts (maybe with a multiplier?)
   - Responsive design for mobile devices
   - All: Native UX (animations)
   - All: Deploying to Android/iOS
